@@ -20,8 +20,6 @@ void input_pro(){
 }
 void save_pro(){
     in=fopen("pros.txt","w");
-    pros.clear();
-    int x;
     for(int i=0;i<pros.size();i++)fprintf(in,"%d ",pros[i]);
     fclose(in);
 }
@@ -50,6 +48,7 @@ int main(){
             c=getchar();
             while(c!='y'&&c!='n')c=getchar();
             if(c=='y')pros.erase(pros.begin()+x);
+            getchar();
         }
         if(c=='q'){save_pro();break;}
         else{
