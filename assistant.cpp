@@ -36,6 +36,7 @@ int Rand(int up=RAND_MAX){
 }
 char str[100];
 int main(){
+    srand(time(0));
     input_pro();
     while(1){
         printf("There are %d problems.\n",pros.size());
