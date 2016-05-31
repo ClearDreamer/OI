@@ -31,7 +31,7 @@ void out(int x){
 void out_allpro(){
     for_each(pros.begin(),pros.end(),out);
 }
-void Rand(int up=RAND_MAX){
+int Rand(int up=RAND_MAX){
     return rand()%up;
 }
 char str[100];
@@ -44,7 +44,7 @@ int main(){
         if(c=='\n'){
             int x=Rand(pros.size());
             printf("Problem ID: %d, Do you solve it?",pros[x]);
-            sprintf(str,"http://www.lydsy.com/JudgeOnline/problem.php?id=%d",pros[x]);
+            sprintf(str,"start http://www.lydsy.com/JudgeOnline/problem.php?id=%d",pros[x]);
             system(str);
             c=getchar();
             while(c!='y'&&c!='n')c=getchar();
