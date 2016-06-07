@@ -1,8 +1,5 @@
 /*
-AC×Ô¶¯»ú¡£
-	°ÑÃ¿¸öÐ¡¾ØÕó²ð³ÉÒ»ÐÐÒ»ÐÐ¼Óµ½AC×Ô¶¯»úÀï£¬È»ºóÃ¿´ÎÆ¥Åä¾Í°Ñcot[×óÉÏ½Ç]++
-	×îºó¼ì²éÓÐÃ»ÓÐÒ»¸öÎ»ÖÃµÄcotµÈÓÚÐ¡¾ØÕóµÄÐÐÊý¡£
-	ÒòÎªÒ»¸ö½Úµã¿ÉÄÜÊÇ¶à¸öÐÐµÄ½áÎ²£¬ËùÒÔ½áÊø½ÚµãÐèÒª´æ¶à¸öÖµ£¬
+ACè‡ªåŠ¨æœºï¼Œæš´åŠ›æ‰«
 */
 #include<cstdio>
 #include<cstdlib>
