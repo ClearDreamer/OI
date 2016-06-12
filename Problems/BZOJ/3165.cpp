@@ -1,8 +1,8 @@
 /*
 [Heoi2013]Segment 
-������ע��X��Χ��С�������߶�����ά�����������߶Σ�
-	  �����߶�ʱ���������߶����Ϸ��ѳ�O(logn)�����������뵱ǰ��������߶β��ཻ����ôȡ���ŵģ��������ݹ����������︴�Ӷ���O(log^2(n)) 
-		��ѯʱ��Ҷ�ӵ���·�������е�������߶���ȡ�����ŵļ��ɡ�O(logn)
+分析：注意X范围较小，建立线段树，维护区间最优线段，
+	  插入线段时，最多会在线段树上分裂成O(logn)棵子树，若与当前点的最优线段不相交，那么取较优的，否则暴力递归子树。这里复杂度是O(log^2(n)) 
+		查询时在叶子到根路径上所有点的最优线段中取个最优的即可。O(logn)
 */
 #include<iostream>
 #include<cstdio>
@@ -28,7 +28,7 @@ inline int dcmp(double t){
 	return fabs(t)<1e-8?0:(t>0?1:-1);
 }
 int f[N*4+3];
-bool isup(int a,int b,int l,int r){//�ж�a�Ƿ���b�Ϸ� 
+bool isup(int a,int b,int l,int r){//判断a是否在b上方 
 	return dcmp(S[a].cy(l)-S[b].cy(l))>0 && dcmp(S[a].cy(r)-S[b].cy(r))>0;
 }
 void insert(int x,int L,int R,int l,int r,int pos){
@@ -51,7 +51,7 @@ void query(int x,int l,int r,int X){
 }
 int main(){
 	S.push_back(segment()); 
-	S[0].b=-1;//�������붼������ 
+	S[0].b=-1;//所有输入都是正的 
 	int n;scanf("%d",&n);
 	for(int q,w,e,r,t;n;n--){
 		scanf("%d",&q);

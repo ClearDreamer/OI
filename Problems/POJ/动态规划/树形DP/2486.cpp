@@ -1,9 +1,9 @@
 /*
 Apple Tree
-���⣺����Ȩ��һ��������1�ڵ���K���������Ȩֵ
-������ע����Իص���㣬���Զ���״̬��
-	  ״̬dp[i][k][0]��ʾ��k�������ߵ�����£�Ů���ǻص�i�ڵ�Ե������ƻ������dp[i][k][1]��ʾ��k�������ߵ�����£�Ů���ǲ�һ���ص�i��������i��������ֹͣ���Ե������ƻ������
-	  ״̬ת�Ʒ��̴������дΪ�����������Ǳ����� 
+题意：含点权的一棵树，从1节点走K步，问最大权值
+分析：注意可以回到起点，所以定义状态：
+	  状态dp[i][k][0]表示有k步可以走的情况下，女主角回到i节点吃到的最大苹果数；dp[i][k][1]表示有k步可以走的情况下，女主角不一定回到i（可能在i的子树中停止）吃到的最大苹果数。
+	  状态转移方程大体可以写为三个（本质是背包） 
 	  (1)dp[i][k][0]=Max{dp[i][k][0],{dp[i][k-l-2][0]+dp[j][l][0]|(i,j)}};
 	  (2)dp[i][k][1]=Max{dp[i][k][1],{dp[i][k-l-2][0]+dp[j][l][1]|(i,j)}};
 	  (3)dp[i][k][1]=Max{dp[i][k][1],{dp[i][k-l-2][1]+dp[j][l][0]|(i,j)}};
@@ -25,7 +25,7 @@ void dp(int u,int pa){
 	for(int i=0;i<=k;i++)opt[u][i][0]=opt[u][i][1]=val[u]; 
 	for(int i=0;i<g[u].size();i++){
 		int v=g[u][i];
-		if(v==pa)continue;dp(v,u);//�����ȡ���֣���ȡbitset����WA 
+		if(v==pa)continue;dp(v,u);//必须采取这种，采取bitset法会WA 
 		//if(!vis[v])dp(v,u);
 		for(int j=k;j>=0;j--){
 			for(int p=0;p<=j;p++){

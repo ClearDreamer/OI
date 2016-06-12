@@ -1,6 +1,6 @@
 /*
 [Usaco2007 Demo]City skyline
-���������ó�n��ά����������ջ���������ͬ�߶ȵģ���ô�𰸿���-1��(ע�����и����Ǹ߶ȵı仯���̣����Բ�����������������ͬ�� 
+分析：答案置成n，维护单调递增栈，如果有相同高度的，那么答案可以-1。(注意题中给的是高度的变化过程，所以不可能有相邻两个相同） 
 */
 #include<iostream>
 #include<cstdio>

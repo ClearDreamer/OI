@@ -1,6 +1,6 @@
 /*
-Ò»ËþºþÍ¼
-·ÖÎö£ººÃ¶ñÐÄµÄÒ»µÀÌâ¡£¡£¡£²»´òËãAÁË¡£¡£ÓÐÊ±¼äÔÙËµ°É 
+ä¸€å¡”æ¹–å›¾
+åˆ†æžï¼šå¥½æ¶å¿ƒçš„ä¸€é“é¢˜ã€‚ã€‚ã€‚ä¸æ‰“ç®—Aäº†ã€‚ã€‚æœ‰æ—¶é—´å†è¯´å§ 
 */
 #include<iostream>
 #include<cstring>

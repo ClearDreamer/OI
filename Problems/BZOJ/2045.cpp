@@ -1,7 +1,7 @@
 /*
-˫����
-�������������ZAP(bzoj1101)�ļ򻯰棬������������һ�����ƺ�������phi
-	  �������ʱ���÷ֶ��ˣ���Ϊֻ��һ��ѯ�ʣ�ɨһ��d<=n���� 
+双亲数
+分析：这道题是ZAP(bzoj1101)的简化版，但是做法基本一样，似乎不能用phi
+	  最后求解的时候不用分段了，因为只有一次询问，扫一遍d<=n即可 
 */
 #include<iostream>
 #include<cstdio>

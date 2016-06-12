@@ -1,5 +1,5 @@
 /*
-Êý×ÖÍ³¼Æ
+æ•°å­—ç»Ÿè®¡
 */
 #include<stdio.h>
 int times(int n){

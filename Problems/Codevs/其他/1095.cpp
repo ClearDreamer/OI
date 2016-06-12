@@ -1,6 +1,6 @@
 /*
-»ðÐÇÈË
-·ÖÎö£ºÆäÊµ¾ÍÊÇÉú³É½ÓÏÂÀ´µÄµÚm¸öÅÅÁÐ 
+ç«æ˜Ÿäºº
+åˆ†æžï¼šå…¶å®žå°±æ˜¯ç”ŸæˆæŽ¥ä¸‹æ¥çš„ç¬¬mä¸ªæŽ’åˆ— 
 */
 #include<iostream>
 #include<algorithm>

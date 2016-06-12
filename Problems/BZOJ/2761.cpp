@@ -1,6 +1,6 @@
 /*
-[JLOI2011]²»ÖØ¸´Êý×Ö
-·ÖÎö£ºÖ±½ÓÓÃset£¬×¢Òâbzoj²»»á¹ýÂËÐÐÄ©¿Õ¸ñ 
+[JLOI2011]ä¸é‡å¤æ•°å­—
+åˆ†æžï¼šç›´æŽ¥ç”¨setï¼Œæ³¨æ„bzojä¸ä¼šè¿‡æ»¤è¡Œæœ«ç©ºæ ¼ 
 */
 #include<iostream>
 #include<algorithm>

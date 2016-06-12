@@ -1,9 +1,9 @@
 /*
 Treats for the Cows
-ÌâÒâ£º¸ø³öµÄÒ»ÏµÁÐµÄÊý×Ö£¬¿ÉÒÔ¿´³ÉÒ»¸öË«Ïò¶ÓÁÐ£¬Ã¿´ÎÖ»ÄÜ´Ó¶ÓÊ×»òÕß¶ÓÎ²³ö¶Ó£¬µÚn¸ö³ö¶Ó¾ÍÄÃÕâ¸öÊý³ËÒÔn£¬×îºó½«ºÍ¼ÓÆðÀ´£¬Çó×î´óºÍ
-·ÖÎö£ºa[i]*n²»ºÃ´¦Àí£¬µ«¿ÉÒÔ×ª»»×´Ì¬¶¨Òå£ºopt[i][j]±íÊ¾´ËÇø¼äÔÚ×îºóµÚ(n-(j-i+1)+1)..n¸ö³ö¶ÓÁÐµÄ×îÓÅ½âÇÒa[i]»òa[j]×îºóÒ»¸ö³ö£¬ÕâÑù¾Í¿ÉÒÔ±Ü¿ªÕâ¸ö³ö¶ÓË³ÐòµÄÏÞÖÆ
-	   ×ªÒÆÊÇopt[i][j]=max{opt[i+1][j]+a[i]*(n-len+1),opt[i][j-1]+a[j]*(n-len+1)} 
-	   ³õÊ¼»¯£ºopt[i][i]=a[i]*(n-1+1) 
+é¢˜æ„ï¼šç»™å‡ºçš„ä¸€ç³»åˆ—çš„æ•°å­—ï¼Œå¯ä»¥çœ‹æˆä¸€ä¸ªåŒå‘é˜Ÿåˆ—ï¼Œæ¯æ¬¡åªèƒ½ä»Žé˜Ÿé¦–æˆ–è€…é˜Ÿå°¾å‡ºé˜Ÿï¼Œç¬¬nä¸ªå‡ºé˜Ÿå°±æ‹¿è¿™ä¸ªæ•°ä¹˜ä»¥nï¼Œæœ€åŽå°†å’ŒåŠ èµ·æ¥ï¼Œæ±‚æœ€å¤§å’Œ
+åˆ†æžï¼ša[i]*nä¸å¥½å¤„ç†ï¼Œä½†å¯ä»¥è½¬æ¢çŠ¶æ€å®šä¹‰ï¼šopt[i][j]è¡¨ç¤ºæ­¤åŒºé—´åœ¨æœ€åŽç¬¬(n-(j-i+1)+1)..nä¸ªå‡ºé˜Ÿåˆ—çš„æœ€ä¼˜è§£ä¸”a[i]æˆ–a[j]æœ€åŽä¸€ä¸ªå‡ºï¼Œè¿™æ ·å°±å¯ä»¥é¿å¼€è¿™ä¸ªå‡ºé˜Ÿé¡ºåºçš„é™åˆ¶
+	   è½¬ç§»æ˜¯opt[i][j]=max{opt[i+1][j]+a[i]*(n-len+1),opt[i][j-1]+a[j]*(n-len+1)} 
+	   åˆå§‹åŒ–ï¼šopt[i][i]=a[i]*(n-1+1) 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,5 +1,5 @@
 /*
-·­×ªÓÎÏ·
+ç¿»è½¬æ¸¸æˆ
 */ 
 #include<iostream>
 using namespace std;
@@ -11,7 +11,7 @@ int main(){
 	for(int i=1;i<=n;i++)
 		for(int j=i;j<=n;j++)
 			ans=max(ans,s[i-1]	  +(j-i+1)-(s[j]-s[i-1])+(s[n]-s[j]));
-			//		Ç°i-1¸öÖĞµÄ1   ·­×ª²¿·ÖĞÂµÃµ½µÄ1	 ºój+1..nÖĞµÄ1 
+			//		å‰i-1ä¸ªä¸­çš„1   ç¿»è½¬éƒ¨åˆ†æ–°å¾—åˆ°çš„1	 åj+1..nä¸­çš„1 
 	cout<<ans;
 	return 0;
 }

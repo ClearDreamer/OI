@@ -1,5 +1,5 @@
 /*
-n里的质数
+n閲岀殑璐ㄦ暟
 */
 #include<iostream>
 #include<bitset>

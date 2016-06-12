@@ -1,7 +1,7 @@
 /*
-���ֻ�ľ
-��������ʵ���ǡ���������������棬���Ǹ��·�Χ��A�� 
-	  ͨ����������ַ����Ƚϣ�sortһ�鼴�� 
+数字积木
+分析：其实就是“最大数”的升级版，但是改下范围就A了 
+	  通过巧妙设计字符串比较，sort一遍即可 
 */
 #include<iostream>
 #include<string>

@@ -1,7 +1,7 @@
 /*
 [Poi2010]Antisymmetry
-�����������������ȵĴ��ǿ϶����еģ�����manacher��ֻ�����ָ������ֵģ�����ͳ��ԭ���鲿�ֵĴ�= = 
-		����һ��ö���е㣬hash+���� 
+分析：首先奇数长度的串是肯定不行的，套用manacher，只处理分隔符部分的，不能统计原数组部分的答案= = 
+		还有一种枚举中点，hash+二分 
 */
 #include<iostream>
 #include<cstdio>

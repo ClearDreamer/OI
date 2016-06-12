@@ -1,5 +1,5 @@
 /*
-рПрП╣д╣зр╩©н
+Х▄╣Х▄╣Г └Г╛╛Д╦─Х╞╬
 */
 #include<stdio.h>
 #include<string.h>

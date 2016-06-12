@@ -1,6 +1,6 @@
 /*
-[HAOI2006]�ܻ�ӭ��ţ
-������tarjanǿ��ͨ�����������ع�ͼ������Ϊ0�ĵ���ֻ��һ������������ǿ��ͨ�����Ĵ�С�������޽⡣ 
+[HAOI2006]受欢迎的牛
+分析：tarjan强连通分量求缩点重构图，出度为0的点若只有一个则输出其代表强连通分量的大小，否则无解。 
 */
 #include<iostream>
 #include<cstdio>

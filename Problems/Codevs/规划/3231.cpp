@@ -1,5 +1,5 @@
 /*
-Ğ¡³Ô
+å°åƒ
 */
 #include<iostream>
 #include<algorithm>

@@ -1,7 +1,7 @@
 /*
-³Ë»ý×î´ó
-·ÖÎö£º»®·ÖDP£¬ÏÈÉú³ÉµÚiÎ»µ½µÚjÎ»µÄÊý×Ös[i][j]£¬Éèopt[i][j]±íÊ¾ÔÚ[1..i]Õâ¸ö·¶Î§ÄÚ²åÈëj¸ö³ËºÅµÄ×îÓÅ½â
-		Ôòopt[i][j]=max{opt[p][j-1]*s[p+1][i]|j<=p<i} 
+ä¹˜ç§¯æœ€å¤§
+åˆ†æžï¼šåˆ’åˆ†DPï¼Œå…ˆç”Ÿæˆç¬¬iä½åˆ°ç¬¬jä½çš„æ•°å­—s[i][j]ï¼Œè®¾opt[i][j]è¡¨ç¤ºåœ¨[1..i]è¿™ä¸ªèŒƒå›´å†…æ’å…¥jä¸ªä¹˜å·çš„æœ€ä¼˜è§£
+		åˆ™opt[i][j]=max{opt[p][j-1]*s[p+1][i]|j<=p<i} 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,6 +1,6 @@
 /*
 Integer Inquiry
-分析：高精加 
+鍒嗘瀽锛氶珮绮惧姞 
 */
 #include<iostream>
 #include<algorithm>

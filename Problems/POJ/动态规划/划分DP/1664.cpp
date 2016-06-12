@@ -1,6 +1,6 @@
 /*
-��ƻ��
-��������ʵ���ǽ�M�ֳ�1�ݣ�2�ݣ�3�ݣ�...��N�ݡ������������ֻ��ֵĴ��룬���ͳ��opt[n][1..m]���ɡ� 
+放苹果
+分析：其实就是将M分成1份，2份，3份，...，N份。所以套用数字划分的代码，最后统计opt[n][1..m]即可。 
 */
 #include<iostream>
 using namespace std;

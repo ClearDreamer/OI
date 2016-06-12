@@ -20,8 +20,8 @@ int dp(){
 	for(int len=2;len<=n;len++){
 		for(int i=1;i<=n-len+1;i++){
 			int j=i+len-1,t=INF;
-			for(int k=i;k<j;k++){//但这里是k<j，因为下面会有k+1 
-				//注意这里从i开始，因为可以分割成i,i+1..j 
+			for(int k=i;k<j;k++){//浣嗚繖閲屾槸k<j锛屽洜涓轰笅闈細鏈塳+1 
+				//娉ㄦ剰杩欓噷浠巌寮�濮嬶紝鍥犱负鍙互鍒嗗壊鎴恑,i+1..j 
 				t=min(t,opt[i][k]+opt[k+1][j]);
 			}
 			opt[i][j]=t+sum[j]-sum[i-1];

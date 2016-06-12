@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Mar]Monthly Expense ÔÂ¶È¿ªÖ§
-·ÖÎö£º¶ş·Ö´ğ°¸ 
+[Usaco2007 Mar]Monthly Expense æœˆåº¦å¼€æ”¯
+åˆ†æï¼šäºŒåˆ†ç­”æ¡ˆ 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,10 +1,10 @@
 /*
 [Usaco2007 Demo]Cow Acrobats
-·ÖÎö£ºÌ°ĞÄ¡£
-		Ê×ÏÈ£¬¶ÔÓÚÒ»¸öÅÅÁĞ£¬½»»»ÏàÁÚÁ½Ïî£¬¶ÔÆäËûÏîÃ»ÓĞÓ°Ïì¡£
-		¼ÙÉèÏÖÔÚa under b£¬ÔòÓĞÁ½¸öÎ£ÏÕÖµÎª w[b]+sum-s[a](1),sum-s[b](2)
-			Èç¹ûb under a£¬ÔòÓĞÁ½¸öÎ£ÏÕÖµÎª w[a]+sum-s[b](3),sum-s[a](4)
-		×¢Òâ(2)<(3),(4)<(1)£¬ËùÒÔ×îÖÕÊÇ±È½ÏÇ°Á½¸ö£¬½»»»abµÄÌõ¼ş¾ÍÊÇ w[a]+sum-s[b]<w[b]+sum-s[a]
+åˆ†æï¼šè´ªå¿ƒã€‚
+		é¦–å…ˆï¼Œå¯¹äºä¸€ä¸ªæ’åˆ—ï¼Œäº¤æ¢ç›¸é‚»ä¸¤é¡¹ï¼Œå¯¹å…¶ä»–é¡¹æ²¡æœ‰å½±å“ã€‚
+		å‡è®¾ç°åœ¨a under bï¼Œåˆ™æœ‰ä¸¤ä¸ªå±é™©å€¼ä¸º w[b]+sum-s[a](1),sum-s[b](2)
+			å¦‚æœb under aï¼Œåˆ™æœ‰ä¸¤ä¸ªå±é™©å€¼ä¸º w[a]+sum-s[b](3),sum-s[a](4)
+		æ³¨æ„(2)<(3),(4)<(1)ï¼Œæ‰€ä»¥æœ€ç»ˆæ˜¯æ¯”è¾ƒå‰ä¸¤ä¸ªï¼Œäº¤æ¢abçš„æ¡ä»¶å°±æ˜¯ w[a]+sum-s[b]<w[b]+sum-s[a]
 */
 #include<iostream>
 #include<cstdio>
@@ -15,7 +15,7 @@ const int MAXN=50000,INF=0x3f3f3f3f;
 struct data{
 	int w,s;
 	bool operator <(const data &t)const{
-		return t.w-s<w-t.s;//curÔÚtÏÂÃæµÄÌõ¼ş 
+		return t.w-s<w-t.s;//curåœ¨tä¸‹é¢çš„æ¡ä»¶ 
 	}
 }ds[MAXN+3];
 int n,sum=0,ans=-INF;

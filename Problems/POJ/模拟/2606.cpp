@@ -1,7 +1,7 @@
 /*
 Rabbit hunt
-���⣺�����ɸ����������ֱ�ߺ�����
-�������������ò���У���ö��ԭ�㣬Ȼ�����ѭ��ɨһ�� 
+题意：给若干个点求含最多点的直线含点数
+分析：暴力，用叉积判，先枚举原点，然后二重循环扫一遍 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,8 +1,8 @@
 /*
-[HEOI2012]AkaiµÄÊýÑ§×÷Òµ
-·ÖÎö£ºÃ¶¾Ù·Ö×Ó·ÖÄ¸£¬ÔÚÄ£ÒâÒåÏÂÅÐÊÇ·ñÎªÁã¼´¿É¡£
-	  ·Ö×Ó±ØÐëÊÇA[0]µÄÒò×Ó£¬·ÖÄ¸±ØÐëÊÇA[n]µÄÒò×Ó £¬²»¹ý»¹ÊÇ²»Ì«Ã÷°×¡£
-	  ×¢ÒâÅÅÐòµÄÊ±ºòµÄÅÐ·¨¡£Ö±½Ó×ª³ÉdoubleÊÇ²»ÐÐµÄ= =¡£ 
+[HEOI2012]Akaiçš„æ•°å­¦ä½œä¸š
+åˆ†æžï¼šæžšä¸¾åˆ†å­åˆ†æ¯ï¼Œåœ¨æ¨¡æ„ä¹‰ä¸‹åˆ¤æ˜¯å¦ä¸ºé›¶å³å¯ã€‚
+	  åˆ†å­å¿…é¡»æ˜¯A[0]çš„å› å­ï¼Œåˆ†æ¯å¿…é¡»æ˜¯A[n]çš„å› å­ ï¼Œä¸è¿‡è¿˜æ˜¯ä¸å¤ªæ˜Žç™½ã€‚
+	  æ³¨æ„æŽ’åºçš„æ—¶å€™çš„åˆ¤æ³•ã€‚ç›´æŽ¥è½¬æˆdoubleæ˜¯ä¸è¡Œçš„= =ã€‚ 
 */
 #include<iostream>
 #include<cstdio>
@@ -40,13 +40,13 @@ void div_num(vector<int> &a,int x){
 	int t=(int)(sqrt(x*1.0));
 	for(int i=1;i<=t;i++)if(x%i==0){a.push_back(i);if(i!=x/i)a.push_back(x/i);}
 }
-bool check(Q t){//¼ÆËãsigam{A[i]*a^i*b(n-i)}£¬ÕâÑùÆä½á¹û³ýÒÔb^n¼´Îª·½³ÌµÄÖµ£¬ÓÖÒòÎªÔÚMODÒâÒåÏÂ£¬·½³Ì½á¹ûÎªÁãµÈ¼ÛÓÚÇ°ÃæÄÇ¸öÊ½×ÓÎª0 
+bool check(Q t){//è®¡ç®—sigam{A[i]*a^i*b(n-i)}ï¼Œè¿™æ ·å…¶ç»“æžœé™¤ä»¥b^nå³ä¸ºæ–¹ç¨‹çš„å€¼ï¼Œåˆå› ä¸ºåœ¨MODæ„ä¹‰ä¸‹ï¼Œæ–¹ç¨‹ç»“æžœä¸ºé›¶ç­‰ä»·äºŽå‰é¢é‚£ä¸ªå¼å­ä¸º0 
 	LL ans=0;
 	t1[0]=t2[0]=1;
 	for(int i=1;i<=n;i++)t1[i]=t.a*t1[i-1]%MOD,t2[i]=t.b*t2[i-1]%MOD;
 	for(int i=0;i<=n;i++){
 		LL del=(LL)((LL)A[i]*t1[i]%MOD)*t2[n-i]%MOD;
-		if(t.neg && (i&1)){//×¢Òâ¸ºÊýÌÖÂÛ 
+		if(t.neg && (i&1)){//æ³¨æ„è´Ÿæ•°è®¨è®º 
 			ans=(ans-del+MOD)%MOD;
 		}
 		else{
@@ -65,7 +65,7 @@ int main(){
 		if(len==-1&&x==0)continue;
 		A[++len]=x;
 	}
-	if(len!=n)ans.push_back(Q(0,1,0));//×¢ÒâÊÇ0/1£¬ÒòÎªÕâ¸öREÁË= = 
+	if(len!=n)ans.push_back(Q(0,1,0));//æ³¨æ„æ˜¯0/1ï¼Œå› ä¸ºè¿™ä¸ªREäº†= = 
 	n=len;
 	div_num(a,A[0]);div_num(b,A[n]);
 	//cout<<A[0]<<" "<<A[n]<<endl;

@@ -1,6 +1,6 @@
 /*
-�ϲ�ɵ��
-������������ʯ�ӹ鲢2һ�� 
+合并傻子
+分析：基本和石子归并2一样 
 */
 #include<iostream>
 #include<algorithm>
@@ -25,10 +25,10 @@ int main(){
 			}
 			fmax[i][j]=m+s[j]-s[i-1];
 			m=INF;
-			for(k=i;k<j;k++){//ö�������е����пɻ��ֵ㣬����Ϊ[i..k]��[k+1..j]�������� 
-				m=min(m,fmin[i][k]+fmin[k+1][j]);//Ѱ����Сֵ 
+			for(k=i;k<j;k++){//枚举区间中的所有可划分点，划分为[i..k]和[k+1..j]两个区间 
+				m=min(m,fmin[i][k]+fmin[k+1][j]);//寻找最小值 
 			}
-			fmin[i][j]=m+s[j]-s[i-1];//��Сֵ+�ϲ������ѵĴ���(s[k]-s[i-1]+s[j]-s[k]) 
+			fmin[i][j]=m+s[j]-s[i-1];//最小值+合并这两堆的代价(s[k]-s[i-1]+s[j]-s[k]) 
 		}
 	}
 	int amax=0,amin=INF;

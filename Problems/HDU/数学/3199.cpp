@@ -1,6 +1,6 @@
 /*
 Hamming Problem
-ÌâÒâ£ºÇóÒò×ÓÊÇ{p1,p2,p3}µÄ×Ó¼¯µÄÊý×é³ÉÊýÁÐµÄµÚnÏî 
+é¢˜æ„ï¼šæ±‚å› å­æ˜¯{p1,p2,p3}çš„å­é›†çš„æ•°ç»„æˆæ•°åˆ—çš„ç¬¬né¡¹ 
 */
 #include<iostream>
 #include<algorithm>

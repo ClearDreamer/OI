@@ -1,8 +1,8 @@
 /*
-·ÖÎö£ºÏß¶ÎÊ÷Î¬»¤Á¬Í¨ÐÔ
-	  ÒÔÃ¿Ò»¸öÇø¼ä£¨¾ÍÊÇÃ¿1ÌõºáÏòµÀÂ·Á¬½ÓµÄ×óÓÒÁ½¸ö½Úµã£©ÎªÒ»¸öÒ¶×Ó½Úµã¡£ 
-	  Î¬»¤6¸ö±äÁ¿£¨Ò²¾ÍÊÇÇø¼äÄÚµÄ6ÖÖÁªÍ¨¹ØÏµ£©£¬·Ö±ðÊÇluru£¬ldrd£¬lurd£¬ldru£¬luld£¬rurd£¨l£ºleft£»r£ºright£»u£ºup£»d£ºdown£© 
-	  ÎªÁË±ãÓÚºÏ²¢Á½¸öÇø¼ä£¬ÓÉÓÚ×ó±ßÊÇ[1..k]£¬ÓÒ±ßÊÇ[k+1..n]£¬²»ÖªµÀk..k+1µÄÁ¬Í¨ÐÔ£¬ËùÒÔÎ¬»¤Ò»¸öside[1..2]±íÊ¾Çø¼äÓÒ²àµÄ[r..r+1]µÄÁ½ÐÐµÄÁ¬Í¨ÐÔ 
+åˆ†æžï¼šçº¿æ®µæ ‘ç»´æŠ¤è¿žé€šæ€§
+	  ä»¥æ¯ä¸€ä¸ªåŒºé—´ï¼ˆå°±æ˜¯æ¯1æ¡æ¨ªå‘é“è·¯è¿žæŽ¥çš„å·¦å³ä¸¤ä¸ªèŠ‚ç‚¹ï¼‰ä¸ºä¸€ä¸ªå¶å­èŠ‚ç‚¹ã€‚ 
+	  ç»´æŠ¤6ä¸ªå˜é‡ï¼ˆä¹Ÿå°±æ˜¯åŒºé—´å†…çš„6ç§è”é€šå…³ç³»ï¼‰ï¼Œåˆ†åˆ«æ˜¯luruï¼Œldrdï¼Œlurdï¼Œldruï¼Œluldï¼Œrurdï¼ˆlï¼šleftï¼›rï¼šrightï¼›uï¼šupï¼›dï¼šdownï¼‰ 
+	  ä¸ºäº†ä¾¿äºŽåˆå¹¶ä¸¤ä¸ªåŒºé—´ï¼Œç”±äºŽå·¦è¾¹æ˜¯[1..k]ï¼Œå³è¾¹æ˜¯[k+1..n]ï¼Œä¸çŸ¥é“k..k+1çš„è¿žé€šæ€§ï¼Œæ‰€ä»¥ç»´æŠ¤ä¸€ä¸ªside[1..2]è¡¨ç¤ºåŒºé—´å³ä¾§çš„[r..r+1]çš„ä¸¤è¡Œçš„è¿žé€šæ€§ 
 */
 #include<iostream>
 #include<cstdio>

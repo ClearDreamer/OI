@@ -1,9 +1,9 @@
 /*
-[Scoi2014]·½²®²®µÄÓñÃ×Ìï
-·ÖÎö£ºÒ»¸ö½áÂÛ£ºÎÒÃÇÑ¡ÔñµÄk´ÎÇø¼äÓÒ¶Ëµã¶¼ÊÇnÊ±²ÅÄÜ±£Ö¤×îÓÅ
-		Áîf[i][j]±íÊ¾Ç°i¸öÊýÉÏÉýj´ÎµÄ×î´óLIS
-		ÄÇÃ´ÓÐf[i][j]=max{f[k][l]|k<i,l<=j,a[k]+l<=a[i]+j}+1
-		¿´µ½ÈýÎ¬Æ«Ðò¾Í¿ÉÒÔÓÃ¶þÎ¬Ê÷×´Êý×éÁË
+[Scoi2014]æ–¹ä¼¯ä¼¯çš„çŽ‰ç±³ç”°
+åˆ†æžï¼šä¸€ä¸ªç»“è®ºï¼šæˆ‘ä»¬é€‰æ‹©çš„kæ¬¡åŒºé—´å³ç«¯ç‚¹éƒ½æ˜¯næ—¶æ‰èƒ½ä¿è¯æœ€ä¼˜
+		ä»¤f[i][j]è¡¨ç¤ºå‰iä¸ªæ•°ä¸Šå‡jæ¬¡çš„æœ€å¤§LIS
+		é‚£ä¹ˆæœ‰f[i][j]=max{f[k][l]|k<i,l<=j,a[k]+l<=a[i]+j}+1
+		çœ‹åˆ°ä¸‰ç»´ååºå°±å¯ä»¥ç”¨äºŒç»´æ ‘çŠ¶æ•°ç»„äº†
 */
 #include<iostream>
 #include<cstdio>
@@ -30,7 +30,7 @@ int main(){
 	for(int i=1;i<=n;i++){scanf("%d",&a[i]);mx=max(a[i],mx);}
 	for(int i=1;i<=n;i++){
 		for(int j=K;~j;j--){
-			int tmp=query(a[i]+j,j+1)+1;//×¢ÒâjÏòÓÒ´íÒ»Î» 
+			int tmp=query(a[i]+j,j+1)+1;//æ³¨æ„jå‘å³é”™ä¸€ä½ 
 			ans=max(tmp,ans);
 			modify(a[i]+j,j+1,tmp);
 		}

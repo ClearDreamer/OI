@@ -1,6 +1,6 @@
 /*
-Ææ¹ÖµÄÃÎ¾³
-·ÖÎö£ºÍØÆËÅÅĞò 
+å¥‡æ€ªçš„æ¢¦å¢ƒ
+åˆ†æï¼šæ‹“æ‰‘æ’åº 
 */
 #include<iostream>
 #include<algorithm>
@@ -45,7 +45,7 @@ int main(){
 	ios::sync_with_stdio(false);
 	input();
 	n=toposort();
-	if(!n)cout<<"o(¡É_¡É)o"<<endl;
+	if(!n)cout<<"o(âˆ©_âˆ©)o"<<endl;
 	else cout<<"T_T"<<endl<<n;
 	return 0;
 }

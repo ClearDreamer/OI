@@ -1,5 +1,5 @@
 /*
-数列处理
+鏁板垪澶勭悊
 */
 #include<iostream>
 #include<algorithm>

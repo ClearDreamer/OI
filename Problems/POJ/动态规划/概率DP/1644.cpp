@@ -1,7 +1,7 @@
 /*
 To Bet or Not To Bet
-ÌâÒâ£ºÆåÅÌÊÇÒ»¸öÏßÐÔ±í£¬³õÊ¼Î»ÖÃ0£¬½áÊøÎ»ÖÃm+1£¬Ã¿Ò»ÂÖÅ×Ó²±Ò¾ö¶¨ÏòÓÒÒ»²½»¹ÊÇÁ½²½£¬¸ÅÂÊ¸÷Îª0.5¡£ÆåÅÌÃ¿¸ñÉÏ¶¼»áÓÐÒ»¸öËµÃ÷+n£¬-n£¬L£¬»òÕß 0£¬·Ö±ðÒâÎ¶×ÅÏòÓÒ×ßn¸ñ£¬Ïò×ó×ßn¸ñ£¬Ê§È¥Ò»ÂÖ»ú»á£¬ÎÞÈÎºÎËµÃ÷¡£¸ø³öÆåÅÌµÄ´óÐ¡£¬ÒÔ¼°ÆåÅÌÉÏÃ¿Ò»¸ñµÄËµÃ÷£¬ÇóÔÚtÂÖ»òÕßÉÙÓÚtÂÖ±ã×ßµ½ÖÕµã´¦µÄ¸ÅÂÊ¡£
-·ÖÎö£º¸ÅÂÊDP£¬µÝÍÆ£¬×¢Òâ¶ÁÊýºÍ¾«¶È 
+é¢˜æ„ï¼šæ£‹ç›˜æ˜¯ä¸€ä¸ªçº¿æ€§è¡¨ï¼Œåˆå§‹ä½ç½®0ï¼Œç»“æŸä½ç½®m+1ï¼Œæ¯ä¸€è½®æŠ›ç¡¬å¸å†³å®šå‘å³ä¸€æ­¥è¿˜æ˜¯ä¸¤æ­¥ï¼Œæ¦‚çŽ‡å„ä¸º0.5ã€‚æ£‹ç›˜æ¯æ ¼ä¸Šéƒ½ä¼šæœ‰ä¸€ä¸ªè¯´æ˜Ž+nï¼Œ-nï¼ŒLï¼Œæˆ–è€… 0ï¼Œåˆ†åˆ«æ„å‘³ç€å‘å³èµ°næ ¼ï¼Œå‘å·¦èµ°næ ¼ï¼Œå¤±åŽ»ä¸€è½®æœºä¼šï¼Œæ— ä»»ä½•è¯´æ˜Žã€‚ç»™å‡ºæ£‹ç›˜çš„å¤§å°ï¼Œä»¥åŠæ£‹ç›˜ä¸Šæ¯ä¸€æ ¼çš„è¯´æ˜Žï¼Œæ±‚åœ¨tè½®æˆ–è€…å°‘äºŽtè½®ä¾¿èµ°åˆ°ç»ˆç‚¹å¤„çš„æ¦‚çŽ‡ã€‚
+åˆ†æžï¼šæ¦‚çŽ‡DPï¼Œé€’æŽ¨ï¼Œæ³¨æ„è¯»æ•°å’Œç²¾åº¦ 
 */
 #include<cstdio>
 #include<cstring>
@@ -16,7 +16,7 @@ void input(){
 	scanf("%d%d",&m,&t);
 	memset(opt,0,sizeof(opt));
 	data[0]=0,data[m+1]=0;
-	data[m+2]=-1;//³¬¹ýÖÕµãËãÖÕµã
+	data[m+2]=-1;//è¶…è¿‡ç»ˆç‚¹ç®—ç»ˆç‚¹
 	for (int i=1;i<=m;i++){
 		scanf("%s",str);    
 		if(str[0]=='L')data[i]=INF;

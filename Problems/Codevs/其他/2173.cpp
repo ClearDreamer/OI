@@ -1,6 +1,6 @@
 /*
-ÖÒ³Ï
-·ÖÎö£ºÇø¼ä×îĞ¡Öµ£¬RMQÎÊÌâ 
+å¿ è¯š
+åˆ†æï¼šåŒºé—´æœ€å°å€¼ï¼ŒRMQé—®é¢˜ 
 */ 
 #include<iostream>
 #include<algorithm>
@@ -10,14 +10,14 @@ const int MAXN=100000,MAXP=16+1;//16=ln(100000)/ln(2)
 int f[MAXN+3][MAXP],a[MAXN+3],n,m,x,y;
 void rmq(int *arr,int n){
 	for(int i=1;i<=n;i++)f[i][0]=arr[i];
-	for(int j=1;(1<<j)<=n;j++){//×¢ÒâÏÈÃ¶¾ÙÇø¼ä³¤ 
-		for(int i=1;i+(1<<j)-1<=n;i++){//Ã¶¾ÙÇø¼äÆğµã 
+	for(int j=1;(1<<j)<=n;j++){//æ³¨æ„å…ˆæšä¸¾åŒºé—´é•¿ 
+		for(int i=1;i+(1<<j)-1<=n;i++){//æšä¸¾åŒºé—´èµ·ç‚¹ 
 			f[i][j]=min(f[i][j-1],f[i+(1<<(j-1))][j-1]);
 		}
 	}
 }
 int minquery(int l,int r){
-	int k=log(r-l+1)/log(2);//¼ÆËãÇø¼ä³¤¶ÈÊÇ2µÄ¼¸´ÎÃİ 
+	int k=log(r-l+1)/log(2);//è®¡ç®—åŒºé—´é•¿åº¦æ˜¯2çš„å‡ æ¬¡å¹‚ 
 	return min(f[l][k],f[r-(1<<k)+1][k]);
 }
 int main(){

@@ -1,7 +1,7 @@
 /*
-[SCOI2003]ÇĞ¸î¶à±ßĞÎ
-·ÖÎö£ºPºÜĞ¡£¬±©Á¦Ã¶¾ÙÅÅÁĞ£¬×¢ÒâÏàÁÚÁ½Ö±Ïß²»ÒªÆ½ĞĞ £¬×¢ÒâÌâÖĞÆäÊµÒÑ¾­¸øÁË×îÖÕÍ¹°üµÄĞÅÏ¢ÁË¡£ 
-		ÓÃÁËnext_permutationÂıÁË= = 
+[SCOI2003]åˆ‡å‰²å¤šè¾¹å½¢
+åˆ†æï¼šPå¾ˆå°ï¼Œæš´åŠ›æšä¸¾æ’åˆ—ï¼Œæ³¨æ„ç›¸é‚»ä¸¤ç›´çº¿ä¸è¦å¹³è¡Œ ï¼Œæ³¨æ„é¢˜ä¸­å…¶å®å·²ç»ç»™äº†æœ€ç»ˆå‡¸åŒ…çš„ä¿¡æ¯äº†ã€‚ 
+		ç”¨äº†next_permutationæ…¢äº†= = 
 */
 #include <cstdio>
 #include <cmath>
@@ -21,7 +21,7 @@ struct Point{
 	Point operator *(const double b)const{return Point(x*b,y*b);}
 	double operator / (const Point &b)const{return x*b.x+y*b.y;}
 } a[MAXP], center;
-bool cmp(const Point &a0, const Point &b0){//Î§ÈÆÖĞĞÄµã¼«½ÇÅÅĞò
+bool cmp(const Point &a0, const Point &b0){//å›´ç»•ä¸­å¿ƒç‚¹æè§’æ’åº
     Point a = a0-center,b=b0-center;
     return dcmp(atan2(a.y, a.x)-atan2(b.y, b.x)) < 0; 
 }
@@ -37,18 +37,18 @@ Point intersect(const Line &a, const Line &b){
     double temp=(b.v*(a.p-b.p))/(a.v*b.v);
     return a.p+a.v*temp;
 }
-bool inhalf(const Point &p, const Line &l){return dcmp(l.v*(p - l.p))>=0;}//ÔÚ°ëÆ½ÃæÒ»²à£¨×ó²à£¬ÄæÊ±Õë£© 
-bool inrec(const Point &a){return dcmp(a.x) >= 0 && dcmp(a.y) >= 0 && dcmp(a.x-n) <= 0 && dcmp(a.y-m) <= 0;}//ÔÚ´ó¾ØĞÎÖĞ
+bool inhalf(const Point &p, const Line &l){return dcmp(l.v*(p - l.p))>=0;}//åœ¨åŠå¹³é¢ä¸€ä¾§ï¼ˆå·¦ä¾§ï¼Œé€†æ—¶é’ˆï¼‰ 
+bool inrec(const Point &a){return dcmp(a.x) >= 0 && dcmp(a.y) >= 0 && dcmp(a.x-n) <= 0 && dcmp(a.y-m) <= 0;}//åœ¨å¤§çŸ©å½¢ä¸­
 Point tmp[4];Line lst[4];
-Line inrec(const Line &l){//½ØÈ¡Ò»ÌõÖ±ÏßÔÚ´ó¾ØĞÎÖĞµÄ²¿·Ö£¬×¢ÒâlÊµ¼ÊÊÇÒ»ÌõÏß¶Îl.p~(l.p+l.v) 
+Line inrec(const Line &l){//æˆªå–ä¸€æ¡ç›´çº¿åœ¨å¤§çŸ©å½¢ä¸­çš„éƒ¨åˆ†ï¼Œæ³¨æ„lå®é™…æ˜¯ä¸€æ¡çº¿æ®µl.p~(l.p+l.v) 
     if(dcmp(l.v.x)==0)return Line(Point(l.p.x, 0), Point(0, m));
     if(dcmp(l.v.y)==0)return Line(Point(0, l.p.y), Point(n, 0));
     bool hv = false;
     Point p;
-    for(int i=0;i<4;i++){//Çó³öÓë±ß½çµÄ½»µã 
+    for(int i=0;i<4;i++){//æ±‚å‡ºä¸è¾¹ç•Œçš„äº¤ç‚¹ 
     	tmp[i]=intersect(l,lst[i]);
     	if(inrec(tmp[i])){
-    		if(hv&& (!(p==tmp[i])))return Line(p,tmp[i]-p);//×¢ÒâÅĞÒ»ÏÂp=tmp[i]µÄÇé¿ö£¬¾ÍÊÇtmp[i]=(0,0)µÄÇé¿ö£¬²»È»»áWA 
+    		if(hv&& (!(p==tmp[i])))return Line(p,tmp[i]-p);//æ³¨æ„åˆ¤ä¸€ä¸‹p=tmp[i]çš„æƒ…å†µï¼Œå°±æ˜¯tmp[i]=(0,0)çš„æƒ…å†µï¼Œä¸ç„¶ä¼šWA 
 			hv=1;p=tmp[i];
 		}
 	}
@@ -80,7 +80,7 @@ int main(){
 	        	Line &y=l[f[j]]; 
 	            if(!parallel(y.v, x.v)){
 	                Point p=intersect(x,y);
-	                if (dcmp((x.p - p)/(x.p + x.v - p)) < 0){//Èç¹ûlÁ½¶ËµãÔÚ½»µãÁ½²à£¬Ôò±ØÓĞÒ»¶ËµãÔÚ´ğ°¸Íâ 
+	                if (dcmp((x.p - p)/(x.p + x.v - p)) < 0){//å¦‚æœlä¸¤ç«¯ç‚¹åœ¨äº¤ç‚¹ä¸¤ä¾§ï¼Œåˆ™å¿…æœ‰ä¸€ç«¯ç‚¹åœ¨ç­”æ¡ˆå¤– 
 	                    if(!inhalf(x.p, y))x=Line(p, x.p + x.v - p);
 	                    else if (!inhalf(x.p + x.v, y))x = Line(x.p, p - x.p);
 	                }
@@ -129,10 +129,10 @@ Point intersect(const Line &a, const Line &b){
     double temp=(b.v*(a.p-b.p))/(a.v*b.v);
     return a.p+a.v*temp;
 }
-bool inhalf(const Point &p, const Line &l){return dcmp(l.v*(p - l.p))>=0;}//ÔÚ°ëÆ½ÃæÒ»²à£¨×ó²à£¬ÄæÊ±Õë£© 
-bool inrec(const Point &a){return dcmp(a.x) >= 0 && dcmp(a.y) >= 0 && dcmp(a.x-n) <= 0 && dcmp(a.y-m) <= 0;}//ÔÚ´ó¾ØĞÎÖĞ
+bool inhalf(const Point &p, const Line &l){return dcmp(l.v*(p - l.p))>=0;}//åœ¨åŠå¹³é¢ä¸€ä¾§ï¼ˆå·¦ä¾§ï¼Œé€†æ—¶é’ˆï¼‰ 
+bool inrec(const Point &a){return dcmp(a.x) >= 0 && dcmp(a.y) >= 0 && dcmp(a.x-n) <= 0 && dcmp(a.y-m) <= 0;}//åœ¨å¤§çŸ©å½¢ä¸­
 Point tmp[4];Line lst[4];
-Line inrec(const Line &l){//½ØÈ¡Ò»ÌõÖ±ÏßÔÚ´ó¾ØĞÎÖĞµÄ²¿·Ö 
+Line inrec(const Line &l){//æˆªå–ä¸€æ¡ç›´çº¿åœ¨å¤§çŸ©å½¢ä¸­çš„éƒ¨åˆ† 
     if(dcmp(l.v.x)==0)return Line(Point(l.p.x, 0), Point(0, m));
     if(dcmp(l.v.y)==0)return Line(Point(0, l.p.y), Point(n, 0));
     bool hv = false;

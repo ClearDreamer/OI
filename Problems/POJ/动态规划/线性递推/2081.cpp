@@ -1,6 +1,6 @@
 /*
 Recaman's Sequence
-·ÖÎö£ºµİÍÆ¼´¿É 
+åˆ†æï¼šé€’æ¨å³å¯ 
 */
 #include<iostream>
 #include<algorithm>
@@ -9,7 +9,7 @@ Recaman's Sequence
 #include<bitset>
 using namespace std;
 const int MAXN=500000;
-bitset<20*MAXN+3> vis=0;//×¢ÒâÒª´óÒ»Ğ© 
+bitset<20*MAXN+3> vis=0;//æ³¨æ„è¦å¤§ä¸€äº› 
 int ans[MAXN+3],k;
 int main(){
 	ans[0]=0;vis[0]=1;

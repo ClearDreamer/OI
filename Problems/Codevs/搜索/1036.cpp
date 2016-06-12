@@ -1,6 +1,6 @@
 /*
-商务旅行
-分析：LCA，d[cur]+d[u]-2*d[lca(cur,u)]
+鍟嗗姟鏃呰
+鍒嗘瀽锛歀CA锛宒[cur]+d[u]-2*d[lca(cur,u)]
 */
 #include<iostream>
 #include<vector>
@@ -12,7 +12,7 @@ struct edge{
 };
 vector<edge> es;
 vector<int> g[MAXN+3];
-int d[MAXN+3],f[MAXN+3][POW+1];//这里要POW+1
+int d[MAXN+3],f[MAXN+3][POW+1];//杩欓噷瑕丳OW+1
 void add(int u,int v){
 	es.push_back((edge){u,v});
 	es.push_back((edge){v,u});

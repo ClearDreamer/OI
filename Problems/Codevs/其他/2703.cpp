@@ -1,5 +1,5 @@
 /*
-длеё╢ЗюМил XII 
+Е╔╤Г┴⌡Д╩ёГ░├Е∙├ XII 
 */
 #include<iostream>
 #include<algorithm>

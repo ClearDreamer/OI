@@ -1,7 +1,7 @@
 /*
-������Ԥ�㷽��
-����һ��ö��ÿ��״̬������ 
-δͨ������ 
+金明的预算方案
+方法一：枚举每个状态的主件 
+未通过测试 
 */
 #include<iostream>
 #include<algorithm>

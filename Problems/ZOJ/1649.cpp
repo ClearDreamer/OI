@@ -1,6 +1,6 @@
 /*
 ZOJ1649
-采用记忆化搜索，注意边界判断，并不是传统的BFS 
+閲囩敤璁板繂鍖栨悳绱紝娉ㄦ剰杈圭晫鍒ゆ柇锛屽苟涓嶆槸浼犵粺鐨凚FS 
 */
 #include<iostream>
 #include<queue>

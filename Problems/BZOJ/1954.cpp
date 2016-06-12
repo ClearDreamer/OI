@@ -1,9 +1,9 @@
 /*
 Pku3764 The xor-longest Path
-�����������ÿ���㵽��·����Ȩֵ���ͣ����������·�����Ϳ����������㵽�������͵�����ʾ
-	  Ȼ����Ǿ������⣺��һ��������������x��������ֵ������Trie��+̰�Ŀ���
-	  ע�����鷶Χ���߿�������Trie���ڵ�*������λ����ע�ⲻҪά��valֵ�ˣ��ᱬ�ڴ棬����Ԥ����һ�£����ܺ����ױ���val����
-	  һֱRE����ݴ�����poj��Ҳ��RE����BZOJ��AC 
+分析：先求出每个点到根路径的权值异或和，则任两点的路径异或和可以由这两点到根的异或和的异或表示
+	  然后就是经典问题：在一个集合中找与数x异或和最大的值，利用Trie树+贪心可求
+	  注意数组范围：边开两倍，Trie树节点*二进制位数，注意不要维护val值了，会爆内存，可以预处理一下，就能很容易避免val数组
+	  一直RE，这份代码在poj上也会RE，在BZOJ上AC 
 */
 #include<iostream>
 #include<cstdio>

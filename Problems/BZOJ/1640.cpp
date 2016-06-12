@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Nov]Best Cow Line ¶ÓÁĞ±ä»»
-·ÖÎö£ºÍ¬1692£¬Èõ»¯°æ£¬Ì°ĞÄ 
+[Usaco2007 Nov]Best Cow Line é˜Ÿåˆ—å˜æ¢
+åˆ†æï¼šåŒ1692ï¼Œå¼±åŒ–ç‰ˆï¼Œè´ªå¿ƒ 
 */
 #include<iostream>
 #include<cstdio>

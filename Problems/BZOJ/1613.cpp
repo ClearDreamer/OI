@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Jan]Running����ĳ����ƻ�
-������DP dp[i , j]��ʾ��i��ƣ�Ͷ�Ϊj�������롣
+[Usaco2007 Jan]Running贝茜的晨练计划
+分析：DP dp[i , j]表示第i秒疲劳度为j的最大距离。
 */
 #include<iostream>
 #include<cstring>

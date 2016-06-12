@@ -1,5 +1,5 @@
 /*
-×ÔÃÝÊý
+è‡ªå¹‚æ•°
 */
 #include<stdio.h>
 int a[6],m,n,i,j,k,s;

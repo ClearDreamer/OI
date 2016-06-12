@@ -1,11 +1,11 @@
 /*
-HanksonµÄÈ¤Î¶Ìâ
-·ÖÎö£º1¡¢Ô¤´¦Àítrunc(sqrt(2000000000))¡Ö50000ÒÔÄÚµÄÖÊÊý£¬ÕâÀï±ØÐëÓÃÉ¸·¨£¬·ñÔòÊ±¼ä¾ÍÄÑËµÁË£»
-¡¡	¡¡2¡¢³õÊ¼´ð°¸sum=1£¬È»ºóÑ­»·ÖÊÊý£¬¿´a0¡¢a1¡¢b0¡¢b1ÀïÃæÓÐ¶àÉÙ¸ö¸ÃÖÊÊýÒò×Ó£¬¼ÇÎªaa0¡¢aa1¡¢bb0¡¢bb1£¬Í¬Ê±½«a0¡¢a1¡¢b0¡¢b1ÕâËÄ¸öÊý·Ö±ðÏûÈ¥ËùÓÐ¸ÃÖÊÊýÒò×Ó£»
-¡¡	¡¡3¡¢¸ù¾Ýaa0¡¢aa1¡¢bb0¡¢bb1È·¶¨ÎÒÃÇËùÇóµÄÊýËùº¬¸ÃÖÊÊýÒò×ÓµÄ¸öÊýÉÏ½çhighºÍÏÂ½çlow£»
-¡¡	¡¡4¡¢Âú×ãÒªÇóµÄÊýµÄ¸öÊýsum:=sum*(high-low+1)£» 
-		µ«ÊÇ±¯¾çµÄWAÁËÒ»¸öÊý¾Ý£¬²»ÖªµÀÎªÊ²Ã´¡£¡£¡£
-		ÕâÀïÀûÓÃgcdÓëlcmµÄÐÔÖÊ£ºgcdÎªÃ¿¸öÊý·Ö½âÖÊÒòÊýºóÖ¸ÊýÈ¡×îÐ¡Öµ£¬lcmÎªÈ¡×î´óÖµ 
+Hanksonçš„è¶£å‘³é¢˜
+åˆ†æžï¼š1ã€é¢„å¤„ç†trunc(sqrt(2000000000))â‰ˆ50000ä»¥å†…çš„è´¨æ•°ï¼Œè¿™é‡Œå¿…é¡»ç”¨ç­›æ³•ï¼Œå¦åˆ™æ—¶é—´å°±éš¾è¯´äº†ï¼›
+ã€€	ã€€2ã€åˆå§‹ç­”æ¡ˆsum=1ï¼Œç„¶åŽå¾ªçŽ¯è´¨æ•°ï¼Œçœ‹a0ã€a1ã€b0ã€b1é‡Œé¢æœ‰å¤šå°‘ä¸ªè¯¥è´¨æ•°å› å­ï¼Œè®°ä¸ºaa0ã€aa1ã€bb0ã€bb1ï¼ŒåŒæ—¶å°†a0ã€a1ã€b0ã€b1è¿™å››ä¸ªæ•°åˆ†åˆ«æ¶ˆåŽ»æ‰€æœ‰è¯¥è´¨æ•°å› å­ï¼›
+ã€€	ã€€3ã€æ ¹æ®aa0ã€aa1ã€bb0ã€bb1ç¡®å®šæˆ‘ä»¬æ‰€æ±‚çš„æ•°æ‰€å«è¯¥è´¨æ•°å› å­çš„ä¸ªæ•°ä¸Šç•Œhighå’Œä¸‹ç•Œlowï¼›
+ã€€	ã€€4ã€æ»¡è¶³è¦æ±‚çš„æ•°çš„ä¸ªæ•°sum:=sum*(high-low+1)ï¼› 
+		ä½†æ˜¯æ‚²å‰§çš„WAäº†ä¸€ä¸ªæ•°æ®ï¼Œä¸çŸ¥é“ä¸ºä»€ä¹ˆã€‚ã€‚ã€‚
+		è¿™é‡Œåˆ©ç”¨gcdä¸Žlcmçš„æ€§è´¨ï¼šgcdä¸ºæ¯ä¸ªæ•°åˆ†è§£è´¨å› æ•°åŽæŒ‡æ•°å–æœ€å°å€¼ï¼Œlcmä¸ºå–æœ€å¤§å€¼ 
 */
 #include<iostream>
 #include<algorithm>

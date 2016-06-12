@@ -1,5 +1,5 @@
 /*
-总数统计
+鎬绘暟缁熻
 */
 #include<iostream>
 #include<algorithm>

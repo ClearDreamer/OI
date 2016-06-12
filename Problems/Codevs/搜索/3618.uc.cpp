@@ -1,6 +1,6 @@
 /*
-����
-�����������е�󣬲�Ȼ��Floyd�ֺñ��м򵥡���ֻ��DFS�����ô� 
+比赛
+分析：数据有点大，不然用Floyd又好编有简单。。只能DFS，懒得打 
 */
 #include<iostream>
 #include<bitset>

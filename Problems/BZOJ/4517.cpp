@@ -1,7 +1,7 @@
 /*
-[Sdoi2016]排列计数
-分析：ans=C(n,m)*F[n-m]
-		F[i] i个数的全错位排列
+[Sdoi2016]鎺掑垪璁℃暟
+鍒嗘瀽锛歛ns=C(n,m)*F[n-m]
+		F[i] i涓暟鐨勫叏閿欎綅鎺掑垪
 		F[i]=(i-1)*(F[i-1]+F[i-2]) 
 */
 #include<iostream>

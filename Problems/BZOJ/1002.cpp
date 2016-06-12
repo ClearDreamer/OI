@@ -1,6 +1,6 @@
 /*
-[FJOI2007]轮状病毒
-分析：VFK推出了一个递推式：f[1]=1,f[2]=5,f[n]=3*f[n-1]-f[n-2]+2，具体推导见博客 
+[FJOI2007]杞姸鐥呮瘨
+鍒嗘瀽锛歏FK鎺ㄥ嚭浜嗕竴涓�掓帹寮忥細f[1]=1,f[2]=5,f[n]=3*f[n-1]-f[n-2]+2锛屽叿浣撴帹瀵艰鍗氬 
 */
 #include<iostream>
 #include<cstdio>

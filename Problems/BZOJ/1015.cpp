@@ -1,6 +1,6 @@
 /*
-[JSOI2008]星球大战starwar
-分析：逆向做，并查集，注意很多细节处理，错了好几回，要维护当前存在的点 
+[JSOI2008]鏄熺悆澶ф垬starwar
+鍒嗘瀽锛氶�嗗悜鍋氾紝骞舵煡闆嗭紝娉ㄦ剰寰堝缁嗚妭澶勭悊锛岄敊浜嗗ソ鍑犲洖锛岃缁存姢褰撳墠瀛樺湪鐨勭偣 
 */
 #include<cstdio>
 #include<bitset>

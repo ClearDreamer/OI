@@ -1,9 +1,9 @@
 /*
 Zipper
-ÌâÒâ£º¸ø¶¨Èý¸ö×Ö·û´®A£¬B£¬C£»ÅÐ¶ÏCÄÜ·ñÓÉABÖÐµÄ×Ö·û×é³É£¬Í¬Ê±Õâ¸ö×éºÏºóµÄ×Ö·ûË³Ðò±ØÐëÊÇA£¬BÖÐÔ­À´µÄË³Ðò£¬²»ÄÜÄæÐò£»ÀýÈç£ºA£ºmnl£¬B£ºxyz£»Èç¹ûCÎªmnxylz£¬¾Í·ûºÏÌâÒâ£»Èç¹ûCÎªmxnzly£¬¾Í²»·ûºÏÌâÒâ£¬Ô­ÒòÊÇzÓëyË³Ðò²»ÊÇBÖÐË³Ðò¡£
-·ÖÎö£ºDP£¬dp[i][j]±íÊ¾AÖÐÇ°i¸ö×Ö·ûÓëBÖÐÇ°j¸ö×Ö·ûÊÇ·ñÄÜ×é³ÉCÖÐµÄÇ° (i+j) ¸ö×Ö·û£¬Èç¹ûÄÜ±ê¼Çtrue£¬Èç¹û²»ÄÜ±ê¼Çfalse£»
-	  dp[i][j] = 1 Èç¹û dp[i-1][j] == 1 && C[i+j-1] == A[i-1]
-	  dp[i][j] = 1 Èç¹û dp[i][j-1] == 1 && C[i+j-1] == B[j-1]
+é¢˜æ„ï¼šç»™å®šä¸‰ä¸ªå­—ç¬¦ä¸²Aï¼ŒBï¼ŒCï¼›åˆ¤æ–­Cèƒ½å¦ç”±ABä¸­çš„å­—ç¬¦ç»„æˆï¼ŒåŒæ—¶è¿™ä¸ªç»„åˆåŽçš„å­—ç¬¦é¡ºåºå¿…é¡»æ˜¯Aï¼ŒBä¸­åŽŸæ¥çš„é¡ºåºï¼Œä¸èƒ½é€†åºï¼›ä¾‹å¦‚ï¼šAï¼šmnlï¼ŒBï¼šxyzï¼›å¦‚æžœCä¸ºmnxylzï¼Œå°±ç¬¦åˆé¢˜æ„ï¼›å¦‚æžœCä¸ºmxnzlyï¼Œå°±ä¸ç¬¦åˆé¢˜æ„ï¼ŒåŽŸå› æ˜¯zä¸Žyé¡ºåºä¸æ˜¯Bä¸­é¡ºåºã€‚
+åˆ†æžï¼šDPï¼Œdp[i][j]è¡¨ç¤ºAä¸­å‰iä¸ªå­—ç¬¦ä¸ŽBä¸­å‰jä¸ªå­—ç¬¦æ˜¯å¦èƒ½ç»„æˆCä¸­çš„å‰ (i+j) ä¸ªå­—ç¬¦ï¼Œå¦‚æžœèƒ½æ ‡è®°trueï¼Œå¦‚æžœä¸èƒ½æ ‡è®°falseï¼›
+	  dp[i][j] = 1 å¦‚æžœ dp[i-1][j] == 1 && C[i+j-1] == A[i-1]
+	  dp[i][j] = 1 å¦‚æžœ dp[i][j-1] == 1 && C[i+j-1] == B[j-1]
 	  dp[0][0]=1 
  
 */

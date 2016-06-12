@@ -1,6 +1,6 @@
 /*
 [Usaco2007 Demo]Ant Counting
-·ÖÎö£ºÍ¬2023 
+åˆ†æï¼šåŒ2023 
 */
 #include<iostream>
 #include<cstdio>

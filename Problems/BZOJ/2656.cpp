@@ -1,6 +1,6 @@
 /*
-[Zjoi2012]ÊýÁÐ(sequence)
-·ÖÎö£º¸ß¾«¶È+¼ÇÒä»¯ËÑË÷£¬¿ÉÒÔ·¢ÏÖ£¬Ã¿´În¼õÐ¡Ò»°ë£¬ÕâÑù×î¶àlogn²ã 
+[Zjoi2012]æ•°åˆ—(sequence)
+åˆ†æžï¼šé«˜ç²¾åº¦+è®°å¿†åŒ–æœç´¢ï¼Œå¯ä»¥å‘çŽ°ï¼Œæ¯æ¬¡nå‡å°ä¸€åŠï¼Œè¿™æ ·æœ€å¤šlognå±‚ 
 */
 #include<iostream>
 #include<cstring>

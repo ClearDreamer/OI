@@ -1,10 +1,10 @@
 /*
 Multiplication Puzzle
-���⣺����һ��N������ÿ�δ��г��һ��������һ�����һ�����ܳ飩���ôεĵ÷ּ�Ϊ��������������������ĳ˻���ֱ��ֻʣ����β������Ϊֹ������С�÷��Ƕ��٣� 
-����������DP��opt[i][j]=min{opt[i][k]+opt[k][j]+a[i]*a[k]*a[j]}
-	  ע��3�� opt[i][k]+opt[k][j]�ǰ���k�ģ���Ϊ�����������ûѡk��
-	  a[l]*a[i]*a[r]��������a[i-1]*a[i]*a[i+1]����Ϊ�����Ѿ�ȡ��a[i-1]��a[i+1]
-	  ������̳���Ϊ3 
+题意：给出一组N个数，每次从中抽出一个数（第一和最后一个不能抽），该次的得分即为抽出的数与相邻两个数的乘积。直到只剩下首尾两个数为止。问最小得分是多少？ 
+分析：区间DP，opt[i][j]=min{opt[i][k]+opt[k][j]+a[i]*a[k]*a[j]}
+	  注意3点 opt[i][k]+opt[k][j]是包含k的，因为这两个区间均没选k，
+	  a[l]*a[i]*a[r]，而不是a[i-1]*a[i]*a[i+1]，因为这里已经取完a[i-1]和a[i+1]
+	  区间最短长度为3 
 */
 #include<iostream>
 #include<cstring>

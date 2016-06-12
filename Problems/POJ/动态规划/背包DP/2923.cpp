@@ -1,11 +1,11 @@
 /*
 Relocation
-���⣺ �� n ���������֪����ÿ�������������ÿ�����������ֱ�Ϊc1,c2�Ļ�װ�أ���������Ҫ���Ͷ��ٴο��Խ��������ꡣ
-����: ������һ���⣬��״̬ѹ���õ����С���Ʒ����Ȼ��ת�ɱ���DP����û���Ż�������أ� 
-		�ҳ�����״̬��1.....(1<<n)-1����ѡ��������������һ�������״̬
-        ��ÿ��״̬������һ����Ʒ������Ϊ��״̬������������ֵΪ 1
-        ��� 01 ������dp[(1<<n)-1]Ϊ���Ž�
-        ת�Ʒ��̣� dp[stat|j]=min(dp[stat|j],dp[j]+1)  ע�� stat �� j �����н���
+题意： 有 n 个货物，并且知道了每个货物的重量，每次用载重量分别为c1,c2的火车装载，问最少需要运送多少次可以将货物运完。
+分析: 不错的一道题，先状态压缩得到所有“物品”，然后转成背包DP，有没有优化的余地呢？ 
+		找出所有状态（1.....(1<<n)-1）中选出可以用两辆车一次运完的状态
+        把每个状态都看作一个物品，重量为该状态的总重量，价值为 1
+        求解 01 背包，dp[(1<<n)-1]为最优解
+        转移方程： dp[stat|j]=min(dp[stat|j],dp[j]+1)  注意 stat 和 j 不能有交集
 */
 #include<cstdio>
 #include<cstring>
@@ -44,7 +44,7 @@ int main(){
             if(check(i))thing.push_back(i);
         for(int i=0;i<thing.size();i++)
             for(int j=st;j>=0;j--)
-                if(opt[j]!=INF&&(!(j&thing[i])))//����״̬�����н���
+                if(opt[j]!=INF&&(!(j&thing[i])))//两个状态不能有交集
                     opt[thing[i]|j]=min(opt[thing[i]|j],opt[j]+1);
         printf("Scenario #%d:\n%d\n\n",k,opt[st]);
     }

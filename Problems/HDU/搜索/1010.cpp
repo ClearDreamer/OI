@@ -1,12 +1,12 @@
 /*
 Tempter of the Bone
-ÌâÒâ£ºÍø¸ñÍ¼£¬ÒªÇ¡ºÃtÊ±¼äµ½´ïT£¬²¢²»ÊÇÔÚtÊ±¼äÄÚµ½´ï 
-·ÖÎö£ºDFS+¿ÉÐÐÐÔÅÐ¶Ï
-	  ¿ÉÐÐÐÔÅÐ¶Ï£ºµ±Ê£ÏÂµÄ²½Êý´óÓÚÊ£ÏÂµÄÊ±¼äµÄÊ±ºò£¬¹·ÊÇ²»ÄÜ×ßµ½µÄ£»
-	  	¶ÔÍ¼01È¾É«£¬·¢ÏÖ´Ó0×ßÒ»²½Ò»¶¨×ßµ½1£¬´Ó1×ßÒ»²½Ò»¶¨×ßµ½0¡£
-		Èç¹ûµ±Ç°µÄ¹·ËùÔÚµÄ×ø±êÓëDµÄ×ø±êÆæÅ¼ÐÔ²»Ò»Ñù£¬ÄÇÃ´¹·ÐèÒª×ßÆæÊý²½¡£
-		Í¬Àí£¬Èç¹û¹·ËùÔÚ×ø±êÓëDµÄ×ø±êÆæÅ¼ÐÔÒ»Ñù£¬ÄÇÃ´¹·ÐèÒª×ßÅ¼Êý²½Êý¡£
-	  ±£Ö¤Õâ¸öÆæÅ¼ÐÔÏàÍ¬ 
+é¢˜æ„ï¼šç½‘æ ¼å›¾ï¼Œè¦æ°å¥½tæ—¶é—´åˆ°è¾¾Tï¼Œå¹¶ä¸æ˜¯åœ¨tæ—¶é—´å†…åˆ°è¾¾ 
+åˆ†æžï¼šDFS+å¯è¡Œæ€§åˆ¤æ–­
+	  å¯è¡Œæ€§åˆ¤æ–­ï¼šå½“å‰©ä¸‹çš„æ­¥æ•°å¤§äºŽå‰©ä¸‹çš„æ—¶é—´çš„æ—¶å€™ï¼Œç‹—æ˜¯ä¸èƒ½èµ°åˆ°çš„ï¼›
+	  	å¯¹å›¾01æŸ“è‰²ï¼Œå‘çŽ°ä»Ž0èµ°ä¸€æ­¥ä¸€å®šèµ°åˆ°1ï¼Œä»Ž1èµ°ä¸€æ­¥ä¸€å®šèµ°åˆ°0ã€‚
+		å¦‚æžœå½“å‰çš„ç‹—æ‰€åœ¨çš„åæ ‡ä¸ŽDçš„åæ ‡å¥‡å¶æ€§ä¸ä¸€æ ·ï¼Œé‚£ä¹ˆç‹—éœ€è¦èµ°å¥‡æ•°æ­¥ã€‚
+		åŒç†ï¼Œå¦‚æžœç‹—æ‰€åœ¨åæ ‡ä¸ŽDçš„åæ ‡å¥‡å¶æ€§ä¸€æ ·ï¼Œé‚£ä¹ˆç‹—éœ€è¦èµ°å¶æ•°æ­¥æ•°ã€‚
+	  ä¿è¯è¿™ä¸ªå¥‡å¶æ€§ç›¸åŒ 
 */
 #include<iostream>
 #include<algorithm>
@@ -58,7 +58,7 @@ int main(){
 	while(input()){
 		if(abs(tx-sx)+abs(ty-sy)>t||(tx+sx+ty+sy+t)%2==1){puts("NO");continue;}
         memset(vis,0,sizeof(vis));
-        vis[sx][sy]=1;//×¢ÒâÕâÀï£¬WA*2 
+        vis[sx][sy]=1;//æ³¨æ„è¿™é‡Œï¼ŒWA*2 
 		if(dfs(sx,sy,0))puts("YES");
 		else puts("NO");
 	}

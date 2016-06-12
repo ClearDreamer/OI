@@ -1,13 +1,13 @@
 /*
-[Usaco2008 Open]Cow Neighborhoods ÄÌÅ£µÄÁÚ¾Ó
-·ÖÎö£ºÒ»¸ö·Ç³£ÇÉÃîµÄ·½·¨ÇóÂü¹þ¶Ù¾àÀë£º
-	  Èç¹ûÔ­À´×ø±êÊÇ(x, y)£¬ÁîÐÂµÄ×ø±êÎª(X, Y), ÆäÖÐX = x + y, Y = x - y
-	  ÄÇÃ´£ºÂü¹þ¶Ù¾àÀë = |x1 - x2| + |y1 - y2| = max(|X1 - X2|, |Y1 - Y2|)
-	  ÓÚÊÇÎÒÃÇÏÈ½øÐÐ×ø±ê±ä»»£¬°´XÅÅÐò¡£
-	  È»ºóÓÃÒ»¸ö¶ÓÁÐÀ´×ö£¬Âú×ã¶ÓÎ²X - ¶ÓÊ×X < c¡£
-	  ¶ÔÕâ¸ö¶ÓÁÐÖÐÃ¿¸öµãµÄYÎ¬»¤Ò»¿ÃÆ½ºâÊ÷£¬Èç¹ûÐÂ¼ÓÈëÔªËØµÄÇ°Çýºó¼ÌÓëËüµÄYÖµ²îÖµ²»³¬¹ýc£¬ÔòÓÃ²¢²é¼¯½«ËûÃÇÁ¬ÔÚÒ»Æð¡£
-	  £¨ÆäÊµ¾ÍÊÇÀàËÆkruskalµÄ¸Ä½ø°æ±¾£©
-	  Ê¹ÓÃÁËSTLµÄmultiset
+[Usaco2008 Open]Cow Neighborhoods å¥¶ç‰›çš„é‚»å±…
+åˆ†æžï¼šä¸€ä¸ªéžå¸¸å·§å¦™çš„æ–¹æ³•æ±‚æ›¼å“ˆé¡¿è·ç¦»ï¼š
+	  å¦‚æžœåŽŸæ¥åæ ‡æ˜¯(x, y)ï¼Œä»¤æ–°çš„åæ ‡ä¸º(X, Y), å…¶ä¸­X = x + y, Y = x - y
+	  é‚£ä¹ˆï¼šæ›¼å“ˆé¡¿è·ç¦» = |x1 - x2| + |y1 - y2| = max(|X1 - X2|, |Y1 - Y2|)
+	  äºŽæ˜¯æˆ‘ä»¬å…ˆè¿›è¡Œåæ ‡å˜æ¢ï¼ŒæŒ‰XæŽ’åºã€‚
+	  ç„¶åŽç”¨ä¸€ä¸ªé˜Ÿåˆ—æ¥åšï¼Œæ»¡è¶³é˜Ÿå°¾X - é˜Ÿé¦–X < cã€‚
+	  å¯¹è¿™ä¸ªé˜Ÿåˆ—ä¸­æ¯ä¸ªç‚¹çš„Yç»´æŠ¤ä¸€æ£µå¹³è¡¡æ ‘ï¼Œå¦‚æžœæ–°åŠ å…¥å…ƒç´ çš„å‰é©±åŽç»§ä¸Žå®ƒçš„Yå€¼å·®å€¼ä¸è¶…è¿‡cï¼Œåˆ™ç”¨å¹¶æŸ¥é›†å°†ä»–ä»¬è¿žåœ¨ä¸€èµ·ã€‚
+	  ï¼ˆå…¶å®žå°±æ˜¯ç±»ä¼¼kruskalçš„æ”¹è¿›ç‰ˆæœ¬ï¼‰
+	  ä½¿ç”¨äº†STLçš„multiset
 */
 #include<iostream>
 #include<cstdio>

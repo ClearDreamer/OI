@@ -1,7 +1,7 @@
 /*
 [POI2006]OKR-Periods of Words
-��������һ����������ǰ׺������ڳ���֮�ͣ��ر�ģ�����Ϊ�Լ��Ĵ�������ڳ�������0. 
- 		KMP�и�����i-nxt[i]Ϊ [1..i]����С���ڣ�����ǰ����Զ�ľ��������� 
+分析：求一个串的所有前缀的最长周期长度之和，特别的，周期为自己的串的最长周期长度视作0. 
+ 		KMP有个性质i-nxt[i]为 [1..i]的最小周期，那向前找最远的就是最大的了 
 */
 #include<iostream>
 #include<cstdio>

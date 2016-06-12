@@ -1,8 +1,8 @@
 /*
-[Usaco2006 Jan] Redundant Paths ·ÖÀëµÄÂ·¾¶
-·ÖÎö£ºĞÂ½¨×îÉÙµÄ±ß,Ê¹µÃÕû¸öÍ¼Ö»ÓĞÒ»¸ö±ßË«ÁªÍ¨·ÖÁ¿. 
-	  °ÑÍ¼ÓÃË«ÁªÍ¨·ÖÁ¿Ëõµãºó»áĞÎ³ÉÒ»¸öDAG,ÆäÖĞÕâ¸öDAGÉÏµÄÒ¶×Ó½Úµã¿ÉÒÔÁ½Á½»¥ÏàÅä¶ÔÁ¬±ß. ÊÇ×îÓÅÇé¿ö. 
-	  ËùÒÔans=ceil(leaf/2)=(leaf+1)/2 
+[Usaco2006 Jan] Redundant Paths åˆ†ç¦»çš„è·¯å¾„
+åˆ†æï¼šæ–°å»ºæœ€å°‘çš„è¾¹,ä½¿å¾—æ•´ä¸ªå›¾åªæœ‰ä¸€ä¸ªè¾¹åŒè”é€šåˆ†é‡. 
+	  æŠŠå›¾ç”¨åŒè”é€šåˆ†é‡ç¼©ç‚¹åä¼šå½¢æˆä¸€ä¸ªDAG,å…¶ä¸­è¿™ä¸ªDAGä¸Šçš„å¶å­èŠ‚ç‚¹å¯ä»¥ä¸¤ä¸¤äº’ç›¸é…å¯¹è¿è¾¹. æ˜¯æœ€ä¼˜æƒ…å†µ. 
+	  æ‰€ä»¥ans=ceil(leaf/2)=(leaf+1)/2 
 */
 #include<cstdio>
 #include<algorithm>
@@ -18,7 +18,7 @@ int low[MAXN+3],dfn[MAXN+3],cnt,point[MAXN+3],tim,stk[MAXN+3],top;
 void tarjan(int u){
     low[u]=dfn[u]=++tim;stk[top++]=u;
     for(int i=H[u];i;i=X[i]){
-        if(num[i]==fa[u]) continue;//ÑØ×Å·´Ïò±ß»ØÈ¥ÁË 
+        if(num[i]==fa[u]) continue;//æ²¿ç€åå‘è¾¹å›å»äº† 
         if(!dfn[P[i]]){
             fa[P[i]]=num[i];
             tarjan(P[i]);

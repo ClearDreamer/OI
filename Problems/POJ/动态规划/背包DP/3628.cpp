@@ -1,7 +1,7 @@
 /*
 Bookshelf 2
-���⣺Nֻ��ţ��ÿֻ��ţӵ�����ԣ�height������ܸ߶�B��������ţ���Ӹ߶������ܹ�������ܣ����ҳ���ֵ��С���Ǹ�excess�߶ȡ�
-������01�������������Ϊb+max{h} 
+题意：N只奶牛，每只奶牛拥有属性（height），书架高度B。求令奶牛叠加高度正好能够超过书架，并且超过值最小的那个excess高度。
+分析：01背包。总体积变为b+max{h} 
 */
 #include<iostream>
 #include<algorithm>

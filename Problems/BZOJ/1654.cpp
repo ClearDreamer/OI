@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Jan]The Cow Prom длеёнХ╩А
-╥жнЖё╨SCC 
+[Usaco2006 Jan]The Cow Prom Е╔╤Г┴⌡Х┬·Д╪ 
+Е┬├Ф·░О╪ SCC 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-上帝造题的七分钟2
-分析：基本上同BZOJ3211，数据大了点 
+涓婂笣閫犻鐨勪竷鍒嗛挓2
+鍒嗘瀽锛氬熀鏈笂鍚孊ZOJ3211锛屾暟鎹ぇ浜嗙偣 
 */
 #include<iostream>
 #include<cstdio>
@@ -32,7 +32,7 @@ int main(){
 		if(a[i]<=1)pa[i]=i+1;
 		else pa[i]=i;
 	}
-	pa[n+1]=n+1;//注意这句，不然会TLE 
+	pa[n+1]=n+1;//娉ㄦ剰杩欏彞锛屼笉鐒朵細TLE 
 	scanf("%d",&m);
 	for(int i=1,x,l,r;i<=m;i++){
 		scanf("%d%d%d",&x,&l,&r);

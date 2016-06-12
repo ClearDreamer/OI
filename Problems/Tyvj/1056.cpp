@@ -15,7 +15,7 @@ int dp(){
 	int l=2*n;
 	for(int len=2;len<=l;len++){
 		for(int i=1;i<=l-len+1;i++){
-			//×¢Òâ´ËÌâµÄÌØµã£ºw[i]Óëw[i+1]±íÊ¾Öé×ÓiµÄÐÅÏ¢ 
+			//æ³¨æ„æ­¤é¢˜çš„ç‰¹ç‚¹ï¼šw[i]ä¸Žw[i+1]è¡¨ç¤ºç å­içš„ä¿¡æ¯ 
 			int j=i+len,s=w[i]*w[j];
 			int &t=opt[i][j];
 			for(int k=i+1;k<j;k++){

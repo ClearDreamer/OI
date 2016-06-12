@@ -1,11 +1,11 @@
 /*
-���̸���
-����������Ķ���ͼȾɫ�����ǲ���
-	  �����Ƕ���ͼƥ�䣬���ڵĵ����ߣ������ƥ�� 
-	  ����ͼ��ʵ�֣�
-	  	1.�ֳɶ���ͼ��matchֻ��¼��ߵ���ƥ����ұߵ㣬Ȼ���������ߵ�dfs 
-		2.���ֶ���ͼ��match��¼���е��ƥ��㣬ע��ı�·��ʱ��ֻ�ı�һ�� 
-	  ������һ�ֶ���ͼ�������Ⱥڰ�Ⱦɫ���ڵ������ڰ׵����ߣ�Ȼ������ڵ㣬dfs 
+棋盘覆盖
+分析：先想的二分图染色，但是不对
+	  正解是二分图匹配，相邻的点连边，求最大匹配 
+	  二分图的实现：
+	  	1.分成二部图，match只记录左边点所匹配的右边点，然后对所有左边点dfs 
+		2.不分二部图，match记录所有点的匹配点，注意改变路的时候只改变一方 
+	  本题另一种二分图方法：先黑白染色，黑点向相邻白点连边，然后遍历黑点，dfs 
 */ 
 #include<iostream>
 #include<vector>
@@ -35,7 +35,7 @@ bool dfs(int u){
 			inq[e.v]=1;
 			if(match[e.v]==0||dfs(match[e.v])){
 				match[e.v]=u;
-				//��Ҫ��match[u]=e.v; 
+				//不要加match[u]=e.v; 
 				return true;
 			}
 		}
@@ -73,7 +73,7 @@ int main(){
 	cout<<Max()/2;
 	return 0;
 }
-/*����ͼȾɫ����Ȼ����8���� 
+/*二分图染色，居然过了8个点 
 #include<iostream>
 #include<cstring>
 #include<algorithm>

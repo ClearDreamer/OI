@@ -1,10 +1,10 @@
 /*
 Elevator
-���������ȣ������ԣ�Ҫ�ø߶Ⱦ����ܸߣ��߶����Ƶ͵������ڵ��£�������a[i]����
-		Ȼ����f[i,j]��ʾǰi������,�ܷ񵽴�j�߶�..
-		����ܹ������Ϊtrue,���ܵ���Ϊfalse
-		��ô���̾���if f[i-1,j] then f[i,j+h[i]]:=true;
-		��ʵ�Ƕ��ر�����������ֻ�ǿ����ԣ������������ԣ�ֱ��01���� 
+分析：首先，很明显，要让高度尽可能高，高度限制低的箱子在底下，即按照a[i]排序
+		然后，用f[i,j]表示前i个箱子,能否到达j高度..
+		如果能够到达就为true,不能到达为false
+		那么方程就是if f[i-1,j] then f[i,j+h[i]]:=true;
+		其实是多重背包，但由于只是可行性，而不是最优性，直接01背包 
 */
 #include<iostream>
 #include<algorithm>

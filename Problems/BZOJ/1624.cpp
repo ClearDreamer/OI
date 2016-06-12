@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Open] Clear And Present Danger Ñ°±¦Ö®Â·
-·ÖÎö£ºfloyd+É¨Ò»±é 
+[Usaco2008 Open] Clear And Present Danger å¯»å®ä¹‹è·¯
+åˆ†æï¼šfloyd+æ‰«ä¸€é 
 */
 #include<iostream>
 #include<cstdio>

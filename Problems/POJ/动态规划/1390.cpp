@@ -1,12 +1,12 @@
 /*
 Blocks
-���⣺��һЩ����ɫ�ĺ��ӣ����һЩ���ڵĺ��Ӷ�����ͬ����ɫ,������������(��������ڵĻ�)������(��������ڵĻ�)��������ɫ,���ǳ�֮Ϊ���жΡ���
-	  ÿһ��,���Ե���һ������,Ȼ����������ʧ����������k���������,���õ�k * k�㡣�����ŵ��� 
-����������DP��һĿ��Ȼ������״̬����̫�����⣺
-	  opt[i][j][k]��ʾ[i..j]Ȼ��ѵ�j�κ�����k�����Ӻϲ������Ž�
-	  ��ת��Ϊ��
-	  	1.ֱ����ȥ:opt[i][j][k]=opt[i][j-1][0]+(len[j]+k)^2
-		2.��j����ͬk��һ���[i..j]��ĳһ��һ��ϲ���opt[i][j][k]=max{opt[i][p][len[j]+k]+opt[p+1][j-1][0]|i<=p<j&&color[p]==color[j]} 
+题意：有一些带颜色的盒子，如果一些相邻的盒子都是相同的颜色,和两个盒子左(如果它存在的话)和其右(如果它存在的话)的其他颜色,我们称之为“盒段”。
+	  每一次,可以单击一个盒子,然后整个段消失。如果这段由k个盒子组成,你会得到k * k点。求最优点数 
+分析：区间DP，一目了然，但是状态并不太好理解：
+	  opt[i][j][k]表示[i..j]然后把第j段和其后的k个格子合并的最优解
+	  则转移为：
+	  	1.直接消去:opt[i][j][k]=opt[i][j-1][0]+(len[j]+k)^2
+		2.第j段连同k个一起和[i..j]中某一段一起合并：opt[i][j][k]=max{opt[i][p][len[j]+k]+opt[p+1][j-1][0]|i<=p<j&&color[p]==color[j]} 
 */
 #include<iostream>
 #include<algorithm>
@@ -30,7 +30,7 @@ void input(){
 		}
 	}
 	n=cntc;
-	for(int i=1;i<=n;i++){//ͳ��i֮�󣨲���i������i��ɫ��ͬ�ĸ����� 
+	for(int i=1;i<=n;i++){//统计i之后（不含i）的与i颜色相同的格子数 
 		after[i]=0;
 		for(int j=i+1;j<=n;j++)if(col[j]==col[i])after[i]+=len[j];
 	}

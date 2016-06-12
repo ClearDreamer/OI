@@ -1,37 +1,37 @@
 /*
-[wc2013]�ǹ���԰
-���������޸�����Ī��
-	  1.�����ֿ飺
-	  	���֣�һ������ͨ��״���ķֿ飬����dfs�򰴱�����˳��������һ�����ӽ�㣬����block֮���¿顣�����ӵĻ���ֳ��ϸ�block�Ŀ������֦Ҷ�ϲ���block�Ŀ顣�������ڵĿ������ϵ�λ�ò�һ��������
-		��һ�ַ�����bzoj1086�ķֿ鷽ʽ����Ŀ�Ѿ�˵�ú�����ˡ��ֿ�Ľ���ǿ��Էֳ�[block,3*block]�Ŀ顣��Щ���ڵĽ����ܲ�����ͨ�����������������ǿ��Խ�ͨ��һ������������ͨ�� �����ӷֿ�Ļ���֤���ڵĿ������ϵ�λ���ǰ��ŵġ� 
-	  2. ���û���޸ģ�����B = sqrt(n)������ѯ��(v, u)������v��u���ڿ�ı������v���ڿ�ı��Ϊ��һ�ؼ��֣�u���ڿ�ı��Ϊ�ڶ��ؼ����Ÿ���Ȼ���Ī���㷨����˳��ɨѯ�ʣ���������һ����������O(n * sqrt(n))����n��q��ͬ�׵ģ�
-	  3.���������޸ģ�����ʱ����һά�ȣ�
-	  	��ɣ�(v, u, ti)��ti��ѯ��ʱ��ʱ�䣬�����ѯ���ǵڼ��β�����
-		Ȼ��v���ڿ�ı��Ϊ��һ�ؼ��֣�u���ڿ�ı��Ϊ�ڶ��ؼ��֣�tiΪ�����ؼ��֡�
-		Ȼ���Ī���㷨����˳��ɨѯ�ʣ���������һ����ʱ����ʱ��ǰ��ʱ������������B = n ^ (2 / 3)����ʱ�临�Ӷ���O(n ^ (5 / 3))����n��q��ͬ�׵ģ� 
-	  4.������δ�һ��(v,u,ti)ת�Ƶ�(v',u',t')
-	  5.��ת��t��Ԥ����������ÿ���޸� �����޸�ǰӦ��ʲô��ɫ�������Ϳ��Գ����޸��ˡ�
-	  	�ı�ķ�ʽ���������㱻ͳ�Ƶ������ˣ���ô���ų����޸ģ�����ͳ�Ƶ����С����û�У���ֱ�Ӹ�
-	  6.ת�ƽڵ㣺
-	  	��S(v, u)���� v��u��·���ϵĽ��ļ��ϡ���root����������㣬��lca(v, u)������v��u������������ȡ�
-		��ôS(v, u) = S(root, v) xor S(root, u) xor lca(v, u)
-		����xor�Ǽ��ϵĶԳƲ����˵���ǽڵ��������������
-		�����ʲô����= = ���Ȳ�����lca����Ϊ������һ���㣬���Ե���������
-		����T(v, u) = S(root, v) xor S(root, u)
-		�۲콫curV�ƶ���targetVǰ��T(curV, curU)�仯��
+[wc2013]糖果公园
+分析：带修改树上莫队
+	  1.对树分块：
+	  	两种：一种是普通块状树的分块，按照dfs序按遍历的顺序，往块里一个个加结点，到达block之后开新块。这样子的话会分出严格block的块和树的枝叶上不到block的块。但是相邻的块在树上的位置不一定连续。
+		另一种方法是bzoj1086的分块方式。题目已经说得很清楚了。分块的结果是可以分出[block,3*block]的块。这些块内的结点可能并不连通，但是在最坏情况下他们可以仅通过一个公共父亲连通。 这样子分块的话保证相邻的块在树上的位置是挨着的。 
+	  2. 如果没有修改，则令B = sqrt(n)，对于询问(v, u)，按照v、u所在块的编号排序。v所在块的编号为第一关键字，u所在块的编号为第二关键字排个序，然后搞莫队算法，按顺序扫询问，在树上爬一爬。这样是O(n * sqrt(n))。（n、q是同阶的）
+	  3.现在有了修改，引入时间这一维度，
+	  	变成：(v, u, ti)，ti是询问时的时间，即这次询问是第几次操作。
+		然后v所在块的编号为第一关键字，u所在块的编号为第二关键字，ti为第三关键字。
+		然后搞莫队算法，按顺序扫询问，在树上爬一爬，时间有时向前有时倒流。这样令B = n ^ (2 / 3)，则时间复杂度是O(n ^ (5 / 3))。（n、q是同阶的） 
+	  4.考虑如何从一个(v,u,ti)转移到(v',u',t')
+	  5.先转移t，预处理出对于每个修改 ，它修改前应是什么颜色，这样就可以撤销修改了。
+	  	改变的方式：如果这个点被统计到答案中了，那么就排除，修改，重新统计到答案中。如果没有，就直接改
+	  6.转移节点：
+	  	用S(v, u)代表 v到u的路径上的结点的集合。用root来代表根结点，用lca(v, u)来代表v、u的最近公共祖先。
+		那么S(v, u) = S(root, v) xor S(root, u) xor lca(v, u)
+		其中xor是集合的对称差。简单来说就是节点出现两次消掉。
+		这个有什么用呢= = ，先不考虑lca（因为它就是一个点，可以单独处理）
+		定义T(v, u) = S(root, v) xor S(root, u)
+		观察将curV移动到targetV前后T(curV, curU)变化：
 		T(curV, curU) = S(root, curV) xor S(root, curU)
 		T(targetV, curU) = S(root, targetV) xor S(root, curU)
-		ȡ�ԳƲ
+		取对称差：
 		T(curV, curU) xor T(targetV, curU)= (S(root, curV) xor S(root, curU)) xor (S(root, targetV) xor S(root, curU))
-		���ڶԳƲ�Ľ����ɡ�����ɣ�
+		由于对称差的交换律、结合律：
 		T(curV, curU) xor T(targetV, curU)= S(root, curV) xor S(root, targetV)
-		����ͬʱxor T(curV, curU)��
+		两边同时xor T(curV, curU)：
 		T(targetV, curU)= T(curV, curU) xor S(root, curV) xor S(root, targetV)
-		��������������T(curV, targetV)
+		发现最后两项就是T(curV, targetV)
 		T(targetV, curU)= T(curV, curU) xor T(curV, targetV)
-		��ʵ���Ƕ�curV��targetV·��(����lca(curV, targetV))�ϵĽ�㣬�����ǵĴ�����ȡ�����ɡ�
-		��������Ҫ��һ����������ȡ���Ĳ�����reverse�� 
-	  7.��������������������ʵ��ת���ˣ�����ת�Ƹ��Ӷ�����ά�������پ��룬��Ī�Ӹ�һ�¾ͺ��� 
+		其实就是对curV到targetV路径(除开lca(curV, targetV))上的结点，将它们的存在性取反即可。
+		所以我们要有一个将存在性取反的操作（reverse） 
+	  7.有了这两个操作，就能实现转移了，并且转移复杂度是三维的曼哈顿距离，用莫队搞一下就好了 
 */
 #include<iostream>
 #include<cstdio>

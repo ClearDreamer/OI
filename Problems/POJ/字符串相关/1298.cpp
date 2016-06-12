@@ -1,6 +1,6 @@
 /*
 The Hardest Problem Ever
-·ÖÎö£ºË®Ìâ£¬µ«ÎªÊ²Ã´»áWA£¿ 
+åˆ†æï¼šæ°´é¢˜ï¼Œä½†ä¸ºä»€ä¹ˆä¼šWAï¼Ÿ 
 */
 #include<iostream>
 #include<algorithm>

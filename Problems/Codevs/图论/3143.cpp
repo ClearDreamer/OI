@@ -1,5 +1,5 @@
 /*
-¶þ²æÊ÷µÄÐò±éÀú
+äºŒå‰æ ‘çš„åºéåŽ†
 */
 #include<stdio.h>
 int a[30][3];

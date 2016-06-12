@@ -30,7 +30,7 @@ void merge_sort(int l,int r,int *a){
 	while(ll<=mid&&rr<=r){
 		if(a[ll]<=a[rr])temp[cur++]=a[ll++];
 		else{
-			//pair+=mid-ll+1;//ÄæÐò¶Ô 
+			//pair+=mid-ll+1;//é€†åºå¯¹ 
 			temp[cur++]=a[rr++];
 		}
 	}

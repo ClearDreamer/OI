@@ -1,8 +1,8 @@
 /*
-[POI2007]�Ľ��Ƶ���ƽWag
-���������Ƚ�nת��Ϊ�Ľ��ƣ��ӵ�λ����λ����DP
-		f[i]��ʾ��һλ������һλ��λ
-		g[i]��ʾ��һλ����һλ��λ��������Ǹ�������i
+[POI2007]四进制的天平Wag
+分析：首先将n转化为四进制，从低位到高位计数DP
+		f[i]表示这一位不向下一位借位
+		g[i]表示这一位向下一位借位，但借的那个不算在i
 		f[0]=0,g[0]=inf
 		f[i]=merge(f[i-1]+b[i],g[i-1]+b[i]+1)
 		g[i]=merge(f[i-1]+4-b[i],g[i-1]+3-b[i]) 
@@ -28,7 +28,7 @@ int a[MAXN+3],b[MAXN+3],n,l,i;
 char s[MAXN+3];
 int main(){
 	for(scanf("%s",s),l=strlen(s),i=1;i<=l;i++)a[i]=s[l-i]-'0';
-	while(l){//ת��4����  
+	while(l){//转成4进制  
 		for(i=l,a[0]=0;i;i--)a[i-1]+=(a[i]&3)*10,a[i]>>=2;
 		for(b[++n]=a[0]/10;l&&!a[l];l--);
 	}

@@ -1,7 +1,7 @@
 /*
 DNA Sorting
-ÌâÒâ£º½«DNAÐòÁÐ£¬°´ÄæÐò¶Ô´ÓÐ¡µ½´óÎÈ¶¨ÅÅÐò
-·ÖÎö£º×¢ÒâÖ»ÓÐ4ÖÖ×Ö·û£¬ÄæÏòÉ¨Ò»±é¼´¿ÉµÃµ½ÄæÐò¶Ô£¬¿ÉÒÔÖ±½Óµ÷sort£¬×¢Òâcmpº¯Êý¶ÔÓÚi==jÓ¦·µ»Øfalse£¨²»½»»»£¬ÎÈ¶¨ÅÅÐò£© 
+é¢˜æ„ï¼šå°†DNAåºåˆ—ï¼ŒæŒ‰é€†åºå¯¹ä»Žå°åˆ°å¤§ç¨³å®šæŽ’åº
+åˆ†æžï¼šæ³¨æ„åªæœ‰4ç§å­—ç¬¦ï¼Œé€†å‘æ‰«ä¸€éå³å¯å¾—åˆ°é€†åºå¯¹ï¼Œå¯ä»¥ç›´æŽ¥è°ƒsortï¼Œæ³¨æ„cmpå‡½æ•°å¯¹äºŽi==jåº”è¿”å›žfalseï¼ˆä¸äº¤æ¢ï¼Œç¨³å®šæŽ’åºï¼‰ 
 */
 #include<iostream>
 #include<algorithm>

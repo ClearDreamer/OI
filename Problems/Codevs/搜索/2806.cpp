@@ -1,6 +1,6 @@
 /*
-ºìÓëºÚ
-·ÖÎö£ºBFS 
+çº¢ä¸é»‘
+åˆ†æï¼šBFS 
 */
 #include<iostream>
 #include<cstdio>

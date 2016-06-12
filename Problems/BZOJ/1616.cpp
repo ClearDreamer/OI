@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Mar]Cow TravellingÓÎµ´µÄÄÌÅ£
-·ÖÎö£ºDP£¬f[i][j][k]±íÊ¾µÚiÃëµ½´ï(j,k)µÄ·½°¸ 
+[Usaco2008 Mar]Cow Travellingæ¸¸è¡çš„å¥¶ç‰›
+åˆ†æï¼šDPï¼Œf[i][j][k]è¡¨ç¤ºç¬¬iç§’åˆ°è¾¾(j,k)çš„æ–¹æ¡ˆ 
 */
 #include<iostream>
 #include<cstdio>

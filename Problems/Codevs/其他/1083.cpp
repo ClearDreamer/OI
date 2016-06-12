@@ -1,5 +1,5 @@
 /*
-Cantor±í
+Cantorè¡¨
 */
 #include<stdio.h>
 int a[1000][1000],p,q,n;

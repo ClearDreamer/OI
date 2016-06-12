@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Dec]´©Ô½ÄàµØ
-·ÖÎö£ºBFS 
+[Usaco2007 Dec]ç©¿è¶Šæ³¥åœ°
+åˆ†æï¼šBFS 
 */
 #include<iostream>
 #include<cstdio>

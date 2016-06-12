@@ -1,7 +1,7 @@
 /*
 Best Sequence
-�����������ÿ�����ַ����غϲ��ֳ��ȣ�Ȼ��״ѹDP���ɣ�������WA������������״ѹDP��״̬˳���޷�ʵ�� 
-	  ����ĳ�ȫ���У���ʵҲ����DFS+��֦ 
+分析：先求出每两个字符串重合部分长度，然后状压DP即可，但就是WA。。。可能是状压DP的状态顺序无法实现 
+	  无语，改成全排列，其实也可以DFS+剪枝 
 */
 #include<iostream>
 #include<cstring>
@@ -36,7 +36,7 @@ void input(){
 		//cout<<endl;
 	}
 }
-int dp(){//�����ѹ� 
+int dp(){//样例已过 
 	memset(opt,INF,sizeof(opt));
 	for(int i=0;i<n;i++)opt[1<<i][i]=len[i];
 	for(int i=0;i<(1<<n);i++){
@@ -54,7 +54,7 @@ int dp(){//�����ѹ�
 	for(int i=0;i<n;i++)ans=min(opt[(1<<n)-1][i],ans);
 	return ans;
 }
-int dp(int x){//����û�� 
+int dp(int x){//样例没过 
 	//for(int i=0;i<n;i++)opt[1<<i][i]=len[i];
 	for(int i=0;i<(1<<n);i++){
 		for(int j=0;j<n;j++){

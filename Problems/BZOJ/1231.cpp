@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Nov]mixup2 ╩Лбр╣ддлеё
-╥жнЖё╨N╨эп║ё╛в╢я╧DP 
+[Usaco2008 Nov]mixup2 Ф╥╥Д╧╠Г └Е╔╤Г┴⌡
+Е┬├Ф·░О╪ NЕ╬┬Е╟▐О╪▄Г┼╤Е▌▀DP 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-ɳ�Ӻϲ�
-��������ͨ����DP������ʯ�ӹ鲢 
+沙子合并
+分析：普通区间DP，类似石子归并 
 */
 #include<iostream>
 #include<algorithm>

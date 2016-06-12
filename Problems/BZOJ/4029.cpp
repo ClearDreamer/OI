@@ -1,6 +1,6 @@
 /*
-[HEOI2015]定价
-分析：每次将最后一位非0数字+1
+[HEOI2015]瀹氫环
+鍒嗘瀽锛氭瘡娆″皢鏈�鍚庝竴浣嶉潪0鏁板瓧+1
 */
 #include<iostream>
 #include<cstdio>

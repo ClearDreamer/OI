@@ -1,12 +1,12 @@
 /*
-���̷ָ�
-�����������ʽ�Ƚϸ��ӣ��Ƚ�����Σ�X��ʾ��ֵ  
-		S^2 = 1/n��(Xi - X)^2
-		   = 1/n(n*X^2 + ��Xi^2 - 2*X��Xi)
-		   = 1/n��Xi^2 - X^2;   
-		������С�� ��Xi^2����
-		DP����Ԥ����ÿ�����εĺ͵�ƽ����Ȼ����������ࣺ�����У�������
-		  ÿ���ж��λ��[x1..x2][y1..y2] 
+棋盘分割
+分析：均方差公式比较复杂，先将其变形，X表示均值  
+		S^2 = 1/n∑(Xi - X)^2
+		   = 1/n(n*X^2 + ∑Xi^2 - 2*X∑Xi)
+		   = 1/n∑Xi^2 - X^2;   
+		这样最小化 ∑Xi^2即可
+		DP：先预处理每个矩形的和的平方，然后决策有两类：横着切，竖着切
+		  每种有多个位置[x1..x2][y1..y2] 
 */
 #include<iostream>
 #include<algorithm>
@@ -20,7 +20,7 @@ typedef int MAP[MAXN][MAXN][MAXN][MAXN];
 MAP opt[MAXK+3],sum;
 int g[MAXN][MAXN],K; 
 void init(){
-	for(int i=0;i<MAXN;i++){//����Ҫ�ദ����һλ��9*9������ΪDPʱ���õ������ĵ��� 
+	for(int i=0;i<MAXN;i++){//这里要多处理出一位（9*9），因为DP时会用到这样的调用 
 		for(int j=0;j<MAXN;j++){
 			for(int k=i;k<MAXN;k++){
 				for(int l=j;l<MAXN;l++){

@@ -1,6 +1,6 @@
 /*
-Ã»ÓĞÉÏË¾µÄÎè»á
-·ÖÎö£º¾­µäÊ÷ĞÎDP 
+æ²¡æœ‰ä¸Šå¸çš„èˆä¼š
+åˆ†æï¼šç»å…¸æ ‘å½¢DP 
 */
 #include<iostream>
 #include<cstdio>
@@ -9,13 +9,13 @@
 #include<vector>
 using namespace std;
 const int MAXN=6000;
-vector<int> G[MAXN+3];//ÏÂÊô
-int n,h[MAXN+3],boss[MAXN+3]/*ÀÏ°å*/,f[MAXN+3][2];//f[i][1]±íÊ¾ÒÔiÎª¸ù£¬i³öÏ¯µÄ×î´óÖµ£»f[i][0]±íÊ¾ÒÔiÎª¸ù£¬i²»³öÏ¯µÄ×î´óÖµ
+vector<int> G[MAXN+3];//ä¸‹å±
+int n,h[MAXN+3],boss[MAXN+3]/*è€æ¿*/,f[MAXN+3][2];//f[i][1]è¡¨ç¤ºä»¥iä¸ºæ ¹ï¼Œiå‡ºå¸­çš„æœ€å¤§å€¼ï¼›f[i][0]è¡¨ç¤ºä»¥iä¸ºæ ¹ï¼Œiä¸å‡ºå¸­çš„æœ€å¤§å€¼
 void dfs(int k){
     for(int j=0;j<G[k].size();j++){
         int i=G[k][j];
         dfs(i);
-        //Èç¹ûÀÏ°å³öÏ¯£¬ÄÇÃ´ËûµÄÊÖÏÂ¾Í²»³öÏ¯
+        //å¦‚æœè€æ¿å‡ºå¸­ï¼Œé‚£ä¹ˆä»–çš„æ‰‹ä¸‹å°±ä¸å‡ºå¸­
         f[k][0]+=max(f[i][0],f[i][1]);
         f[k][1]+=f[i][0];
     }
@@ -32,8 +32,8 @@ int main(){
         boss[x]=y;
     }
     for(int i=1;i<=n;i++){
-        if(boss[i]==0){//¸ù½Úµã
-            dfs(i);//Ê÷ĞÎDP
+        if(boss[i]==0){//æ ¹èŠ‚ç‚¹
+            dfs(i);//æ ‘å½¢DP
             printf("%d",max(f[i][0],f[i][1]));
             break;
         }

@@ -1,6 +1,6 @@
 /*
-买票
-分析：预处理前缀和，然后枚举区间即可 
+涔扮エ
+鍒嗘瀽锛氶澶勭悊鍓嶇紑鍜岋紝鐒跺悗鏋氫妇鍖洪棿鍗冲彲 
 */
 #include<iostream>
 using namespace std;

@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Dec]Building Roads 修建道路
-分析：最小生成树 
+[Usaco2007 Dec]Building Roads 淇缓閬撹矾
+鍒嗘瀽锛氭渶灏忕敓鎴愭爲 
 */
 #include<iostream>
 #include<cstdio>

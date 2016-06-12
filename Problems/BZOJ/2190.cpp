@@ -1,8 +1,8 @@
 /*
-[SDOI2008]���̶�
-�������۲�ͼ�Σ����Խ��߻��ֵĻ������߶�����sigma(phi[i],2<=i<=n-1)
-	  ���Դ�= sigma(phi[i],2<=i<=n-1)*2 + 3(���½ǵ�3����)
-	  ע��n=1����� 
+[SDOI2008]仪仗队
+分析：观察图形，按对角线划分的话，两边都等于sigma(phi[i],2<=i<=n-1)
+	  所以答案= sigma(phi[i],2<=i<=n-1)*2 + 3(左下角的3个点)
+	  注意n=1的情况 
 */
 #include<iostream>
 #include<cstdio>

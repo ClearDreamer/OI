@@ -1,6 +1,6 @@
 /*
-��ţ��
-������ͳ��һ�¼��ɣ�ע������ı߽� 
+挤牛奶
+分析：统计一下即可，注意区间的边界 
 */
 #include<iostream>
 #include<algorithm>

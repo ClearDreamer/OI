@@ -1,4 +1,4 @@
-//δͨ�� 
+//未通过 
 #include<iostream>
 #include<algorithm>
 using namespace std;

@@ -1,5 +1,5 @@
 /*
-取出整数的一部分
+鍙栧嚭鏁存暟鐨勪竴閮ㄥ垎
 */
 #include<cstdio>
 #include<cmath>

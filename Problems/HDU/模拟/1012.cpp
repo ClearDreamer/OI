@@ -1,6 +1,6 @@
 /*
 u Calculate e
-ÌâÒâ£º¼ÆËãe 
+é¢˜æ„ï¼šè®¡ç®—e 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,5 +1,5 @@
 /*
-ÂÏÉúËØÊı 2
+å­ªç”Ÿç´ æ•° 2
 */
 #include<stdio.h>
 bool iszhi(int n){

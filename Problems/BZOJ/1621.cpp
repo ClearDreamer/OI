@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Open]Roads Around The Farm·Ö²íÂ·¿Ú
-·ÖÎö£ºÖ±½ÓÄ£Äâ£¬×¢Òân<k+2Ê±²»ÄÜÔÙ·Ö 
+[Usaco2008 Open]Roads Around The Farmåˆ†å²”è·¯å£
+åˆ†æï¼šç›´æ¥æ¨¡æ‹Ÿï¼Œæ³¨æ„n<k+2æ—¶ä¸èƒ½å†åˆ† 
 */
 #include<iostream>
 #include<cstdio>

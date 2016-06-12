@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Dec]挑剔的美食家
-分析：贪心，按美味度从大到小排序，先满足要求高的牛，插入multiset中，找价值大于要求价值的最小的 
+[Usaco2007 Dec]鎸戝墧鐨勭編椋熷
+鍒嗘瀽锛氳椽蹇冿紝鎸夌編鍛冲害浠庡ぇ鍒板皬鎺掑簭锛屽厛婊¤冻瑕佹眰楂樼殑鐗涳紝鎻掑叆multiset涓紝鎵句环鍊煎ぇ浜庤姹備环鍊肩殑鏈�灏忕殑 
 */
 #include<iostream>
 #include<cstdio>

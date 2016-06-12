@@ -1,7 +1,7 @@
 /*
-[CQOI2007]ÓàÊıÖ®ºÍsum
-·ÖÎö£ºsigma{k%i|i=1..n}=sigma{k-[k/i]*i}=n*k-sigma{ [k/i]*i }
-	   ×¢Òâ[k/i]×î¶àÓĞsqrt(k)¸öÈ¡Öµ£¬·Ö¶Î×ö¼´¿É 
+[CQOI2007]ä½™æ•°ä¹‹å’Œsum
+åˆ†æï¼šsigma{k%i|i=1..n}=sigma{k-[k/i]*i}=n*k-sigma{ [k/i]*i }
+	   æ³¨æ„[k/i]æœ€å¤šæœ‰sqrt(k)ä¸ªå–å€¼ï¼Œåˆ†æ®µåšå³å¯ 
 */
 #include<iostream>
 #include<cstdio>
@@ -20,7 +20,7 @@ int main(){
 	while(l>0){
 		ans-=i*(r+l)*(r-l+1)/2;
 		if(l==1)break;
-		i=k/(l-1);//i=k/(k/(i+1))Ïàµ±ÓÚÃ¶¾ÙÒòÊı 
+		i=k/(l-1);//i=k/(k/(i+1))ç›¸å½“äºæšä¸¾å› æ•° 
 		l=k/(i+1)+1;
 		r=k/i;
 	}

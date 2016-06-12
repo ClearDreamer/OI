@@ -1,6 +1,6 @@
 /*
-[HAOI2006]����comf
-������ע�������С����������Ȼ��ö����С�ߣ��ٴ�С�������ӱߣ�ֱ��st��ͨ����ͨ��Ϣ�ò��鼯ά�� 
+[HAOI2006]旅行comf
+分析：注意边数较小，将边排序，然后枚举最小边，再从小到大添加边，直到st联通，联通信息用并查集维护 
 */
 #include<iostream>
 #include<cstdio>

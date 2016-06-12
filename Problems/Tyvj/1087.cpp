@@ -1,9 +1,9 @@
 /*
 sumsets
-·ÖÎö£º·ÖÓÐ1ºÍÃ»ÓÐ1ÌÖÂÛ£¬ÓÉÓÚ±ØÐëÊÇ2µÄÃÝ£¬ËùÒÔ¶ÔÓÚÆæÊýµÄÇé¿ö£¬ÓÐopt[i]=opt[i-1](·Ö³öÒ»¸ö1)
-	  ¶ÔÓÚÅ¼ÊýµÄÇé¿ö£¬ÓÐopt[i]=opt[i/2]+opt[i-1](·Ö³öÒ»¸ö1£¬»òËùÓÐÏî³ËÒÔ2)
-	  ÏÈÐ´µÄdfs£¬ÒÔÎª²»Ò»¶¨¼ÆËãËùÓÐµÄoptÖµ£¬µ«ÆäÊµÓÉÓÚ¶¼Òª¼ÆËãopt[i-1]£¬ËùÒÔÕâÑùÊÇÃ»ÓÐÈÎºÎ¸Ä½øµÄ
-	  ¶øÇÒ»á±¬Õ»£¬¸Õ¿ªÊ¼»¹Ã»ÓÐmod¡£¡£¡£ 
+åˆ†æžï¼šåˆ†æœ‰1å’Œæ²¡æœ‰1è®¨è®ºï¼Œç”±äºŽå¿…é¡»æ˜¯2çš„å¹‚ï¼Œæ‰€ä»¥å¯¹äºŽå¥‡æ•°çš„æƒ…å†µï¼Œæœ‰opt[i]=opt[i-1](åˆ†å‡ºä¸€ä¸ª1)
+	  å¯¹äºŽå¶æ•°çš„æƒ…å†µï¼Œæœ‰opt[i]=opt[i/2]+opt[i-1](åˆ†å‡ºä¸€ä¸ª1ï¼Œæˆ–æ‰€æœ‰é¡¹ä¹˜ä»¥2)
+	  å…ˆå†™çš„dfsï¼Œä»¥ä¸ºä¸ä¸€å®šè®¡ç®—æ‰€æœ‰çš„optå€¼ï¼Œä½†å…¶å®žç”±äºŽéƒ½è¦è®¡ç®—opt[i-1]ï¼Œæ‰€ä»¥è¿™æ ·æ˜¯æ²¡æœ‰ä»»ä½•æ”¹è¿›çš„
+	  è€Œä¸”ä¼šçˆ†æ ˆï¼Œåˆšå¼€å§‹è¿˜æ²¡æœ‰modã€‚ã€‚ã€‚ 
 */
 #include<iostream>
 #include<algorithm>

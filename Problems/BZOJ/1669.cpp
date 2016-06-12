@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Oct]Hungry Cows¼¢¶öµÄÄÌÅ£
-·ÖÎö£ºLIS 
+[Usaco2006 Oct]Hungry Cowsé¥¥é¥¿çš„å¥¶ç‰›
+åˆ†æï¼šLIS 
 */
 #include<iostream>
 #include<cstdio>

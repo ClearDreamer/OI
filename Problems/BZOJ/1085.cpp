@@ -1,5 +1,5 @@
 /*
-分析：A*，估价就是和终态有多少不同= = 
+鍒嗘瀽锛欰*锛屼及浠峰氨鏄拰缁堟�佹湁澶氬皯涓嶅悓= = 
 */
 #include<iostream>
 #include<cstdio>
@@ -28,7 +28,7 @@ bool dfs(int dep,int x,int y){
 		if(eva()+dep<=mxdep && dfs(dep+1,tx,ty))return true;
 		swap(mp[x][y],mp[tx][ty]);
 	}
-	return false;//注意返回= = 
+	return false;//娉ㄦ剰杩斿洖= = 
 }
 char ch[10];
 int main(){

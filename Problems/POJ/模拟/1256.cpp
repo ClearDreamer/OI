@@ -1,7 +1,7 @@
 /*
 Anagram
-题意：求字符串全排列，注意字典序的定义：'A'<'a'<'B'<'b'<...<'Z'<'z' 
-分析：先将字符串按上述定义转成数字，然后调用next_permutation，注意先sort 
+棰樻剰锛氭眰瀛楃涓插叏鎺掑垪锛屾敞鎰忓瓧鍏稿簭鐨勫畾涔夛細'A'<'a'<'B'<'b'<...<'Z'<'z' 
+鍒嗘瀽锛氬厛灏嗗瓧绗︿覆鎸変笂杩板畾涔夎浆鎴愭暟瀛楋紝鐒跺悗璋冪敤next_permutation锛屾敞鎰忓厛sort 
 */
 #include<iostream>
 #include<algorithm>

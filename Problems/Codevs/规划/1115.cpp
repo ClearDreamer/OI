@@ -1,6 +1,6 @@
 /*
-开心的金明
-分析：典型背包DP 
+寮�蹇冪殑閲戞槑
+鍒嗘瀽锛氬吀鍨嬭儗鍖匘P 
 */ 
 #include<iostream>
 #include<algorithm>

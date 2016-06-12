@@ -1,7 +1,7 @@
 /*
-������Ӵ�
-������ֻҪ����A��B�ϲ������ڽӿڴ�����һ�������ַ�����A��B�ж�û�м��ɣ�Ȼ���ܺ�׺���鲢����height
-	  ������ans��ʱ����Ҫ�ж� ���� sa[i]<len1&&sa[i-1]>len1||sa[i-1]<len1&&sa[i]>len1���� 
+最长公共子串
+分析：只要将串A串B合并，并在接口处加上一个特殊字符（串A串B中都没有即可）然后跑后缀数组并计算height
+	  最后更新ans的时候需要判断 名词 sa[i]<len1&&sa[i-1]>len1||sa[i-1]<len1&&sa[i]>len1即可 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,6 +1,6 @@
 /*
-�����ߵ���ս 
-����������DP��opt[i][j][k]��ʾǰi����ս���ɹ�j�Σ�ʣ������Ϊj�ĸ��� 
+守卫者的挑战 
+分析：概率DP，opt[i][j][k]表示前i次挑战，成功j次，剩余容量为j的概率 
 */
 #include<cstdio>
 #include<cstring>
@@ -25,9 +25,9 @@ double dp(){
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
 			for(int t=mn;t<=mx;t++){
-				if(opt[i][j][t]==0)continue;//���������Ϊ0����ת�ƣ�����ֻӰ��mx,mn��ȡֵ 
-				opt[i+1][j+1][min(t+a[i+1],n+pos)]+=opt[i][j][t]*p[i+1];//�ɹ� 
-				opt[i+1][j][t]+=opt[i][j][t]*(1-p[i+1]);//ʧ�� 
+				if(opt[i][j][t]==0)continue;//如果可能性为0，则不转移，这里只影响mx,mn的取值 
+				opt[i+1][j+1][min(t+a[i+1],n+pos)]+=opt[i][j][t]*p[i+1];//成功 
+				opt[i+1][j][t]+=opt[i][j][t]*(1-p[i+1]);//失败 
 				mx=max(mx,min(t+a[i+1],n+pos));
 				mn=min(mn,t+a[i+1]);
 			}

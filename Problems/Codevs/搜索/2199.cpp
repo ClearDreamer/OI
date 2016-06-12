@@ -1,6 +1,6 @@
 /*
-�ɶ�
-���������������������̶��˵�һ��Ԫ�ؾͲ������� 
+派对
+分析：类似于质数环，固定了第一个元素就不用判重 
 */
 #include<iostream>
 #include<cmath>
@@ -25,7 +25,7 @@ void dfs(int ind){
 int main(){
 	cin>>n>>k;
 	for(int i=1;i<=n;i++)cin>>a[i];
-	s[1]=a[1];used[1]=1;//��������Сֵ���������ΪֻҪ�н⣬a[1]������ǿ��еģ�ע���ǻ��� 
+	s[1]=a[1];used[1]=1;//不必找最小值放在这里，因为只要有解，a[1]在这就是可行的（注意是环） 
 	dfs(2);
 	cout<<ans;
 	return 0;

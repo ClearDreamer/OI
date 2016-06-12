@@ -1,6 +1,6 @@
 /*
 Ugly Numbers
-分析：暴力枚举，每次选最小的 
+鍒嗘瀽锛氭毚鍔涙灇涓撅紝姣忔閫夋渶灏忕殑 
 */
 #include<iostream>
 #include<algorithm> 

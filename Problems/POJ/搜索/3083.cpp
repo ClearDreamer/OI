@@ -1,7 +1,7 @@
 /*
 Children of the Candy Corn
-���⣺��һ�ŷ���ͼ��������һֱ�����ߣ�һֱ�����ߣ������·
-���������巽��0(��),1(��),2(��),3(��)���ȴ�����ÿ��ת��ķ�ʽ��Ȼ��DFS���ɣ������ۺϿ���DFS��BFS 
+题意：给一张方格图，求从起点一直向左走，一直向右走，和最短路
+分析：定义方向，0(上),1(左),2(下),3(右)，先处理出每种转向的方式，然后DFS即可，此题综合考察DFS，BFS 
 */
 #include<iostream>
 #include<algorithm>
@@ -96,7 +96,7 @@ int main(){
 		input();
 		//cout<<direction<<endl;
 		dfsl(sx,sy,direction);
-		//cout<<"������"<<endl; 
+		//cout<<"！！！"<<endl; 
 		dfsr(sx,sy,direction);
 		printf("%d %d %d\n",stepl,stepr,bfs(sx,sy));
 	}

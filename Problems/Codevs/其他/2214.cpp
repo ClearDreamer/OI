@@ -1,6 +1,6 @@
 /*
-超级书架 2
-分析：n较小，直接二进制枚举 
+瓒呯骇涔︽灦 2
+鍒嗘瀽锛歯杈冨皬锛岀洿鎺ヤ簩杩涘埗鏋氫妇 
 */
 #include<iostream>
 using namespace std;

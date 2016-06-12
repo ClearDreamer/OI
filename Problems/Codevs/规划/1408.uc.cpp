@@ -1,5 +1,5 @@
 /*
-最长公共子序列
+鏈�闀垮叕鍏卞瓙搴忓垪
 */
 #include<iostream>
 #include<algorithm>

@@ -1,16 +1,16 @@
 /*
 Grazing on the Run
-���⣺��n���ƺ��֪��ÿ���ƺ��λ�ã����ǿ��Կ�����x���ϵ�һ�㣩��Bessieλ��Lλ�ã���������������������ȥ�Բ�ƺ������Բ�ƺ��ʱ�䲻�ƣ�·�ϵ�ʱ����ÿ��һ����λ��ʱ��+1��ÿ���ƺ����һ��stalenessֵ�����ֵǡ�õ���Bessie�����ʱ�䣬����Ҫ�����Bessie�����в�ƺ���꣬���в�ƺ��stalenessֵ��С�Ƕ���
-���������Ž�һ���������������������Ծʽ��
-	  ���ԣ�
-	  	��dp[i][j][0]��ʾ��i-j���䶼���꣬���ͣ����iλ�ã����в�ƺ����С��stalenessֵ
-		dp[i][j][1]��ʾi-j���䶼���꣬���ͣ����jλ���ϵ���Сֵ
-		��ô������״̬��ת�Ʒ��̾���
+题意：有n块草坪，知道每块草坪的位置（我们可以看做是x轴上的一点），Bessie位于L位置，他可以向左右两个方向去吃草坪，假设吃草坪的时间不计，路上的时间是每走一个单位，时间+1，每块草坪都有一个staleness值，这个值恰好等于Bessie到达的时间，现在要求的是Bessie将所有草坪吃完，所有草坪的staleness值最小是多少
+分析：最优解一定是区间扩大而不会是跳跃式的
+	  所以：
+	  	用dp[i][j][0]表示从i-j区间都吃完，最后停留在i位置，所有草坪的最小的staleness值
+		dp[i][j][1]表示i-j区间都吃完，最后停留在j位置上的最小值
+		那么这两个状态的转移方程就是
         	dp[i][j][0]=min(dp[i][j][0],dp[i+1][j][0]+(a[i+1]-a[i])*(delay));
         	dp[i][j][0]=min(dp[i][j][0],dp[i+1][j][1]+(a[j]-a[i])*(delay));
             dp[i][j][1]=min(dp[i][j][1],dp[i][j-1][1]+(a[j]-a[j-1])*(delay));
             dp[i][j][1]=min(dp[i][j][1],dp[i][j-1][0]+(a[j]-a[i])*(delay));
-        delay��ʾ֮���ж��ٲ������ӳ�ʱ�䣬�൱����ǰ���������delay=n-(j-i+1)+1=n-j+i 
+        delay表示之后还有多少操作会延长时间，相当于提前计算出来，delay=n-(j-i+1)+1=n-j+i 
 */
 #include<iostream>
 #include<algorithm>

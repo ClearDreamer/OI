@@ -1,9 +1,9 @@
 /*
-[HNOI2008]GT¿¼ÊÔ
-·ÖÎö£ºÁîf[i][j]±íÊ¾³¤¶ÈÎªi£¬×îºój¸öÎª²»¼ªÀûÊý×ÖµÄÇ°j¸ö£¬ÄÇÃ´Èç¹ûÇó³öa[i][j]±íÊ¾²»¼ªÀûÊý×ÖµÄÇ°i¸ö¼ÓÒ»¸ö×Ö·û×ªÒÆµ½²»¼ªÀûÊý×ÖµÄÇ°j¸öµÄ·½°¸Êý
-	  ÄÇÃ´f[i][j]=sigma{f[i-1][k]*a[k][j]} ¿ÉÒÔ¾ØÕó³Ë·¨
-	  ÄÇÃ´aÔõÃ´Çó£ºKMP£¬
-	  Ã¿´ÎÃ¶¾Ù¼ÓÄÄ¸ö×Ö·û(0..9)t£¬Áîj=i,È»ºó±È½ÏµÚj+1Î»==t?£¬µÈÓÚÔòa[i][j+1]++£¬²»µÈÔòj=fail[j]£¬×¢ÒâjµÈÓÚmµÄÊ±ºò²»ÄÜ++£¬´ËÊ±²»ºÏ·¨£¬Í¬Ñù£¬i=[0..m-1] 
+[HNOI2008]GTè€ƒè¯•
+åˆ†æžï¼šä»¤f[i][j]è¡¨ç¤ºé•¿åº¦ä¸ºiï¼Œæœ€åŽjä¸ªä¸ºä¸å‰åˆ©æ•°å­—çš„å‰jä¸ªï¼Œé‚£ä¹ˆå¦‚æžœæ±‚å‡ºa[i][j]è¡¨ç¤ºä¸å‰åˆ©æ•°å­—çš„å‰iä¸ªåŠ ä¸€ä¸ªå­—ç¬¦è½¬ç§»åˆ°ä¸å‰åˆ©æ•°å­—çš„å‰jä¸ªçš„æ–¹æ¡ˆæ•°
+	  é‚£ä¹ˆf[i][j]=sigma{f[i-1][k]*a[k][j]} å¯ä»¥çŸ©é˜µä¹˜æ³•
+	  é‚£ä¹ˆaæ€Žä¹ˆæ±‚ï¼šKMPï¼Œ
+	  æ¯æ¬¡æžšä¸¾åŠ å“ªä¸ªå­—ç¬¦(0..9)tï¼Œä»¤j=i,ç„¶åŽæ¯”è¾ƒç¬¬j+1ä½==t?ï¼Œç­‰äºŽåˆ™a[i][j+1]++ï¼Œä¸ç­‰åˆ™j=fail[j]ï¼Œæ³¨æ„jç­‰äºŽmçš„æ—¶å€™ä¸èƒ½++ï¼Œæ­¤æ—¶ä¸åˆæ³•ï¼ŒåŒæ ·ï¼Œi=[0..m-1] 
 */
 #include<iostream>
 #include<cstdio>
@@ -31,7 +31,7 @@ int main(){
 	for(int i=1;i<=m;i++)scanf("%1d",&str[i]);
 	for(int i=2,j=0;i<=m;i++){//nxt[0]=nxt[1]=0;j=nxt[1]
 		while(j && str[j+1]!=str[i])j=nxt[j];
-		nxt[i]=str[i]==str[j+1]?++j:0;//×¢ÒâÒª×Ô¼Ó£¬ÕâÑùÏÂÒ»´Î¾Í²»ÓÃj=nxt[i-1]ÁË£¬²¢ÇÒÈç¹ûÌõ¼þ²»Âú×ã£¬ÄÇÃ´jÒ»¶¨µÈÓÚ0 
+		nxt[i]=str[i]==str[j+1]?++j:0;//æ³¨æ„è¦è‡ªåŠ ï¼Œè¿™æ ·ä¸‹ä¸€æ¬¡å°±ä¸ç”¨j=nxt[i-1]äº†ï¼Œå¹¶ä¸”å¦‚æžœæ¡ä»¶ä¸æ»¡è¶³ï¼Œé‚£ä¹ˆjä¸€å®šç­‰äºŽ0 
 	}
 	for(int i=0;i<m;i++){//i<m
 		for(int j=0;j<=9;j++){

@@ -1,6 +1,6 @@
 /*
-[SCOI2008]������
-������״ѹ����������С�������жϲ�����״̬�����Ե��Ƹ����㣬���ü�¼״̬�Ƿ���У����Ҵ𰸾���f[1][0] 
+[SCOI2008]奖励关
+分析：状压，这题数据小，不用判断不可行状态，所以倒推更方便，不用记录状态是否可行，而且答案就是f[1][0] 
 */
 #include<iostream>
 #include<cstdio>
@@ -21,7 +21,7 @@ int main(){
 		for(int st=0;st<bin[n];st++){
 			for(int j=1;j<=n;j++){
 				if((st&d[j])==d[j])f[i][st]+=max(f[i+1][st|bin[j-1]]+v[j],f[i+1][st]);
-				else f[i][st]+=f[i+1][st];//ע���������=������Ʒ�µĵ÷ֺ�/��Ʒ����������ȡ����ƷҲ���С��÷֡��� 
+				else f[i][st]+=f[i+1][st];//注意这里，期望=所有物品下的得分和/物品个数，不能取得物品也是有“得分”的 
 			}
 			f[i][st]/=n;
 		}

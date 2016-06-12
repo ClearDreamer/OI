@@ -1,5 +1,5 @@
 /*
-�жϸ������Ƿ����
+判断浮点数是否相等
 */
 #include<iostream>
 #include<cmath>

@@ -1,6 +1,6 @@
 /*
-[JSOI2008]ÇòĞÎ¿Õ¼ä²úÉúÆ÷sphere
-·ÖÎö£º¸ßË¹ÏûÔª 
+[JSOI2008]çƒå½¢ç©ºé—´äº§ç”Ÿå™¨sphere
+åˆ†æï¼šé«˜æ–¯æ¶ˆå…ƒ 
 */
 #include<iostream>
 #include<cstdio>

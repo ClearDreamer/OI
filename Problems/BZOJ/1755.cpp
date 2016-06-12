@@ -1,6 +1,6 @@
 /*
 [Usaco2005 qua]Bank Interest
-·ÖÎö£º¸´Àû¼ÆËã= = 
+åˆ†æï¼šå¤åˆ©è®¡ç®—= = 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,9 +1,9 @@
 /*
-[cqoi2013]������a+b
-������DP
+[cqoi2013]二进制a+b
+分析：DP
 		f[i][a][b][c][j]
-		��ǰö�ٵ�(�������µ�)��iλ��a' b' c'����a,b,c�˼���1��j��ʾ���һλ�Ƿ��н�λ
-		��ʱ����С�� 
+		当前枚举到(二进制下的)第i位，a' b' c'各用a,b,c了几个1，j表示最后一位是否有进位
+		这时的最小答案 
 */
 #include <iostream>
 #include <algorithm>

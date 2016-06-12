@@ -1,5 +1,5 @@
 /*
-[Usaco2008Nov]°²Î¿ÄÌÅ£cheer
+[Usaco2008Nov]å®‰æ…°å¥¶ç‰›cheer
 */
 #include<iostream>
 #include<cstdio>

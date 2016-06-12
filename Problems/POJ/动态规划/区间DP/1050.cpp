@@ -7,10 +7,10 @@ const int MAXN=100;
 int n,a[MAXN+3][MAXN+3];
 int dp(){
 	int ans=0,sum;
-	for(int i=1;i<=n;i++){//Ã¶¾Ù±éÀúÆðÊ¼ÐÐ 
-		for(int j=i;j<=n;j++){//Ã¶¾Ùµ±Ç°ÐÐ 
+	for(int i=1;i<=n;i++){//æžšä¸¾éåŽ†èµ·å§‹è¡Œ 
+		for(int j=i;j<=n;j++){//æžšä¸¾å½“å‰è¡Œ 
 			sum=0;
-			for(int k=1;k<=n;k++){//Ã¶¾ÙÁÐ 
+			for(int k=1;k<=n;k++){//æžšä¸¾åˆ— 
 				int t=a[j][k]-a[i-1][k];
 				sum=max(sum+t,0);
 				ans=max(ans,sum);
@@ -23,7 +23,7 @@ void input(){
 	cin>>n;
 	int t;
 	for(int i=1;i<=n;i++)
-		for(int j=1;j<=n;j++){//Ô¤´¦ÀíÃ¿Ò»ÁÐµÄÇ°×ººÍ 
+		for(int j=1;j<=n;j++){//é¢„å¤„ç†æ¯ä¸€åˆ—çš„å‰ç¼€å’Œ 
 			cin>>t;
 			a[i][j]=a[i-1][j]+t;
 		}

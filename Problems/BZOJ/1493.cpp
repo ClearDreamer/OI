@@ -1,6 +1,6 @@
 /*
-[NOI2007]ÏîÁ´¹¤³§
-·ÖÎö£ºÏß¶ÎÊ÷¿É×ö 
+[NOI2007]é¡¹é“¾å·¥å‚
+åˆ†æï¼šçº¿æ®µæ ‘å¯åš 
 */
 #include<cstdio>
 #include<cstring>
@@ -28,11 +28,11 @@ struct segment_color{
 	}
 };
 struct node{
-    int size;       //ÒÔµ±Ç°µãÎ»¸ùµÄ×ÓÊ÷µÄ´óĞ¡
-    int col;        //µ±Ç°½ÚµãµÄÑÕÉ«
+    int size;       //ä»¥å½“å‰ç‚¹ä½æ ¹çš„å­æ ‘çš„å¤§å°
+    int col;        //å½“å‰èŠ‚ç‚¹çš„é¢œè‰²
     int ch[2],pnt; 
-    bool reverse;   //·´×ª±ê¼Ç
-    int lab;      //ÑÕÉ«±ê¼Ç
+    bool reverse;   //åè½¬æ ‡è®°
+    int lab;      //é¢œè‰²æ ‡è®°
     segment_color w;
 };
 node tr[N];

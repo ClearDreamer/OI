@@ -1,7 +1,7 @@
 /*
 Longest Ordered Subsequence
-ÌâÒâ£ºLIS
-·ÖÎö£ºnlogn·½·¨¼´¿É£¬×¢Òâ0<=x<=10000,½«x+1µ±×÷ÊäÈë¿ÉÒÔ±ÜÃâlower_bound¶Ô0µÄÎóÅĞ£¨ÒòÎªans={0}£© 
+é¢˜æ„ï¼šLIS
+åˆ†æï¼šnlognæ–¹æ³•å³å¯ï¼Œæ³¨æ„0<=x<=10000,å°†x+1å½“ä½œè¾“å…¥å¯ä»¥é¿å…lower_boundå¯¹0çš„è¯¯åˆ¤ï¼ˆå› ä¸ºans={0}ï¼‰ 
 */
 #include<iostream>
 #include<algorithm>

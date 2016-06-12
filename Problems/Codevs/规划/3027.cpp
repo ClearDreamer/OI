@@ -1,8 +1,8 @@
 /*
-�߶θ��� 2
-�������Ȱ��Ҷ˵����� 
-	  opt[i]��ʾ����i����������Ž⣬
-	  ת��Ϊopt[i]=max{opt[j]|j<i&&j.y<=i.x} 
+线段覆盖 2
+分析：先按右端点排序， 
+	  opt[i]表示到第i个区间的最优解，
+	  转移为opt[i]=max{opt[j]|j<i&&j.y<=i.x} 
 */
 #include<iostream>
 #include<algorithm>

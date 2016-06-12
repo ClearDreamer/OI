@@ -1,6 +1,6 @@
 /*
-素数判定 2
-分析：MR素数判定，但是有一组会爆long long 
+绱犳暟鍒ゅ畾 2
+鍒嗘瀽锛歁R绱犳暟鍒ゅ畾锛屼絾鏄湁涓�缁勪細鐖唋ong long 
 */
 #include<iostream>
 #include<algorithm>

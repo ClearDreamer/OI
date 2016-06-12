@@ -1,6 +1,6 @@
 /*
-Fibonacci数列 2
-分析：同1250 
+Fibonacci鏁板垪 2
+鍒嗘瀽锛氬悓1250 
 */
 #include<cstdio>
 #include<cstring>

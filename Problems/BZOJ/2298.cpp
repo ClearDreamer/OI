@@ -1,8 +1,8 @@
 /*
 [HAOI2011]problem a
-·ÖÎö£ºÇó×î¶àËµÕæ»°µÄÈËÊı£¬´ğ°¸¼´Îªn-ans
-		Éèdp[i]±íÊ¾ÔÚÇ°iÃûÖĞ×î¶àÓĞ¶àÉÙÈËËµÕæ»°
-		dp[i] = max{dp[j-1]+sum[j][i]} ÆäÖĞsum[j][i]±íÊ¾Ãû´ÎÇø¼äÎª[j, i]µÄÈËÊı
+åˆ†æï¼šæ±‚æœ€å¤šè¯´çœŸè¯çš„äººæ•°ï¼Œç­”æ¡ˆå³ä¸ºn-ans
+		è®¾dp[i]è¡¨ç¤ºåœ¨å‰iåä¸­æœ€å¤šæœ‰å¤šå°‘äººè¯´çœŸè¯
+		dp[i] = max{dp[j-1]+sum[j][i]} å…¶ä¸­sum[j][i]è¡¨ç¤ºåæ¬¡åŒºé—´ä¸º[j, i]çš„äººæ•°
 */
 #include<iostream>
 #include<algorithm>
@@ -20,7 +20,7 @@ int main(){
     scanf("%d",&n);
     for(int i=1,a,b;i<=n;i++){
         scanf("%d%d",&a,&b);
-        int l=a+1,r=n-b;//ºÍËûÏàµÈµÄÈËÓĞ[a+1..n-b]£¬Èç¹ûÊÇÕæ»°£¬ËûÃÇËµµÄÓ¦¸ÃÒ»Ñù 
+        int l=a+1,r=n-b;//å’Œä»–ç›¸ç­‰çš„äººæœ‰[a+1..n-b]ï¼Œå¦‚æœæ˜¯çœŸè¯ï¼Œä»–ä»¬è¯´çš„åº”è¯¥ä¸€æ · 
         if(l>r)continue;
         s[make_pair(l,r)]++;
         if(s[make_pair(l,r)]==1)q[r].push_back(l);
@@ -28,7 +28,7 @@ int main(){
     for(int i=1;i<=n;i++){
         opt[i]=opt[i-1];
         for(int j=0;j<q[i].size();j++)
-            opt[i]=max(opt[i],opt[q[i][j]-1]+min(i-q[i][j]+1,s[make_pair(q[i][j],i)]));//ºóÃæÒªÈ¡min 
+            opt[i]=max(opt[i],opt[q[i][j]-1]+min(i-q[i][j]+1,s[make_pair(q[i][j],i)]));//åé¢è¦å–min 
     }
     printf("%d\n",n-opt[n]);
     return 0;

@@ -1,6 +1,6 @@
 /*
 Team Queue
-ÌâÒâ£º¶à¸ö¶ÓÁĞµÄÄ£Äâ 
+é¢˜æ„ï¼šå¤šä¸ªé˜Ÿåˆ—çš„æ¨¡æ‹Ÿ 
 */
 #include<iostream>  
 #include<cstdio>  
@@ -12,7 +12,7 @@ using namespace std;
 const int MAXN=1000;  
 int n;  
 bitset<MAXN+3> vis;
-queue<int> q[MAXN],que;//que: ×Ü¶ÓÁĞ,ÀïÃæ´æµÄÊÇ×Ó¶ÓÁĞµÄ±àºÅ q[i]: µÚi¸ö×Ó¶ÓÁĞ,ÀïÃæ´æµÄÊÇÔªËØÖµ
+queue<int> q[MAXN],que;//que: æ€»é˜Ÿåˆ—,é‡Œé¢å­˜çš„æ˜¯å­é˜Ÿåˆ—çš„ç¼–å· q[i]: ç¬¬iä¸ªå­é˜Ÿåˆ—,é‡Œé¢å­˜çš„æ˜¯å…ƒç´ å€¼
 map<int,int> team;
 int main(){  
     int kase=0;  

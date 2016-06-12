@@ -1,7 +1,7 @@
 /*
-[Usaco2008 Dec]Patting Heads ÇáÅÄÅ£Í·
-·ÖÎö£º¶ÔÓÚÃ¿¸öa[i]£¬Ëü¶ÔÓÚËùÓÐans[j]µÄ¹±Ï×Îª1£¨j%i=0£©
-		È»ºóÎÒÃÇ¿ÉÒÔÓÃÒ»ÖÖÀàËÆÓÚÉ¸·¨µÄ·½·¨¶ÔÃ¿¸öa[i]½øÐÐ´¦Àí 
+[Usaco2008 Dec]Patting Heads è½»æ‹ç‰›å¤´
+åˆ†æžï¼šå¯¹äºŽæ¯ä¸ªa[i]ï¼Œå®ƒå¯¹äºŽæ‰€æœ‰ans[j]çš„è´¡çŒ®ä¸º1ï¼ˆj%i=0ï¼‰
+		ç„¶åŽæˆ‘ä»¬å¯ä»¥ç”¨ä¸€ç§ç±»ä¼¼äºŽç­›æ³•çš„æ–¹æ³•å¯¹æ¯ä¸ªa[i]è¿›è¡Œå¤„ç† 
 */
 #include<iostream>
 #include<algorithm>

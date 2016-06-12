@@ -1,5 +1,5 @@
 /*
-m进制转十进制
+m杩涘埗杞崄杩涘埗
 */
 #include<iostream>
 #include<cstring>

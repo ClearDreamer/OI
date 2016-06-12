@@ -1,6 +1,6 @@
 /*
-[ZJOI2006]ÎïÁ÷ÔËÊätrans
-·ÖÎö£º×î¶ÌÂ·Ô¤´¦Àí+DP 
+[ZJOI2006]ç‰©æµè¿è¾“trans
+åˆ†æï¼šæœ€çŸ­è·¯é¢„å¤„ç†+DP 
 */
 #include<iostream>
 #include<algorithm>

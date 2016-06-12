@@ -1,6 +1,6 @@
 /*
-集合论与图论
-分析：刚开始想的Floyd闭包，但是超时了 
+闆嗗悎璁轰笌鍥捐
+鍒嗘瀽锛氬垰寮�濮嬫兂鐨凢loyd闂寘锛屼絾鏄秴鏃朵簡 
 
 bool floyd(){
 	for(int k=1;k<=n;k++)
@@ -9,7 +9,7 @@ bool floyd(){
 				if(d[i][j]==0&&(d[i][k]&d[k][j])==1)return false;
 	return true;
 }
-	  然后就改成枚举，就AC了。注意memset不要用于bool数组 
+	  鐒跺悗灏辨敼鎴愭灇涓撅紝灏盇C浜嗐�傛敞鎰弇emset涓嶈鐢ㄤ簬bool鏁扮粍 
 */
 #include<iostream>
 #include<cstring>

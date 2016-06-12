@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Dec]±¦Ê¯ÊÖïí
-·ÖÎö£º01±³°ü£¬È»¶øÆäÊµ¸´ÔÓ¶ÈÊÇnmµÄ= = 
+[Usaco2007 Dec]å®çŸ³æ‰‹é•¯
+åˆ†æžï¼š01èƒŒåŒ…ï¼Œç„¶è€Œå…¶å®žå¤æ‚åº¦æ˜¯nmçš„= = 
 */
 #include<cstdio>
 #include<algorithm>

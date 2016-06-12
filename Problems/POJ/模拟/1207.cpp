@@ -1,7 +1,7 @@
 /*
 The 3n + 1 problem
-ÌâÒâ£º¼ÆËã¶àÉÙ²½µ½´ï1£¬l..rÖÐµÄ×î´óÖµ 
-·ÖÎö£º±©Á¦£¬µ«²»ÖªµÀ´íÔÚÄÄ¡£¡£¡£ 
+é¢˜æ„ï¼šè®¡ç®—å¤šå°‘æ­¥åˆ°è¾¾1ï¼Œl..rä¸­çš„æœ€å¤§å€¼ 
+åˆ†æžï¼šæš´åŠ›ï¼Œä½†ä¸çŸ¥é“é”™åœ¨å“ªã€‚ã€‚ã€‚ 
 */
 #include<iostream>
 using namespace std;

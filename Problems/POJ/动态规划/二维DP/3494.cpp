@@ -1,7 +1,7 @@
 /*
-Largest Submatrix of All 1’s
-题意：最大子矩阵
-分析：模板题
+Largest Submatrix of All 1鈥檚
+棰樻剰锛氭渶澶у瓙鐭╅樀
+鍒嗘瀽锛氭ā鏉块
 */
 #include<cstdio>
 #include<cstring>

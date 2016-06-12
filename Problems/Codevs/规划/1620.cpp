@@ -1,6 +1,6 @@
 /*
-轮船问题
-分析：先按x排序，然后找y的LIS 
+杞埞闂
+鍒嗘瀽锛氬厛鎸墄鎺掑簭锛岀劧鍚庢壘y鐨凩IS 
 */
 #include<iostream>
 #include<algorithm>

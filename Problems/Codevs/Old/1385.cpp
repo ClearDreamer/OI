@@ -1,12 +1,12 @@
 /*
-¼·Å£ÄÌ
+æŒ¤ç‰›å¥¶
 */ 
 #include<iostream>
 #include<algorithm>
 using namespace std;
 int f[5003],e[5003],r[5003],n,ll=0,kk=0;
 bool cmp(const int i,const int j){
-	return (f[i]<f[j])||(f[i]==f[j]&&e[i]>e[j]);//ÒÔ×ó¶ËµãÅÅĞò£¬×ó¶ËµãÏàµÈÊ±ÒÔ³¤¶È×î´óÓÅÏÈ 
+	return (f[i]<f[j])||(f[i]==f[j]&&e[i]>e[j]);//ä»¥å·¦ç«¯ç‚¹æ’åºï¼Œå·¦ç«¯ç‚¹ç›¸ç­‰æ—¶ä»¥é•¿åº¦æœ€å¤§ä¼˜å…ˆ 
 }
 int main(){
 	cin>>n;
@@ -17,17 +17,17 @@ int main(){
 	sort(r+1,r+n+1,cmp);
 	int fr=0,en=0;
 	if(n==1){cout<<e[1]-f[1]<<" "<<0;return 0;}
-	fr=f[r[1]];//´¦ÀíµÚÒ»¸ö 
+	fr=f[r[1]];//å¤„ç†ç¬¬ä¸€ä¸ª 
 	en=e[r[1]];
 	ll=en-fr;
 	for(int i=2;i<=n;i++){
 		int t=r[i];
-		if(f[t]>=fr&&e[t]<=en)continue;//´ËÇø¼äÒÑ°üº¬ 
-		if(f[t]<=en)en=e[t];//´ËÇø¼äµÄÆğµãÔÚµ±Ç°Çø¼äÄÚ£¬ÍØÕ¹ÓÒ¶Ëµã 
-		else{//³öÏÖÁË¶Ï¿ªÇøÓò 
-			ll=max(ll,en-fr);//¼ÇÂ¼×î³¤Çø¼ä 
-			kk=max(kk,f[t]-en);//¼ÇÂ¼×î´ó¿ÕÈ± 
-			fr=f[t];en=e[t];//³õÊ¼»¯ĞÂÇø¼ä 
+		if(f[t]>=fr&&e[t]<=en)continue;//æ­¤åŒºé—´å·²åŒ…å« 
+		if(f[t]<=en)en=e[t];//æ­¤åŒºé—´çš„èµ·ç‚¹åœ¨å½“å‰åŒºé—´å†…ï¼Œæ‹“å±•å³ç«¯ç‚¹ 
+		else{//å‡ºç°äº†æ–­å¼€åŒºåŸŸ 
+			ll=max(ll,en-fr);//è®°å½•æœ€é•¿åŒºé—´ 
+			kk=max(kk,f[t]-en);//è®°å½•æœ€å¤§ç©ºç¼º 
+			fr=f[t];en=e[t];//åˆå§‹åŒ–æ–°åŒºé—´ 
 		}
 	}
 	cout<<ll<<" "<<kk;

@@ -8,7 +8,7 @@ using namespace std;
 const int MAXN=100,INF=1<<20;
 int n,m,r,rmb[MAXN+3],time[MAXN+3],rp[MAXN+3];
 int mxp[MAXN+3][MAXN+3],mxt[MAXN+3][MAXN+3];
-//¼ÇÂ¼»¨·ÑiÔª£¬»¨·ÑjRP£¬ËùÄÜµÃµ½µÄ×î¶àµÄÈËÊýmxp[i][j]£¬ºÍ´ïµ½Õâ¸öÈËÊýµÄ×îÐ¡Ê±¼ämxt[i][j] 
+//è®°å½•èŠ±è´¹iå…ƒï¼ŒèŠ±è´¹jRPï¼Œæ‰€èƒ½å¾—åˆ°çš„æœ€å¤šçš„äººæ•°mxp[i][j]ï¼Œå’Œè¾¾åˆ°è¿™ä¸ªäººæ•°çš„æœ€å°æ—¶é—´mxt[i][j] 
 void init(){
 	cin>>n;
 	for(int i=1;i<=n;i++){
@@ -28,11 +28,11 @@ int solve(){
 			for(int k=r;k>=rp[i];k--){
 				int ep=mxp[j-rmb[i]][k-rp[i]]+1,
 				    et=mxt[j-rmb[i]][k-rp[i]]+time[i];
-				if(mxp[j][k]<ep){//ÏÈÓÅ»¯ÈËÊý 
+				if(mxp[j][k]<ep){//å…ˆä¼˜åŒ–äººæ•° 
 					mxp[j][k]=ep;
 					mxt[j][k]=et;
 				}
-				if(mxp[j][k]==ep&&mxt[j][k]>et){//ÈËÊý×îÓÅÊ±ÓÅ»¯Ê±¼ä 
+				if(mxp[j][k]==ep&&mxt[j][k]>et){//äººæ•°æœ€ä¼˜æ—¶ä¼˜åŒ–æ—¶é—´ 
 					mxt[j][k]=et;
 				}
 			}

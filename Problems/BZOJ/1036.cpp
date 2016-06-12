@@ -1,6 +1,6 @@
 /*
-[ZJOI2008]树的统计Count
-分析：树链剖分，线段树单点修改，区间查询 
+[ZJOI2008]鏍戠殑缁熻Count
+鍒嗘瀽锛氭爲閾惧墫鍒嗭紝绾挎鏍戝崟鐐逛慨鏀癸紝鍖洪棿鏌ヨ 
 */ 
 #include<cstdio>
 #include<cstring>

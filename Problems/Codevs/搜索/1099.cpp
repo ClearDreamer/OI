@@ -1,5 +1,5 @@
 /*
-字串变换
+瀛椾覆鍙樻崲
 */
 #include<iostream>
 #include<map>
@@ -37,7 +37,7 @@ int bfs(){
 			}
 		}
 	}
-	return -1;//注意这里 
+	return -1;//娉ㄦ剰杩欓噷 
 }
 int main(){
 	cin>>a>>b;

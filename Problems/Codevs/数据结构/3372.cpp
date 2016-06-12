@@ -1,6 +1,6 @@
 /*
-Ñ¡Ñ§°Ô 
-·ÖÎö£º²¢²é¼¯Î¬»¤´óÐ¡£¬È»ºó×öÁãÒ»±³°ü 
+é€‰å­¦éœ¸ 
+åˆ†æžï¼šå¹¶æŸ¥é›†ç»´æŠ¤å¤§å°ï¼Œç„¶åŽåšé›¶ä¸€èƒŒåŒ… 
 */
 #include<iostream>
 #include<algorithm>
@@ -12,7 +12,7 @@ using namespace std;
 const int INF=0x3f3f3f3f,MAXN=30000;
 struct Uniset{
 	int pa[MAXN+3],n,cnt[MAXN+3];
-	void init(int n){//ÕâÀïÊÇ1..n 
+	void init(int n){//è¿™é‡Œæ˜¯1..n 
 		this->n=n;
 		for(int i=1;i<=n;i++){
 			pa[i]=i;cnt[i]=1; 

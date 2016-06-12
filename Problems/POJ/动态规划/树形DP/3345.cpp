@@ -1,10 +1,10 @@
 /*
 Bribing FIPA
-ÌâÒâ£ºÏÖÔÚÓÐn¸ö´å×Ó£¬ÄãÏëÒªÓÃÊÕÂòm¸ö´å×ÓÎªÄãÍ¶Æ±£¬ÆäÖÐÊÕÂòµÚi¸ö´å×ÓµÄ´ú¼ÛÊÇval[i]¡£µ«ÊÇÓÐÐ©´å×Ó´æÔÚ´ÓÊô¹ØÏµ£¬Èç¹ûB´ÓÊôÓÚA¹ú£¬ÔòÊÕÂòÁËAÒ²ÒâÎ¶×ÅÂòÍ¨ÁËB£¬¶øÇÒÕâÐ©¹ØÏµÊÇ´«µÝµÄ¡£ÎÊÄã×îÐ¡Òª¸¶³öµÄ´ú¼ÛÊÇ¶àÉÙ£¿
-·ÖÎö£º¾­µäÊ÷ÐÎDP£¬ÅäºÏ±³°ü£¬dp[i][j]±íÊ¾ÒÔµÚi½ÚµãÎª¸ùµÄ×ÓÊ÷£¬Èç¹ûÒªÊÕÂòj¸ö¹ú¼ÒµÄ×îÐ¡´ú¼Û¡£
-	  dp[u][j+k] = min(dp[u][j+k], val[u], dp[v][k]+dp[u][j])¡£
-	  ÕâÀïÒªºÜ×¢ÒâÒ»µã£¬¾ÍÊÇÔÚ°Ñ×ÓÊ÷kµ±Îª±³°üµÄÊ±ºò£¬×ÓÊýj±íÊ¾µÄËùÓÐ±³°ü²»ÄÜÓÐÏà»¥Ó°Ïì¡£ËùÒÔÐèÒªÏÈÔ¤´¦ÀíÒ»ÏÂ¡£¼´½«Ö®Ç°µÄ½á¹û´æµ½ÁíÒ»¸öÊý×é
-	  Ò²¿ÉÒÔÍ¨¹ýÄæÏò×Å±³°ü±ÜÃâÕâ¸öÎÊÌâ£¨×ÓÎÊÌâÖØµþ£©£¬µ«ÊÇÀí½âÓÐµãÂé·³£¬²¢ÇÒÒªÏÈ´¦Àí³ö×Ü×ÓÊ÷½ÚµãÊý 
+é¢˜æ„ï¼šçŽ°åœ¨æœ‰nä¸ªæ‘å­ï¼Œä½ æƒ³è¦ç”¨æ”¶ä¹°mä¸ªæ‘å­ä¸ºä½ æŠ•ç¥¨ï¼Œå…¶ä¸­æ”¶ä¹°ç¬¬iä¸ªæ‘å­çš„ä»£ä»·æ˜¯val[i]ã€‚ä½†æ˜¯æœ‰äº›æ‘å­å­˜åœ¨ä»Žå±žå…³ç³»ï¼Œå¦‚æžœBä»Žå±žäºŽAå›½ï¼Œåˆ™æ”¶ä¹°äº†Aä¹Ÿæ„å‘³ç€ä¹°é€šäº†Bï¼Œè€Œä¸”è¿™äº›å…³ç³»æ˜¯ä¼ é€’çš„ã€‚é—®ä½ æœ€å°è¦ä»˜å‡ºçš„ä»£ä»·æ˜¯å¤šå°‘ï¼Ÿ
+åˆ†æžï¼šç»å…¸æ ‘å½¢DPï¼Œé…åˆèƒŒåŒ…ï¼Œdp[i][j]è¡¨ç¤ºä»¥ç¬¬ièŠ‚ç‚¹ä¸ºæ ¹çš„å­æ ‘ï¼Œå¦‚æžœè¦æ”¶ä¹°jä¸ªå›½å®¶çš„æœ€å°ä»£ä»·ã€‚
+	  dp[u][j+k] = min(dp[u][j+k], val[u], dp[v][k]+dp[u][j])ã€‚
+	  è¿™é‡Œè¦å¾ˆæ³¨æ„ä¸€ç‚¹ï¼Œå°±æ˜¯åœ¨æŠŠå­æ ‘kå½“ä¸ºèƒŒåŒ…çš„æ—¶å€™ï¼Œå­æ•°jè¡¨ç¤ºçš„æ‰€æœ‰èƒŒåŒ…ä¸èƒ½æœ‰ç›¸äº’å½±å“ã€‚æ‰€ä»¥éœ€è¦å…ˆé¢„å¤„ç†ä¸€ä¸‹ã€‚å³å°†ä¹‹å‰çš„ç»“æžœå­˜åˆ°å¦ä¸€ä¸ªæ•°ç»„
+	  ä¹Ÿå¯ä»¥é€šè¿‡é€†å‘ç€èƒŒåŒ…é¿å…è¿™ä¸ªé—®é¢˜ï¼ˆå­é—®é¢˜é‡å ï¼‰ï¼Œä½†æ˜¯ç†è§£æœ‰ç‚¹éº»çƒ¦ï¼Œå¹¶ä¸”è¦å…ˆå¤„ç†å‡ºæ€»å­æ ‘èŠ‚ç‚¹æ•° 
 */
 #include<iostream>
 #include<cstring>
@@ -32,7 +32,7 @@ void dfs(int u){
         //printf("%d,",v);
         dfs(v);
         num[u]+=num[v];
-        memcpy(tmp,opt[u],(num[u]+1)*sizeof(int));//Ô¤´¦Àíopt[u][j]
+        memcpy(tmp,opt[u],(num[u]+1)*sizeof(int));//é¢„å¤„ç†opt[u][j]
         for(int j=0;j<=num[u]-num[v];j++)
             for(int k=1;k<=num[v];k++)
                 opt[u][j+k]=min(opt[u][j+k],min(val[u],opt[v][k]+tmp[j]));
@@ -43,7 +43,7 @@ map<string,int> mp;
 string t;
 char str[105];
 int main(){
-    while(gets(str)&&str[0] != '#'){//sscanf()º¯ÊýÓ¦ÓÃÔÚÕâÀïºÜÊÊºÏ£º°Ñstrµ±ÎªÊäÈëÁ÷¡£
+    while(gets(str)&&str[0] != '#'){//sscanf()å‡½æ•°åº”ç”¨åœ¨è¿™é‡Œå¾ˆé€‚åˆï¼šæŠŠstrå½“ä¸ºè¾“å…¥æµã€‚
         sscanf(str,"%d%d",&n,&m);
         mp.clear();isroot=0;
         for(int i=0;i<=n;i++)g[i].clear();

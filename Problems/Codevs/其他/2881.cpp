@@ -1,5 +1,5 @@
 /*
-这是一道小学应用题
+杩欐槸涓�閬撳皬瀛﹀簲鐢ㄩ
 */
 #include<stdio.h>
 int main(){

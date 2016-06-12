@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Mar]The Loathesome Hay Baler麻烦的干草打包机
-分析：bfs，但是注意齿轮带动判的是相切 
+[Usaco2008 Mar]The Loathesome Hay Baler楹荤儲鐨勫共鑽夋墦鍖呮満
+鍒嗘瀽锛歜fs锛屼絾鏄敞鎰忛娇杞甫鍔ㄥ垽鐨勬槸鐩稿垏 
 */
 #include<iostream>
 #include<cstdio>

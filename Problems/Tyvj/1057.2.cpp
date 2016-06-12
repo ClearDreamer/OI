@@ -1,7 +1,7 @@
 /*
-½ðÃ÷µÄÔ¤Ëã·½°¸
-·½·¨2£ºÐÂµÄ×ªÒÆ·½³Ì 
-²âÊÔÍ¨¹ý 
+é‡‘æ˜Žçš„é¢„ç®—æ–¹æ¡ˆ
+æ–¹æ³•2ï¼šæ–°çš„è½¬ç§»æ–¹ç¨‹ 
+æµ‹è¯•é€šè¿‡ 
 */
 #include<iostream>
 #include<algorithm>
@@ -23,7 +23,7 @@ void read(){
 		cin>>th[i].v>>th[i].p>>th[i].q;
 		th[i].w=th[i].v*th[i].p;
 		e=th[i].q;
-		if(e!=0){//¼ÇÂ¼Ã¿¸öÖ÷¼þµÄº¢×Ó 
+		if(e!=0){//è®°å½•æ¯ä¸ªä¸»ä»¶çš„å­©å­ 
 			if(th[e].ch1==0)th[e].ch1=i;
 			else th[e].ch2=i;
 		}
@@ -36,7 +36,7 @@ int solve(){
 		thi &t=th[i];
 		for(int j=n;j>=t.v;j--){
 			int &a=opt[j];
-			//ÎåÖÖ×ªÒÆ£¬×¢ÒâÒª±£Ö¤Ìå»ýÄÜ×°ÏÂ 
+			//äº”ç§è½¬ç§»ï¼Œæ³¨æ„è¦ä¿è¯ä½“ç§¯èƒ½è£…ä¸‹ 
 			a=(tt=j-t.v)>=0?max(a,opt[tt]+t.w):a;
 			a=(tt=j-t.v-th[t.ch1].v)>=0?max(a,opt[tt]+t.w+th[t.ch1].w):a;
 			a=(tt=j-t.v-th[t.ch2].v)>=0?max(a,opt[tt]+t.w+th[t.ch2].w):a;

@@ -1,9 +1,9 @@
 /*
 Exponentiation
-���⣺С�����6λ�������ݵ�׼ȷֵ
-������ת���������߾��ˣ�С������Լ��������ע��ĩβ0
-	  ����ͬPOJ1001�����´���ͬ 
-	  ��ʾ���³��򲢲��ܹ�����������HDU��TLE 
+题意：小数点后6位的数的幂的准确值
+分析：转成整数，高精乘，小数点可以计算出来，注意末尾0
+	  此题同POJ1001，以下代码同 
+	  表示以下程序并不能过样例，交上HDU，TLE 
 */
 #include<iostream>
 #include<cstring>

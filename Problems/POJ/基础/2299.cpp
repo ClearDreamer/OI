@@ -1,7 +1,7 @@
 /*
 Ultra-QuickSort
-ÌâÒâ£º¸øÒ»Ð©(n¸ö)ÂÒÐòµÄÊý£¬ÈÃÄãÇóÃ°ÅÝÅÅÐòÐèÒª½»»»ÊýµÄ´ÎÊý
-·ÖÎö£ºÇóÄæÐò¶Ô¸öÊý£¬ÀëÉ¢»¯ºóBIT 
+é¢˜æ„ï¼šç»™ä¸€äº›(nä¸ª)ä¹±åºçš„æ•°ï¼Œè®©ä½ æ±‚å†’æ³¡æŽ’åºéœ€è¦äº¤æ¢æ•°çš„æ¬¡æ•°
+åˆ†æžï¼šæ±‚é€†åºå¯¹ä¸ªæ•°ï¼Œç¦»æ•£åŒ–åŽBIT 
 */
 #include<iostream>
 #include<algorithm>

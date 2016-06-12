@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Open]County Fair Events 参加节日庆祝
-分析：按右端点排序，DP 
+[Usaco2006 Open]County Fair Events 鍙傚姞鑺傛棩搴嗙
+鍒嗘瀽锛氭寜鍙崇鐐规帓搴忥紝DP 
 */
 #include<iostream>
 #include<cstdio>

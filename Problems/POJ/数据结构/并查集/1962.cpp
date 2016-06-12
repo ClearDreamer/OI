@@ -1,6 +1,6 @@
 /*
-���⣺����n̨���ԣ���ʼ�������Լ���Ϊ���ġ�Ȼ��һЩѯ�ʣ�E x����x�������Ķ�Զ�� I x y ����һ��x��y�ĳ���Ϊ|x-y|(mod 1000)�ıߣ���ʹ��ԭ��x��Ⱥ������ת�Ƶ�y��Ⱥ�ϡ�
-���������鼯��+ά��·������a[x]=a[fa[x]]+a[x] 
+题意：给定n台电脑，初始都是以自己作为中心。然后一些询问，E x，问x距离中心多远。 I x y 建立一条x到y的长度为|x-y|(mod 1000)的边，且使得原来x机群的中心转移到y机群上。
+分析：并查集，+维护路径长：a[x]=a[fa[x]]+a[x] 
 */
 #include<cstdio>
 #include<algorithm>

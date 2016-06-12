@@ -1,7 +1,7 @@
 /*
 Lining Up
-题意：给N各点，求最多有多少个点在同一条直线上
-分析：解析几何暴力算 
+棰樻剰锛氱粰N鍚勭偣锛屾眰鏈�澶氭湁澶氬皯涓偣鍦ㄥ悓涓�鏉＄洿绾夸笂
+鍒嗘瀽锛氳В鏋愬嚑浣曟毚鍔涚畻 
 */
 #include<iostream>
 #include<algorithm>

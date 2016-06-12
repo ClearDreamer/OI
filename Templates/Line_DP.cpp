@@ -8,7 +8,7 @@
 using namespace std;
 const int MAXN=1000,INF=0x3f3f3f3f;
 
-namespace LIS{//严格最长上升子序列 
+namespace LIS{//涓ユ牸鏈�闀夸笂鍗囧瓙搴忓垪 
 	int dp[MAXN+3];
 	int nsqr(int *a,int n){//solve a[1..n]
 		memset(dp,0,sizeof(dp));
@@ -21,7 +21,7 @@ namespace LIS{//严格最长上升子序列
 		return *max_element(dp+1,dp+n+1);
 	}
 	int nlogn(int *a,int n){
-		memset(dp,0,sizeof(dp));int tp=0;//并不用赋值为-INF 
+		memset(dp,0,sizeof(dp));int tp=0;//骞朵笉鐢ㄨ祴鍊间负-INF 
 		for(int i=1;i<=n;i++){
 			int t=lower_bound(dp+1,dp+tp+1,a[i])-dp;
 			if(t==tp+1)tp++;

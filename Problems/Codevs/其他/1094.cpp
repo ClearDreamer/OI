@@ -1,6 +1,6 @@
 /*
-FBIÊ÷
-·ÖÎö£ºÖ±½ÓÄ£Äâ£¬²»Òª¹Ün£¬Ö±½Óstrlen 
+FBIæ ‘
+åˆ†æï¼šç›´æ¥æ¨¡æ‹Ÿï¼Œä¸è¦ç®¡nï¼Œç›´æ¥strlen 
 */
 #include<iostream>
 #include<cstdio>

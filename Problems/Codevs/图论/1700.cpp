@@ -1,6 +1,6 @@
 /*
-Ê©¹¤·½°¸µÚ¶ş¼¾
-·ÖÎö£ºÏÈÇó×îĞ¡Éú³ÉÊ÷£¬ÔÚÊ÷ÉÏÕÒ×î³¤Á´£¬Æä³¤¶ÈÖĞµãµ½Á½±ß¾àÀë×î´óÖµÎªµÚ¶şÎÊ´ğ°¸ 
+æ–½å·¥æ–¹æ¡ˆç¬¬äºŒå­£
+åˆ†æï¼šå…ˆæ±‚æœ€å°ç”Ÿæˆæ ‘ï¼Œåœ¨æ ‘ä¸Šæ‰¾æœ€é•¿é“¾ï¼Œå…¶é•¿åº¦ä¸­ç‚¹åˆ°ä¸¤è¾¹è·ç¦»æœ€å¤§å€¼ä¸ºç¬¬äºŒé—®ç­”æ¡ˆ 
 */ 
 /*#include<iostream>
 #include<cstring>
@@ -97,22 +97,22 @@ int main(){
 using namespace std;
 int n, m;
 struct edge{int x,y,z;}a[200001];
-struct node{int p,w;}e;//pÊÇµã£¬wÎªÈ¨ 
+struct node{int p,w;}e;//pæ˜¯ç‚¹ï¼Œwä¸ºæƒ 
 vector<node>h[100001];
-int p[100001],d[100001],b[100001];//d×î´óÉî¶È£¬b×î´óÉî¶ÈµÄµã;
+int p[100001],d[100001],b[100001];//dæœ€å¤§æ·±åº¦ï¼Œbæœ€å¤§æ·±åº¦çš„ç‚¹;
 bool cmp(const edge &a, const edge &b){return a.z<b.z;}
 int search(int a){return p[a]==0?a:p[a]=search(p[a]);}
 void treedp(int c){
      int i,j;d[c]=-1;
      for(i=0;i<h[c].size();i++)
-         if(d[j=h[c][i].p]==0){//²»»Ø·Ã 
+         if(d[j=h[c][i].p]==0){//ä¸å›è®¿ 
 		 	treedp(j);p[j]=c;
             if(d[j]+h[c][i].w>d[c]){
                d[c]=d[j]+h[c][i].w;
                b[c]=b[j];
             }
          }
-     if(d[c]<0){d[c]=0;b[c]=c;}//Ò¶×Ó
+     if(d[c]<0){d[c]=0;b[c]=c;}//å¶å­
 } 
 int main(){
     int i,u,v,j;

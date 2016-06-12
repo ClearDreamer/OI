@@ -1,9 +1,9 @@
 /*
-[Noi2014]�����������
-�����������������̿�����nm��ʱ�������������ע�ⲻҪ���ȡģ��Ȼ��T
-		���Żᷢ��һ���Ƚ϶��ȵ����ʣ����Ǵ�1��ʼȡ��n*m����ȡ��ȡ��ȡn+m-1�������ŵ�
-		��ôֻҪ����ģ��һ�¼���
-		ע��2500�������ֻ�ܿ�����Ҫѭ������T T����һ�� ��95M�� 
+[Noi2014]随机数生成器
+分析：首先整个棋盘可以在nm的时间内求出，但是注意不要疯狂取模不然会T
+		接着会发现一个比较逗比的性质，就是从1开始取到n*m，能取就取共取n+m-1个是最优的
+		那么只要这样模拟一下即可
+		注意2500万的数组只能开俩，要循环利用T T，（一个 是95M） 
 */
 #include<iostream>
 #include<cstdio>
@@ -43,7 +43,7 @@ int main(){
 		if(x[i]%m)a=x[i]/m+1;
 		else a=x[i]/m;
 		b=x[i]%m;if(!b)b+=m;
-		if(b<=up[a]&&b>=down[a]){//��֤û���õ�(a,b)����� 
+		if(b<=up[a]&&b>=down[a]){//保证没有用到(a,b)这个点 
 			add(a,b);
 			ans[++top]=i;
 			if(top==n+m-1)break;

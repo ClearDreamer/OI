@@ -1,9 +1,9 @@
 /*
 Sightseeing trip
-���⣺������ͼ��С��
-������Floyd����չ����Ϊfloyd����㵽kʱ��i->j�����·�Ͽ϶�û��k���������ǿ������һ����ٸ��¡�������ڵĻ�����ô�϶���i->j  Ȼ��j->k->i��������֤��i->j����·������k��
-	  ������ i �͵� j ����С�������ǿ��Կ����� i �� j ֮������·�ʹζ�·����ϣ�ͨ�� floyd ������������֮�����̾��룬��ô����ֻҪ�ҵ����·�����һ�����·����֤ i �� j ֮��ɴＴ�ɡ����� floyd ѭ����ͬʱ�������� ��Ȩֵ ��С�����·Ȩֵ+�ζ�·Ȩֵ=��С��Ȩֵ��Ϊ��׼��һֱ����ÿ�����ǰ����Ҳ���Ǽ�¼ i �� j �����·�����Լ����ܹ��ɳ� i �� j �ĵ� k ��k ���� i �� j �����·���У��д�����С���Ǹ���Ҳ���� i �� j ֮��Ĵζ�·����Ȼ�󰴻�����Ȼ˳��������ɡ�
-	  ���Լ��Ĵ��벻֪ΪʲôWA������˼��һ�� 
+题意：求无向图最小环
+分析：Floyd的扩展：因为floyd的外层到k时，i->j的最短路上肯定没有k。所以我们可以先找环，再更新。如果存在的话，那么肯定是i->j  然后j->k->i。这样保证了i->j这条路不经过k。
+	  包含点 i 和点 j 的最小环，我们可以看成是 i 到 j 之间的最短路和次短路的组合，通过 floyd 可求任意两点之间的最短距离，那么我们只要找到最短路径外的一条最短路来保证 i 和 j 之间可达即可。在做 floyd 循环的同时，我们以 环权值 最小（最短路权值+次短路权值=最小环权值）为标准，一直更新每个点的前驱，也就是记录 i 到 j 的最短路径，以及，能够松弛 i 和 j 的点 k （k 不在 i 到 j 的最短路径中）中代价最小的那个（也就是 i 到 j 之间的次短路），然后按环的自然顺序输出即可。
+	  但自己的代码不知为什么WA。。意思都一样 
 	  
 */
 #include<iostream>
@@ -95,7 +95,7 @@ int main(){
         memset(path,0,sizeof(path));
         for(int k=1;k<=n;k++){
             for(int i=1;i<k;i++)
-                for(int j=i+1;j<k;j++)//��
+                for(int j=i+1;j<k;j++)//求环
                     if(dis[i][j]+g[i][k]+g[k][j]<ans){
                         ans=dis[i][j]+g[i][k]+g[k][j];
                         num=0;
@@ -105,7 +105,7 @@ int main(){
                     }
             for(int i=1;i<=n;i++)
                 for(int j=1;j<=n;j++)
-                    if(dis[i][k]+dis[k][j]<dis[i][j]){//�ɳ�
+                    if(dis[i][k]+dis[k][j]<dis[i][j]){//松弛
                         dis[i][j]=dis[i][k]+dis[k][j];
                         path[i][j]=k;
                     }
@@ -146,20 +146,20 @@ int main()
 		}
 
 		int min=INF;
-		for(k=1;k<=n;k++){//���·����һ�㽫���·��β����,��ô�͵õ�һ����С��
+		for(k=1;k<=n;k++){//最短路径外一点将最短路首尾链接,那么就得到一个最小环
 			for(i=1;i<k;i++){
 				for(j=i+1;j<k;j++){
-					//����С����������������·�ɳ�,��Ϊ(i,k)֮������·,(k,j)֮������·�������غϵĲ���
-					//����mat[][]��ʵ�ǲ����µ�,����͵�����floyd���·��һ��
-					//dist[i][j]������� i �� j �����·Ȩֵ��
-					int tmp=dist[i][j]+mat[i][k]+mat[k][j];//���� k �ֱ�� i ���� j ��mat��ֱ������
+					//求最小环不能用两点间最短路松弛,因为(i,k)之间的最短路,(k,j)之间的最短路可能有重合的部分
+					//所以mat[][]其实是不更新的,这里和单纯的floyd最短路不一样
+					//dist[i][j]保存的是 i 到 j 的最短路权值和
+					int tmp=dist[i][j]+mat[i][k]+mat[k][j];//这里 k 分别和 i 还有 j 在mat中直接相连
 					if(tmp<min){
 						min=tmp;
 						num=0;
 						int p=j;
-						while(p!=i){//����
+						while(p!=i){//回溯
 							path[num++]=p;
-							p=pre[i][p];//pre[i][j]��ʾ i �� j ���·���� j ǰ���һ����
+							p=pre[i][p];//pre[i][j]表示 i 到 j 最短路径上 j 前面的一个点
 						}
 						path[num++]=i;
 						path[num++]=k;
@@ -169,7 +169,7 @@ int main()
 			for(i=1;i<=n;i++){
 				for(j=1;j<=n;j++){
 					if(dist[i][j]>dist[i][k]+dist[k][j]){
-						dist[i][j]=dist[i][k]+dist[k][j];//dist[][]�����������̾���
+						dist[i][j]=dist[i][k]+dist[k][j];//dist[][]保存两点间最短距离
 						pre[i][j]=pre[k][j];
 					}
 				}

@@ -1,5 +1,5 @@
 /*
-十进制转m进制
+鍗佽繘鍒惰浆m杩涘埗
 */
 #include<iostream>
 #include<cstring>

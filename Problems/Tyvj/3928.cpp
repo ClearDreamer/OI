@@ -1,5 +1,5 @@
 /*
-为电脑寻找合适的CPU
+涓虹數鑴戝鎵惧悎閫傜殑CPU
 */
 #include<iostream>
 #include<algorithm>

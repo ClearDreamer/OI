@@ -1,10 +1,10 @@
 /*
-����ȡ����Ϸ
-����������n�����룬����֮��Ķ����ģ�ֻ��Ҫ�ҵ����е����ֵ���ɡ����ǵĺͼ�Ϊ����
-	  �����������һ��a[m]����x��ȡ����״̬ת��Ϊ��
+矩阵取数游戏
+分析：对于n行输入，各行之间的独立的，只需要找到各行的最大值即可。它们的和即为所求。
+	  对于输入的任一行a[m]，第x次取数的状态转移为：
 	  dp[i][j] = max{dp[i+1][j]+a[i]*2^x, dp[i][j-1]+a[j]*2^x};
-	  dp[i][j]��ʾÿ�е�i��j�����ɵõ������ֵ��
-	  ���еĸ߾��ȳ˷��ͼӷ����֣�����int���飬ÿ�������100000-1���൱��100000���ƣ���ʡ�ռ䡣 
+	  dp[i][j]表示每行第i到j个数可得到的最大值。
+	  其中的高精度乘法和加法部分，采用int数组，每个数最大100000-1，相当于100000进制，节省空间。 
 */
 
 #include<iostream>
@@ -73,7 +73,7 @@ int main()
                 int xm[31],ym[31],cm[31];
                 ll=ly;
                 mul(cm,ys[m-k+1],a[lx]);
-                ly=ll;//����¼һ��ly��Ī���ı��0��xm��ֵҲ��һ����???
+                ly=ll;//不记录一下ly会莫名的变成0，xm的值也是一样。???
                 add(xm,cm,f[lx+1][ly]);
                 mul(ym,ys[m-k+1],a[ly]);
                 add(ym,ym,f[lx][ly-1]);
@@ -90,7 +90,7 @@ int main()
     return 0;
 }
 
-/*60�� 
+/*60分 
 #include<iostream>
 #include<cstring>
 #include<cstdio> 

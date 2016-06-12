@@ -1,6 +1,6 @@
 /*
-ÌâÒâ£º¸ø¶¨Ò»×é²»Í¬³¤¶ÈµÄÄ¾¹÷,ÓĞ¿ÉÄÜ¼ÓÈëËûÃÇµÄ¶Ëµ½¶ËĞÎ³ÉÒ»¸öÕı·½ĞÎÂğ? 
-·ÖÎö£ºÀàËÆ1011£¬ÊÇÆä¼õÈõ°æ¡£Ö±½Óµ÷ÓÃdfsÅĞ¶Ïsum/4ÊÇ·ñ¿ÉĞĞ¼´¿É 
+é¢˜æ„ï¼šç»™å®šä¸€ç»„ä¸åŒé•¿åº¦çš„æœ¨æ£,æœ‰å¯èƒ½åŠ å…¥ä»–ä»¬çš„ç«¯åˆ°ç«¯å½¢æˆä¸€ä¸ªæ­£æ–¹å½¢å—? 
+åˆ†æï¼šç±»ä¼¼1011ï¼Œæ˜¯å…¶å‡å¼±ç‰ˆã€‚ç›´æ¥è°ƒç”¨dfsåˆ¤æ–­sum/4æ˜¯å¦å¯è¡Œå³å¯ 
 */
 #include<iostream>
 #include<algorithm>
@@ -11,22 +11,22 @@ using namespace std;
 const int INF=0x3f3f3f3f,MAXN=20;
 int T,n,a[MAXN+3],sum;
 bool vis[MAXN+3];
-bool dfs(int* stick,bool* vist,int len,int InitLen,int s,int num){//len:µ±Ç°ÕıÔÚ×éºÏµÄ°ô³¤  InitLen:Ä¿±ê°ô³¤  s:stick[]µÄËÑË÷Æğµã  num:ÒÑÓÃµÄ°ô×ÓÊıÁ¿ 
+bool dfs(int* stick,bool* vist,int len,int InitLen,int s,int num){//len:å½“å‰æ­£åœ¨ç»„åˆçš„æ£’é•¿  InitLen:ç›®æ ‡æ£’é•¿  s:stick[]çš„æœç´¢èµ·ç‚¹  num:å·²ç”¨çš„æ£’å­æ•°é‡ 
 	if(num==n)return true;
 	int sample=-1;
 	for(int i=s;i<n;i++){
-		if(vist[i] || stick[i]==sample)continue;//¼ôÖ¦3,µÈ³¤µÄÄ¾°ôÖ»ËÑË÷Ò»´Î
+		if(vist[i] || stick[i]==sample)continue;//å‰ªæ3,ç­‰é•¿çš„æœ¨æ£’åªæœç´¢ä¸€æ¬¡
 		vist[i]=true;
 		if(len+stick[i]<InitLen){
 			if(dfs(stick,vist,len+stick[i],InitLen,i,num+1))return true;
-			else sample=stick[i];//²»ÒªÖ±½ÓºÍi-1±È½Ï£¬ÓĞ¿ÉÄÜi-1²¢²»ºÏ·¨£¨ÈçÒÑÓÃ£© 
+			else sample=stick[i];//ä¸è¦ç›´æ¥å’Œi-1æ¯”è¾ƒï¼Œæœ‰å¯èƒ½i-1å¹¶ä¸åˆæ³•ï¼ˆå¦‚å·²ç”¨ï¼‰ 
 		}
 		else if(len+stick[i]==InitLen){
 			if(dfs(stick,vist,0,InitLen,0,num+1))return true;
 			else sample=stick[i];
 		}
 		vist[i]=false;
-		if(len==0)break;//¼ôÖ¦4£¬¹¹½¨ĞÂ°ôÊ±£¬¶ÔÓÚĞÂ°ôµÄµÚÒ»¸ù°ô×Ó£¬ÔÚËÑË÷ÍêËùÓĞ°ô×Óºó¶¼ÎŞ·¨×éºÏ£¬ÔòËµÃ÷¸Ã°ô×ÓÎŞ·¨ÔÚµ±Ç°×éºÏ·½Ê½ÏÂ×éºÏ£¬²»ÓÃÍùÏÂËÑË÷(ÍùÏÂËÑË÷»áÁî¸Ã°ô×Ó±»ÉáÆú)£¬Ö±½Ó·µ»ØÉÏÒ»²ã 
+		if(len==0)break;//å‰ªæ4ï¼Œæ„å»ºæ–°æ£’æ—¶ï¼Œå¯¹äºæ–°æ£’çš„ç¬¬ä¸€æ ¹æ£’å­ï¼Œåœ¨æœç´¢å®Œæ‰€æœ‰æ£’å­åéƒ½æ— æ³•ç»„åˆï¼Œåˆ™è¯´æ˜è¯¥æ£’å­æ— æ³•åœ¨å½“å‰ç»„åˆæ–¹å¼ä¸‹ç»„åˆï¼Œä¸ç”¨å¾€ä¸‹æœç´¢(å¾€ä¸‹æœç´¢ä¼šä»¤è¯¥æ£’å­è¢«èˆå¼ƒ)ï¼Œç›´æ¥è¿”å›ä¸Šä¸€å±‚ 
 	}
 	return false;
 }

@@ -1,6 +1,6 @@
 /*
-[Usaco2005 Feb]Feed Accounting 饲料计算
-分析：倒着用差分序列，f2每次更新，直到到f2>=f1的时候就输出
+[Usaco2005 Feb]Feed Accounting 楗叉枡璁＄畻
+鍒嗘瀽锛氬�掔潃鐢ㄥ樊鍒嗗簭鍒楋紝f2姣忔鏇存柊锛岀洿鍒板埌f2>=f1鐨勬椂鍊欏氨杈撳嚭
 */
 #include<iostream>
 #include<cstdio>

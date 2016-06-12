@@ -1,9 +1,9 @@
 /*
 LCIS 
-������f[i]������a���ĵ�i����Ϊֹ, ����a[i]���ڵĲ���a[i]Ϊ��β�ģ�������b������������������У�
-	  ����max��¼��a[i]>b[j]ʱa����ǰiλ��b����ǰjλ��LCIS���Ա�����һ��������a[i]=b[j]ʱʹ�ã�
-	  ��ʱʹ�õ�maxʱj֮ǰ��LCIS����f[j]����Ϊmax+1���������һ�������maxΪʲô��a[i]=b[j]ʱҲ��ʹ���أ�
-	  ��Ϊ�����������ͬһ��a[i]��˵�ġ���Ϊa[i]<b[j]ʱ������a[i]���ڵ�LCIS�������γɣ����Բ���Ҫ������ 
+分析：f[i]代表到a串的第i个数为止, 包括a[i]在内的并以a[i]为结尾的，与整个b串的最长公共上升子序列，
+	  其中max记录在a[i]>b[j]时a串的前i位与b串的前j位的LCIS，以便于下一个搜索到a[i]=b[j]时使用，
+	  此时使用的max时j之前的LCIS，把f[j]更新为max+1，这里的上一次求出的max为什么在a[i]=b[j]时也能使用呢？
+	  因为他们是相对于同一个a[i]来说的。因为a[i]<b[j]时，包括a[i]在内的LCIS不可能形成，所以不需要处理。 
 */
 #include<iostream>
 #include<cstring>

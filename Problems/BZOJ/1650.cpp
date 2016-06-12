@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Dec]River Hopscotch лЬй╞вс
-╥жнЖё╨╤Ч╥ж╢П╟╦+еп╤╗ 
+[Usaco2006 Dec]River Hopscotch Х╥ЁГ÷ЁЕ╜░
+Е┬├Ф·░О╪ Д╨▄Е┬├Г╜■Ф║┬+Е┬╓Е╝  
 */
 #include<iostream>
 #include<cstdio>

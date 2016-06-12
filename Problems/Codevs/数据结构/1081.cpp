@@ -1,6 +1,6 @@
 /*
-Ïß¶ÎÊ÷Á·Ï° 2
-·ÖÎö£ºµ¥µã²éÑ¯£¬Çø¼äĞŞ¸Ä 
+çº¿æ®µæ ‘ç»ƒä¹  2
+åˆ†æï¼šå•ç‚¹æŸ¥è¯¢ï¼ŒåŒºé—´ä¿®æ”¹ 
 */
 #include<iostream>
 using namespace std;
@@ -18,7 +18,7 @@ struct segment_tree{
 	void updata(int x){
 		ns[x].val=ns[x<<1].val+ns[(x<<1)+1].val;
 	}
-	void pushdown(int x){//×¢ÒâpushÒª´¦ÀíºÃ×Ó½ÚµãµÄval£¬·ñÔòupdataÊ±»á³ö´í 
+	void pushdown(int x){//æ³¨æ„pushè¦å¤„ç†å¥½å­èŠ‚ç‚¹çš„valï¼Œå¦åˆ™updataæ—¶ä¼šå‡ºé”™ 
 		node &t=ns[x];
 		if(t.lazy!=0){
 			node &ll=ns[x<<1],&rr=ns[(x<<1)+1];
@@ -47,7 +47,7 @@ struct segment_tree{
 		node &t=ns[x];
 		if(l<=t.l&&r>=t.r){
 			t.lazy+=ad;
-			t.val+=ad*(t.r-t.l+1);//ÏÈ¼ÆËãºÃ 
+			t.val+=ad*(t.r-t.l+1);//å…ˆè®¡ç®—å¥½ 
 			return;
 		}
 		int mid=(t.l+t.r)>>1;

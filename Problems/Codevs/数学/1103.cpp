@@ -1,7 +1,7 @@
 /*
-Ñ­»·
-·ÖÎö£º´Ó×îµÍÎ»¿ªÊ¼ÌÖÂÛ£¬Ã¿¸öÎ»ÖÃÉÏµÄÑ­»·³¤¶È³ËÆğÀ´¼´¿É£¬ÕâÒªÓÃ¸ß¾«¶È£¬ÎªÊ²Ã´×Ô¼º²âÊÇ¶ÔµÄ£¬½»ÉÏÈ¥RE 
-	  ºók¸öÊıÑ­»·µÄ³¤¶ÈÊÇºók-1¸öÊıÑ­»·³¤¶ÈµÄ±¶Êı
+å¾ªç¯
+åˆ†æï¼šä»æœ€ä½ä½å¼€å§‹è®¨è®ºï¼Œæ¯ä¸ªä½ç½®ä¸Šçš„å¾ªç¯é•¿åº¦ä¹˜èµ·æ¥å³å¯ï¼Œè¿™è¦ç”¨é«˜ç²¾åº¦ï¼Œä¸ºä»€ä¹ˆè‡ªå·±æµ‹æ˜¯å¯¹çš„ï¼Œäº¤ä¸Šå»RE 
+	  åkä¸ªæ•°å¾ªç¯çš„é•¿åº¦æ˜¯åk-1ä¸ªæ•°å¾ªç¯é•¿åº¦çš„å€æ•°
 */
 #include<iostream>
 #include<cstdio>
@@ -86,7 +86,7 @@ struct bign{
 		return *this;
 	}
 	
-	bign operator - (const bign &t)const{//ÒªÇó´ó¼õĞ¡ 
+	bign operator - (const bign &t)const{//è¦æ±‚å¤§å‡å° 
 		bign ans=*this;
 		for(int i=0;i<t.len;i++){
 			if(ans.v[i]-t.v[i]<0){
@@ -250,7 +250,7 @@ void mul_(bignum *a, bignum *b)
         re = 0;
         for(j = 0; j < b->len; j++){
             tmp.num[i + j] += a->num[i] * b->num[j] + re;
-                //ÊÇ+=
+                //æ˜¯+=
             re = tmp.num[i + j] / used;
             if(re > 0){
                 tmp.num[i + j] %= used;

@@ -1,7 +1,7 @@
 /*
 Sliding Window
-���⣺��������ģ��
-������ע��q[0]�����ã�ע��Ҫ�����±꣬����ֱ���ж��г��ȣ��ⲻһ���Ϸ��� 
+题意：单调队列模板
+分析：注意q[0]的设置，注意要保存下标，不能直接判队列长度（这不一定合法） 
 */
 #include<iostream>
 #include<algorithm>

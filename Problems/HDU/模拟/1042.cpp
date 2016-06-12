@@ -1,7 +1,7 @@
 /*
 N!
-题意：求N!
-分析：高精乘 
+棰樻剰锛氭眰N!
+鍒嗘瀽锛氶珮绮句箻 
 */
 #include<iostream>
 using namespace std;
@@ -19,7 +19,7 @@ int main(){
                 a[j]=temp%10;
                 k=temp/10;
             }
-            while(k){//记录进位
+            while(k){//璁板綍杩涗綅
                 a[count++]=k%10;
                 k/=10;
             }

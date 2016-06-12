@@ -1,7 +1,7 @@
 /*
 Prime Ring Problem
-ÌâÒâ£ºËØÊý»· 
-·ÖÎö£ºËØÊý±í+DFS£¬Êä³ö¶¼Òª¼Ó¿ÕÐÐ£¬PEÁËºÃ¾Ã¡£¡£¡£ 
+é¢˜æ„ï¼šç´ æ•°çŽ¯ 
+åˆ†æžï¼šç´ æ•°è¡¨+DFSï¼Œè¾“å‡ºéƒ½è¦åŠ ç©ºè¡Œï¼ŒPEäº†å¥½ä¹…ã€‚ã€‚ã€‚ 
 */
 #include<iostream>
 #include<bitset>

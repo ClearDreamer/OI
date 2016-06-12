@@ -1,7 +1,7 @@
 /*
 Game of Connections
-ÌâÒâ£ºÒ»Ô²»·ÉÏÓÐ2n¸öµã£¬ÇóÁ½Á½Á¬ÏßÇÒ²»½»²æµÄ·½·¨Êý¡£
-·ÖÎö£ºcatalanÊý
+é¢˜æ„ï¼šä¸€åœ†çŽ¯ä¸Šæœ‰2nä¸ªç‚¹ï¼Œæ±‚ä¸¤ä¸¤è¿žçº¿ä¸”ä¸äº¤å‰çš„æ–¹æ³•æ•°ã€‚
+åˆ†æžï¼šcatalanæ•°
 */
 #include<iostream>
 #include<cstdio>

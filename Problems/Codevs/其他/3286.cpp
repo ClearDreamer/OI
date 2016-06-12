@@ -1,8 +1,8 @@
 /*
-����Ŷ�
-�����������뵽�����������еĵ�iλ�þ�Ϊ����Եĵ�i����ʱ������С 
-	  �ȶ�����ֵ��ɢ����������Ӧ�±꣩��Ȼ��k[i]��ʾa�е�ֵΪi��λ��Ҫ�ƶ���b�е��ĸ�λ�� 
-	  Ȼ���ת��Ϊ����� 
+火柴排队
+分析：可以想到，当两个序列的第i位置均为其各自的第i大数时，答案最小 
+	  先对所有值离散化（排序后对应下标），然后k[i]表示a中的值为i的位置要移动到b中的哪个位置 
+	  然后就转换为逆序对 
 */
 #include<iostream>
 #include<algorithm>
@@ -46,8 +46,8 @@ int main(){
 	for(int i=1;i<=n;i++)k[a[i].p]=b[i].p;
 	for(int i=1;i<=n;i++){
 		bit.add(k[i],1);
-		ans=(ans+i-bit.sum(k[i]))%MOD;//i-sum(k[i])��ʾǰi�����б�k[i]������ĸ��� 
-		/*����������ѭ�������������� 
+		ans=(ans+i-bit.sum(k[i]))%MOD;//i-sum(k[i])表示前i个数中比k[i]大的数的个数 
+		/*由于是正者循环，这样做不行 
 		ans+=bit.sum(k[i]);
 		bit.add(k[i],1);
 		*/

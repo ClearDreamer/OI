@@ -1,5 +1,5 @@
 /*
-�˳˳ˣ�
+乘乘乘！
 */
 #include<iostream>
 #include<cstdio>

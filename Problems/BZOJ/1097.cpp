@@ -1,6 +1,6 @@
 /*
-[POI2007]ÂÃÓÎ¾°µãatr
-·ÖÎö£ºdijkstra£¬È»ºó×´Ñ¹DP£¬ÎªÊ²Ã´ÏÂÃæµÄ´úÂëÓÐÆæÝâ´íÎó= = 
+[POI2007]æ—…æ¸¸æ™¯ç‚¹atr
+åˆ†æžï¼šdijkstraï¼Œç„¶åŽçŠ¶åŽ‹DPï¼Œä¸ºä»€ä¹ˆä¸‹é¢çš„ä»£ç æœ‰å¥‡è‘©é”™è¯¯= = 
 */
 #include<iostream>
 #include<cstdio>

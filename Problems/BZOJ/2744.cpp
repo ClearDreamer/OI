@@ -1,11 +1,11 @@
 /*
-[HEOI2012]����Ȧ
-������������Ǹ�����ͼ��������š�Ȼ��һ��ͼ���������NP�������=��ͼ����������� 
-	  ��������ϸ���⣬���Է��֣����췴ͼ��A������������š�����ż
-	  B����ż֮�乹�ɶ���ͼ������ͼ�ɵڶ����������Եõ� 
-	  ����Aͼ�п��ܹ���0,1,2���㣬�������B��һЩ��ʧЧ��
-	  ��ôö��A�������������B��ȥ������ѡ�ĵ㣬�ܶ���ͼ���ƥ�䣬�õ����ƥ�䣬����������=�ܵ���-���ƥ��=B-����ѡ�ĵ���-���ƥ��
-	  �漣����ܵĺܿ�0.0��496 MS 
+[HEOI2012]朋友圈
+分析：题意就是给了张图，求最大团。然而一般图的最大团是NP。最大团=反图的最大点独立集 
+	  不过，仔细看题，可以发现，构造反图后，A国变成了两个团——奇偶
+	  B国奇偶之间构成二分图，二分图由第二个条件可以得到 
+	  于是A图中可能贡献0,1,2个点，其代价是B中一些点失效。
+	  那么枚举A的所有情况，在B中去掉不能选的点，跑二分图最大匹配，得到最大匹配，而最大独立集=总点数-最大匹配=B-不能选的点数-最大匹配
+	  奇迹般的跑的很快0.0，496 MS 
 */
 #include<iostream>
 #include<cstdio>
@@ -20,13 +20,13 @@ bool vis[MAXN+3],can[MAXN+3];
 vector<int> g[MAXN+3];
 int A,B,m;
 int a[MAXN+3],b[MAXN+3];
-int count_one(int x){//������lowbit�ķ���ͳ��1�ĸ��� 
+int count_one(int x){//用类似lowbit的方法统计1的个数 
 	int ans=0;
 	while(x)x-=(x&-x),ans++;
 	return ans;
 }
 bool hungry(int x){
-	if(can[x]==0)return false;//��������ȥ�����Ͳ�ѡ 
+	if(can[x]==0)return false;//如果这个点去掉，就不选 
 	vis[x]=1;
 	for(int i=0;i<g[x].size();i++){
 		int t=g[x][i];
@@ -40,10 +40,10 @@ bool hungry(int x){
 }
 int get_max_point(int x=0,int y=0){
 	int ans=B;memset(can,1,sizeof(can));
-	for(int i=1;i<=B;i++)//������Ҫȥ���ĵ� 
+	for(int i=1;i<=B;i++)//处理需要去掉的点 
 		if(mp[x][i] || mp[y][i])ans--,can[i]=0;
 	memset(match,0,sizeof(match));
-	for(int i=1;i<=B;i++){//��ƥ�䣬ע����ݽ��ߣ���������ż�� 
+	for(int i=1;i<=B;i++){//跑匹配，注意根据建边，从奇数到偶数 
 		if(b[i]&1){
 			memset(vis,0,sizeof(vis));
 			if(hungry(i))ans--;
@@ -58,9 +58,9 @@ int main(){
 	memset(mp,1,sizeof(mp));
 	for(int x,y,i=1;i<=m;i++){
 		scanf("%d%d",&x,&y);
-		mp[x][y]=0;//ע���Ƿ�ͼ 
+		mp[x][y]=0;//注意是反图 
 	}
-	for(int i=1;i<=B;i++){//��������ż������ 
+	for(int i=1;i<=B;i++){//由奇数到偶数建边 
 		if(b[i]&1){
 			for(int j=1;j<=B;j++){
 				if(!(b[j]&1)){
@@ -70,12 +70,12 @@ int main(){
 		}
 	}
 	for(int i=1;i<=B;i++)mp[0][i]=0;
-	int ans=get_max_point();//��ѡA 
-	for(int i=1;i<=A;i++)ans=max(ans,get_max_point(i)+1);//A��ѡһ�� 
+	int ans=get_max_point();//不选A 
+	for(int i=1;i<=A;i++)ans=max(ans,get_max_point(i)+1);//A中选一个 
 	for(int i=1;i<=A;i++){
 		if(a[i]&1){
 			for(int j=1;j<=A;j++)
-				if(!(a[j]&1))ans=max(ans,get_max_point(i,j)+2);//A��ѡ������ע����żҪ��ͬ�� 
+				if(!(a[j]&1))ans=max(ans,get_max_point(i,j)+2);//A中选两个（注意奇偶要不同） 
 		}
 	}
 	printf("%d\n",ans);

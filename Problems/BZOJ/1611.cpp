@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Feb]Meteor ShowerÁ÷ÐÇÓê
-·ÖÎö£º´¦ÀíºÃÃ¿¸öÎ»ÖÃ»µµôµÄÊ±¼ä£¬BFS£¬×¢ÒâÓÐ¿ÉÄÜÆðµãÒ»¿ªÊ¼¾ÍÊÇ»µµÄQAQ 
+[Usaco2008 Feb]Meteor Showeræµæ˜Ÿé›¨
+åˆ†æžï¼šå¤„ç†å¥½æ¯ä¸ªä½ç½®åæŽ‰çš„æ—¶é—´ï¼ŒBFSï¼Œæ³¨æ„æœ‰å¯èƒ½èµ·ç‚¹ä¸€å¼€å§‹å°±æ˜¯åçš„QAQ 
 */
 #include<iostream>
 #include<cstdio>

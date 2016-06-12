@@ -1,5 +1,5 @@
 /*
-[Usaco2005 Feb]Rigging the Bovine Election ¾ºÑ¡»®Çø
+[Usaco2005 Feb]Rigging the Bovine Election ç«žé€‰åˆ’åŒº
 */
 #include<cmath>
 #include<cstdio>

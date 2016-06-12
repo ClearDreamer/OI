@@ -1,5 +1,5 @@
 /*
-最小数和最大数
+鏈�灏忔暟鍜屾渶澶ф暟
 */
 #include<iostream>
 #include<algorithm>

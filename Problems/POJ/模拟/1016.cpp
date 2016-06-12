@@ -1,20 +1,20 @@
 /*
 Numbers That Count
-ÌâÒâÓë·ÖÎö£º
-	Ò»¸öÊý5553141£ºËû°üº¬ÁË2¸ö1£¬1¸ö3£¬1¸ö4£¬3¸ö5£» 
-	ÄÇÃ´ºÍÆðÀ´Ð´£º21131435¾ÍÊÇ5553141µÄInventory Êý£» 
-	È»ºóÌâÄ¿ÒªÇó£¬¸ø³öÒ»¸öÊýn( ×î¶à80Î»)£¬Ëû¿ÉÒÔ±»¹éµ½ÈçÏÂËÄÀà£º 
-	1£©n is self-inventorying£¨nÓÃ¸ø³öÄÇ¸öÊý´ú£¬ÏÂÍ¬£©  
-	¼´¶Ô¸ø³öµÄÊý£¬Çó³öËûµÄInventory Êý£¬Èç¹ûÊÇ±¾Éí£¬ÔòÊä³ö¸ÃÐÐ£» 
-	ÀýÈç£º31123314µÄInventoryÊýÈÔÈ»ÊÇ31123314£¬Êä³ö: 31123314 is self-inventorying  
+é¢˜æ„ä¸Žåˆ†æžï¼š
+	ä¸€ä¸ªæ•°5553141ï¼šä»–åŒ…å«äº†2ä¸ª1ï¼Œ1ä¸ª3ï¼Œ1ä¸ª4ï¼Œ3ä¸ª5ï¼› 
+	é‚£ä¹ˆå’Œèµ·æ¥å†™ï¼š21131435å°±æ˜¯5553141çš„Inventory æ•°ï¼› 
+	ç„¶åŽé¢˜ç›®è¦æ±‚ï¼Œç»™å‡ºä¸€ä¸ªæ•°n( æœ€å¤š80ä½)ï¼Œä»–å¯ä»¥è¢«å½’åˆ°å¦‚ä¸‹å››ç±»ï¼š 
+	1ï¼‰n is self-inventoryingï¼ˆnç”¨ç»™å‡ºé‚£ä¸ªæ•°ä»£ï¼Œä¸‹åŒï¼‰  
+	å³å¯¹ç»™å‡ºçš„æ•°ï¼Œæ±‚å‡ºä»–çš„Inventory æ•°ï¼Œå¦‚æžœæ˜¯æœ¬èº«ï¼Œåˆ™è¾“å‡ºè¯¥è¡Œï¼› 
+	ä¾‹å¦‚ï¼š31123314çš„Inventoryæ•°ä»ç„¶æ˜¯31123314ï¼Œè¾“å‡º: 31123314 is self-inventorying  
 	2) n is self-inventorying after j steps   
-	¶ÔÒ»¸öÊýÇóËûµÄInventory Êý£¬È»ºóÔÙ¶ÔËûµÄInventoryÊý¼ÌÐøÇó£¬ÈçÊµÎÒÃÇ¿ÉÒÔµÃµ½Ò»¸öÐòÁÐ£ºn[0]->n[1]->n[2]¡­n[j]¡­. Èç´ËÍù¸´£¬µ±1<=j<=15Ê±¡£Èç¹ûn[j]µÄInventoryÊýµÈÓÚËû±¾Éí£¬ÔòÊä³ö¸ÃÐÐ£» 
-	ÀýÈç: 21221314 -> 31321314 -> (31321314)£¬Êä³ö: 21221314 is self-inventorying after 2 steps  
+	å¯¹ä¸€ä¸ªæ•°æ±‚ä»–çš„Inventory æ•°ï¼Œç„¶åŽå†å¯¹ä»–çš„Inventoryæ•°ç»§ç»­æ±‚ï¼Œå¦‚å®žæˆ‘ä»¬å¯ä»¥å¾—åˆ°ä¸€ä¸ªåºåˆ—ï¼šn[0]->n[1]->n[2]â€¦n[j]â€¦. å¦‚æ­¤å¾€å¤ï¼Œå½“1<=j<=15æ—¶ã€‚å¦‚æžœn[j]çš„Inventoryæ•°ç­‰äºŽä»–æœ¬èº«ï¼Œåˆ™è¾“å‡ºè¯¥è¡Œï¼› 
+	ä¾‹å¦‚: 21221314 -> 31321314 -> (31321314)ï¼Œè¾“å‡º: 21221314 is self-inventorying after 2 steps  
 	3) n enters an inventory loop of length k   
-	ÈÔÈ»ÓÃnµÄÐòÁÐËµÃ÷: n[0]->n[1]->n[2]¡­n[j]¡­n[i]¡­. (0<=j<i<=15)£¬µ±n[i]µÄInventoryÊý(¼Ç×÷n[k]) µÈÓÚn[0]¡­n[i-1]µÄÖÐn[j]Ê±£¬ÄÇÃ´ºÜÏÔÈ»£¬ÔÙÇóÏÂ»áÐÎ³ÉÒ»¸öÑ­»·£»Òò´ËÎÒÃÇÒªÕÒ³öÊÇ·ñ´æÔÚ×îÐ¡(k>=1)Ê¹µÃnÐòÁÐ¹»³ÉÑ­»·£¬Êä³öÕâ¸ök;  
-	ÀýÈç: 314213241519 --> 412223241519 -->314213241519£¬¶ÔÓ¦ÉÏÊöµÄn[j] --> n[i] -> (n[k])   
+	ä»ç„¶ç”¨nçš„åºåˆ—è¯´æ˜Ž: n[0]->n[1]->n[2]â€¦n[j]â€¦n[i]â€¦. (0<=j<i<=15)ï¼Œå½“n[i]çš„Inventoryæ•°(è®°ä½œn[k]) ç­‰äºŽn[0]â€¦n[i-1]çš„ä¸­n[j]æ—¶ï¼Œé‚£ä¹ˆå¾ˆæ˜¾ç„¶ï¼Œå†æ±‚ä¸‹ä¼šå½¢æˆä¸€ä¸ªå¾ªçŽ¯ï¼›å› æ­¤æˆ‘ä»¬è¦æ‰¾å‡ºæ˜¯å¦å­˜åœ¨æœ€å°(k>=1)ä½¿å¾—nåºåˆ—å¤Ÿæˆå¾ªçŽ¯ï¼Œè¾“å‡ºè¿™ä¸ªk;  
+	ä¾‹å¦‚: 314213241519 --> 412223241519 -->314213241519ï¼Œå¯¹åº”ä¸Šè¿°çš„n[j] --> n[i] -> (n[k])   
 	4) n can not be classified after 15 iterations  
-	Èç¹ûÔÚÕÒ³ö15¸öÊýºó£¬Ã»ÓÐÂú×ãÉÏÊöµÄÈÎºÎÒ»Ìõ£¬ÄÇÃ´¾ÍÊä³ö¸ÃÐÐ£» 
+	å¦‚æžœåœ¨æ‰¾å‡º15ä¸ªæ•°åŽï¼Œæ²¡æœ‰æ»¡è¶³ä¸Šè¿°çš„ä»»ä½•ä¸€æ¡ï¼Œé‚£ä¹ˆå°±è¾“å‡ºè¯¥è¡Œï¼› 
 */
 #include<iostream>
 #include<cstdio>

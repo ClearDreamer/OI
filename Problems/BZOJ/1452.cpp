@@ -1,6 +1,6 @@
 /*
 [JSOI2009]Count
-·ÖÎö£ºÊı×Ö·¶Î§Ğ¡£¬¿ª100¸öÊ÷×´Êı×é 
+åˆ†æï¼šæ•°å­—èŒƒå›´å°ï¼Œå¼€100ä¸ªæ ‘çŠ¶æ•°ç»„ 
 */
 #include<iostream>
 #include<cstdio>
@@ -21,7 +21,7 @@ int sum(int c,int x,int y){
 		for(int j=y;j;j-=lowbit(j))
 			ans+=cnt[c][i][j];
 	/*for(;x;x-=lowbit(x))
-		for(;y;y-=lowbit(y))//²»ÄÜÕâÃ´Ğ´£¬ÕâÑùy¾ÍÖ»»áÑ­»·Ò»´Î 
+		for(;y;y-=lowbit(y))//ä¸èƒ½è¿™ä¹ˆå†™ï¼Œè¿™æ ·yå°±åªä¼šå¾ªç¯ä¸€æ¬¡ 
 			ans+=cnt[c][x][y];*/
 	return ans;
 }

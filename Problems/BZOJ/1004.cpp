@@ -1,8 +1,8 @@
 /*
 [HNOI2008]Cards
-�������û�Ⱥ + ����
-	  Burnside��������m���û�k����ɫ�����б��ʲ�ͬ��Ⱦɫ����������ÿ���û��Ĳ���Ԫ�صĸ�����ƽ������
-	  ��ν����Ԫ�ؾ���һ��Ⱦɫ���������û��任���û�仯֮ǰһ����
+分析：置换群 + 背包
+	  Burnside定理：有m个置换k种颜色，所有本质不同的染色方案数就是每种置换的不变元素的个数的平均数。
+	  所谓不变元素就是一种染色方案经过置换变换后和没变化之前一样。
 */
 #include<iostream>
 #include<cstdio>
@@ -22,7 +22,7 @@ int dp(int x){
     memset(b,0,sizeof(b));
     int sum=0,p;
     for(int i=1;i<=n;i++)
-        if(!b[i]){//�������ѭ�� 
+        if(!b[i]){//求出所有循环 
             d[++sum]=1;p=i;
             b[p]=1;
             while(!b[a[x][p]]){
@@ -33,7 +33,7 @@ int dp(int x){
         }
     memset(f,0,sizeof(f));
     f[0][0][0]=1;
-    for(int h=1;h<=sum;h++)//������ɫ��Ⱦɫ���� 
+    for(int h=1;h<=sum;h++)//三种颜色的染色方法 
         for(int i=s1;i>=0;i--)
             for(int j=s2;j>=0;j--)
                 for(int k=s3;k>=0;k--){
@@ -55,7 +55,7 @@ int main(){
         for(int j=1;j<=n;j++)a[i][j]=read();
     m++;
     for(int i=1;i<=n;i++)a[m][i]=i;
-    for(int i=1;i<=m;i++)ans=(ans+dp(i))%mod;//ö��ÿ���û����󲻱��״̬�ĸ��� 
+    for(int i=1;i<=m;i++)ans=(ans+dp(i))%mod;//枚举每种置换，求不变的状态的个数 
     int x,y;
     exgcd(m,mod,x,y);
     while(x<=0)x+=mod,y-=m;

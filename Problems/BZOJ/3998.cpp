@@ -1,8 +1,8 @@
 /*
-[TJOI2015]ÏÒÂÛ
-·ÖÎö£º½¨³ö×Ô¶¯»úÇóK´ó¡£
-		T=0 ³ýÁË¸ùÒÔÍâµÄ×´Ì¬¶¼´ú±í1¸ö´®
-		T=1 Ã¿¸ö×´Ì¬parent×ÓÊ÷½áÊø½áµã¸öÊý¼´Îª´®µÄ¸öÊý 
+[TJOI2015]å¼¦è®º
+åˆ†æžï¼šå»ºå‡ºè‡ªåŠ¨æœºæ±‚Kå¤§ã€‚
+		T=0 é™¤äº†æ ¹ä»¥å¤–çš„çŠ¶æ€éƒ½ä»£è¡¨1ä¸ªä¸²
+		T=1 æ¯ä¸ªçŠ¶æ€parentå­æ ‘ç»“æŸç»“ç‚¹ä¸ªæ•°å³ä¸ºä¸²çš„ä¸ªæ•° 
 */
 #include<cstdio>
 #include<vector>

@@ -1,6 +1,6 @@
 /*
 [Ceoi2008]order
-·ÖÎö£º×îĞ¡¸î£¬S->Ã¿¸öÈÎÎñ£¬Ã¿¸öÈÎÎñ->¶ÔÓ¦»úÆ÷£¬»úÆ÷->T£¬×¢ÒâdinicµÄ¸÷ÖÖÓÅ»¯²»ÄÜÉÙ 
+åˆ†æï¼šæœ€å°å‰²ï¼ŒS->æ¯ä¸ªä»»åŠ¡ï¼Œæ¯ä¸ªä»»åŠ¡->å¯¹åº”æœºå™¨ï¼Œæœºå™¨->Tï¼Œæ³¨æ„dinicçš„å„ç§ä¼˜åŒ–ä¸èƒ½å°‘ 
 */
 #include<iostream>
 #include<algorithm>
@@ -40,13 +40,13 @@ bool bfs(){
 int dfs(int u,int a){
 	if(u==T||a==0)return a;
 	int flow=0;
-	for(int &i=cur[u];i;i=es[i].nxt){//µ±Ç°»¡ 
+	for(int &i=cur[u];i;i=es[i].nxt){//å½“å‰å¼§ 
 		if(es[i].c && d[es[i].v]==d[u]+1){
 			int w=dfs(es[i].v,min(a,es[i].c));
 			if(w==0)continue;
 			flow+=w;a-=w;
 			es[i].c-=w;es[i^1].c+=w;
-			if(a==0)break;//ÕâÀïÈç¹ûÃ»ÓĞ¾Í»áT 
+			if(a==0)break;//è¿™é‡Œå¦‚æœæ²¡æœ‰å°±ä¼šT 
 		}
 	} 
 	if(flow==0)d[u]=-1;

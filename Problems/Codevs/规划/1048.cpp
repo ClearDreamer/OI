@@ -1,6 +1,6 @@
 /*
-ʯ�ӹ鲢
-����������DP��ǰ׺��Ԥ����������ÿһ�����䣬ö�ٻ��ֵ㡣 
+石子归并
+分析：区间DP，前缀和预处理，对于每一个区间，枚举划分点。 
 */
 #include<iostream>
 using namespace std;

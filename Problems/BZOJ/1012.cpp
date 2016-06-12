@@ -1,6 +1,6 @@
 /*
-[JSOI2008]×î´óÊýmaxnumber
-·ÖÎö£ºµ¹¹ýÀ´´æ£¬¾Í¿ÉÒÔ±ÜÃâ²åÈë²Ù×÷£¬Ö±½ÓÏß¶ÎÊ÷£¬µ«ÊÇ²»ÄÜÓÃcin,cout,»áRE£¬ÁíÒ»ÖÖ×ö·¨£ºµ¥µ÷¶ÓÁÐ+¶þ·Ö 
+[JSOI2008]æœ€å¤§æ•°maxnumber
+åˆ†æžï¼šå€’è¿‡æ¥å­˜ï¼Œå°±å¯ä»¥é¿å…æ’å…¥æ“ä½œï¼Œç›´æŽ¥çº¿æ®µæ ‘ï¼Œä½†æ˜¯ä¸èƒ½ç”¨cin,cout,ä¼šREï¼Œå¦ä¸€ç§åšæ³•ï¼šå•è°ƒé˜Ÿåˆ—+äºŒåˆ† 
 */
 #include<iostream>
 #include<algorithm>

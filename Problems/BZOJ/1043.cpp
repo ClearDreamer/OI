@@ -1,9 +1,9 @@
 /*
-·ÖÎö£ºÇó³ö±»¸²¸ÇµÄËùÓÐ»¡O(n^2)£¬ÅÜÒ»±ßÏß¶Î¸²¸ÇµÃµ½×Ü³¤£¬¼õÒ»ÏÂ¡£
-	  Çó »¡µÄ·½·¨£ºÏÈÇó³öÔ²ÐÄÁ¬ÏßÓëxÖá¼Ð½Ça£¬ÔÙÇó½»µãÓëÔ²ÐÄÁ¬ÏßºÍÁ½Ô²ÐÄÁ¬ÏßµÄ¼Ð½Çb£¬
-	  ÕâÑùµÃµ½Á½½»µãÓëÔ²ÐÄÁ¬ÏßµÄÓëxÖá¼Ð½Ça+b,a-b¡£
-	  ½ÓÏÂÀ´ÅÐ¶ÏÒ»ÏÂ£ºÈôa-b<0ÔòÒª×ªµ½ÁíÒ»²à(a-b+2pi..2pi)+(0..a+b)£¬Èôa+b>2pi£¬Ôò(0..a+b-2pi)+(a-b..2pi)£¬PS:ÕâÁ½ÖÖÇé¿ö²»¿ÉÄÜÍ¬Ê±·¢Éú ÒòÎªb<=180*
-	  Èô¶¼Ã»ÓÐ£¬ÄÇÃ´Ö±½Ó(a-b..a+b) 
+åˆ†æžï¼šæ±‚å‡ºè¢«è¦†ç›–çš„æ‰€æœ‰å¼§O(n^2)ï¼Œè·‘ä¸€è¾¹çº¿æ®µè¦†ç›–å¾—åˆ°æ€»é•¿ï¼Œå‡ä¸€ä¸‹ã€‚
+	  æ±‚ å¼§çš„æ–¹æ³•ï¼šå…ˆæ±‚å‡ºåœ†å¿ƒè¿žçº¿ä¸Žxè½´å¤¹è§’aï¼Œå†æ±‚äº¤ç‚¹ä¸Žåœ†å¿ƒè¿žçº¿å’Œä¸¤åœ†å¿ƒè¿žçº¿çš„å¤¹è§’bï¼Œ
+	  è¿™æ ·å¾—åˆ°ä¸¤äº¤ç‚¹ä¸Žåœ†å¿ƒè¿žçº¿çš„ä¸Žxè½´å¤¹è§’a+b,a-bã€‚
+	  æŽ¥ä¸‹æ¥åˆ¤æ–­ä¸€ä¸‹ï¼šè‹¥a-b<0åˆ™è¦è½¬åˆ°å¦ä¸€ä¾§(a-b+2pi..2pi)+(0..a+b)ï¼Œè‹¥a+b>2piï¼Œåˆ™(0..a+b-2pi)+(a-b..2pi)ï¼ŒPS:è¿™ä¸¤ç§æƒ…å†µä¸å¯èƒ½åŒæ—¶å‘ç”Ÿ å› ä¸ºb<=180*
+	  è‹¥éƒ½æ²¡æœ‰ï¼Œé‚£ä¹ˆç›´æŽ¥(a-b..a+b) 
 */
 #include<iostream>  
 #include<cstdio>  
@@ -37,11 +37,11 @@ int main(){
         bool f=0;le=0;  
         for (int j=i+1;j<=n;j++){  
             double dis=dist(a[i],a[j]);  
-            if (dis<=a[j].r-a[i].r){f=1;break;}//i±»ÄÚº¬ 
-            if (dis>=a[i].r+a[j].r||dis<=a[i].r-a[j].r)  continue;//j±»ÄÚº¬»òÁ½Ô²ÍâÀë  
+            if (dis<=a[j].r-a[i].r){f=1;break;}//iè¢«å†…å« 
+            if (dis>=a[i].r+a[j].r||dis<=a[i].r-a[j].r)  continue;//jè¢«å†…å«æˆ–ä¸¤åœ†å¤–ç¦»  
             double x=a[j].x-a[i].x,y=a[j].y-a[i].y;  
-            double a1=atan2(y,x)+pi;//ÇóÔ²ÐÄÁ¬ÏßÓëxÖáÕý·½ÏòµÄ¼Ð½Ç 
-            double a2=ang(a[i].r,dis,a[j].r);//Çó½»µãÓëiÔ²ÐÄÁ¬ÏßºÍÁ½Ô²ÐÄÁ¬ÏßµÄ¼Ð½Ç 
+            double a1=atan2(y,x)+pi;//æ±‚åœ†å¿ƒè¿žçº¿ä¸Žxè½´æ­£æ–¹å‘çš„å¤¹è§’ 
+            double a2=ang(a[i].r,dis,a[j].r);//æ±‚äº¤ç‚¹ä¸Žiåœ†å¿ƒè¿žçº¿å’Œä¸¤åœ†å¿ƒè¿žçº¿çš„å¤¹è§’ 
             if (a1-a2<0)add(0,a1+a2),add(a1-a2+2*pi,2*pi);
 			else if (a1+a2>2*pi)add(a1-a2,pi*2),add(0,a1+a2-2*pi);  
             else add(a1-a2,a1+a2);

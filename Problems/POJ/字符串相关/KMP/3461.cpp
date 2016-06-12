@@ -1,6 +1,6 @@
 /*
 Oulipo
-·ÖÎö£ºKMP£¬µ«ÊÇ×Ô¼ºµÄ´úÂë³¬Ê±ÁË 
+åˆ†æžï¼šKMPï¼Œä½†æ˜¯è‡ªå·±çš„ä»£ç è¶…æ—¶äº† 
 */
 /*
 #include<cstdio>

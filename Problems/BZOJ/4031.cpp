@@ -1,6 +1,6 @@
 /*
-[HEOI2015]Ð¡ZµÄ·¿¼ä
-·ÖÎö£ºÉú³ÉÊ÷¼ÆÊý 
+[HEOI2015]å°Zçš„æˆ¿é—´
+åˆ†æžï¼šç”Ÿæˆæ ‘è®¡æ•° 
 */
 #include<cstdio>
 #include<algorithm>

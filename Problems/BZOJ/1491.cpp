@@ -1,6 +1,6 @@
 /*
-[NOI2007]社交网络
-分析：Floyd+暴力 
+[NOI2007]绀句氦缃戠粶
+鍒嗘瀽锛欶loyd+鏆村姏 
 */
 #include<iostream>
 #include<cstdio>

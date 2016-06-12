@@ -1,9 +1,9 @@
 /*
-[SDOI2012]LonggeµÄÎÊÌâ
-·ÖÎö£ºsigma(gcd(i,n))
+[SDOI2012]Longgeçš„é—®é¢˜
+åˆ†æï¼šsigma(gcd(i,n))
 	  =sigma(sigma(d|i&d|n,phi(d)))
 	  =sigma(d|n,phi(d)*(n/d)) 
-	  ×¢ÒâphiÒªÓÃÖÊÒòÊı·Ö½âµÄ·½·¨Çó£¨nÌ«´ó£© 
+	  æ³¨æ„phiè¦ç”¨è´¨å› æ•°åˆ†è§£çš„æ–¹æ³•æ±‚ï¼ˆnå¤ªå¤§ï¼‰ 
 */
 #include<iostream>
 #include<cstdio>
@@ -20,7 +20,7 @@ LL phi(LL x){
 		ans=ans/i*(i-1);
 		while(x%i==0)x/=i;
 	}
-	if(x>1)ans=ans/x*(x-1);//×¢ÒâÕâÀï£¬ÓĞ¿ÉÄÜ»áÊ£ÏÂÒ»¸öÖÊÒò×Ó 
+	if(x>1)ans=ans/x*(x-1);//æ³¨æ„è¿™é‡Œï¼Œæœ‰å¯èƒ½ä¼šå‰©ä¸‹ä¸€ä¸ªè´¨å› å­ 
 	return ans;
 }
 LL solve(LL n){
@@ -28,7 +28,7 @@ LL solve(LL n){
 	for(LL i=1;i<=m;i++){
 		if(n%i!=0)continue;
 		ans+=(LL)(n/i)*phi(i);
-		if(i*i<=n)ans+=(LL)i*phi(n/i);//ÌÖÂÛÁíÒ»ÖÖÇé¿ö 
+		if(i*i<=n)ans+=(LL)i*phi(n/i);//è®¨è®ºå¦ä¸€ç§æƒ…å†µ 
 	}
 	return ans;
 }

@@ -24,7 +24,7 @@ int topo(){
 	while(!ans.empty())ans.pop();
 	for(int i=1;i<=n;i++)d[i]=d0[i];
 	for(int i=1;i<=n;i++)if(d[i]==0)cur.push(i);
-	bool flg=true;//¼ÇÂ¼ÊÇ·ñ»á³öÏÖ¶à½â£¬¼´ÍØÆËÅÅÐòÖÐÊÇ·ñ»áÓÐ³¬¹ý1µãÔÚµ±Ç°¶ÓÁÐÖÐ 
+	bool flg=true;//è®°å½•æ˜¯å¦ä¼šå‡ºçŽ°å¤šè§£ï¼Œå³æ‹“æ‰‘æŽ’åºä¸­æ˜¯å¦ä¼šæœ‰è¶…è¿‡1ç‚¹åœ¨å½“å‰é˜Ÿåˆ—ä¸­ 
 	while(!cur.empty()){
 		if(cur.size()>1)flg=false;
 		int k=cur.front();cur.pop();
@@ -35,7 +35,7 @@ int topo(){
 			if(--d[es[t].v]==0)cur.push(es[t].v);
 		}
 	}
-	if(ans.size()<n)return -1;//Èô´ð°¸ÐòÁÐÉÙÓÚn¸ö£¬¾ÍËµÃ÷ÓÐ»· 
+	if(ans.size()<n)return -1;//è‹¥ç­”æ¡ˆåºåˆ—å°‘äºŽnä¸ªï¼Œå°±è¯´æ˜Žæœ‰çŽ¯ 
 	if(flg)return 1;
 	return 0;
 }

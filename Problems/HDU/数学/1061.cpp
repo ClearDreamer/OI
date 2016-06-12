@@ -1,7 +1,7 @@
 /*
 Rightmost Digit
-题意：求N^N的个位数
-分析：快速幂，还可以找规律，发现20个一循环 
+棰樻剰锛氭眰N^N鐨勪釜浣嶆暟
+鍒嗘瀽锛氬揩閫熷箓锛岃繕鍙互鎵捐寰嬶紝鍙戠幇20涓竴寰幆 
 */
 #include<iostream>
 #include<algorithm>

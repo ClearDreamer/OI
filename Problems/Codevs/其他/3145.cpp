@@ -1,5 +1,5 @@
 /*
-ººÅµËşÓÎÏ·
+æ±‰è¯ºå¡”æ¸¸æˆ
 */
 #include<stdio.h>
 #include<cmath>

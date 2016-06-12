@@ -1,5 +1,5 @@
 /*
-їЁЖ¬ХыАн
+еЌЎз‰‡ж•ґзђ†
 */
 #include<stdio.h>
 #include<algorithm>

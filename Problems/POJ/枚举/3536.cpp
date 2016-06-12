@@ -1,7 +1,7 @@
 /*
 Beer Refrigerator
-ÌâÒâ£º¸ø¶¨Ò»¸öÁ¢·½ÌåµÄÌå»ý£¬Ê¹Æä±íÃæ»ý×îÐ¡£¬Çó³¤¿í¸ß£¨³¤¿í¸ß¾ùÎªÕûÊý£©
-·ÖÎö£ºÏÈÇóÆäËùÓÐÒò×Ó£¬È»ºó±©Á¦Ã¶¾Ù3ÌõÀâµÄ³¤¶È£¬¸üÐÂ×îÐ¡Ãæ»ý¡£ 
+é¢˜æ„ï¼šç»™å®šä¸€ä¸ªç«‹æ–¹ä½“çš„ä½“ç§¯ï¼Œä½¿å…¶è¡¨é¢ç§¯æœ€å°ï¼Œæ±‚é•¿å®½é«˜ï¼ˆé•¿å®½é«˜å‡ä¸ºæ•´æ•°ï¼‰
+åˆ†æžï¼šå…ˆæ±‚å…¶æ‰€æœ‰å› å­ï¼Œç„¶åŽæš´åŠ›æžšä¸¾3æ¡æ£±çš„é•¿åº¦ï¼Œæ›´æ–°æœ€å°é¢ç§¯ã€‚ 
 */
 #include<iostream>
 #include<algorithm>

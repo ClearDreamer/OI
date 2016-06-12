@@ -1,7 +1,7 @@
 /*
 NUMBER BASE CONVERSION
-ÌâÒâ£º½«Ò»¸ök½øÖÆµÄ¸ß¾«¶ÈÊý×ÖA×ª»»³Ém½øÖÆÊýB£¨k,m<=62£©
-·ÖÎö£º¶Ì³ý·¨£¬¸ß¾«¶È 
+é¢˜æ„ï¼šå°†ä¸€ä¸ªkè¿›åˆ¶çš„é«˜ç²¾åº¦æ•°å­—Aè½¬æ¢æˆmè¿›åˆ¶æ•°Bï¼ˆk,m<=62ï¼‰
+åˆ†æžï¼šçŸ­é™¤æ³•ï¼Œé«˜ç²¾åº¦ 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,10 +1,10 @@
 /*
-°Ú»¨
-·ÖÎö£ºÀàËÆ¶àÖØ±³°ü£¬¼´ÓÐÏÞÖÆÎïÆ·ÊýÁ¿µÄ±³°ü
-	  opt[i][j]±íÊ¾Ç°i¸öÎïÆ·£¬·ÅÈëj¸ö»¨ÅèµÄ·½°¸Êý
-	  ÔòÓÐopt[i][j]=sum{opt[i-1][j-k]|0<=k<=min(j,iÎïÆ·¼þÊý)} 
-	  ×¢Òâ±ß½çopt[i][0]=1£¬j´Ó1¿ªÊ¼Ã¶¾Ù 
-	  »¹ÓÐÒ»ÖÖ£ºopt[0][0]=1£¬j´Ó0¿ªÊ¼Ã¶¾Ù£¨·ñÔòopt[i][0]Ò»Ö±Îª0£© 
+æ‘†èŠ±
+åˆ†æžï¼šç±»ä¼¼å¤šé‡èƒŒåŒ…ï¼Œå³æœ‰é™åˆ¶ç‰©å“æ•°é‡çš„èƒŒåŒ…
+	  opt[i][j]è¡¨ç¤ºå‰iä¸ªç‰©å“ï¼Œæ”¾å…¥jä¸ªèŠ±ç›†çš„æ–¹æ¡ˆæ•°
+	  åˆ™æœ‰opt[i][j]=sum{opt[i-1][j-k]|0<=k<=min(j,iç‰©å“ä»¶æ•°)} 
+	  æ³¨æ„è¾¹ç•Œopt[i][0]=1ï¼Œjä»Ž1å¼€å§‹æžšä¸¾ 
+	  è¿˜æœ‰ä¸€ç§ï¼šopt[0][0]=1ï¼Œjä»Ž0å¼€å§‹æžšä¸¾ï¼ˆå¦åˆ™opt[i][0]ä¸€ç›´ä¸º0ï¼‰ 
 */
 #include<iostream>
 using namespace std;
@@ -14,9 +14,9 @@ int main(){
 	cin>>n>>m;
 	for(int i=1;i<=n;i++)cin>>a[i];
 	for(int i=0;i<=n;i++)opt[i][0]=1; 
-	for(int i=1;i<=n;i++){//Ã¶¾ÙÎïÆ· 
-		for(int j=1;j<=m;j++){//Ã¶¾ÙÈÝÁ¿ 
-			for(int k=0;k<=min(j,a[i]);k++){//Ã¶¾Ù×°Èë¸öÊý£¬´Ó0¿ªÊ¼ 
+	for(int i=1;i<=n;i++){//æžšä¸¾ç‰©å“ 
+		for(int j=1;j<=m;j++){//æžšä¸¾å®¹é‡ 
+			for(int k=0;k<=min(j,a[i]);k++){//æžšä¸¾è£…å…¥ä¸ªæ•°ï¼Œä»Ž0å¼€å§‹ 
 				opt[i][j]=(opt[i][j]+opt[i-1][j-k])%MOD;
 			}
 		}

@@ -1,8 +1,8 @@
 /*
-������ע�����ǽ�����٣�״ѹ��
-		 f(s,r,c,dir)��ʾ�����Ѿ��������Ŀ��صļ���Ϊs��DPλ��r��c�У�����Ϊdir��ͣ�����Ĵ�������Ȼ��ϸϸ������״̬��ֻ�л�����Χ���ĸ����������õģ�״̬�ɼ�Ϊf(s,t,dir)����ʾDPλ�ڵ�t�����ص�dir����ת��ֻ��Ҫö����һ�δ��ĸ���������ɡ�����ҪԤ��������������λ�ڻ������ܵĵ�֮��ľ��롣 
-		 ֱ��BFS�Ļ���Ҫע��bfs�Ķ�������Ҫ��֤ǰ���״̬��ͣ�����������ں���ģ��Ϳ��Ա�֤һ�������ѵ����Ž��ˣ�Ҫʵʱ�����Ѿ�push�������е�״̬��
-		 ���spfa�Ļ�������ν�� 
+分析：注意机关墙数量少，状压。
+		 f(s,r,c,dir)表示当且已经触碰到的开关的集合为s，DP位于r行c列，朝向为dir的停下来的次数。当然，细细分析，状态中只有机关周围的四个格子是有用的，状态可简化为f(s,t,dir)，表示DP位于第t个机关的dir方向。转移只需要枚举上一次从哪个点过来即可。这需要预处理出任意两个位于机关四周的点之间的距离。 
+		 直接BFS的话，要注意bfs的队列中需要保证前面的状态的停留次数不多于后面的，就可以保证一定可以搜到最优解了，要实时更新已经push到队列中的状态。
+		 如果spfa的话就无所谓了 
 */
 #include<iostream>
 #include<cstring>
@@ -38,7 +38,7 @@ void bfs(int bx,int by,int id){
 			if(rock[nowx][nowy]||nowx<1||nowy<1||nowx>n||nowy>m)continue;
 			for(int b=0;b<4;b++)
 				if(d[x][y][k]+(k!=b)<d[nowx][nowy][b]){
-					d[nowx][nowy][b]=d[x][y][k]+(k!=b);//�����Ƿ���Ҫ�������� 
+					d[nowx][nowy][b]=d[x][y][k]+(k!=b);//加上是否需要调整方向 
 					if(!inq[nowx][nowy]){
 						inq[nowx][nowy]=1;
 						qx[tail]=nowx;qy[tail]=nowy;
@@ -52,7 +52,7 @@ void bfs(int bx,int by,int id){
 		for(int k=0;k<4;k++){
 			int t=INF,tx=x[i]+xx[k],ty=y[i]+yy[k];
 			for(int l=0;l<4;l++)
-				t=min(t,d[tx][ty][l]+(tx+xx[l]!=x[i]||ty+yy[l]!=y[i]));//�����Ƿ���Ҫ�������� 
+				t=min(t,d[tx][ty][l]+(tx+xx[l]!=x[i]||ty+yy[l]!=y[i]));//加上是否需要调整方向 
 			dis[id][p(i,k)]=t;
 		}
 }
@@ -66,7 +66,7 @@ void dp(){
 			if(f[i][x]!=INF)
 				for(int y=1;y<=4*T;y++){
 					int t=i|bin[(y-1)/4];
-					f[t][y]=min(f[t][y],f[i][x]+dis[x][y]+1);//�ȵ�תһ���򣬲����ߣ���Ϊ��ʱһ����ײ����ǽ�� 
+					f[t][y]=min(f[t][y],f[i][x]+dis[x][y]+1);//先得转一个向，才能走，因为这时一定是撞机关墙了 
 				}
 	for(int x=1;x<=4*T;x++)ans=min(ans,f[ed][x]);
 }

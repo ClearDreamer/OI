@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Jan]Balanced Lineup排队
-分析：RMQ问题，注意循环外层是j 
+[Usaco2007 Jan]Balanced Lineup鎺掗槦
+鍒嗘瀽锛歊MQ闂锛屾敞鎰忓惊鐜灞傛槸j 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,7 +1,7 @@
 /*
-[ZJOI2008]���վۻ�Party
-������cnt[i][j][k][l]��ʾ����i�ˣ�Ů��j�ˣ���-Ů=k��Ů-��=l�ķ�����
-	  ת�Ƽ��� 
+[ZJOI2008]生日聚会Party
+分析：cnt[i][j][k][l]表示男生i人，女生j人，男-女=k，女-男=l的方案数
+	  转移即可 
 */
 #include<iostream>
 #include<cstdio>

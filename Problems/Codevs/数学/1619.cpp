@@ -1,13 +1,13 @@
 /*
-ÕûÊıµÄÃİÔËËã 2
-·ÖÎö£º¸ß¾«+¿ìËÙÃİ 
+æ•´æ•°çš„å¹‚è¿ç®— 2
+åˆ†æï¼šé«˜ç²¾+å¿«é€Ÿå¹‚ 
 */
 #include<cstdio>
 #include<iostream>
 #include<cstring>
 using namespace std;
 
-const int MAXN = 3503;//1000^1000ÓĞ3000¶à¸ö0 
+const int MAXN = 3503;//1000^1000æœ‰3000å¤šä¸ª0 
 struct bign{
 	int len, s[MAXN];
 

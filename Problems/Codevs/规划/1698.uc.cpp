@@ -1,5 +1,5 @@
 /*
-四个国王
+鍥涗釜鍥界帇
 */
 #include<iostream>
 using namespace std;

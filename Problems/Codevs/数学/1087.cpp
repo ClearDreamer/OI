@@ -46,7 +46,7 @@ struct bign{
 		return *this;
 	}
 	
-	bign operator - (const bign &t)const{//ÒªÇó´ó¼õĞ¡ 
+	bign operator - (const bign &t)const{//è¦æ±‚å¤§å‡å° 
 		bign ans=*this;
 		for(int i=0;i<t.len;i++){
 			if(ans.v[i]-t.v[i]<0){

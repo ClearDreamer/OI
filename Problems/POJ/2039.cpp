@@ -1,6 +1,6 @@
 /*
 To and Fro
-分析：简单的转成题中矩阵，行列反着输出 
+鍒嗘瀽锛氱畝鍗曠殑杞垚棰樹腑鐭╅樀锛岃鍒楀弽鐫�杈撳嚭 
 */
 #include <iostream>
 #include <cstring>

@@ -1,7 +1,7 @@
 /*
-[HNOI2004]Ê÷µÄ¼ÆÊı
-·ÖÎö£ºans=(n-2)!/((d[1]-1)!(d[2]-1)!(...)(d[n]-1)!)
-	  ´ğ°¸ÔÚlong longÄÚ£¬ÏÈ·Ö½âÖÊÒòÊı 
+[HNOI2004]æ ‘çš„è®¡æ•°
+åˆ†æï¼šans=(n-2)!/((d[1]-1)!(d[2]-1)!(...)(d[n]-1)!)
+	  ç­”æ¡ˆåœ¨long longå†…ï¼Œå…ˆåˆ†è§£è´¨å› æ•° 
 */
 #include<cstdio>
 #include<cstring>
@@ -14,7 +14,7 @@ using namespace std;
 int cnt[MAXN]={0};
 int d[MAXN]={0};
 int n,sum;
-inline void toprime(int x, int key){//key£º¶Ô´ğ°¸µÄÓ°Ïì 
+inline void toprime(int x, int key){//keyï¼šå¯¹ç­”æ¡ˆçš„å½±å“ 
     for(int i=2;i<=x;i++)
         if(x%i==0)while(x%i==0&&x>0)cnt[i]+=key,x/=i;
 }

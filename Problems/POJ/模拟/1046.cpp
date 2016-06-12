@@ -1,7 +1,7 @@
 /*
 Color Me Less
-ÌâÒâ£º¸ø16¸öµ×É«£¬ºó¸øÈô¸É¸öÑÕÉ«ÎÊÓëÇ°ÃæÄÄ¸ö¾àÀë×îÐ¡£¿
-·ÖÎö£º±©Á¦ 
+é¢˜æ„ï¼šç»™16ä¸ªåº•è‰²ï¼ŒåŽç»™è‹¥å¹²ä¸ªé¢œè‰²é—®ä¸Žå‰é¢å“ªä¸ªè·ç¦»æœ€å°ï¼Ÿ
+åˆ†æžï¼šæš´åŠ› 
 */
 #include<iostream>
 #include<cmath>

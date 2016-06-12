@@ -1,6 +1,6 @@
 /*
 [Usaco2007 Jan]Balanced Lineup
-分析：RMQ+输入输出优化 
+鍒嗘瀽锛歊MQ+杈撳叆杈撳嚭浼樺寲 
 */
 #include<iostream>
 #include<cstdio>

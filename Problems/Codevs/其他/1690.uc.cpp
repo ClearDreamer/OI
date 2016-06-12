@@ -1,6 +1,6 @@
 /*
-开关灯
-分析：区间查询，区间修改 
+寮�鍏崇伅
+鍒嗘瀽锛氬尯闂存煡璇紝鍖洪棿淇敼 
 */
 #include<iostream>
 using namespace std;
@@ -20,7 +20,7 @@ struct segment_tree{
 	void updata(int x){
 		ns[x].val=ns[x<<1].val+ns[(x<<1)+1].val;
 	}
-	void pushdown(int x){//注意push要处理好子节点的val，否则updata时会出错 
+	void pushdown(int x){//娉ㄦ剰push瑕佸鐞嗗ソ瀛愯妭鐐圭殑val锛屽惁鍒檜pdata鏃朵細鍑洪敊 
 		node &t=ns[x];
 		if(t.lazy!=0){
 			node &ll=ns[x<<1],&rr=ns[(x<<1)+1];
@@ -49,7 +49,7 @@ struct segment_tree{
 		node &t=ns[x];
 		if(l<=t.l&&r>=t.r){
 			t.lazy^=1;
-			t.val=t.r-t.l+1-t.val;//先计算好 
+			t.val=t.r-t.l+1-t.val;//鍏堣绠楀ソ 
 			return;
 		}
 		int mid=(t.l+t.r)>>1;
@@ -70,7 +70,7 @@ struct segment_tree{
 		if(l<=t.l&&r>=t.r){
 			return t.val;
 		}
-		pushdown(x);//push不要放在前面 
+		pushdown(x);//push涓嶈鏀惧湪鍓嶉潰 
 		if(l<=mid){
 			ans+=query(l,r,x<<1);
 		}

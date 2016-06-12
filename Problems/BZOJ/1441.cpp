@@ -1,6 +1,6 @@
 /*
 Min 
-·ÖÎö£ºÅáÊñ¶¨Àí 
+åˆ†æï¼šè£´èœ€å®šç† 
 */
 #include<cstdio>
 using namespace std;

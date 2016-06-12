@@ -8,13 +8,13 @@
 using namespace std;
 const int MAXN=1000,INF=0x3f3f3f3f;
 int dp[MAXN+3][MAXN+3];
-int ZeroOne_Bag(int *v,int *w,int n,int V){//01±³°ü£¬²»Ò»¶¨×°Âú 
+int ZeroOne_Bag(int *v,int *w,int n,int V){//01èƒŒåŒ…ï¼Œä¸ä¸€å®šè£…æ»¡ 
 	memset(dp,0,sizeof(dp));
 	for(int i=1;i<=n;i++){
 		for(int j=V;j>=v[i];j--)dp[i][j]=max(dp[i][j],dp[i-1][j-v[i]]+w[i]);
 	}
 	/*
-	//01±³°ü£¬Ò»¶¨×°Âú 
+	//01èƒŒåŒ…ï¼Œä¸€å®šè£…æ»¡ 
 	memset(dp,-INF,sizeof(dp));memset(dp[0],0,sizeof(dp[0]));
 	for(int i=1;i<=n;i++){
 		for(int j=V;j>=v[i];j--)dp[i][j]=max(dp[i][j],dp[i-1][j-v[i]]+w[i]);
@@ -34,7 +34,7 @@ int Complete_Bag(int *v,int *w,int n,int V){
 }
 int Multi_Bag(int *v,int *w,int *c,int n,int V){
 	static int opt[MAXN+3],que[MAXN+3],g[MAXN+3];
-	memset(opt,0,sizeof(opt));//Èç¹û²»ÓÃ¹ö¶¯Êı×é£¬¼Ç×Ådp[i]=dp[i-1] ¸´ÖÆÒ»ÏÂ 
+	memset(opt,0,sizeof(opt));//å¦‚æœä¸ç”¨æ»šåŠ¨æ•°ç»„ï¼Œè®°ç€dp[i]=dp[i-1] å¤åˆ¶ä¸€ä¸‹ 
 	for(int i=1;i<=n;i++){
 		if(c[i]==-1)c[i]=V/v[i];
 		for(int j=0;j<v[i];j++){

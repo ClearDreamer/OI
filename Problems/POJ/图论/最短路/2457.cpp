@@ -1,7 +1,7 @@
 /*
 Part Acquisition
-ÌâÒâ£ºÇóµ¥Ô´×î¶ÌÂ·£¬±ßÈ¨¾ùÎª1£¬ÒªÇóÊä³öÂ·¾¶
-·ÖÎö£ºBFS¼´¿É 
+é¢˜æ„ï¼šæ±‚å•æºæœ€çŸ­è·¯ï¼Œè¾¹æƒå‡ä¸º1ï¼Œè¦æ±‚è¾“å‡ºè·¯å¾„
+åˆ†æžï¼šBFSå³å¯ 
 */
 #include<iostream>
 #include<algorithm>

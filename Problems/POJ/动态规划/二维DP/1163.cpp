@@ -1,6 +1,6 @@
 /*
 The Triangle
-分析：数字三角形 
+鍒嗘瀽锛氭暟瀛椾笁瑙掑舰 
 */
 #include<iostream>
 using namespace std;

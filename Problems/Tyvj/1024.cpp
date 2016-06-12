@@ -1,6 +1,6 @@
 /*
-外星人的密码数字
-分析：就是LIS，写了个nlogn，WA了一个TAT 
+澶栨槦浜虹殑瀵嗙爜鏁板瓧
+鍒嗘瀽锛氬氨鏄疞IS锛屽啓浜嗕釜nlogn锛學A浜嗕竴涓猅AT 
 */
 #include<iostream>
 #include<algorithm>

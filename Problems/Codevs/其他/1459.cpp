@@ -1,5 +1,5 @@
 /*
-n个数的最小公倍数
+n涓暟鐨勬渶灏忓叕鍊嶆暟
 */
 #include<iostream>
 using namespace std;

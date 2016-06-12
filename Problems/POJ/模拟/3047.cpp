@@ -1,7 +1,7 @@
 /*
 Bovine Birthday
-ÌâÒâ£ºÇóÄ³ÌìÊÇÐÇÆÚ¼¸¡£
-·ÖÎö£ºÁÐ¸öÊ½×Ó 
+é¢˜æ„ï¼šæ±‚æŸå¤©æ˜¯æ˜ŸæœŸå‡ ã€‚
+åˆ†æžï¼šåˆ—ä¸ªå¼å­ 
 */
 #include<cstdio>
 #include<cstring>

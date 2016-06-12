@@ -1,8 +1,8 @@
 /*
 COURSES
-���⣺����p�ſγ̺�n��ѧ����һ��ѧ������ѡ0�ţ�1�ţ����߶��ſγ̣�����Ҫ��һ����p��ѧ����ɵļ��ϣ���������2��������
-	  1.ÿ��ѧ��ѡ��һ����ͬ�Ŀγ̣�2.ÿ���γ̶��в�ͬ�Ĵ�����������㣬�����YES
-����������ͼ���ƥ�䡣ע��Ҫ�������ֵ� 
+题意：给你p门课程和n个学生，一个学生可以选0门，1门，或者多门课程，现在要求一个由p个学生组成的集合，满足下列2个条件：
+	  1.每个学生选择一个不同的课程，2.每个课程都有不同的代表，如果满足，就输出YES
+分析：二分图最大匹配。注意要分清两种点 
 */
 #include<cstdio>
 #include<cstring>
@@ -11,9 +11,9 @@ COURSES
 using namespace std;
 const int MAXL=100,MAXP=300,INF=0x3f3f3f3f;
 const char OUT[2][5]={"NO","YES"};
-vector<int> g[MAXL+3];//������󲿵�������Ҳ���
-int link[MAXP+3];//������Ҳ����Ӧ���󲿵� 
-bitset<MAXP+3> vis;//������Ҳ�����û�б����� 
+vector<int> g[MAXL+3];//存的是左部点连向的右部点
+int link[MAXP+3];//存的是右部点对应的左部点 
+bitset<MAXP+3> vis;//存的是右部点有没有被访问 
 bool find(int u){
 	for(int i=0;i<g[u].size();i++){
 		if(!vis[g[u][i]]){

@@ -1,6 +1,6 @@
 /*
-聚会
-分析：对所有能从K点到的点求器到K点的最短路 
+鑱氫細
+鍒嗘瀽锛氬鎵�鏈夎兘浠嶬鐐瑰埌鐨勭偣姹傚櫒鍒癒鐐圭殑鏈�鐭矾 
 */ 
 #include<iostream>
 #include<cstring>

@@ -1,9 +1,9 @@
 /*
-[Sdoi2016]��Ϸ
-�������߶���ά��ֱ�ߣ�ÿ���ڵ�ά��ֱ����������Сֵ����Сֵֻ�п�����ֱ�����˵� ȡ�ã�
-		����һ��ֱ�ߵ��´������������ǰ����ֱ�ߵĽ��㣬�����÷�ΧС��һ���´���ȥ ������mn 
-		��ѯʱ����ѯ���з��ʽڵ��ֱ����Сֵ��mnֵ
-	  ���⿨ջ 
+[Sdoi2016]游戏
+分析：线段树维护直线，每个节点维护直线与区间最小值，最小值只有可能在直线两端点 取得，
+		对于一条直线的下传，可以求出当前两条直线的交点，把试用范围小的一条下传下去 ，更新mn 
+		查询时，查询所有访问节点的直线最小值和mn值
+	  这题卡栈 
 */
 #include<iostream>
 #include<cstdio>
@@ -55,7 +55,7 @@ void div_tree(int u,int tp){
 	id[u]=++dfstime;
 	dfsn[dfstime]=u;
 	top[u]=tp;
-	int son=0;//ע���ֵ 
+	int son=0;//注意初值 
 	for(int i=0;i<g[u].size();i++){
 		edge &e=g[u][i];
 		if(e.v==fa[u])continue;
@@ -91,7 +91,7 @@ void add_tag(int x,int l,int r,LL a,LL b){
 		}
 	}
 	else{//x>pos A[x] is good 
-		LL pos=(-tb-ta+1)/(-ta);//ע����ȡ�� 
+		LL pos=(-tb-ta+1)/(-ta);//注意上取整 
 		if(pos>lmid){
 			add_tag(x<<1|1,mid+1,r,A[x],B[x]+A[x]*lmid);
 			A[x]=a,B[x]=b;
@@ -138,7 +138,7 @@ int lca(int a,int b){
 	}
 	return dep[a]<dep[b]?a:b;
 }
-void modify_lv(int v,int lc,LL a,LL b){//��lcΪ���ģ������ߴ������� 
+void modify_lv(int v,int lc,LL a,LL b){//以lc为中心，向两边处理距离 
 	while(top[v]!=top[lc]){
 		int tp=top[v];
 		_modify(1,1,n,id[tp],id[v],a,b+a*(dis[tp]-dis[lc]));
@@ -146,7 +146,7 @@ void modify_lv(int v,int lc,LL a,LL b){//��lcΪ���ģ������ߴ�������
 	}
 	_modify(1,1,n,id[lc],id[v],a,b);
 }
-void modify(int l,int r,LL a,LL b){//ע�����޸� 
+void modify(int l,int r,LL a,LL b){//注意拆解修改 
 	int lc=lca(l,r);
 	modify_lv(l,lc,-a,b+a*(dis[l]-dis[lc]));
 	modify_lv(r,lc,a,b+a*(dis[l]-dis[lc]));

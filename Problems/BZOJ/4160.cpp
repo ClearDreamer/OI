@@ -1,10 +1,10 @@
 /*
 [Neerc2009]Exclusive Access 2
-��������Ϊ�����Ƚ��٣�����״̬ѹ��DP��
-	  ���� Dilworth ����,�����޻�ͼ���������,�������ٷ�������������������������ĵڶ��ʣ���
-	  ��������ȼ���,�ѵ㼯�ֳ����ɼ���,ʹ��ÿ���Ӽ��ڲ�û�бߡ�
-	  Ԥ������ok[code]��ʾ����code�ڲ��Ƿ��б�,Ȼ�����f[code]��ʾ�Ѽ���code���ֵ������Ӽ�����,
-	  ת�Ƶ�ʱ��ö��subcode����ok[subcode]Ϊ��,��f[code-subcode]+1���´𰸡��ܵ�ʱ�临�Ӷ��� O(2^n*m+3^n)�� 
+分析：因为点数比较少，考虑状态压缩DP。
+	  根据 Dilworth 定理,有向无环图的最长链长度,等于最少反链划分数量（导弹拦截里面的第二问）。
+	  所以问题等价于,把点集分成若干集合,使得每个子集内部没有边。
+	  预处理出ok[code]表示集合code内部是否有边,然后计算f[code]表示把集合code划分的最少子集数量,
+	  转移的时候枚举subcode满足ok[subcode]为真,用f[code-subcode]+1更新答案。总的时间复杂度是 O(2^n*m+3^n)。 
 */
 #include<cstdio>
 #include<cstring>

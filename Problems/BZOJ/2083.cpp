@@ -1,8 +1,8 @@
 /*
 [Poi2010]Intelligence test
-�����������ж�һ�������Ƿ�����һ���������У�����O(nm)��
-		���ڲ���ֱ�Ӷ���ȷ��λ�ã���ôÿ�����ֽ�vector��ÿ��ѯ�ʣ����δ���ÿ�����֣�����vector�ж��ֳ���Ӧλ�� ��ֻҪÿ�ζ����ҵ�ƥ��ľ��С�
-		�����������Թ�= = 
+分析：就是判断一个序列是否是另一个的子序列，暴力O(nm)：
+		由于不能直接二分确定位置，那么每个数字建vector，每次询问，依次处理每个数字，在其vector中二分出对应位置 。只要每次都能找到匹配的就行。
+		这样暴力可以过= = 
 */
 #include<cstdio>
 #include<vector>

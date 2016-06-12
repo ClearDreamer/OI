@@ -1,50 +1,50 @@
 /*
-·ÖÎö£ºÊ×ÏÈÃ÷°×Á½µã£º 1.¿¨hashµÄ¹Ø¼üÔÚÓÚ¹¹ÔìÁ½¸ö²»Í¬µÄ´®¶ÔÓ¦µÄhashÖµÏàÍ¬¡£ 2.±¬u64Ïàµ±ÓÚ¶Ô2^64Õâ¸öÊýÈ¡Ä£¡£ 
-	  Èç¹ûbaseÊÇÅ¼Êý£¬ÄÇÃ´a.........aaa(>64¸öa)Óëba.......aa(aµÄÊýÁ¿ÎªÇ°ÃæÄÇÃ´´®aµÄÊýÁ¿-1)£¬ÕâÁ½¸ö´®³¤¶ÈÏàÍ¬£¬hashÖµÏàÍ¬£¬ÏÔÈ»´®ÊÇ²»Í¬µÄ£¬ÕâÑù¾Í¿¨µôÁË¡£ 
-	  Èç¹ûbaseÊÇÆæÊý£¬¾Í±È½ÏÂé·³ÁË¡£ 
-	  ¿´vfkµÄ×ö·¨°É£º 
-	  Èç¹ûbaseÊÇÆæÊýµÄ»°£¬ÏÖÔÚÖ»¿¼ÂÇa¡¢bÁ½¸ö×ÖÄ¸¡£ 
-		a \ b±íÊ¾aÄÜÕû³ýb¡££¨orz ¾ßÌåÊýÑ§£© 
-		ÉèÊýÑ§ÉÏµÄº¯Êýnot(S)±íÊ¾°Ñ×Ö·û´®SÖÐÃ¿¸öÎ»ÖÃµÄ'a'±ä³É'b'£¬°Ñ'b'±ä³É'a'ºóÐÎ³ÉµÄ×Ö·û´®¡£±ÈÈçnot("ababaa") = "bababb" 
- 		strA . strB´ú±í×Ö·û´®´®Áª¡£Èç"ÍÞ" . "¹þ¹þ" = "ÍÞ¹þ¹þ" 
- 		|str|±íÊ¾×Ö·û´®strµÄ³¤¶È¡£ 
- 		Éè×Ö·û´®ÐòÁÐ{orzstr[i]}£¬orzstr[1] = "a", orzstr[i] = orzstr[i - 1] . not(orzstr[i - 1]) 
- 		ÄÇÃ´|orzstr[i]| = |orzstr[i - 1]| * 2¡£ÏÔÈ»ÕâÊÇµÈ±ÈÊýÁÐ£¬µÃµ½£º|orzstr[i]| = |orzstr[1]| . 2 ^ (i - 1) = 2 ^ (i - 1) 
- 		Éèhash(str)ÎªstrµÄ¹þÏ£Öµ¡£ 
- 		Ôò£º 
+åˆ†æžï¼šé¦–å…ˆæ˜Žç™½ä¸¤ç‚¹ï¼š 1.å¡hashçš„å…³é”®åœ¨äºŽæž„é€ ä¸¤ä¸ªä¸åŒçš„ä¸²å¯¹åº”çš„hashå€¼ç›¸åŒã€‚ 2.çˆ†u64ç›¸å½“äºŽå¯¹2^64è¿™ä¸ªæ•°å–æ¨¡ã€‚ 
+	  å¦‚æžœbaseæ˜¯å¶æ•°ï¼Œé‚£ä¹ˆa.........aaa(>64ä¸ªa)ä¸Žba.......aa(açš„æ•°é‡ä¸ºå‰é¢é‚£ä¹ˆä¸²açš„æ•°é‡-1)ï¼Œè¿™ä¸¤ä¸ªä¸²é•¿åº¦ç›¸åŒï¼Œhashå€¼ç›¸åŒï¼Œæ˜¾ç„¶ä¸²æ˜¯ä¸åŒçš„ï¼Œè¿™æ ·å°±å¡æŽ‰äº†ã€‚ 
+	  å¦‚æžœbaseæ˜¯å¥‡æ•°ï¼Œå°±æ¯”è¾ƒéº»çƒ¦äº†ã€‚ 
+	  çœ‹vfkçš„åšæ³•å§ï¼š 
+	  å¦‚æžœbaseæ˜¯å¥‡æ•°çš„è¯ï¼ŒçŽ°åœ¨åªè€ƒè™‘aã€bä¸¤ä¸ªå­—æ¯ã€‚ 
+		a \ bè¡¨ç¤ºaèƒ½æ•´é™¤bã€‚ï¼ˆorz å…·ä½“æ•°å­¦ï¼‰ 
+		è®¾æ•°å­¦ä¸Šçš„å‡½æ•°not(S)è¡¨ç¤ºæŠŠå­—ç¬¦ä¸²Sä¸­æ¯ä¸ªä½ç½®çš„'a'å˜æˆ'b'ï¼ŒæŠŠ'b'å˜æˆ'a'åŽå½¢æˆçš„å­—ç¬¦ä¸²ã€‚æ¯”å¦‚not("ababaa") = "bababb" 
+ 		strA . strBä»£è¡¨å­—ç¬¦ä¸²ä¸²è”ã€‚å¦‚"å¨ƒ" . "å“ˆå“ˆ" = "å¨ƒå“ˆå“ˆ" 
+ 		|str|è¡¨ç¤ºå­—ç¬¦ä¸²strçš„é•¿åº¦ã€‚ 
+ 		è®¾å­—ç¬¦ä¸²åºåˆ—{orzstr[i]}ï¼Œorzstr[1] = "a", orzstr[i] = orzstr[i - 1] . not(orzstr[i - 1]) 
+ 		é‚£ä¹ˆ|orzstr[i]| = |orzstr[i - 1]| * 2ã€‚æ˜¾ç„¶è¿™æ˜¯ç­‰æ¯”æ•°åˆ—ï¼Œå¾—åˆ°ï¼š|orzstr[i]| = |orzstr[1]| . 2 ^ (i - 1) = 2 ^ (i - 1) 
+ 		è®¾hash(str)ä¸ºstrçš„å“ˆå¸Œå€¼ã€‚ 
+ 		åˆ™ï¼š 
  		hash(orzstr[i]) = hash(orzstr[i - 1]) * base ^ |not(orzstr[i - 1])| + hash(not(orzstr[i - 1])) 
                         = hash(orzstr[i - 1]) * base ^ (2 ^ (i - 2)) + hash(not(orzstr[i - 1])) 
  		hash(not(orzstr[i])) = hash(not(orzstr[i - 1])) * base ^ (2 ^ (i - 2)) + hash(orzstr[i - 1]) 
- 		Á½Ê½Ïà¼õ£º 
+ 		ä¸¤å¼ç›¸å‡ï¼š 
    		hash(orzstr[i]) - hash(not(orzstr[i])) 
 		= (hash(orzstr[i - 1]) * base ^ (2 ^ (i - 2)) + hash(not(orzstr[i - 1]))) - (hash(not(orzstr[i - 1])) * base ^ (2 ^ (i - 2)) + hash(orzstr[i - 1])) 
 		= (hash(orzstr[i - 1]) - hash(not(orzstr[i - 1]))) * (base ^ (2 ^ (i - 2)) - 1) 
- 		ÕâÈÃÎÒÃÇ·¢ÏÖ£¬hash(orzstr[i]) - hash(not(orzstr[i]))ËÆºõÊÇ¸öÉñÆæµÄ¶«Î÷¡£¶øÎÒÃÇµÄÄ¿µÄÊµ¼ÊÉÏÊÇÒªÕÒÁ½¸ö×Ö·û´®strA, strBÊ¹µÃ 
+ 		è¿™è®©æˆ‘ä»¬å‘çŽ°ï¼Œhash(orzstr[i]) - hash(not(orzstr[i]))ä¼¼ä¹Žæ˜¯ä¸ªç¥žå¥‡çš„ä¸œè¥¿ã€‚è€Œæˆ‘ä»¬çš„ç›®çš„å®žé™…ä¸Šæ˜¯è¦æ‰¾ä¸¤ä¸ªå­—ç¬¦ä¸²strA, strBä½¿å¾— 
 		hash(strA) % 2^64 = hash(strB) % 2^64 
- 		Ïàµ±Óë 
+ 		ç›¸å½“ä¸Ž 
  		2^64 \ hash(strA) - hash(strB) 
- 		ÉèÊýÁÐ{f[i]}£¬f[i] = hash(orzstr[i]) - hash(not(orzstr[i])) 
- 		ÕâÑù¾ÍÓÐ£º 
+ 		è®¾æ•°åˆ—{f[i]}ï¼Œf[i] = hash(orzstr[i]) - hash(not(orzstr[i])) 
+ 		è¿™æ ·å°±æœ‰ï¼š 
  		f[i] = f[i - 1] * (base ^ (2 ^ (i - 2)) - 1) 
- 		»¹ÊÇÓÐµã²»Ë¬°¡¡­¡­ÎÒÃÇÔÙÉèÊýÁÐ{g[i]}£¬g[i] = base ^ (2 ^ (i - 1)) - 1 
- 		ÓÚÊÇÄÜÐ´³É£º 
+ 		è¿˜æ˜¯æœ‰ç‚¹ä¸çˆ½å•Šâ€¦â€¦æˆ‘ä»¬å†è®¾æ•°åˆ—{g[i]}ï¼Œg[i] = base ^ (2 ^ (i - 1)) - 1 
+ 		äºŽæ˜¯èƒ½å†™æˆï¼š 
  		f[i] = f[i - 1] * g[i - 1] 
- 		Ôòf[i] = f[1] * g[1] * g[2] * ... * g[i - 1] 
- 		È»ºó·¢ÏÖÒ»¸öÉñÆæµÄÊÂÇé£¿ 
- 		baseÊÇÆæÊý£¬ÔòbaseµÄÈÎÒâÕýÕûÊý´Î·½Ò²Ò»¶¨ÊÇÆæÊý¡£ËùÒÔ¶ÔÓÚÈÎÒâµÄi±ØÓÐg[i]ÎªÅ¼Êý£¬ËùÒÔ2 ^ (i - 1) \ f[i] 
- 		ÎÊÌâÊÇ²»ÊÇ½áÊøÁËÄØ¡­¡­·¢ÏÖÃ»ÓÐ¡­¡­ÕâÑùµÄ»°ÎÒÃÇÒªÊ¹2 ^ 64 \ f[i]£¬ÖÁÉÙµÃÈÃi = 65¡­¡­È»ºó·¢ÏÖ|orzstr[65]|ÊÇ¸öÌìÎÄÊý×Ö¡£ 
- 		·¢ÏÖÎÒÃÇ¸Õ²ÅÄÇÑù·ÖÎöÌ«¿ÓµùÁË¡­¡­ 
- 		i > 1Ê±ÓÐ£º 
- 		g[i] = base ^ (2 ^ (i - 1)) - 1 = (base ^ (2 ^ (i - 2)) - 1) * (base ^ (2 ^ (i - 2)) + 1) = g[i - 1] * Ò»¸öÅ¼Êý 
- 		¶øg[1]ÏÔÈ»ÊÇÅ¼Êý°É¡­¡­ 
- 		ÄÇÃ´4 \ g[2]£¬8 \ g[3]... 
- 		Ò²¾ÍÊÇËµ2 ^ i \ g[i] 
- 		ËùÒÔf[i] Êµ¼ÊÉÏÓÐ£º 
+ 		åˆ™f[i] = f[1] * g[1] * g[2] * ... * g[i - 1] 
+ 		ç„¶åŽå‘çŽ°ä¸€ä¸ªç¥žå¥‡çš„äº‹æƒ…ï¼Ÿ 
+ 		baseæ˜¯å¥‡æ•°ï¼Œåˆ™baseçš„ä»»æ„æ­£æ•´æ•°æ¬¡æ–¹ä¹Ÿä¸€å®šæ˜¯å¥‡æ•°ã€‚æ‰€ä»¥å¯¹äºŽä»»æ„çš„iå¿…æœ‰g[i]ä¸ºå¶æ•°ï¼Œæ‰€ä»¥2 ^ (i - 1) \ f[i] 
+ 		é—®é¢˜æ˜¯ä¸æ˜¯ç»“æŸäº†å‘¢â€¦â€¦å‘çŽ°æ²¡æœ‰â€¦â€¦è¿™æ ·çš„è¯æˆ‘ä»¬è¦ä½¿2 ^ 64 \ f[i]ï¼Œè‡³å°‘å¾—è®©i = 65â€¦â€¦ç„¶åŽå‘çŽ°|orzstr[65]|æ˜¯ä¸ªå¤©æ–‡æ•°å­—ã€‚ 
+ 		å‘çŽ°æˆ‘ä»¬åˆšæ‰é‚£æ ·åˆ†æžå¤ªå‘çˆ¹äº†â€¦â€¦ 
+ 		i > 1æ—¶æœ‰ï¼š 
+ 		g[i] = base ^ (2 ^ (i - 1)) - 1 = (base ^ (2 ^ (i - 2)) - 1) * (base ^ (2 ^ (i - 2)) + 1) = g[i - 1] * ä¸€ä¸ªå¶æ•° 
+ 		è€Œg[1]æ˜¾ç„¶æ˜¯å¶æ•°å§â€¦â€¦ 
+ 		é‚£ä¹ˆ4 \ g[2]ï¼Œ8 \ g[3]... 
+ 		ä¹Ÿå°±æ˜¯è¯´2 ^ i \ g[i] 
+ 		æ‰€ä»¥f[i] å®žé™…ä¸Šæœ‰ï¼š 
  		(2 ^ 1) * (2 ^ 2) * (2 ^ 3) * ... * (2 ^ (i - 1)) \ f[i] 
  		2 ^ (i * (i - 1) / 2) \ f[i] 
- 		µ±iÈ¡12Ê±£¬¾ÍÓÐ66¸ö2ÁËÓ´£¡ 
- 		Õâ¾ÍÊÇ¿¨baseÎªÆæÊýÊ±µÄ·½·¨¡£orzstr[12]ºÍnot(orzstr[12])¼´ÎªËùÇó¡£ 
-		¶ø¶ÁÈëÖÐbase¼ÈÓÐÆæÊýÓÖÓÐÅ¼Êý£¬Ö±½ÓÔÚÆæÊý¹¹ÔìµÄ×Ö·û´®ºóÃæ¼Ó64¸öa¾Í¿ÉÒÔÁË¡£ 
+ 		å½“iå–12æ—¶ï¼Œå°±æœ‰66ä¸ª2äº†å“Ÿï¼ 
+ 		è¿™å°±æ˜¯å¡baseä¸ºå¥‡æ•°æ—¶çš„æ–¹æ³•ã€‚orzstr[12]å’Œnot(orzstr[12])å³ä¸ºæ‰€æ±‚ã€‚ 
+		è€Œè¯»å…¥ä¸­baseæ—¢æœ‰å¥‡æ•°åˆæœ‰å¶æ•°ï¼Œç›´æŽ¥åœ¨å¥‡æ•°æž„é€ çš„å­—ç¬¦ä¸²åŽé¢åŠ 64ä¸ªaå°±å¯ä»¥äº†ã€‚ 
 */
 #include<iostream>
 #include<cstdio>

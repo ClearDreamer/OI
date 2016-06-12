@@ -1,5 +1,5 @@
 /*
-×î³¤¹«¹²×Ó´®
+æœ€é•¿å…¬å…±å­ä¸²
 */
 #include<iostream>
 #include<cstring>
@@ -12,11 +12,11 @@ void lcs(str a,str b,str out){
 	memset(opt,0,sizeof(opt));
 	int la=strlen(a),lb=strlen(b),maxl=0,poi=0;
 	for(int i=1;i<=la;i++){
-		for(int j=lb;j>=1;j--){//×¢ÒâÕâÀïÒªÄæĞò 
+		for(int j=lb;j>=1;j--){//æ³¨æ„è¿™é‡Œè¦é€†åº 
 			if(a[i-1]==b[j-1]){
 				opt[j]=opt[j-1]+1;
 				if(opt[j]>maxl){
-					poi=j-1;maxl=opt[j];//¼ÇÂ¼LCSµÄ½áÎ²ºÍ³¤¶È 
+					poi=j-1;maxl=opt[j];//è®°å½•LCSçš„ç»“å°¾å’Œé•¿åº¦ 
 				}
 			}
 			else opt[j]=0;

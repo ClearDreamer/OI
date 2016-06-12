@@ -1,6 +1,6 @@
 /*
-�������
-�����������㣬Ȼ�������Ϊ0�ģ�����е����Ϊ0�ĵ㲻�ܻ�¸����ôһ����No�����Ի�¸�����ܻ�¸�ģ�����Сֵ 
+间谍网络
+分析：先缩点，然后找入度为0的，如果有的入度为0的点不能贿赂，那么一定是No，尝试贿赂所有能贿赂的，找最小值 
 */
 #include<iostream>
 #include<vector>
@@ -84,7 +84,7 @@ int topo(){
 	}
 	if(ans==-1){
 		for(int i=1;i<=sccn;i++){
-			if(val[i]!=INF){//�ܻ�¸ȫ����¸ 
+			if(val[i]!=INF){//能贿赂全部贿赂 
 				for(int j=1;j<=n;j++){
 					if(scc[j]==i)can[j]=1;
 				}

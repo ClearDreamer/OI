@@ -1,6 +1,6 @@
 /*
-[Fjoi 2016]ÉñÃØÊý
-·ÖÎö£ºÍ¬BZOJ4299 
+[Fjoi 2016]ç¥žç§˜æ•°
+åˆ†æžï¼šåŒBZOJ4299 
 */
 #include<iostream>
 #include<cstdio>

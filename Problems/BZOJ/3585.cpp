@@ -1,6 +1,6 @@
 /*
 mex
-·ÖÎö£ºÍ¬3339£¬ÏÈÀëÉ¢»¯£¬×¢ÒâÕâÌâÀëÉ¢»¯ÓĞÌØÊâµÄµØ·½£¬ÒòÎªÊÇmex 
+åˆ†æï¼šåŒ3339ï¼Œå…ˆç¦»æ•£åŒ–ï¼Œæ³¨æ„è¿™é¢˜ç¦»æ•£åŒ–æœ‰ç‰¹æ®Šçš„åœ°æ–¹ï¼Œå› ä¸ºæ˜¯mex 
 */
 #include<cstdio>
 #include<algorithm>
@@ -14,7 +14,7 @@ struct number{int x,id;}ns[MAXN+3];
 bool cmp1(query x,query y){return x.l<y.l;}
 bool cmp2(number x,number y){return x.x<y.x;}
 arr t1,t2;
-void init(){//ÀëÉ¢»¯ 
+void init(){//ç¦»æ•£åŒ– 
 	sort(ns+1,ns+n+1,cmp2);
 	cnt=0;t1[cnt]=0;t2[0]=cnt;
 	for(int i=1;i<=n;i++){
@@ -23,7 +23,7 @@ void init(){//ÀëÉ¢»¯
 	}
 	for(int cur=0,i=1;i<=n;i++){
     	v[t2[i]]=1;
-        while(v[cur]!=0&&t1[cur+1]==t1[cur]+1)cur++;//×¢ÒâÕâÁ½¾ä 
+        while(v[cur]!=0&&t1[cur+1]==t1[cur]+1)cur++;//æ³¨æ„è¿™ä¸¤å¥ 
         if(v[cur]!=0&&t1[cur+1]!=t1[cur]+1)mex[i]=t1[cur]+1;
         else mex[i]=t1[cur];
     }
@@ -36,7 +36,7 @@ void init(){//ÀëÉ¢»¯
 void change(int x){
 	int ed=next[x]?next[x]:(n+1);
     mex[x]=0;
-    for(int i=ed-1;i>x;i--){//ÕâÀïµ¹×Å¸üĞÂ£¬ ½µµÍ¸´ÔÓ¶È 
+    for(int i=ed-1;i>x;i--){//è¿™é‡Œå€’ç€æ›´æ–°ï¼Œ é™ä½å¤æ‚åº¦ 
         if(mex[i]<=a[x])break;
         mex[i]=a[x];
     }

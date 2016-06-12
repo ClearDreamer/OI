@@ -1,6 +1,6 @@
 /*
 [POI2015]Wilcze do?y
-·ÖÎö£ºÎ¬»¤³¤¶ÈÎªdµÄÇø¼äµÄÇø¼äºÍµÄµ¥µ÷¼õ¶ÓÁÐ£¬Î¬»¤µ±Ç°Âú×ãsum[l..r]-maxsumd<=PµÄsum[l..r]¼°Æä×ó¶Ëµã£¬µ¥µ÷¶ÓÁÐ¼´¿É¡£ 
+åˆ†æžï¼šç»´æŠ¤é•¿åº¦ä¸ºdçš„åŒºé—´çš„åŒºé—´å’Œçš„å•è°ƒå‡é˜Ÿåˆ—ï¼Œç»´æŠ¤å½“å‰æ»¡è¶³sum[l..r]-maxsumd<=Pçš„sum[l..r]åŠå…¶å·¦ç«¯ç‚¹ï¼Œå•è°ƒé˜Ÿåˆ—å³å¯ã€‚ 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,7 +1,7 @@
 /*
 Trick or Treat
-ÌâÒâ£ºÔÚÆ½Ãæ×ø±êÏµÉÏ¸ø¶¨Ò»Ð©µã£¬È»ºóÈÃÔÚXÖáÉÏÕÒÒ»µãÊ¹µÃËùÓÐµãµ½¸ÃµãµÄ¾àÀëµÄ×î´óÖµ×îÐ¡¡£
-·ÖÎö£ºÈç¹ûx0µãÊÇËùÇóµã£¬ÄÇÃ´¸ÃµãÏò×óÏòÓÒ¶¼»áÊ¹µÃ×î´ó¾àÀë±ä´ó£¬ÓÚÊÇÈý·Ö 
+é¢˜æ„ï¼šåœ¨å¹³é¢åæ ‡ç³»ä¸Šç»™å®šä¸€äº›ç‚¹ï¼Œç„¶åŽè®©åœ¨Xè½´ä¸Šæ‰¾ä¸€ç‚¹ä½¿å¾—æ‰€æœ‰ç‚¹åˆ°è¯¥ç‚¹çš„è·ç¦»çš„æœ€å¤§å€¼æœ€å°ã€‚
+åˆ†æžï¼šå¦‚æžœx0ç‚¹æ˜¯æ‰€æ±‚ç‚¹ï¼Œé‚£ä¹ˆè¯¥ç‚¹å‘å·¦å‘å³éƒ½ä¼šä½¿å¾—æœ€å¤§è·ç¦»å˜å¤§ï¼ŒäºŽæ˜¯ä¸‰åˆ† 
 */
 #include<cstdio>
 #include<iostream>
@@ -33,7 +33,7 @@ int main(){
 			if(v1>v2)l=p1;
 			else r=p2;
 		}
-		printf("%.9lf %.9lf\n",l,calc(l));//´Ë´¦²»Òªµ÷ÓÃmin(v1,v2),ÖØÐÂ¼ÆËã 
+		printf("%.9lf %.9lf\n",l,calc(l));//æ­¤å¤„ä¸è¦è°ƒç”¨min(v1,v2),é‡æ–°è®¡ç®— 
 	}
 	return 0 ;
 }

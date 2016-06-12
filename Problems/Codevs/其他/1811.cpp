@@ -1,6 +1,6 @@
 /*
-A+BÎÊÌâ 3
-·ÖÎö£º´ËÌâ½Ï¿Ó£¬Ê×ÏÈµçÄÔÉÏ¿ªMAXN=100005ÔËĞĞ²»ÁË£¬µ«ÆÀ²â»ú¿ÉÒÔ£¬È»ºóÒª×¢ÒâÕı¸ºÅĞ¶Ï£¬»¹ÓĞ0 
+A+Bé—®é¢˜ 3
+åˆ†æï¼šæ­¤é¢˜è¾ƒå‘ï¼Œé¦–å…ˆç”µè„‘ä¸Šå¼€MAXN=100005è¿è¡Œä¸äº†ï¼Œä½†è¯„æµ‹æœºå¯ä»¥ï¼Œç„¶åè¦æ³¨æ„æ­£è´Ÿåˆ¤æ–­ï¼Œè¿˜æœ‰0 
 */
 #include<cstdio>
 #include<iostream>
@@ -45,7 +45,7 @@ struct bign{
 	void setstr(const char* num,int start){
 		len = strlen(num);
 		for(int i = start; i < len; i++) s[i-start] = num[len-i-1+start] - '0';
-		clean();//ÕâÀï¿ÉÒÔ±ÜÃâµ÷ÓÃclean£¬µ«ÊÇÀÁµÃ´òÁË 
+		clean();//è¿™é‡Œå¯ä»¥é¿å…è°ƒç”¨cleanï¼Œä½†æ˜¯æ‡’å¾—æ‰“äº† 
 	}
 
 	string str() const {

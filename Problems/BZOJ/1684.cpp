@@ -1,13 +1,13 @@
 /*
 [Usaco2005 Oct]Close Encounter
-·ÖÎö£º×¢Òâ·ÖÄ¸½ÏĞ¡£¬Ã¶¾Ù¼ÆËã 
+åˆ†æï¼šæ³¨æ„åˆ†æ¯è¾ƒå°ï¼Œæšä¸¾è®¡ç®— 
 */
 #include<cstdio>
 #include<cmath>
 int a,b,ans1,ans2;
 double delta=1e10;
 void check(int x,int y){
-    if(x*b==y*a)return;//±ÜÃâÏàµÈ£¬¼õĞ¡¾«¶ÈÎó²î 
+    if(x*b==y*a)return;//é¿å…ç›¸ç­‰ï¼Œå‡å°ç²¾åº¦è¯¯å·® 
     double d=fabs((double)x/y-(double)a/b);
     if(d<delta)delta=d,ans1=x,ans2=y;
 }

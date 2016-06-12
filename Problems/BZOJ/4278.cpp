@@ -1,6 +1,6 @@
 /*
 [ONTAK2015]Tasowanie
-·ÖÎö£ººÍÖ®Ç°µÄÒ»µÀUsacoÒ»Ñù£ºÌ°ĞÄ£¬Èç¹ûÓöµ½ÏàÍ¬µÄ£¬¾ÍÏòºóÕÒµÚÒ»¸ö²»Í¬µÄ£¬Õâ¸öÓÃhash+lcpÅĞ¶Ï¾ÍĞĞÁË£¬ÀÁµÃĞ´ºó×ºÊı×é 
+åˆ†æï¼šå’Œä¹‹å‰çš„ä¸€é“Usacoä¸€æ ·ï¼šè´ªå¿ƒï¼Œå¦‚æœé‡åˆ°ç›¸åŒçš„ï¼Œå°±å‘åæ‰¾ç¬¬ä¸€ä¸ªä¸åŒçš„ï¼Œè¿™ä¸ªç”¨hash+lcpåˆ¤æ–­å°±è¡Œäº†ï¼Œæ‡’å¾—å†™åç¼€æ•°ç»„ 
 */
 #include<cstdio>
 #include<algorithm>
@@ -11,7 +11,7 @@ int n,m,pw[MAXN+3],a[MAXN+3],b[MAXN+3],f[MAXN+3],g[MAXN+3];
 int hash0(int l,int r){return(LL)(f[r]-(LL)f[l-1]*pw[r-l+1]%D+D)%D;}
 int hash1(int l,int r){return(LL)(g[r]-(LL)g[l-1]*pw[r-l+1]%D+D)%D;}
 int lcp(int a,int b){
-	int l=0,r=min(n-a+1,m-b+1),ans=0;//´Ó0¿ªÊ¼ 
+	int l=0,r=min(n-a+1,m-b+1),ans=0;//ä»0å¼€å§‹ 
 	while(l<=r){
 		int mid=(l+r)>>1;
 		if(hash0(a,a+mid-1)==hash1(b,b+mid-1))ans=mid,l=mid+1;

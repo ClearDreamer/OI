@@ -1,7 +1,7 @@
 /*
 Milk Patterns
-���⣺���ص���k����ظ��Ӵ���
-��������׺���顣�ȶ��ִ𰸣�Ȼ�󽫺�׺�ֳ������顣����Ҫ�жϵ�����û��һ����ĺ�׺������С��k������У���ô����k����ͬ���Ӵ��������������򲻴��ڡ�ʱ�临�Ӷ�ΪO(nlogn)��  
+题意：可重叠的k次最长重复子串。
+分析：后缀数组。先二分答案，然后将后缀分成若干组。这里要判断的是有没有一个组的后缀个数不小于k。如果有，那么存在k个相同的子串满足条件，否则不存在。时间复杂度为O(nlogn)。  
 */
 #include<algorithm>
 #include<cstring>
@@ -50,7 +50,7 @@ bool check(int k){
 	while(true){
 		while(i<=N&&height[i]<k)i++;
 		if(i>N)break;
-		cnt=1;//ע�⣬�������i-1����Ϊheight������i��i-1��ɵ�LCP 
+		cnt=1;//注意，这里包含i-1，因为height定义是i和i-1组成的LCP 
 		while(i<=N&&height[i]>=k){
 			cnt++;
 			i++;

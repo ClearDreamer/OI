@@ -1,6 +1,6 @@
 /*
-[Poi2008]海报PLA
-分析：单调栈 
+[Poi2008]娴锋姤PLA
+鍒嗘瀽锛氬崟璋冩爤 
 */
 #include<iostream>
 #include<cstdio>

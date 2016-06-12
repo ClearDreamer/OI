@@ -1,7 +1,7 @@
 /*
 Power of Cryptography
-ÌâÒâ£ºK ^ N = P, ¸øN ºÍ P£¬ ÇóK¡£Êı¾İ¹æÄ£ £º1<=n<= 200, 1<=p<10101 and there exists an integer k, 1<=k<=109 ¡£
-·ÖÎö£ºÖ±½Ódouble¾ÍÄÜ¹ı 
+é¢˜æ„ï¼šK ^ N = P, ç»™N å’Œ Pï¼Œ æ±‚Kã€‚æ•°æ®è§„æ¨¡ ï¼š1<=n<= 200, 1<=p<10101 and there exists an integer k, 1<=k<=109 ã€‚
+åˆ†æï¼šç›´æ¥doubleå°±èƒ½è¿‡ 
 */
 #include<cmath> 
 #include<iostream>

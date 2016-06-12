@@ -1,5 +1,5 @@
 /*
-втсибДлЕ
+Х┤╙Г■╠Х░╫Д╫⌠
 */
 #include<cmath>
 #include<algorithm>

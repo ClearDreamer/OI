@@ -1,5 +1,5 @@
 /*
-¼ÆËã
+è®¡ç®—
 */
 #include<stdio.h>
 int cf(int n,int k){

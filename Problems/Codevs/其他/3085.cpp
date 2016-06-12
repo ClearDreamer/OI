@@ -1,5 +1,5 @@
 /*
-相同的后三位
+鐩稿悓鐨勫悗涓変綅
 */
 #include<iostream>
 using namespace std;

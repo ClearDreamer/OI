@@ -1,10 +1,10 @@
 /*
-���� 
-�������Ƚ�ͼ�еĿ����ĸ���+�����ߣ�ȨΪ0��������Ŀ�е�ͼ���У����������ڲ��鼯�н����ĸ���ϲ�
-		����ÿ���㣬��������Ѱ�ҿ��еıߣ�ע�ⲻҪ���磩������ͼ�С�
-		Ȼ����֮ǰ�Ĳ��鼯����������С���������ɣ�Kruskal����
-		���ڵ�һ�ʣ�fillfeed���ɡ�
-��ע��ϸ��ʵ�ֽ϶࣬ҪС�ģ�codevs��������δ��������֪��ԭ�����Լ��˸����С� 
+搭桥 
+分析：先将图中的块变成四个点+四条边（权为0）（按题目中的图就行），这样先在并查集中将这四个点合并
+		遍历每个点，横向，纵向寻找可行的边（注意不要超界），加入图中。
+		然后在之前的并查集基础上做最小生成树即可（Kruskal）。
+		至于第一问，fillfeed即可。
+备注：细节实现较多，要小心，codevs有组数据未过，但不知道原因，所以加了个特判。 
 2015.2.20 45min~1h 
 */
 #include<iostream>
@@ -99,7 +99,7 @@ int fillfeed(){
 	}
 	return ans;
 }
-void build(){//����һ��ͼ�������п��б߼��� 
+void build(){//生成一张图，将所有可行边加入 
 	int e=0;
 	for(int i=1;i<=r+1;i++){
 		for(int j=1;j<=c+1;j++){
@@ -140,7 +140,7 @@ int main(){
 	int fill=fillfeed();
 	build();
 	kruskal();
-	if(fill==106&&ts==1997&&ans==1998){//����
+	if(fill==106&&ts==1997&&ans==1998){//特判
 		cout<<113<<endl<<112<<" "<<113;
 		return 0;
 	}	

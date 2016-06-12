@@ -1,6 +1,6 @@
 /*
-[Tjoi2013]����С����
-��������̰�ģ���������(a+b)ǿ�Ŀ϶��Ƿ�������ߣ�Ȼ��dp��f[i]��ʾ����i���˺�ʣ�µ�������ߵĸ߶�
+[Tjoi2013]拯救小矮人
+分析：先贪心，逃生能力(a+b)强的肯定是放在最后走，然后dp，f[i]表示逃跑i个人后剩下的人梯最高的高度
 */
 #include<iostream>
 #include<cstdio>

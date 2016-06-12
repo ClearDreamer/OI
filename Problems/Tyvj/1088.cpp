@@ -9,11 +9,11 @@ void read(){
 	for(int i=1;i<=n;i++)cin>>a[i];
 	for(int i=1;i<=n;i++){
 		for(int j=i;j<=n;j++){
-			s[i][j]=s[i][j-1]+a[j];//´¦ÀíÇø¼ä[i,j]µÄÇø¼äºÍ£¬×¢ÒâÖ»´¦Àíj>=iµÄÇé¿ö 
+			s[i][j]=s[i][j-1]+a[j];//å¤„ç†åŒºé—´[i,j]çš„åŒºé—´å’Œï¼Œæ³¨æ„åªå¤„ç†j>=içš„æƒ…å†µ 
 		}
 	}
 }
-//×¢Òâµ½Ã¿È¡Ò»´ÎËùÓÐÊ£ÏÂµÄÊý³ËµÄÏµÊý¾Í+1£¬ËùÒÔ¿ÉÒÔÓÃÇóºÍ×ö 
+//æ³¨æ„åˆ°æ¯å–ä¸€æ¬¡æ‰€æœ‰å‰©ä¸‹çš„æ•°ä¹˜çš„ç³»æ•°å°±+1ï¼Œæ‰€ä»¥å¯ä»¥ç”¨æ±‚å’Œåš 
 int solve(){
 	memset(opt,0,sizeof(opt));
 	for(int len=1;len<=n;len++){

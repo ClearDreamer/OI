@@ -1,9 +1,9 @@
 /*
-[Usaco2007 Mar]Ranking the Cows ��ţ����
-������bitset���ݱհ�����Ϊ�����Եĸ�����
-		���������Եĸ�����ô���أ�
-		�ݳ�ԭ�������е�Ը�����ȥ�����Եĸ�����Ϊ�𰸡�
-		��ôά�������Ը�����?bitset���ݱհ����ɡ� 
+[Usaco2007 Mar]Ranking the Cows 奶牛排名
+分析：bitset传递闭包，答案为无序点对的个数。
+		但是无序点对的个数怎么求呢？
+		容斥原理。所有点对个数减去有序点对的个数即为答案。
+		怎么维护有序点对个数呢?bitset传递闭包即可。 
 */
 #include<iostream>
 #include<algorithm>

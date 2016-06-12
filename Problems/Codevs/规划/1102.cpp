@@ -1,5 +1,5 @@
 /*
-╡ир╘
+И┤┤Х█╞
 */
 #include<iostream>
 #include<algorithm>

@@ -1,8 +1,8 @@
 /*
-[HAOI2008]ľ���ָ�
-��������һ�ʶ��֣�ע���½�Ҫȡ�ľ�����ȣ���Ȼ�жϺ���Ҫ������
-	  �ڶ��ʣ���f[i][j]��ʾǰi������j�εķ�������f[i][j]=sigma{f[k][j-1]|sum[i]-sum[k]<=len} 
-	  ע��sum�ǵ����ģ�����ά��һ��sum���ɣ����Ƶ������С�ע�ⲻҪMLE��Ҫ�������顣 
+[HAOI2008]木棍分割
+分析：第一问二分，注意下界要取最长木棍长度，不然判断函数要加特判
+	  第二问，设f[i][j]表示前i根，切j次的方案数，f[i][j]=sigma{f[k][j-1]|sum[i]-sum[k]<=len} 
+	  注意sum是递增的，所以维护一下sum即可，类似单调队列。注意不要MLE，要滚动数组。 
 */
 #include<iostream>
 #include<cstdio>

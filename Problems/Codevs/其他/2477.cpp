@@ -1,5 +1,5 @@
 /*
-½ÚÈÕ²ÊµÆ
+èŠ‚æ—¥å½©ç¯
 */
 #include<stdio.h>
 const char cc[5]={'p','r','b','y','g'};

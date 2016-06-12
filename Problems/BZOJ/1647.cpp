@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Open]Fliptile ��������Ϸ
-������ö�ٵ�һ��ÿ�����Ӱ��򲻰������������еĲ�����Ψһ�ˣ���ΪҪʹȫ��Ϊ0�� 
+[Usaco2007 Open]Fliptile 翻格子游戏
+分析：枚举第一行每个格子按或不按，这样后面行的操作就唯一了（因为要使全部为0） 
 */
 #include<iostream>
 #include<cstdio>

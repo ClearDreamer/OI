@@ -1,6 +1,6 @@
 /*
-����ʽ���
-������ϸ�ڲ��٣�WA�˺ü��Σ�����Ҫϸ�� 
+多项式输出
+分析：细节不少，WA了好几次，还是要细致 
 */
 #include<iostream>
 #include<cstdio>

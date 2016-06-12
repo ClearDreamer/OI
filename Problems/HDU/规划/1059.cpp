@@ -1,7 +1,7 @@
 /*
 Dividing
-���⣺�Ѽ�ֵΪ1��2��3��4��5��6�ı�ʯƽ���ֳ����ݣ������и��û�а취�ֿ���
-���������ر�������ʵ���Ͽ���ͨ����֦�Ż�������01������˼·AC 
+题意：把价值为1，2，3，4，5，6的宝石平均分成两份，不能切割，有没有办法分开。
+分析：多重背包，但实际上可以通过剪枝优化的类似01背包的思路AC 
 */
 #include<cstdio>
 #include<cstring>
@@ -22,7 +22,7 @@ int main(){
 			for(int l=total;l>=0;l--){
 				if(!opt[l])continue;
 				for(int k=1;k<=num[i]&&k*i+l<=total;k++){
-					if(opt[k*i+l])break;//��������Ĵ�һ���Ѿ��������� 
+					if(opt[k*i+l])break;//大于这个的答案一定已经处理过了 
 					opt[k*i+l]=1;
 				}
 			}

@@ -1,5 +1,5 @@
 /*
-я╟урвс╢╝н╩жц
+Е╞╩Ф┴╬Е╜░Д╦╡Д╫█Г╫╝
 */
 #include<iostream>
 #include<string>

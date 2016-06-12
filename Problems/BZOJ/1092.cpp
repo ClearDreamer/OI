@@ -1,6 +1,6 @@
 /*
-[SCOI2003]֩������
-������ֱ�Ӱ�עˮʱ����ģ�� ����ϸ��ͼ�������������ڵ������޵�= = 
+[SCOI2003]蜘蛛难题
+分析：直接按注水时间来模拟 ，仔细看图，给的坐标是在第四象限的= = 
 */
 #include<iostream>
 #include<cstdio>
@@ -30,18 +30,18 @@ int main(){
     while(1){
         for (x=1;x;){
             x=0;
-            for(int i=1;i<=n;i++){//���п��ܱ�עˮ�Ĺܵ� 
+            for(int i=1;i<=n;i++){//所有可能被注水的管道 
                 if(!s[i].v)continue;
                 for(edge *t=prev[i];t;t=t->next)
                     if(s[i].h<=t->w&&!s[t->to].v)s[t->to].v=x=1;
             } 
         }
         maxn=0;
-        for (int i=1;i<=n;i++)if(s[i].v)maxn=max(maxn,s[i].h);//�ҵ���ߵ� 
+        for (int i=1;i<=n;i++)if(s[i].v)maxn=max(maxn,s[i].h);//找到最高的 
         if(s[S].v&&maxn==T){printf("%d\n",ans);return 0;}
         for(int i=1;i<=n;i++)
             if(s[i].v&&s[i].y==s[i].h&&s[i].h==maxn){puts("-1");return 0;}
-        for(int i=1;i<=n;i++)//���͸߶ȣ���ʵ�������s[i].y 
+        for(int i=1;i<=n;i++)//降低高度，其实就是提高s[i].y 
             if(s[i].v&&s[i].h==maxn)s[i].h--,ans++;
     }
 }

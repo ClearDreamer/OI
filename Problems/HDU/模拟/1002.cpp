@@ -1,6 +1,6 @@
 /*
 A + B Problem II
-分析：高精加，memset的参数是传进函数的指针时，memset无效 
+鍒嗘瀽锛氶珮绮惧姞锛宮emset鐨勫弬鏁版槸浼犺繘鍑芥暟鐨勬寚閽堟椂锛宮emset鏃犳晥 
 */
 #include<iostream>
 #include<algorithm>

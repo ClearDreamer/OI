@@ -1,6 +1,6 @@
 /*
-[HNOI2002]Ӫҵ��ͳ��
-��������ǰ����̣�set 
+[HNOI2002]营业额统计
+分析：找前驱后继，set 
 */
 #include<iostream>
 #include<algorithm>

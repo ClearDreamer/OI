@@ -1,6 +1,6 @@
 /*
-�����������Ⱥ͸߶�
-�������߶ȼ���ȣ�DFS�������ȼ�ͬһ�����ڵ�����BFS�� 
+二叉树最大宽度和高度
+分析：高度即深度（DFS），宽度即同一层最多节点数（BFS） 
 */
 #include<iostream>
 #include<algorithm>

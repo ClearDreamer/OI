@@ -1,6 +1,6 @@
 /*
-[JLOI2011]п║A╣д╥Ёду
-╥жнЖё╨дёдБ 
+[JLOI2011]Е╟▐AГ └Г┐╕Ф│╪
+Е┬├Ф·░О╪ Ф╗║Ф▀÷ 
 */
 #include <cstdio>
 #include <string>

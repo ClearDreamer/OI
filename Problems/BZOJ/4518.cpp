@@ -1,9 +1,9 @@
 /*
-[Sdoi2016]Õ÷Í¾
-·ÖÎö£º¸Ğ¾õÊÇ*m£¬¶ø²»ÊÇ*m^2
+[Sdoi2016]å¾é€”
+åˆ†æï¼šæ„Ÿè§‰æ˜¯*mï¼Œè€Œä¸æ˜¯*m^2
 		ans=m*sigma{xi^2}+m*sum^2-2m*sum^2
-		×îĞ¡»¯ sigma{xi^2}
-		DP+Ğ±ÂÊÓÅ»¯ j<k ÇÒkÓÅÓÚj£º((dp[j]+sum[j]^2)-(dp[k]+sum[k]^2))/sum[j]-sum[k]<2s[i]
+		æœ€å°åŒ– sigma{xi^2}
+		DP+æ–œç‡ä¼˜åŒ– j<k ä¸”kä¼˜äºjï¼š((dp[j]+sum[j]^2)-(dp[k]+sum[k]^2))/sum[j]-sum[k]<2s[i]
 */
 #include<iostream>
 #include<cstdio>

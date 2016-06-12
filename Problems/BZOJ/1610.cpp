@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Feb]Line������Ϸ
-���������е�����֮�����߼���б�ʣ�����ɨһ�顣ע��б�ʲ����ڵ����
+[Usaco2008 Feb]Line连线游戏
+分析：所有点两两之间连线计算斜率，排序扫一遍。注意斜率不存在的情况
 */
 #include<iostream>
 #include<cstdio>

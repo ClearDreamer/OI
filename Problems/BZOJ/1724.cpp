@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Nov]Fence Repair �и�ľ��
-���������ŵĺϲ����ӣ�ע�ⲻҪ��Ϊ�Ӵ�С�о��С� 
+[Usaco2006 Nov]Fence Repair 切割木板
+分析：倒着的合并果子，注意不要认为从大到小切就行。 
 */
 #include<iostream>
 #include<cstdio>

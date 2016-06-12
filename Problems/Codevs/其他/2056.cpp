@@ -1,6 +1,6 @@
 /*
-好色的XJP
-分析：一道奇葩题目，根本不用网络流，一定是数据问题 
+濂借壊鐨刋JP
+鍒嗘瀽锛氫竴閬撳钁╅鐩紝鏍规湰涓嶇敤缃戠粶娴侊紝涓�瀹氭槸鏁版嵁闂 
 */
 #include<iostream>
 using namespace std;

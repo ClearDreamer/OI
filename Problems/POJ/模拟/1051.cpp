@@ -1,7 +1,7 @@
 /*
 P,MTHBGWB 
-ÌâÒâ£ºhttp://www.cnblogs.com/dengeven/archive/2013/08/13/3255367.html 
-·ÖÎö£ººÃÂé·³µÄÄ£Äâ 
+é¢˜æ„ï¼šhttp://www.cnblogs.com/dengeven/archive/2013/08/13/3255367.html 
+åˆ†æï¼šå¥½éº»çƒ¦çš„æ¨¡æ‹Ÿ 
 */
 #include <iostream>
 #include <string>

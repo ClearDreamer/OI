@@ -1,20 +1,20 @@
 /*
 UmBasketella
-���⣺��һ�����Ϊs��Բ׶������������Լ���Ӧ�ĵ���뾶�͸ߡ�
-��������������ѧ�Ƶ���û�п�����
+题意：求一个面积为s的圆锥体的最大体积，以及对应的底面半径和高。
+分析：网上有数学推导，没有看懂：
 	  	S=pi*r*l + pi*r*r
-		l=sqrt(r*r+h*h)�� �����ã� r*2= s*s/(pi*pi*h*h+2*pi*s)
-		V=(1/3)*pi*r*r*h������r*2���󵼣���һ�׵���Ϊ0���ó����
+		l=sqrt(r*r+h*h)， 联立得， r*2= s*s/(pi*pi*h*h+2*pi*s)
+		V=(1/3)*pi*r*r*h，代入r*2，求导，令一阶导数为0，得出结果
 		
 		h=sqrt(2*s/pi)
 		r=sqrt(s*s/(pi*pi*h*h+2*pi*s))
 		v=(1.0/3.0)*(s*s)*h/(pi*h*h+2*s) 
-	  ����һ�����ֵķ��������Ǻʹ��в�ࣺ
-	  	V=1/3*r*r*h,��r*r=hʱr*r*hȡ�����ֵ����ʱ����S=pi*r(r+sqrt(r*r+r^4))
-	  	���ֳ�r������𰸣������в��
-	  ����������
-	  	�����ڵ���͹�Ժ���������κ���
-		  	double cal(){}//������Ŀ����Ҫ��ֵ
+	  想了一个二分的方法，但是和答案有差距：
+	  	V=1/3*r*r*h,在r*r=h时r*r*h取得最大值，此时满足S=pi*r(r+sqrt(r*r+r^4))
+	  	二分出r，求出答案，但是有差距
+	  三分做法：
+	  	适用于单峰凸性函数，如二次函数
+		  	double cal(){}//计算题目所需要的值
 			while(l+eps<r){
 			    m1=l+(r-l)/3;
 			    m2=r-(r-l)/3;
@@ -23,7 +23,7 @@ UmBasketella
 			    if(v1<v2)l=m1;
 			    else r=m2;
 			} 
-			��ʱr(��l)�����ֵ��ȡֵ�� 
+			此时r(或l)是最大值的取值点 
 */
 #include<iostream>
 #include<algorithm>

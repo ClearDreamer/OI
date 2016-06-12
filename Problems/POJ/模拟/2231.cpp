@@ -1,7 +1,7 @@
 /*
 Moo Volume
-ÌâÒâ£º¸ø¶¨n¸öÊý×Ö¡£ÎÊÈÎÒâÁ½ÊýÖ®¼äµÄ²îµÄ×ÜºÍÊÇ¶àÉÙ¡£ 
-·ÖÎö£ºÅÅÐòºó£¬É¨Ò»±é£¬ÕÒÕÒ¹æÂÉ£¬×¢ÒâÕâÌâÇó¡°ÔëÒô¡±£¬Òª³Ë2 
+é¢˜æ„ï¼šç»™å®šnä¸ªæ•°å­—ã€‚é—®ä»»æ„ä¸¤æ•°ä¹‹é—´çš„å·®çš„æ€»å’Œæ˜¯å¤šå°‘ã€‚ 
+åˆ†æžï¼šæŽ’åºåŽï¼Œæ‰«ä¸€éï¼Œæ‰¾æ‰¾è§„å¾‹ï¼Œæ³¨æ„è¿™é¢˜æ±‚â€œå™ªéŸ³â€ï¼Œè¦ä¹˜2 
 */
 #include<iostream>
 #include<algorithm>

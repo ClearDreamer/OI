@@ -1,7 +1,7 @@
 /*
 Toy Storage
-·ÖÎö£ºToys(2318)µÄÉý¼¶°æ£¬Ö»ÊÇÖÐ¼äµÄn¸ö¸ô°åÎ´ÅÅÐò£¬Êä³öµÄÊÇ×°ÓÐi¸öÍæ¾ßµÄÇøÓòµÄ¸öÊý£¬ÆäËûÍêÈ«Ò»Ñù
-	  ÕâÀï²ÉÓÃÁíÒ»ÖÖÅÐ¶Ï·½·¨ 
+åˆ†æžï¼šToys(2318)çš„å‡çº§ç‰ˆï¼Œåªæ˜¯ä¸­é—´çš„nä¸ªéš”æ¿æœªæŽ’åºï¼Œè¾“å‡ºçš„æ˜¯è£…æœ‰iä¸ªçŽ©å…·çš„åŒºåŸŸçš„ä¸ªæ•°ï¼Œå…¶ä»–å®Œå…¨ä¸€æ ·
+	  è¿™é‡Œé‡‡ç”¨å¦ä¸€ç§åˆ¤æ–­æ–¹æ³• 
 */ 
 #include<iostream>
 #include<cstdio>

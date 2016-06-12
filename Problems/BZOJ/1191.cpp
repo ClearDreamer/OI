@@ -1,6 +1,6 @@
 /*
-[HNOI2006]����Ӣ��Hero
-������ֱ�Ӷ���ͼƥ�䣬��˵���鼯������ 
+[HNOI2006]超级英雄Hero
+分析：直接二分图匹配，听说并查集能做？ 
 */
 #include<cstdio>
 #include<iostream>

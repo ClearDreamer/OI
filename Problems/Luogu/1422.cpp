@@ -1,5 +1,5 @@
 /*
-小玉家的电费
+灏忕帀瀹剁殑鐢佃垂
 */
 #include<iostream>
 #include<algorithm>

@@ -288,21 +288,21 @@ namespace Connexity_Directed {
 		sta.push(u);
 		for(int i=head[u]; i; i=es[i].nxt) {
 			edge &e=es[i];
-			if(!dfsn[e.v]) { //vÎ´±»·ÃÎÊ
+			if(!dfsn[e.v]) { //væœªè¢«è®¿é—®
 				dfs(e.v);
 				low[u]=min(low[u],low[e.v]);
-			} else if(!sccno[e.v]) { //vÒÑ±»·ÃÎÊÇÒv²»ÊôÓÚÈÎºÎÁ¬Í¨·ÖÁ¿
+			} else if(!sccno[e.v]) { //vå·²è¢«è®¿é—®ä¸”vä¸å±äºä»»ä½•è¿é€šåˆ†é‡
 				low[u]=min(low[u],dfsn[e.v]);
 			}
 		}
-		if(dfsn[u]==low[u]) { //ÕÒµ½Ò»¸öÁ¬Í¨·ÖÁ¿
+		if(dfsn[u]==low[u]) { //æ‰¾åˆ°ä¸€ä¸ªè¿é€šåˆ†é‡
 			sccs[++scc].clear();
 			while(1) {
 				int t=sta.top();
 				sta.pop();
 				sccs[scc].push_back(t);
 				sccno[t]=scc;
-				if(t==u)break;//Óöµ½µ±Ç°½Úµã£¬ÍË³ö
+				if(t==u)break;//é‡åˆ°å½“å‰èŠ‚ç‚¹ï¼Œé€€å‡º
 			}
 		}
 	}
@@ -586,7 +586,7 @@ namespace TreeDivide {
 		id[u]=++dfstime;
 		dfsn[dfstime]=u;
 		top[u]=tp;
-		int son=0;//×¢Òâ³õÖµ
+		int son=0;//æ³¨æ„åˆå€¼
 		for(int i=0; i<g[u].size(); i++) {
 			edge &e=g[u][i];
 			if(e.v==fa[u])continue;

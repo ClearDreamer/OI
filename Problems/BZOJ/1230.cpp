@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Nov]lites ¿ª¹ØµÆ
-·ÖÎö£ºÏß¶ÎÊ÷£¬lazyÓÃÒì»ò¼´¿É 
+[Usaco2008 Nov]lites å¼€å…³ç¯
+åˆ†æï¼šçº¿æ®µæ ‘ï¼Œlazyç”¨å¼‚æˆ–å³å¯ 
 */
 #include<cstdio>
 using namespace std;
@@ -43,7 +43,7 @@ struct segment_tree{
 		node &t=ns[x];
 		if(l<=t.l&&r>=t.r){
 			t.lazy^=1;
-			t.val=t.r-t.l+1-t.val;//ÏÈ¼ÆËãºÃ 
+			t.val=t.r-t.l+1-t.val;//å…ˆè®¡ç®—å¥½ 
 			return;
 		}
 		int mid=(t.l+t.r)>>1;
@@ -58,7 +58,7 @@ struct segment_tree{
 		LL ans=0;
 		int mid=(t.l+t.r)>>1;
 		if(l<=t.l&&r>=t.r)return t.val;
-		pushdown(x);//push²»Òª·ÅÔÚÇ°Ãæ 
+		pushdown(x);//pushä¸è¦æ”¾åœ¨å‰é¢ 
 		if(l<=mid)ans+=query(l,r,x<<1);
 		if(r>mid)ans+=query(l,r,(x<<1)+1);
 		return ans;

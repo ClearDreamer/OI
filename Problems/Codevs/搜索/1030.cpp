@@ -1,6 +1,6 @@
 /*
-外星生命
-分析：迭代加深，但没想到什么剪枝，于是TLE一个点 
+澶栨槦鐢熷懡
+鍒嗘瀽锛氳凯浠ｅ姞娣憋紝浣嗘病鎯冲埌浠�涔堝壀鏋濓紝浜庢槸TLE涓�涓偣 
 */
 #include<iostream>
 #include<algorithm>

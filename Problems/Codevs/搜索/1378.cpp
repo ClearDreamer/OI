@@ -1,6 +1,6 @@
 /*
-选课
-分析：建立虚拟根节点，每次枚举最优解 
+閫夎
+鍒嗘瀽锛氬缓绔嬭櫄鎷熸牴鑺傜偣锛屾瘡娆℃灇涓炬渶浼樿В 
 */
 #include<iostream>
 #include<vector>

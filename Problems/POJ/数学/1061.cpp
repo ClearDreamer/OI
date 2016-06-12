@@ -1,10 +1,10 @@
 /*
 
-ÌâÒâ£ºÁ½¸öÇàÍÜÔÚ³àµÀÉÏÌøÔ¾£¬×ß»·Â·¡£ÆðÊ¼Î»ÖÃ·Ö±ðÎªx£¬y¡£Ã¿´ÎÌøÔ¾¾àÀë·Ö±ðÎªm£¬n¡£³àµÀ³¤¶ÈÎªL¡£Á½ÇàÍÜÌøÔ¾·½ÏòÓë´ÎÊýÏàÍ¬µÄÇé¿öÏÂ£¬ÎÊÁ½ÇàÍÜÊÇ·ñÓÐ·½·¨ÌøÔ¾µ½Í¬Ò»µã¡£Êä³ö×îÉÙÌøÔ¾´ÎÊý¡£
-·ÖÎö£ºÀ©Õ¹Å·¼¸ÀïµÂ¡£ÉèÁ½ÇàÍÜÌøÁËs²½¡£ÓÐ·½³Ì£º(x+n*s)-(y+m*s)=k*L¡£ÕûÀíµÃ£º(n-m)*s+L*(-k)=y-x
-	  ´ËÊ±·½³ÌÒÑ¾­·ûºÏÀ©Õ¹Å·¼¸ÀïµÂµÄÐÎÊ½:a*x+b*y=gcd(a,b)ÁË¡£°´ÒªÇóÇó½â¼´¿É¡£
-	  ¸ÃËã·¨Í¬Ñù¿ÉÓÃÓÚÇó½âa*x+b*y=cµÄÐÎÊ½µÄ·½³Ì¡£·½·¨ÊÇÏÈÇó½âa*x+b*y=gcd(a,b)¡£È»ºóÁ½¶ËÍ¬Ê±³ýÒÔgcd(a,b)ÔÙ³ËÒÔc¼´¿ÉÕûÀí³öÔ­·½³ÌµÄ½â¡£¼´a*(x*c/g)+b*(y*c/g)=c¡£¸Ã·½³ÌÓÐ½âµÄÌõ¼þÊÇcÄÜ±»gcd(a,b)Õû³ý¡£
-	  µ«²»ÖªµÀÒ»ÏÂ´úÂë´íÔÚÄÄ¡£ 
+é¢˜æ„ï¼šä¸¤ä¸ªé’è›™åœ¨èµ¤é“ä¸Šè·³è·ƒï¼Œèµ°çŽ¯è·¯ã€‚èµ·å§‹ä½ç½®åˆ†åˆ«ä¸ºxï¼Œyã€‚æ¯æ¬¡è·³è·ƒè·ç¦»åˆ†åˆ«ä¸ºmï¼Œnã€‚èµ¤é“é•¿åº¦ä¸ºLã€‚ä¸¤é’è›™è·³è·ƒæ–¹å‘ä¸Žæ¬¡æ•°ç›¸åŒçš„æƒ…å†µä¸‹ï¼Œé—®ä¸¤é’è›™æ˜¯å¦æœ‰æ–¹æ³•è·³è·ƒåˆ°åŒä¸€ç‚¹ã€‚è¾“å‡ºæœ€å°‘è·³è·ƒæ¬¡æ•°ã€‚
+åˆ†æžï¼šæ‰©å±•æ¬§å‡ é‡Œå¾·ã€‚è®¾ä¸¤é’è›™è·³äº†sæ­¥ã€‚æœ‰æ–¹ç¨‹ï¼š(x+n*s)-(y+m*s)=k*Lã€‚æ•´ç†å¾—ï¼š(n-m)*s+L*(-k)=y-x
+	  æ­¤æ—¶æ–¹ç¨‹å·²ç»ç¬¦åˆæ‰©å±•æ¬§å‡ é‡Œå¾·çš„å½¢å¼:a*x+b*y=gcd(a,b)äº†ã€‚æŒ‰è¦æ±‚æ±‚è§£å³å¯ã€‚
+	  è¯¥ç®—æ³•åŒæ ·å¯ç”¨äºŽæ±‚è§£a*x+b*y=cçš„å½¢å¼çš„æ–¹ç¨‹ã€‚æ–¹æ³•æ˜¯å…ˆæ±‚è§£a*x+b*y=gcd(a,b)ã€‚ç„¶åŽä¸¤ç«¯åŒæ—¶é™¤ä»¥gcd(a,b)å†ä¹˜ä»¥cå³å¯æ•´ç†å‡ºåŽŸæ–¹ç¨‹çš„è§£ã€‚å³a*(x*c/g)+b*(y*c/g)=cã€‚è¯¥æ–¹ç¨‹æœ‰è§£çš„æ¡ä»¶æ˜¯cèƒ½è¢«gcd(a,b)æ•´é™¤ã€‚
+	  ä½†ä¸çŸ¥é“ä¸€ä¸‹ä»£ç é”™åœ¨å“ªã€‚ 
 */
 #include<iostream>
 #include<algorithm>
@@ -25,7 +25,7 @@ LL solve(LL a,LL b,LL n){
 	LL x,y,d;
 	if(n%gcd(a,b)!=0)return -1;
 	extendGcd(a,b,d,x,y);
-	int t=(n*x/d+b/d)%(b/d);//¼ÓÉÏb/d£¬±£Ö¤ÊÇÕýÕûÊýÈ¡Ä£ 
+	int t=(n*x/d+b/d)%(b/d);//åŠ ä¸Šb/dï¼Œä¿è¯æ˜¯æ­£æ•´æ•°å–æ¨¡ 
 	return t;
 }
 int main(){
@@ -52,7 +52,7 @@ int main(){
     else{
 		xx=xx*((x-y)/d);
 		r=l/d;
-		xx=(xx%r+r)%r;//Çó³ö×îÐ¡·Ç¸ºÕûÊý½â
+		xx=(xx%r+r)%r;//æ±‚å‡ºæœ€å°éžè´Ÿæ•´æ•°è§£
 		printf("%I64d\n",xx);
 	}
     return 0;

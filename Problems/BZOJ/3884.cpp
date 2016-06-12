@@ -1,8 +1,8 @@
 /*
-ÉÏµÛÓë¼¯ºÏµÄÕýÈ·ÓÃ·¨
-·ÖÎö£ºÁîp=2^k*q£¬Ôòans=2^k(2^(...-k) mod q)
-	  Å·À­¶¨ÀíµÃans=2^k(2^((...-k)mod phi(q) ) mod q)
-	  Ã¿´ÎÄ£Êý¶¼ÊÇÅ¼Êý£¬ËùÒÔqÃ¿´Î³ýÒÔ2£¬¿ÉÒÔÔÚlogpÊ±¼äÄÚq=1£¬ÄæÍÆ»ØÈ¥µÃ½â 
+ä¸Šå¸ä¸Žé›†åˆçš„æ­£ç¡®ç”¨æ³•
+åˆ†æžï¼šä»¤p=2^k*qï¼Œåˆ™ans=2^k(2^(...-k) mod q)
+	  æ¬§æ‹‰å®šç†å¾—ans=2^k(2^((...-k)mod phi(q) ) mod q)
+	  æ¯æ¬¡æ¨¡æ•°éƒ½æ˜¯å¶æ•°ï¼Œæ‰€ä»¥qæ¯æ¬¡é™¤ä»¥2ï¼Œå¯ä»¥åœ¨logpæ—¶é—´å†…q=1ï¼Œé€†æŽ¨å›žåŽ»å¾—è§£ 
 */
 #include<iostream>
 #include<cstdio>
@@ -31,11 +31,11 @@ int phi(int x){
 		ans=ans/i*(i-1);
 		while(x%i==0)x/=i;
 	}
-	if(x!=1)ans=ans/x*(x-1);//×îºóÓàÏÂµÄÒ»¸ö>sqrt(x)µÄÖÊÊý 
+	if(x!=1)ans=ans/x*(x-1);//æœ€åŽä½™ä¸‹çš„ä¸€ä¸ª>sqrt(x)çš„è´¨æ•° 
 	return ans;
 }
 int qpow(long long a,int n,int mod){
-	long long ans=1%mod;//×¢ÒâmodÊý¿ÉÄÜÎª1£¬µ±ÊäÈëÎª2Ê±¾Í»á 
+	long long ans=1%mod;//æ³¨æ„modæ•°å¯èƒ½ä¸º1ï¼Œå½“è¾“å…¥ä¸º2æ—¶å°±ä¼š 
 	for(;n;a=a*a%mod,n>>=1)if(n&1)ans=ans*a%mod;
 	return ans;
 }
@@ -44,7 +44,7 @@ int solve(int p){
 	if(p==1)return 0;
 	int cnt=0;while((p&1)==0)p>>=1,cnt++;
 	int ph=phi(p),t=solve(ph);//solve(phi(p'))
-	t=(t-cnt%ph+ph)%ph;//ÐÂµÄÖ¸Êý 2^t mod p'£¬×¢Òâcnt%ph£¬²»È»»á¼õ³ö¸ºÊý£¬ºóÃæµÄ¿ìËÙÃÝ¾Í»áËÀÑ­»· 
+	t=(t-cnt%ph+ph)%ph;//æ–°çš„æŒ‡æ•° 2^t mod p'ï¼Œæ³¨æ„cnt%phï¼Œä¸ç„¶ä¼šå‡å‡ºè´Ÿæ•°ï¼ŒåŽé¢çš„å¿«é€Ÿå¹‚å°±ä¼šæ­»å¾ªçŽ¯ 
 	return (qpow(2,t,p))<<cnt;//ans=(2^t mod p')*2^cnt
 }
 int main(){

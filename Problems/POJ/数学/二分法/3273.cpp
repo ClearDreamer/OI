@@ -1,7 +1,7 @@
 /*
 Monthly Expense
-���⣺һ�������ֳ�M�ݣ�MIN{MAX{ÿ�������ĺ�}} 
-���������ִ𰸣����Ƕ���д���ˡ�����ѧ����һ���µĶ��ַ� 
+题意：一列数，分成M份，MIN{MAX{每份中数的和}} 
+分析：二分答案，但是二分写错了。。。学到了一个新的二分法 
 */
 #include<iostream>
 #include<algorithm>
@@ -25,10 +25,10 @@ int ef(int l,int r){
 	int mid=(l+r)>>1;
 	while(l<r){
 		if(!check(mid)){
-			l=mid+1;//�˴���û�п��ܶ���mid����� 
+			l=mid+1;//此处有没有可能丢掉mid这个解 
 		}
 		else r=mid-1;
-		mid=(l+r)>>1;//������м�ֵ 
+		mid=(l+r)>>1;//后计算中间值 
 	}
 	return mid;
 }

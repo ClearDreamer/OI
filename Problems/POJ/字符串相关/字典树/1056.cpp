@@ -1,7 +1,7 @@
 /*
 IMMEDIATE DECODABILITY
-ÌâÒâ£º¸øÈô¸É¸ö01×Ö·û´®£¬ÎÊÊÇ·ñÓÐÒ»¸öÊÇÁíÍâÒ»¸öµÄÇ°×º£¿ 
-·ÖÎö£ºTrie×ßÆð 
+é¢˜æ„ï¼šç»™è‹¥å¹²ä¸ª01å­—ç¬¦ä¸²ï¼Œé—®æ˜¯å¦æœ‰ä¸€ä¸ªæ˜¯å¦å¤–ä¸€ä¸ªçš„å‰ç¼€ï¼Ÿ 
+åˆ†æžï¼šTrieèµ°èµ· 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,7 +1,7 @@
 /*
 Balanced Lineup
-���⣺һȺţ����������ѯ������ߵĺ���Ĳ
-������RMQ 
+题意：一群牛，多次区间查询，问最高的和最矮的差。
+分析：RMQ 
 */
 #include<iostream>
 #include<algorithm>

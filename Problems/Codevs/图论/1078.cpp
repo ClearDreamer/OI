@@ -1,5 +1,5 @@
 /*
-最小生成树
+鏈�灏忕敓鎴愭爲
 */
 #include<iostream>
 #include<cstring> 

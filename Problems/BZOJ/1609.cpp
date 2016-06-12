@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Feb]Eating TogetherÂé·³µÄ¾Û²Í
-·ÖÎö£º×î³¤²»ÏÂ½µ×ÓĞòÁĞ 
+[Usaco2008 Feb]Eating Togetheréº»çƒ¦çš„èšé¤
+åˆ†æï¼šæœ€é•¿ä¸ä¸‹é™å­åºåˆ— 
 */
 #include<iostream>
 #include<cstdio>

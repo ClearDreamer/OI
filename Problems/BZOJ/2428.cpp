@@ -1,6 +1,6 @@
 /*
-[HAOI2006]¾ù·ÖÊı¾İ
-·ÖÎö£ºÄ£ÄâÍË»ğ£¬Ã¿´Î³¢ÊÔ½«Ò»¸öÊı·Öµ½ÁíÒ»¸ö×é£¬¼ì²é´ğ°¸£¬¶à×ö¼¸´Î 
+[HAOI2006]å‡åˆ†æ•°æ®
+åˆ†æï¼šæ¨¡æ‹Ÿé€€ç«ï¼Œæ¯æ¬¡å°è¯•å°†ä¸€ä¸ªæ•°åˆ†åˆ°å¦ä¸€ä¸ªç»„ï¼Œæ£€æŸ¥ç­”æ¡ˆï¼Œå¤šåšå‡ æ¬¡ 
 */
 #include<iostream>
 #include<cstdio>
@@ -29,8 +29,8 @@ double solve(){
 		ta-=sqr(sum[x]-ave)+sqr(sum[y]-ave);
 		sum[x]-=a[t];sum[y]+=a[t];
 		ta+=sqr(sum[x]-ave)+sqr(sum[y]-ave);
-		if(ta<res || rand()%10000<T)res=ta,pos[t]=y;//½ÓÊÜµÄÌõ¼ş£¬×¢ÒâÊÇ< 
-		else{sum[x]+=a[t];sum[y]-=a[t];}//²»½ÓÊÜ£¬¼Ç×Å¸Ä»ØÈ¥ 
+		if(ta<res || rand()%10000<T)res=ta,pos[t]=y;//æ¥å—çš„æ¡ä»¶ï¼Œæ³¨æ„æ˜¯< 
+		else{sum[x]+=a[t];sum[y]-=a[t];}//ä¸æ¥å—ï¼Œè®°ç€æ”¹å›å» 
 	}
 	return res; 
 }

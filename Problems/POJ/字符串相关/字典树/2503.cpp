@@ -1,6 +1,6 @@
 /*
 Babelfish
-分析：字典树，尾节点记录单词 
+鍒嗘瀽锛氬瓧鍏告爲锛屽熬鑺傜偣璁板綍鍗曡瘝 
 */
 #include<iostream>
 #include<algorithm>

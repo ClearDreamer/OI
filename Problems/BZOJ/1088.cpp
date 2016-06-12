@@ -1,6 +1,6 @@
 /*
-[SCOI2005]扫雷Mine
-分析：通过枚举前两个格子是否有雷就可以确定状态是否可行，模拟即可 
+[SCOI2005]鎵浄Mine
+鍒嗘瀽锛氶�氳繃鏋氫妇鍓嶄袱涓牸瀛愭槸鍚︽湁闆峰氨鍙互纭畾鐘舵�佹槸鍚﹀彲琛岋紝妯℃嫙鍗冲彲 
 */
 #include<iostream>
 #include<cstdio>

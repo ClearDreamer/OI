@@ -1,5 +1,5 @@
 /*
-¼Ò×å
+å®¶æ—
 */
 #include<iostream>
 #include<cstring>

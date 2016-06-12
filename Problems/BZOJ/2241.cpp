@@ -1,6 +1,6 @@
 /*
-[SDOI2011]´òµØÊó
-·ÖÎö£ºÊý¾ÝÐ¡£¬Ã¶¾Ù³¤¿í£¬±©Á¦ÅÐ¶Ï 
+[SDOI2011]æ‰“åœ°é¼ 
+åˆ†æžï¼šæ•°æ®å°ï¼Œæžšä¸¾é•¿å®½ï¼Œæš´åŠ›åˆ¤æ–­ 
 */
 #include<iostream>
 #include<cstdio>

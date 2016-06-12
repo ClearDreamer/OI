@@ -1,9 +1,9 @@
 /*
-��������
-����������Ҫ�������е���������̰��
-	  �Ȱ���A�ľ���Ӵ�С�����ȴ�����A��Զ�ģ�ά������B�ľ��룬
-	  �൱�ڵ㲻�Ͽ���A��Ȼ��ά����Щ�㵽B����Զ���룬 
-	  ��Ϊ����ƽ���ͣ��ҿ�����������С��ϵ����䣬���Բ��ؿ����������ں������� 
+导弹拦截
+分析：由于要拦截所有导弹，可以贪心
+	  先按距A的距离从大到小排序，先处理离A最远的，维护它离B的距离，
+	  相当于点不断靠近A，然后维护这些点到B的最远距离， 
+	  因为答案是平方和，且开方不开方大小关系不会变，所以不必开方，还便于后续处理 
 */
 #include<iostream>
 #include<algorithm>
@@ -29,14 +29,14 @@ void input(){
 		nd[i].da=dist(a,b,xa,ya);
 		nd[i].db=dist(a,b,xb,yb);
 	}
-	sort(nd+1,nd+n+1);//����A�ľ���Ӵ�С���� 
+	sort(nd+1,nd+n+1);//按距A的距离从大到小排序 
 }
 int solve(){
 	int ans=INF,s=0;
 	for(int i=1;i<=n;i++){
-		//ע���������˳��ans�ĸ���ʹ�õ����ϴε�sֵ 
-		ans=min(ans,nd[i].da+s);//���´𰸣��Ե�ǰ�ĵ��A�ľ���Ϊ�뾶 
-		s=max(s,nd[i].db);//ά��ǰi���ĵ�B��������ֵ 
+		//注意这两句的顺序，ans的更新使用的是上次的s值 
+		ans=min(ans,nd[i].da+s);//更新答案，以当前的点距A的距离为半径 
+		s=max(s,nd[i].db);//维护前i个的到B距离的最大值 
 	}
 	return ans;
 }

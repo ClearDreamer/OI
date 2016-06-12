@@ -1,6 +1,6 @@
 /*
-数轴染色
-分析：区间查询，区间修改 
+鏁拌酱鏌撹壊
+鍒嗘瀽锛氬尯闂存煡璇紝鍖洪棿淇敼 
 */
 #include<iostream>
 using namespace std;

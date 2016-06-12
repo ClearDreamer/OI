@@ -1,5 +1,5 @@
 /*
-�ַ�ѹ��
+字符压缩
 */
 #include<iostream>
 #include<cstring>

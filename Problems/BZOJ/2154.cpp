@@ -1,6 +1,6 @@
 /*
-CrashµÄÊı×Ö±í¸ñ
-·ÖÎö£ºÄª±ÈÎÚË¹·´Ñİ£¬GOtohttp://www.cnblogs.com/jianglangcaijin/archive/2013/11/27/3446169.html 
+Crashçš„æ•°å­—è¡¨æ ¼
+åˆ†æï¼šè«æ¯”ä¹Œæ–¯åæ¼”ï¼ŒGOtohttp://www.cnblogs.com/jianglangcaijin/archive/2013/11/27/3446169.html 
 */
 #include<iostream>
 #include<cstdio>

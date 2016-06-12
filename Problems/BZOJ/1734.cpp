@@ -1,6 +1,6 @@
 /*
-[Usaco2005 feb]Aggressive cows ·ßÅ­µÄÅ£
-·ÖÎö£º¶ş·Ö´ğ°¸ 
+[Usaco2005 feb]Aggressive cows æ„¤æ€’çš„ç‰›
+åˆ†æï¼šäºŒåˆ†ç­”æ¡ˆ 
 */
 #include<iostream>
 #include<cstdio>

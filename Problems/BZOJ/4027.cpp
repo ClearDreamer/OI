@@ -1,6 +1,6 @@
 /*
-[HEOI2015]������ӣ��
-������̰�ģ�����һ���ڵ㣬���������ӽڵ�󣬽��䰴��С��������һ����ѡС�� 
+[HEOI2015]兔子与樱花
+分析：贪心，对于一个节点，处理好其子节点后，将其按从小到大排序，一定先选小的 
 */
 #include<iostream>
 #include<algorithm>
@@ -18,7 +18,7 @@ struct cmp{
 priority_queue<int,vector<int>,cmp> pq;
 void dfs(int x){
 	for(int i=0;i<g[x].size();i++)dfs(g[x][i]);
-	for(int i=0;i<g[x].size();i++)pq.push(g[x][i]);//ע�����Ҫ������ͳһpush 
+	for(int i=0;i<g[x].size();i++)pq.push(g[x][i]);//注意这里，要在这里统一push 
 	while(!pq.empty()){
 		int v=pq.top();pq.pop();
 		if(val[x]+val[v]-1<=m)val[x]+=val[v]-1,ans++;

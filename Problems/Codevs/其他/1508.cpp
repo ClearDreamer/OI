@@ -1,5 +1,5 @@
 /*
-ÄãµÄ·ÉµúÔÚÕâ¶ù
+ä½ çš„é£ç¢Ÿåœ¨è¿™å„¿
 */
 #include<cstdio>
 #include<cstring>

@@ -1,12 +1,12 @@
 /*
-Éþ×ÓÎ§µã
-·ÖÎö£ºÏÈÇóÍ¹°ü£¬ÔÙÇóÃæ»ý£¬ÔÙÓÃÅ·¼¸ÀïµÂËã·¨Çó±ß½çÉÏµÄµãÊý£¬
-	  ÔõÃ´ÇóµãÊý£º¸ø¶¨Á½¸ö¸ñµã£¬ÎÊÕâÁ½¸ö¸ñµãÁ¬³ÉµÄÏß¶ÎÉÏÓÐ¶àÉÙ¸ö¸ñµã£¬¸Ð¾õÊÇgcd(x1-x0,y1-y0)+1
-	  È»ºóPick¶¨ÀíÇóÄÚ²¿µãÊý£º
-	  S=I+£¨A/2£©-1;
-		sÊÇÃæ»ý£¬IÊÇ¶à±ßÐÎÄÚ²¿Õûµã£¬AÊÇ±ßÉÏÕûµã;
-		A ÓÃGCDÇó¡£	 
-		×¢ÒâÏ¸½Ú£¬longlong£¬abs×Ô¼ºÐ´ 
+ç»³å­å›´ç‚¹
+åˆ†æžï¼šå…ˆæ±‚å‡¸åŒ…ï¼Œå†æ±‚é¢ç§¯ï¼Œå†ç”¨æ¬§å‡ é‡Œå¾·ç®—æ³•æ±‚è¾¹ç•Œä¸Šçš„ç‚¹æ•°ï¼Œ
+	  æ€Žä¹ˆæ±‚ç‚¹æ•°ï¼šç»™å®šä¸¤ä¸ªæ ¼ç‚¹ï¼Œé—®è¿™ä¸¤ä¸ªæ ¼ç‚¹è¿žæˆçš„çº¿æ®µä¸Šæœ‰å¤šå°‘ä¸ªæ ¼ç‚¹ï¼Œæ„Ÿè§‰æ˜¯gcd(x1-x0,y1-y0)+1
+	  ç„¶åŽPickå®šç†æ±‚å†…éƒ¨ç‚¹æ•°ï¼š
+	  S=I+ï¼ˆA/2ï¼‰-1;
+		sæ˜¯é¢ç§¯ï¼ŒIæ˜¯å¤šè¾¹å½¢å†…éƒ¨æ•´ç‚¹ï¼ŒAæ˜¯è¾¹ä¸Šæ•´ç‚¹;
+		A ç”¨GCDæ±‚ã€‚	 
+		æ³¨æ„ç»†èŠ‚ï¼Œlonglongï¼Œabsè‡ªå·±å†™ 
 */
 #include<iostream>
 #include<cstdio>
@@ -41,7 +41,7 @@ void andrewScan(){
 		while(m>1&&Cross(bag[m],ps[i],bag[m-1])<0)m--;
 		bag[++m]=ps[i];
 	}
-	m--;//ÕâÀïÒª-1,ÒòÎª»áÖØ¸´¼ÓÈëµÚÒ»¸öµã 
+	m--;//è¿™é‡Œè¦-1,å› ä¸ºä¼šé‡å¤åŠ å…¥ç¬¬ä¸€ä¸ªç‚¹ 
 }
 LL TwiceArea(){
 	LL ans=0;

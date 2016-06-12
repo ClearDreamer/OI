@@ -1,8 +1,8 @@
 /*
-Í³¼Æµ¥´Ê¸öÊý
-·ÖÎö£ºopt[i][k]=max{opt[l][k-1]+word[l+1][i]}
-	  ÇówordÊý×éÊ±Ò²µÝÍÆ£ºword[i][j]=word[i][j-1]+ÒÔj½áÎ²µÄµ¥´Ê
-	  µ«µ±Ç°µÄ´úÂëWAÁËÁ½¸öµãTAT 
+ç»Ÿè®¡å•è¯ä¸ªæ•°
+åˆ†æžï¼šopt[i][k]=max{opt[l][k-1]+word[l+1][i]}
+	  æ±‚wordæ•°ç»„æ—¶ä¹Ÿé€’æŽ¨ï¼šword[i][j]=word[i][j-1]+ä»¥jç»“å°¾çš„å•è¯
+	  ä½†å½“å‰çš„ä»£ç WAäº†ä¸¤ä¸ªç‚¹TAT 
 */
 #include<iostream>
 #include<algorithm>
@@ -76,7 +76,7 @@ int main(){
 	cin>>kase;
 	while(kase-->0){
 		input();
-		//ÌØÅÐ
+		//ç‰¹åˆ¤
 		if(dicn==1){
 			cout<<"193"<<endl;
 			continue;

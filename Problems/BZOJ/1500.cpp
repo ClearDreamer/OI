@@ -1,6 +1,6 @@
 /*
-[NOI2005]Î¬ĞŞÊıÁĞ
-·ÖÎö£ºSplayÄ£°å£¬È»¶ø¾ÍÊÇWA= =£¬×¢ÊÍÖĞÊÇhzwerµÄ´úÂë£¬¿ÉÒÔAC 
+[NOI2005]ç»´ä¿®æ•°åˆ—
+åˆ†æï¼šSplayæ¨¡æ¿ï¼Œç„¶è€Œå°±æ˜¯WA= =ï¼Œæ³¨é‡Šä¸­æ˜¯hzwerçš„ä»£ç ï¼Œå¯ä»¥AC 
 */
 #include<iostream>
 #include<cstdio>
@@ -60,7 +60,7 @@ struct Splay{
 		nil=ns;
 		nil->f=nil->c[0]=nil->c[1]=nil;
 		nil->cn=2;nil->sum=nil->lmax=nil->rmax=nil->tag=nil->rev=nil->val=nil->sz=0;
-		nil->mxsum=-INF;//×¢ÒâÕâÀï 
+		nil->mxsum=-INF;//æ³¨æ„è¿™é‡Œ 
 		tot=0;top=0;
 	}
 	node* newnode(int val){
@@ -92,15 +92,15 @@ struct Splay{
 	}*/ 
 	void splay(node *x,node* tp){
 		relax(x);
-		while((x->f!=tp)){//×¢ÒâÅĞ 
+		while((x->f!=tp)){//æ³¨æ„åˆ¤ 
 			//output(x);output(x->f);output(tp);
 			//if(x->cn==2)cout<<"ERROR"<<endl;
-			if(x->f->f!=tp)x->cn==x->f->cn?rotate(x->f):rotate(x);//×¢ÒâÅĞ ×æ¸¸ 
+			if(x->f->f!=tp)x->cn==x->f->cn?rotate(x->f):rotate(x);//æ³¨æ„åˆ¤ ç¥–çˆ¶ 
 			rotate(x);
 		}
 		x->update();
 		//cout<<"QWQ"<<endl;
-		if(tp==nil){root=x;x->link(nil,2);}//×¢Òâ¸üĞÂ¸ù½Úµã 
+		if(tp==nil){root=x;x->link(nil,2);}//æ³¨æ„æ›´æ–°æ ¹èŠ‚ç‚¹ 
 	}
 	node* build(int* a,int l,int r){
 		if(l>r)return nil;
@@ -125,7 +125,7 @@ struct Splay{
 			//output(ans);cout<<pos<<endl;
 			down(ans);
 			if(ans->c[0]->sz+1==pos)return ans;
-			else if(ans->c[0]->sz>=pos)ans=ans->c[0];//×¢ÒâÊÇ>=pos 
+			else if(ans->c[0]->sz>=pos)ans=ans->c[0];//æ³¨æ„æ˜¯>=pos 
 			else {pos-=ans->c[0]->sz+1;ans=ans->c[1];}
 		}
 		return ans;
@@ -135,7 +135,7 @@ struct Splay{
 		node* t=getnode(pos),*p=getnode(pos+1);
 		splay(t,nil);splay(p,t); 
 		nw->link(p,0);
-		p->update();t->update();//×¢Òâ¸üĞÂ 
+		p->update();t->update();//æ³¨æ„æ›´æ–° 
 		//splay(nw,nil);
 	}
 	void remove(int pos,int len){

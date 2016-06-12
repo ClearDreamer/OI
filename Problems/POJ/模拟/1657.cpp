@@ -1,7 +1,7 @@
 /*
 Distance on Chessboard
-ÌâÒâ£º¸øÆåÅÌÉÏµÄÆðÊ¼µãºÍÖÕÖ¹µã£¬ÇóÍõ¡¢ºó¡¢³µ¡¢ÏóµÄ×î¶Ì¾àÀë
-·ÖÎö£º·ÖÀàÌÖÂÛ£¬Ö±½Ó¼ÆËã 
+é¢˜æ„ï¼šç»™æ£‹ç›˜ä¸Šçš„èµ·å§‹ç‚¹å’Œç»ˆæ­¢ç‚¹ï¼Œæ±‚çŽ‹ã€åŽã€è½¦ã€è±¡çš„æœ€çŸ­è·ç¦»
+åˆ†æžï¼šåˆ†ç±»è®¨è®ºï¼Œç›´æŽ¥è®¡ç®— 
 */
 #include<iostream>
 #include<cstdio>

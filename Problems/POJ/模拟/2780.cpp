@@ -1,7 +1,7 @@
 /*
 Linearity
-ÌâÒâ£º¸øÈô¸É¸öµãÇóº¬×î¶àµãµÄÖ±Ïßº¬µãÊý
-·ÖÎö£ºÓÃ²æ»ý³¬Ê±ÁË£¬¸ÄÓÃÐ±ÂÊµÄ·½·¨£¨½âÎö¼¸ºÎ£© 
+é¢˜æ„ï¼šç»™è‹¥å¹²ä¸ªç‚¹æ±‚å«æœ€å¤šç‚¹çš„ç›´çº¿å«ç‚¹æ•°
+åˆ†æžï¼šç”¨å‰ç§¯è¶…æ—¶äº†ï¼Œæ”¹ç”¨æ–œçŽ‡çš„æ–¹æ³•ï¼ˆè§£æžå‡ ä½•ï¼‰ 
 */
 #include<cstdio>
 #include<cstdlib>

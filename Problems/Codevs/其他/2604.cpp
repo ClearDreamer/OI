@@ -1,6 +1,6 @@
 /*
-Îè»áÑûÇë
-·ÖÎö£ºÇóÇ¿Á¬Í¨·ÖÁ¿£¬Í³¼ÆÈë¶ÈÎª0µÄµãµÄ¸öÊý 
+èˆžä¼šé‚€è¯·
+åˆ†æžï¼šæ±‚å¼ºè¿žé€šåˆ†é‡ï¼Œç»Ÿè®¡å…¥åº¦ä¸º0çš„ç‚¹çš„ä¸ªæ•° 
 */
 #include<iostream>
 #include<vector>

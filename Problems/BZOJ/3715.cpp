@@ -1,6 +1,6 @@
 /*
 [PA2014]Lustra
-分析：找最大，最小，判断是否存在 
+鍒嗘瀽锛氭壘鏈�澶э紝鏈�灏忥紝鍒ゆ柇鏄惁瀛樺湪 
 */
 #include<cstdio>
 #include<algorithm>

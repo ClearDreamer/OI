@@ -1,8 +1,8 @@
 /*
-��˵�����
-������opt[i]��ʾ��i��n����Ͼʱ�䣬
-	  opt[i]=opt[i+1]+1 (û�д�i��ʼ�Ĺ���)
-	  opt[i]=max{opt[i+T-1+1]} (T:ÿ����i��ʼ�Ĺ����ĳ���ʱ��) 
+尼克的任务
+分析：opt[i]表示从i到n的闲暇时间，
+	  opt[i]=opt[i+1]+1 (没有从i开始的工作)
+	  opt[i]=max{opt[i+T-1+1]} (T:每个从i开始的工作的持续时间) 
 */
 #include<iostream>
 #include<algorithm>

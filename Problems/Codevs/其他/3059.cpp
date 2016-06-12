@@ -1,5 +1,5 @@
 /*
-тк╥я
+Х©░Х╢╧
 */
 #include<stdio.h>
 int money(int n){

@@ -1,6 +1,6 @@
 /*
-ÕûÊýµÛ¹úÎÊÌâ
-·ÖÎö£º¿ìËÙÃÝ 
+æ•´æ•°å¸å›½é—®é¢˜
+åˆ†æžï¼šå¿«é€Ÿå¹‚ 
 */ 
 #include<iostream>
 #include<cstdlib>
@@ -21,7 +21,7 @@ bool isprime(int n,int y){
 	while(t&1){t>>=1;k++;}
 	for(int i=1;i<=y;i++){
 		ll a=rand()%n;
-		while((a==0)||(n%a==0))a=rand()%n;//×¢ÒâËæ»úÊý²»ÄÜÊÇnµÄÒòÊý»òÎª0
+		while((a==0)||(n%a==0))a=rand()%n;//æ³¨æ„éšæœºæ•°ä¸èƒ½æ˜¯nçš„å› æ•°æˆ–ä¸º0
 		int q=ksm(a,t,n);
 		if(q==1)return true;
 		for(int j=1;j<=k;j++)

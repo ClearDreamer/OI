@@ -1,7 +1,7 @@
 /*
-[SCOI2003]�ַ����۵�
-������dp(i,j)��ʾ[i..j]�����Ž⣬
-		����ת�ƣ�
+[SCOI2003]字符串折叠
+分析：dp(i,j)表示[i..j]的最优解，
+		三种转移：
 			j-i+1
 			dp(i,k)+dp(k+1,j)
 			dp(i,k)+2+calc(t) if [k+1..j]=t([i..k])

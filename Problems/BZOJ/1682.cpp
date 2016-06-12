@@ -1,6 +1,6 @@
 /*
-[Usaco2005 Mar]Out of Hay ¸É²İÎ£»ú
-·ÖÎö£ºKruskal 
+[Usaco2005 Mar]Out of Hay å¹²è‰å±æœº
+åˆ†æï¼šKruskal 
 */
 #include<iostream>
 #include<cstdio>

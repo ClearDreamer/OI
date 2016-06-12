@@ -1,7 +1,7 @@
 /*
 Bridging signals
-题意：原本左右端口应当按顺序连接。现在只有切除部分线路，使得任何线路都不相交。希望你写一个程序计算最后剩下多少线路？
-分析：LIS nlogn 
+棰樻剰锛氬師鏈乏鍙崇鍙ｅ簲褰撴寜椤哄簭杩炴帴銆傜幇鍦ㄥ彧鏈夊垏闄ら儴鍒嗙嚎璺紝浣垮緱浠讳綍绾胯矾閮戒笉鐩镐氦銆傚笇鏈涗綘鍐欎竴涓▼搴忚绠楁渶鍚庡墿涓嬪灏戠嚎璺紵
+鍒嗘瀽锛歀IS nlogn 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,5 +1,5 @@
 /*
-子数整数
+瀛愭暟鏁存暟
 */
 #include<stdio.h>
 int main(){

@@ -1,6 +1,6 @@
 /*
 [CROATIAN2009]OTOCI
-·ÖÎö£ºLCT 
+åˆ†æžï¼šLCT 
 */
 #include<iostream>
 #include<algorithm>

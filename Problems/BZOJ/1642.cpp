@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Nov]Milking Time ¼·ÄÌÊ±¼ä
-·ÖÎö£º ½áÊøÊ±¼ä²»¼·ÄÌ£¬ÀàËÆÏß¶Î¸²¸Ç£¬°´ÆðµãÅÅÐòÈ»ºóDP
+[Usaco2007 Nov]Milking Time æŒ¤å¥¶æ—¶é—´
+åˆ†æžï¼š ç»“æŸæ—¶é—´ä¸æŒ¤å¥¶ï¼Œç±»ä¼¼çº¿æ®µè¦†ç›–ï¼ŒæŒ‰èµ·ç‚¹æŽ’åºç„¶åŽDP
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-数字三角形W
-分析：由于要取模，DP不好写，数据范围小，直接DFS 
+鏁板瓧涓夎褰
+鍒嗘瀽锛氱敱浜庤鍙栨ā锛孌P涓嶅ソ鍐欙紝鏁版嵁鑼冨洿灏忥紝鐩存帴DFS 
 */
 #include<iostream>
 #include<algorithm>

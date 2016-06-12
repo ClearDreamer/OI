@@ -1,14 +1,14 @@
 /*
 A Card Trick
-���⣺��Ҫ�ǽ�5������ȫ���У�Ȼ���ҳ�����Ҫ���һ��������ɡ� 
-�����������ջ��Ǽ����˶�next_permutaiton���������⡣
-	  �ڴ����У����ǰ�ÿ���Ƴ������һ������������int value���ͻ�ɫ��char suit���Ľṹ�塣
-	  �Խṹ������next_permutaiton������Ҫ�ر�ע�⣺
-		��1��Ҫ�Զ�����һ���ȽϺ��������ַ�����ѡһ�֣�
-			a.�ڽṹ�嶨����ֱ������<��==��>������
-			b.����д���ȽϺ������ù�std::sort�����������İ����
-		��2���������е�ȫ�������֮ǰ��һ��Ҫ�Խṹ�����飬��������˵������ȽϺ�����һ��������std::sort��ȽϷ��㣩����ʹ����������������next_permutaiton����Ϊ�����������prev_permutaiton�����򣬻���м������ȫ����������������ȱʧ��
-	  ֵ��һ����ǣ��ڵ�ǰ�������е�Ԫ�ش�����һ˳��״̬�µ�ʱ��
+题意：主要是将5张牌做全排列，然后找出符合要求的一种情况即可。 
+分析：最大的收获是加深了对next_permutaiton函数的理解。
+	  在此题中，我是把每张牌抽象成了一个包含牌数（int value）和花色（char suit）的结构体。
+	  对结构体运用next_permutaiton有两点要特别注意：
+		（1）要自定义以一个比较函数，两种方法任选一种：
+			a.在结构体定义中直接重载<或==或>操作符
+			b.额外写个比较函数（用过std::sort对这个方法不陌生）
+		（2）遍历所有的全排列情况之前，一定要对结构体数组，按照上面说的这个比较函数做一次排序（用std::sort会比较方便），若使用升序，则后面必须用next_permutaiton，若为降序则必须用prev_permutaiton。否则，会从中间遍历的全排列情况，导致情况缺失。
+	  值得一提的是，在当前数组其中的元素处于任一顺序状态下的时候，
 */
 #include<iostream>
 #include<cstdio>
@@ -63,7 +63,7 @@ int main(){
 	for(int counter=1;counter<=caseNum;counter++){
 		card cards[5];
 		initialize(cards);
-		sort(cards, cards + 5);  //  �������򣡣���
+		sort(cards, cards + 5);  //  必须排序！！！
 		do{
 			if(cards[0].suit!=cards[1].suit)continue;
 			int sum=cards[1].value,minIndex;

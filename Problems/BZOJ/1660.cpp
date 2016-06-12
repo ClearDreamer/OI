@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Nov]Bad Hair Day ÂÒ·¢½Ú
-·ÖÎö£ºµ¥µ÷Õ»£¬×¢ÒâÊÇnÔÚÇ°£¬1ÔÚºó£¬²¢ÇÒÒª¿ªlong long 
+[Usaco2006 Nov]Bad Hair Day ä¹±å‘èŠ‚
+åˆ†æžï¼šå•è°ƒæ ˆï¼Œæ³¨æ„æ˜¯nåœ¨å‰ï¼Œ1åœ¨åŽï¼Œå¹¶ä¸”è¦å¼€long long 
 */
 #include<iostream>
 #include<cstdio>

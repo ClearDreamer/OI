@@ -1,7 +1,7 @@
 /*
 Goldbach's Conjecture
-题意：对1000000内的偶数进行哥德巴赫猜想
-分析：筛出质数表，然后暴力，注意筛表时会爆int 
+棰樻剰锛氬1000000鍐呯殑鍋舵暟杩涜鍝ュ痉宸磋但鐚滄兂
+鍒嗘瀽锛氱瓫鍑鸿川鏁拌〃锛岀劧鍚庢毚鍔涳紝娉ㄦ剰绛涜〃鏃朵細鐖唅nt 
 */
 #include<iostream>
 #include<algorithm>

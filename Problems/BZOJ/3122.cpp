@@ -1,6 +1,6 @@
 /*
-[Sdoi2013]随机数生成器
-分析：http://timeplayer.blog.163.com/blog/static/2037182542015056019970/
+[Sdoi2013]闅忔満鏁扮敓鎴愬櫒
+鍒嗘瀽锛歨ttp://timeplayer.blog.163.com/blog/static/2037182542015056019970/
 */
 #include<cstdio>
 #include<cstdlib>

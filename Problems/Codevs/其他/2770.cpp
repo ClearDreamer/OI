@@ -1,5 +1,5 @@
 /*
-Á¬ĞøÕûÊıºÍ
+è¿ç»­æ•´æ•°å’Œ
 */
 #include<cstdio>
 using namespace std;

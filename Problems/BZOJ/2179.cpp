@@ -1,6 +1,6 @@
 /*
-FFT¿ìËÙ¸µÁ¢Ò¶
-·ÖÎö£º×ª³É¶àÏîÊ½Ö±½Ó×ö£¬×¢Òâ×îºó½øÎ»´¦Àí 
+FFTå¿«é€Ÿå‚…ç«‹å¶
+åˆ†æï¼šè½¬æˆå¤šé¡¹å¼ç›´æ¥åšï¼Œæ³¨æ„æœ€åè¿›ä½å¤„ç† 
 */
 #include<iostream>
 #include<cstdio>
@@ -65,7 +65,7 @@ int main(){
 	for(int i=0;i<(1<<bit);i++)A[i]=A[i]*B[i];
 	FFT(A,bit,-1);
 	for(int i=0;i<(1<<bit);i++)A[i].a/=(1<<bit);
-	for(int i=0;i<=len;i++)ans[i]=(int)(A[i].a+0.1);//int ÊÇÏÂÈ¡Õû£¬+0.1 
+	for(int i=0;i<=len;i++)ans[i]=(int)(A[i].a+0.1);//int æ˜¯ä¸‹å–æ•´ï¼Œ+0.1 
 	for(int i=0;i<=len;i++)
 		if(ans[i]>=10){
 			ans[i+1]+=ans[i]/10,ans[i]%=10;

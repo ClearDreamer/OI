@@ -1,6 +1,6 @@
 /*
 [Sdoi2010]Hide and Seek
-·ÖÎö£ºk-dÊ÷£¬Çó×î½üµã£¬×îÔ¶µã¡£ 
+åˆ†æï¼šk-dæ ‘ï¼Œæ±‚æœ€è¿‘ç‚¹ï¼Œæœ€è¿œç‚¹ã€‚ 
 */
 #include<iostream>
 #include<cstring>
@@ -22,7 +22,7 @@ struct P{
 	P(int x=0,int y=0)
 		{l=0,r=0;d[0]=x,d[1]=y;}  
 }p[MAXN+3];
-bool operator<(const P &a,const P &b){//°´Ö¸¶¨Î¬ÅÅĞò 
+bool operator<(const P &a,const P &b){//æŒ‰æŒ‡å®šç»´æ’åº 
 	return a.d[D]<b.d[D];
 }
 inline int dis(P &a,P &b){
@@ -50,23 +50,23 @@ struct kdtree{
 		update(mid);
 		return mid;
 	}
-	int getmn(int k,P p){//È¡×î½ü 
-		int tmp=0;//Èç¹ûp[i]ÊôÓÚ[mn[i]..mx[i]] Ôò»áµÃµ½0£¬·ñÔò»áÑ¡½Ï½üµÄmn[i]»òmx[i] eg.mn[i]<mx[i]<p[i] Ñ¡mx[i] p[i]<mn[i]<mx[i] Ñ¡mn[i] 
+	int getmn(int k,P p){//å–æœ€è¿‘ 
+		int tmp=0;//å¦‚æœp[i]å±äº[mn[i]..mx[i]] åˆ™ä¼šå¾—åˆ°0ï¼Œå¦åˆ™ä¼šé€‰è¾ƒè¿‘çš„mn[i]æˆ–mx[i] eg.mn[i]<mx[i]<p[i] é€‰mx[i] p[i]<mn[i]<mx[i] é€‰mn[i] 
 		for(int i=0;i<2;i++)
 			tmp+=max(0,t[k].mn[i]-p[i]);
 		for(int i=0;i<2;i++)
 			tmp+=max(0,p[i]-t[k].mx[i]);
 		return tmp;
 	}
-	int getmx(int k,P p){//È¡×îÔ¶ 
+	int getmx(int k,P p){//å–æœ€è¿œ 
 		int tmp=0;
 		for(int i=0;i<2;i++)
-			tmp+=max(abs(t[k].mn[i]-p[i]),abs(p[i]-t[k].mx[i]));//¼ÆËã·½·¨ÂÔÓĞ²»Í¬£¨ÒòÎªÊÇ×îÔ¶£¬ËùÒÔËæ±ãabsÁË£© 
+			tmp+=max(abs(t[k].mn[i]-p[i]),abs(p[i]-t[k].mx[i]));//è®¡ç®—æ–¹æ³•ç•¥æœ‰ä¸åŒï¼ˆå› ä¸ºæ˜¯æœ€è¿œï¼Œæ‰€ä»¥éšä¾¿absäº†ï¼‰ 
 		return tmp;
 	}
 	void query_mn(int k,int now){
 		int d=dis(t[k],T),dl=INF,dr=INF;
-		if(d)ans=min(ans,d);//×¢ÒâÕâÀï= =£¬Òª°Ñ×Ô¼ºÅÅ³ı£¨¼´¾àÀë=0£© 
+		if(d)ans=min(ans,d);//æ³¨æ„è¿™é‡Œ= =ï¼Œè¦æŠŠè‡ªå·±æ’é™¤ï¼ˆå³è·ç¦»=0ï¼‰ 
 		if(t[k].l)dl=getmn(t[k].l,T);
 		if(t[k].r)dr=getmn(t[k].r,T);
 		if(dl<dr){

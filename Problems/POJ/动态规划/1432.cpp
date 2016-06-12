@@ -1,11 +1,11 @@
 /*
 Decoding Morse Sequences
-���⣺����һ����ĸ�������������һ����n�����ʵ��ֵ䣬����һ�����롣���ٸ����ֵ����ж����ֲ�ͬ�Ľ��뷽ʽ��
-���������ȱ���ֻ��-��.�����Ժܷ���ؽ���һ��Trie������������Ϥ�Ķ��淽ʽ��
-	  Ȼ����opt[i]��ʾ����[i..len]�ķ�����
-	  	����opt[i]=sigma{[i..j]��ɵĵ��ʵĸ���*opt[j+1]|i<=j<len} 
-	  ��������ɵĵ��ʸ�����������Trie��ǿ�� 
-	  ʱ�临�Ӷ�O(n^2) 
+题意：给出一个字母的译码表，给出一个有n个单词的字典，给出一串编码。问再给出字典中有多少种不同的解码方式。
+分析：首先编码只有-和.，可以很方便地建立一棵Trie树，还是最熟悉的二叉方式。
+	  然后令opt[i]表示区间[i..len]的方案数
+	  	则有opt[i]=sigma{[i..j]组成的单词的个数*opt[j+1]|i<=j<len} 
+	  对于求组成的单词个数，这正是Trie的强项 
+	  时间复杂度O(n^2) 
 */
 #include<iostream>
 #include<algorithm>

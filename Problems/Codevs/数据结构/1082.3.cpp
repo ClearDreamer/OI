@@ -1,6 +1,6 @@
 /*
-Ïß¶ÎÊ÷Á·Ï°3
-·ÖÎö£ºSplayÊµÏÖ 
+çº¿æ®µæ ‘ç»ƒä¹ 3
+åˆ†æï¼šSplayå®ç° 
 */
 #include<iostream>
 #include<stack> 

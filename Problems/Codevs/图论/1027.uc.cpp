@@ -1,6 +1,6 @@
 /*
-������ID
-����������ͼƥ�䣬�ַ����ȽϷ��ˣ���������ж��Ƿ�һ���أ� 
+姓名与ID
+分析：二分图匹配，字符串比较烦人，但是如何判断是否一定呢？ 
 */ 
 #include<iostream>
 #include<bitset>

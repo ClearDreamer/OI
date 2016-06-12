@@ -1,6 +1,6 @@
 /*
-[2009���Ҽ�ѵ��]СZ������(hose)
-������Ī���㷨��һ������ֿ飬���򣬱�����ע���޸�˳�� 
+[2009国家集训队]小Z的袜子(hose)
+分析：莫队算法，一个坐标分块，排序，暴力，注意修改顺序 
 */
 #include<iostream>
 #include<algorithm>

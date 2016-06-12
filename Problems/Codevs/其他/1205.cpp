@@ -1,6 +1,6 @@
 /*
-µ¥´Ê·­×ª
-×¢Òâ£º++£¬--µÄÊ¹ÓÃ 
+å•è¯ç¿»è½¬
+æ³¨æ„ï¼š++ï¼Œ--çš„ä½¿ç”¨ 
 */ 
 #include<iostream>
 using namespace std;
@@ -8,7 +8,7 @@ char str[51][255];
 int n=0;
 int main(){
 	ios::sync_with_stdio(false);
-	while(cin>>str[++n]);//ÕâÀïÊµ¼ÊÉÏ»á¶ÁÈëµ¥´ÊÊý+1 
-	while(n-->0)cout<<str[n]<<" ";//ÕâÀïÓÉÓÚÊÇn--£¬ËùÒÔ»á´Ón-1¿ªÊ¼Êä³ö 
+	while(cin>>str[++n]);//è¿™é‡Œå®žé™…ä¸Šä¼šè¯»å…¥å•è¯æ•°+1 
+	while(n-->0)cout<<str[n]<<" ";//è¿™é‡Œç”±äºŽæ˜¯n--ï¼Œæ‰€ä»¥ä¼šä»Žn-1å¼€å§‹è¾“å‡º 
 	return 0;
 }

@@ -1,6 +1,6 @@
 /*
-[POI2007]É½·åºÍÉ½¹ÈGrz
-·ÖÎö£ºBFS¼´¿É£¬×¢ÒâÕâµÀÌâ¼ÓÊäÈëÓÅ»¯¿ÉÒÔÌá¸ß800ms£¬¿ÉÒÔËµÊÇºÜ´óµÄÌáÉý 
+[POI2007]å±±å³°å’Œå±±è°·Grz
+åˆ†æžï¼šBFSå³å¯ï¼Œæ³¨æ„è¿™é“é¢˜åŠ è¾“å…¥ä¼˜åŒ–å¯ä»¥æé«˜800msï¼Œå¯ä»¥è¯´æ˜¯å¾ˆå¤§çš„æå‡ 
 */
 #include<iostream>
 #include<cstdio>

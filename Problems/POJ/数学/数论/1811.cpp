@@ -1,14 +1,14 @@
 /*
 Prime Test
-ÌâÒâ£ºÅÐ¶ÏÒ»¸öÊýÊÇ·ñÎªËØÊý£¬Èô²»ÊÇ£¬Êä³öÆä×îÐ¡ÖÊÒò×Ó
-·ÖÎö£ºÊý±È½Ï´ó£¬ÅÐ¶ÏÖÊÊýÓÃMR£¬×¢Òâlong longÏà³Ë²»ÄÜÖ±½Ó³Ë£¬»á±¬
-	  Çó×îÐ¡ÖÊÒò×Ó£ºpollard rhoËã·¨¿ÉÇóµÃÒ»¸öÖÊÒò×Ó£¬¶à´ÎÇó¼´¿É
-	  Pollard RhoËã·¨ £º
-	  	Pollard rhoËã·¨µÄÔ­Àí¾ÍÊÇÍ¨¹ýÄ³ÖÖ·½·¨µÃµ½Á½¸öÕûÊýaºÍb£¬¶ø´ý·Ö½âµÄ´óÕûÊýÎªn£¬¼ÆËãp=gcd(a-b,n)£¬Ö±µ½p²»Îª1£¬»òÕßa£¬b³öÏÖÑ­»·ÎªÖ¹¡£È»ºóÔÙÅÐ¶ÏpÊÇ·ñÎªn£¬Èç¹ûp=n³ÉÁ¢£¬ÄÇÃ´·µ»ØnÊÇÒ»¸öÖÊÊý£¬·ñÔò·µ»ØpÊÇnµÄÒ»¸öÒò×Ó£¬ÄÇÃ´ÎÒÃÇÓÖ¿ÉÒÔµÝ¹éµÄ¼ÆËãPollard(p)ºÍPollard(n/p)£¬ÕâÑù£¬ÎÒÃÇ¾Í¿ÉÒÔÇó³önµÄËùÓÐÖÊÒò×Ó¡£
-    	¾ßÌå²Ù×÷ÖÐ£¬ÎÒÃÇÍ¨³£Ê¹ÓÃº¯Êýx2=x1*x1+cÀ´¼ÆËãÖð²½µü´ú¼ÆËãaºÍbµÄÖµ£¬Êµ¼ùÖÐ£¬Í¨³£È¡cÎª1£¬¼´b=a*a+1£¬ÔÚÏÂÒ»´Î¼ÆËãÖÐ£¬½«bµÄÖµ¸³¸øa£¬ÔÙ´ÎÊ¹ÓÃÉÏÊ½À´¼ÆËãÐÂµÄbµÄÖµ£¬µ±a£¬b³öÏÖÑ­»·Ê±£¬¼´¿ÉÍË³ö½øÐÐÅÐ¶Ï¡£
-    	ÔÚÊµ¼Ê¼ÆËãÖÐ£¬aºÍbµÄÖµ×îÖÕ¿Ï¶¨Ò»³öÏÖÒ»¸öÑ­»·£¬¶ø½«ÕâÐ©ÖµÓÃ¹â»¬µÄÇúÏßÁ¬½ÓÆðÀ´µÄ»°£¬¿ÉÒÔ½üËÆµÄ¿´³ÉÊÇÒ»¸ö¦ÑÐÍµÄ¡£
-    	¶ÔÓÚPollard rho£¬Ëü¿ÉÒÔÔÚO(sqrt(p))µÄÊ±¼ä¸´ÔÓ¶ÈÄÚÕÒµ½nµÄÒ»¸öÐ¡Òò×Óp£¬¿É¼ûÐ§ÂÊ»¹ÊÇ¿ÉÒÔµÄ£¬µ«ÊÇ¶ÔÓÚÒ»¸öÒò×ÓºÜÉÙ¡¢Òò×ÓÖµºÜ´óµÄ´óÕûÊýnÀ´Ëµ£¬Pollard rhoËã·¨µÄÐ§ÂÊÈÔÈ»²»ÊÇºÜºÃ£¬ÄÇÃ´£¬ÎÒÃÇ»¹µÃÑ°ÕÒ¸ü¼ÓµÄ·½·¨ÁË¡£ 
-	  Ö¤Ã÷£º¼Ù¶¨ÓÐÁ½ÕûÊýx1,x2,Ê¹µÃp|(x1-x2)ÇÒn²»|(x1-x2), ÔòÓÐp=gcd(x1-x2,n)£ºx1-x2=p*q,q²»|n£¬ÕâÑùgcd(x1-x2,n)¼È¿ÉÒÔÊÇ1Ò²¿ÉÒÔÊÇnµÄÒ»¸öÒòÊý¡£ 
+é¢˜æ„ï¼šåˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯å¦ä¸ºç´ æ•°ï¼Œè‹¥ä¸æ˜¯ï¼Œè¾“å‡ºå…¶æœ€å°è´¨å› å­
+åˆ†æžï¼šæ•°æ¯”è¾ƒå¤§ï¼Œåˆ¤æ–­è´¨æ•°ç”¨MRï¼Œæ³¨æ„long longç›¸ä¹˜ä¸èƒ½ç›´æŽ¥ä¹˜ï¼Œä¼šçˆ†
+	  æ±‚æœ€å°è´¨å› å­ï¼špollard rhoç®—æ³•å¯æ±‚å¾—ä¸€ä¸ªè´¨å› å­ï¼Œå¤šæ¬¡æ±‚å³å¯
+	  Pollard Rhoç®—æ³• ï¼š
+	  	Pollard rhoç®—æ³•çš„åŽŸç†å°±æ˜¯é€šè¿‡æŸç§æ–¹æ³•å¾—åˆ°ä¸¤ä¸ªæ•´æ•°aå’Œbï¼Œè€Œå¾…åˆ†è§£çš„å¤§æ•´æ•°ä¸ºnï¼Œè®¡ç®—p=gcd(a-b,n)ï¼Œç›´åˆ°pä¸ä¸º1ï¼Œæˆ–è€…aï¼Œbå‡ºçŽ°å¾ªçŽ¯ä¸ºæ­¢ã€‚ç„¶åŽå†åˆ¤æ–­pæ˜¯å¦ä¸ºnï¼Œå¦‚æžœp=næˆç«‹ï¼Œé‚£ä¹ˆè¿”å›žnæ˜¯ä¸€ä¸ªè´¨æ•°ï¼Œå¦åˆ™è¿”å›žpæ˜¯nçš„ä¸€ä¸ªå› å­ï¼Œé‚£ä¹ˆæˆ‘ä»¬åˆå¯ä»¥é€’å½’çš„è®¡ç®—Pollard(p)å’ŒPollard(n/p)ï¼Œè¿™æ ·ï¼Œæˆ‘ä»¬å°±å¯ä»¥æ±‚å‡ºnçš„æ‰€æœ‰è´¨å› å­ã€‚
+    	å…·ä½“æ“ä½œä¸­ï¼Œæˆ‘ä»¬é€šå¸¸ä½¿ç”¨å‡½æ•°x2=x1*x1+cæ¥è®¡ç®—é€æ­¥è¿­ä»£è®¡ç®—aå’Œbçš„å€¼ï¼Œå®žè·µä¸­ï¼Œé€šå¸¸å–cä¸º1ï¼Œå³b=a*a+1ï¼Œåœ¨ä¸‹ä¸€æ¬¡è®¡ç®—ä¸­ï¼Œå°†bçš„å€¼èµ‹ç»™aï¼Œå†æ¬¡ä½¿ç”¨ä¸Šå¼æ¥è®¡ç®—æ–°çš„bçš„å€¼ï¼Œå½“aï¼Œbå‡ºçŽ°å¾ªçŽ¯æ—¶ï¼Œå³å¯é€€å‡ºè¿›è¡Œåˆ¤æ–­ã€‚
+    	åœ¨å®žé™…è®¡ç®—ä¸­ï¼Œaå’Œbçš„å€¼æœ€ç»ˆè‚¯å®šä¸€å‡ºçŽ°ä¸€ä¸ªå¾ªçŽ¯ï¼Œè€Œå°†è¿™äº›å€¼ç”¨å…‰æ»‘çš„æ›²çº¿è¿žæŽ¥èµ·æ¥çš„è¯ï¼Œå¯ä»¥è¿‘ä¼¼çš„çœ‹æˆæ˜¯ä¸€ä¸ªÏåž‹çš„ã€‚
+    	å¯¹äºŽPollard rhoï¼Œå®ƒå¯ä»¥åœ¨O(sqrt(p))çš„æ—¶é—´å¤æ‚åº¦å†…æ‰¾åˆ°nçš„ä¸€ä¸ªå°å› å­pï¼Œå¯è§æ•ˆçŽ‡è¿˜æ˜¯å¯ä»¥çš„ï¼Œä½†æ˜¯å¯¹äºŽä¸€ä¸ªå› å­å¾ˆå°‘ã€å› å­å€¼å¾ˆå¤§çš„å¤§æ•´æ•°næ¥è¯´ï¼ŒPollard rhoç®—æ³•çš„æ•ˆçŽ‡ä»ç„¶ä¸æ˜¯å¾ˆå¥½ï¼Œé‚£ä¹ˆï¼Œæˆ‘ä»¬è¿˜å¾—å¯»æ‰¾æ›´åŠ çš„æ–¹æ³•äº†ã€‚ 
+	  è¯æ˜Žï¼šå‡å®šæœ‰ä¸¤æ•´æ•°x1,x2,ä½¿å¾—p|(x1-x2)ä¸”nä¸|(x1-x2), åˆ™æœ‰p=gcd(x1-x2,n)ï¼šx1-x2=p*q,qä¸|nï¼Œè¿™æ ·gcd(x1-x2,n)æ—¢å¯ä»¥æ˜¯1ä¹Ÿå¯ä»¥æ˜¯nçš„ä¸€ä¸ªå› æ•°ã€‚ 
 */
 #include<cstdio>  
 #include<iostream>  
@@ -29,7 +29,7 @@ LL multi(LL a,LL b,LL mod){
     LL ans=0;
     while(b){
         if(b&1){
-            b--;//±ØÐëÕâÃ´Ð´£¬²»ÒªÐ´¿ìËÙÃÝµÄ·½·¨£¬ÕâÁ½¸ö²¢²»Ò»Ñù 
+            b--;//å¿…é¡»è¿™ä¹ˆå†™ï¼Œä¸è¦å†™å¿«é€Ÿå¹‚çš„æ–¹æ³•ï¼Œè¿™ä¸¤ä¸ªå¹¶ä¸ä¸€æ · 
             ans=(ans+a)%mod;
         }  
         else{  
@@ -51,7 +51,7 @@ LL Pow(LL a,LL b,LL mod){
 LL gcd(LL a,LL b){
     return b?gcd(b,a%b):a;
 }
-bool witness(LL a,LL n){//ÓÃa²âÊÔnÊÇ·ñÎªËØÊý 
+bool witness(LL a,LL n){//ç”¨aæµ‹è¯•næ˜¯å¦ä¸ºç´ æ•° 
 	LL d=n-1;
     while(!(d&1))d>>=1;
     LL t=Pow(a,d,n);
@@ -69,7 +69,7 @@ bool miller_rabin(LL n){
     }
     return true;
 }
-LL pollard_rho(LL n,int c){//Ñ°ÕÒnµÄÒ»¸öÖÊÒò×Ó  
+LL pollard_rho(LL n,int c){//å¯»æ‰¾nçš„ä¸€ä¸ªè´¨å› å­  
     LL x,y,d,i=1,k=2;
     x=random(n-2)+1;
     y=x; 
@@ -84,7 +84,7 @@ LL pollard_rho(LL n,int c){//Ñ°ÕÒnµÄÒ»¸öÖÊÒò×Ó
         }
     }  
 }  
-void find(LL n,int c){//Ñ°ÕÒnµÄ×îÐ¡ÖÊÒò×Ó 
+void find(LL n,int c){//å¯»æ‰¾nçš„æœ€å°è´¨å› å­ 
     if(n==1)return;  
     if(miller_rabin(n)){
         mi=min(mi,n);

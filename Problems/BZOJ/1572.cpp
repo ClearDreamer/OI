@@ -1,6 +1,6 @@
 /*
-[Usaco2009 Open]¹¤×÷°²ÅÅJob
-·ÖÎö£ºÌ°ÐÄ£º°´½ØÖÁÊ±¼ä´ÓÐ¡µ½´ó£¬Ã¿´Îpush½øÈ¥£¬Èç¹û·¢ÏÖÈÎÎñÊýÁ¿>µ±Ç°Ê±¼ä£¬ÄÇÃ´popµô×îÐ¡µÄ¡£×îºóËùÓÐqueueÖÐÊ£ÏÂµÄÊýµÄºÍ¾ÍÊÇ´ð°¸ 
+[Usaco2009 Open]å·¥ä½œå®‰æŽ’Job
+åˆ†æžï¼šè´ªå¿ƒï¼šæŒ‰æˆªè‡³æ—¶é—´ä»Žå°åˆ°å¤§ï¼Œæ¯æ¬¡pushè¿›åŽ»ï¼Œå¦‚æžœå‘çŽ°ä»»åŠ¡æ•°é‡>å½“å‰æ—¶é—´ï¼Œé‚£ä¹ˆpopæŽ‰æœ€å°çš„ã€‚æœ€åŽæ‰€æœ‰queueä¸­å‰©ä¸‹çš„æ•°çš„å’Œå°±æ˜¯ç­”æ¡ˆ 
 */
 #include<iostream>
 #include<cstdio>

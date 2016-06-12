@@ -1,5 +1,5 @@
 /*
-°®ÇéÖ®Â·
+çˆ±æƒ…ä¹‹è·¯
 */
 #include<iostream>
 #include<queue>
@@ -43,7 +43,7 @@ void spfa(int from){
 		int nx=(v.t+1)%4;
 		for(int i=0;i<g[v.x].size();i++){
 			edge &e=es[g[v.x][i]];
-			if(e.t==nx && d[e.v]<=d[v.x]+e.w){//ÓĞA->B,B->A£¬ÔõÃ´×ö 
+			if(e.t==nx && d[e.v]<=d[v.x]+e.w){//æœ‰A->B,B->Aï¼Œæ€ä¹ˆåš 
 				d[e.v]=d[v.x]+e.w;cout<<nx<<endl;
 				if((nx==3)&&ky[e.v]<v.ky+1)ky[e.v]=v.ky+1;
 				q.push((vertex){e.v,nx,((nx==3)?v.ky+1:v.ky)});

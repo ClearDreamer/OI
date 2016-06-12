@@ -1,13 +1,13 @@
 /*
 Team Them Up!
-ÌâÒâ£º·Ö³ÉÁ½×é£¬Ê¹µÃÃ¿×éÖÐµÄÈË»¥ÏàÈÏÊ¶£¬ÇÒÁ½×éÈËÊý¾¡Á¿½Ó½ü 
-·ÖÎö£º·Ç³£Ã÷ÏÔ£¬Èç¹û´æÔÚÁ½¸öÈËAºÍB£¬A²»ÈÏÊ¶B£¬»òB²»ÈÏÊ¶A£¬ÄÇÃ´AºÍBÒ»¶¨²»ÄÜ·ÖÔÚÍ¬Ò»×é¡£Òò´Ë£¬ÎÒÃÇÒÔÈËÎª½áµãÖØÐÂ¹¹ÔìÒ»¸öÍ¼G¡£¼ÙÈçAºÍB²»ÄÜ·ÖÔÚÍ¬Ò»×é£¬ÄÇÃ´¾ÍÔÚGÖÐÔö¼ÓÒ»ÌõÎÞÏò±ß(A,B)¡£ÕâÑù£¬ÎÒÃÇ¾ÍµÃµ½ÁËÒ»¸ö½ÏÎª¡°µ¥´¿¡±µÄÄ£ÐÍ¡£ÏÂÃæÎÒÃÇ¶ÔÕâ¸öÄ£ÐÍ½øÐÐ¼òµ¥·ÖÎö¡£
-	  ÎÒÃÇÏÈÑÐ¾¿GµÄÒ»¸öÁ¬Í¨·ÖÁ¿K1¡£¶ÔÓÚÕâ¸öÁ¬Í¨·ÖÁ¿£¬¿ÉÒÔÏÈÇó³öK1µÄÉú³ÉÊ÷T1¡£¶ÔÓÚK1ÖÐµÄÈÎÒâ½áµãa£¬¼ÙÈçaÔÚT1ÖÐµÄÉî¶ÈÎªÆæÊý£¬ÎÒÃÇ¾Í°Ña¼ÓÈëµã¼¯S1£»·ñÔòÎÒÃÇ°Ña¼ÓÈëµã¼¯S2£¨S1,S2×î³õÎª¿Õ¼¯£©¡£ÏÔÈ»×îºóS1,S2µÄ½»¼¯Îª¿Õ¡£
-      ²»ÄÑÖ¤Ã÷£¬Èç¹û´æÔÚ²»Í¬½áµãpºÍq£¬pºÍqÍ¬ÊôÓÚS1»òS2£¬¶øÇÒGÖÐ´æÔÚ±ß(p,q)£¬ÄÇÃ´Òª×öµ½Âú×ãÌâÄ¿ÒªÇóµÄ·Ö×éÊÇ²»¿ÉÄÜµÄ£¬Ó¦Êä³öNo solution¡£·ñÔò£¬ÎÒÃÇ¾ÍµÃµ½ÁËÁ¬Í¨·ÖÁ¿K1µÄÎ¨Ò»·Ö×é·½°¸£º·ÖÎªS1,S2Á½×é¡£
-      ¶ÔÓÚGÖÐµÄÃ¿¸öÁ¬Í¨·ÖÁ¿Ki£¬ÎÒÃÇ¿ÉÒÔÇó³öÏàÓ¦µÄS1i,S2i¡£×îºó£¬ÎÒÃÇµÄÄ¿µÄÊÇ°ÑÈ«²¿ÈË·ÖÎª2×é¡£Ò²¾ÍÊÇËµ£¬¶ÔÓÚi=1,2,3,...,m£¬ÎÒÃÇ±ØÐë¾ö¶¨°ÑS1iÖÐµÄÈË·Öµ½µÚ1×é£¬S2iÖÐµÄÈË·Öµ½µÚ2×é£¬»¹ÊÇ×ö¸ÕºÃÏà·´µÄ´¦Àí¡£ÓÉÓÚÌâÄ¿ÒªÇó×îºóÁ½×éµÄ×ÜÈËÊý²î×îÐ¡£¬ÎÒÃÇ¿ÉÒÔÓÃ¶¯Ì¬¹æ»®µÄ°ì·¨À´È·¶¨¾¿¾¹Ñ¡È¡ÉÏÃæµÄÄÄÖÖ¾ö²ß¡£
-      ²»·Á¼ÙÉèGÖÐ¹²ÓÐm¸öÁ¬Í¨·ÖÁ¿£¬¼Ç|S1i|=xi,|S2i|=yi(i=1,2,3,...,m)¡£ÎÒÃÇÓÃf[i,j]±íÊ¾°ÑÇ°i¸öÁ¬Í¬·ÖÁ¿·ÖÎª2×é£¬ÇÒÕâÁ½×é×ÜÈËÊý²îµÄ¾ø¶ÔÖµÇ¡ºÃÎªjÊÇ·ñ¿ÉÄÜ¡£Èç¹û¿ÉÄÜ£¬f[i,j]=true£»·ñÔòf[i,j]=false¡£³õÊ¼Ìõ¼þÊÇf[0,0]=true, f[0,x]=false(x=1,2,3,...)¡£È»ºóÎÒÃÇ¿ÉÒÔ°´ÕÕÈçÏÂ·½·¨È·¶¨f[i,j](0<i<=m, j>=0)£º
+é¢˜æ„ï¼šåˆ†æˆä¸¤ç»„ï¼Œä½¿å¾—æ¯ç»„ä¸­çš„äººäº’ç›¸è®¤è¯†ï¼Œä¸”ä¸¤ç»„äººæ•°å°½é‡æŽ¥è¿‘ 
+åˆ†æžï¼šéžå¸¸æ˜Žæ˜¾ï¼Œå¦‚æžœå­˜åœ¨ä¸¤ä¸ªäººAå’ŒBï¼ŒAä¸è®¤è¯†Bï¼Œæˆ–Bä¸è®¤è¯†Aï¼Œé‚£ä¹ˆAå’ŒBä¸€å®šä¸èƒ½åˆ†åœ¨åŒä¸€ç»„ã€‚å› æ­¤ï¼Œæˆ‘ä»¬ä»¥äººä¸ºç»“ç‚¹é‡æ–°æž„é€ ä¸€ä¸ªå›¾Gã€‚å‡å¦‚Aå’ŒBä¸èƒ½åˆ†åœ¨åŒä¸€ç»„ï¼Œé‚£ä¹ˆå°±åœ¨Gä¸­å¢žåŠ ä¸€æ¡æ— å‘è¾¹(A,B)ã€‚è¿™æ ·ï¼Œæˆ‘ä»¬å°±å¾—åˆ°äº†ä¸€ä¸ªè¾ƒä¸ºâ€œå•çº¯â€çš„æ¨¡åž‹ã€‚ä¸‹é¢æˆ‘ä»¬å¯¹è¿™ä¸ªæ¨¡åž‹è¿›è¡Œç®€å•åˆ†æžã€‚
+	  æˆ‘ä»¬å…ˆç ”ç©¶Gçš„ä¸€ä¸ªè¿žé€šåˆ†é‡K1ã€‚å¯¹äºŽè¿™ä¸ªè¿žé€šåˆ†é‡ï¼Œå¯ä»¥å…ˆæ±‚å‡ºK1çš„ç”Ÿæˆæ ‘T1ã€‚å¯¹äºŽK1ä¸­çš„ä»»æ„ç»“ç‚¹aï¼Œå‡å¦‚aåœ¨T1ä¸­çš„æ·±åº¦ä¸ºå¥‡æ•°ï¼Œæˆ‘ä»¬å°±æŠŠaåŠ å…¥ç‚¹é›†S1ï¼›å¦åˆ™æˆ‘ä»¬æŠŠaåŠ å…¥ç‚¹é›†S2ï¼ˆS1,S2æœ€åˆä¸ºç©ºé›†ï¼‰ã€‚æ˜¾ç„¶æœ€åŽS1,S2çš„äº¤é›†ä¸ºç©ºã€‚
+      ä¸éš¾è¯æ˜Žï¼Œå¦‚æžœå­˜åœ¨ä¸åŒç»“ç‚¹på’Œqï¼Œpå’ŒqåŒå±žäºŽS1æˆ–S2ï¼Œè€Œä¸”Gä¸­å­˜åœ¨è¾¹(p,q)ï¼Œé‚£ä¹ˆè¦åšåˆ°æ»¡è¶³é¢˜ç›®è¦æ±‚çš„åˆ†ç»„æ˜¯ä¸å¯èƒ½çš„ï¼Œåº”è¾“å‡ºNo solutionã€‚å¦åˆ™ï¼Œæˆ‘ä»¬å°±å¾—åˆ°äº†è¿žé€šåˆ†é‡K1çš„å”¯ä¸€åˆ†ç»„æ–¹æ¡ˆï¼šåˆ†ä¸ºS1,S2ä¸¤ç»„ã€‚
+      å¯¹äºŽGä¸­çš„æ¯ä¸ªè¿žé€šåˆ†é‡Kiï¼Œæˆ‘ä»¬å¯ä»¥æ±‚å‡ºç›¸åº”çš„S1i,S2iã€‚æœ€åŽï¼Œæˆ‘ä»¬çš„ç›®çš„æ˜¯æŠŠå…¨éƒ¨äººåˆ†ä¸º2ç»„ã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œå¯¹äºŽi=1,2,3,...,mï¼Œæˆ‘ä»¬å¿…é¡»å†³å®šæŠŠS1iä¸­çš„äººåˆ†åˆ°ç¬¬1ç»„ï¼ŒS2iä¸­çš„äººåˆ†åˆ°ç¬¬2ç»„ï¼Œè¿˜æ˜¯åšåˆšå¥½ç›¸åçš„å¤„ç†ã€‚ç”±äºŽé¢˜ç›®è¦æ±‚æœ€åŽä¸¤ç»„çš„æ€»äººæ•°å·®æœ€å°ï¼Œæˆ‘ä»¬å¯ä»¥ç”¨åŠ¨æ€è§„åˆ’çš„åŠžæ³•æ¥ç¡®å®šç©¶ç«Ÿé€‰å–ä¸Šé¢çš„å“ªç§å†³ç­–ã€‚
+      ä¸å¦¨å‡è®¾Gä¸­å…±æœ‰mä¸ªè¿žé€šåˆ†é‡ï¼Œè®°|S1i|=xi,|S2i|=yi(i=1,2,3,...,m)ã€‚æˆ‘ä»¬ç”¨f[i,j]è¡¨ç¤ºæŠŠå‰iä¸ªè¿žåŒåˆ†é‡åˆ†ä¸º2ç»„ï¼Œä¸”è¿™ä¸¤ç»„æ€»äººæ•°å·®çš„ç»å¯¹å€¼æ°å¥½ä¸ºjæ˜¯å¦å¯èƒ½ã€‚å¦‚æžœå¯èƒ½ï¼Œf[i,j]=trueï¼›å¦åˆ™f[i,j]=falseã€‚åˆå§‹æ¡ä»¶æ˜¯f[0,0]=true, f[0,x]=false(x=1,2,3,...)ã€‚ç„¶åŽæˆ‘ä»¬å¯ä»¥æŒ‰ç…§å¦‚ä¸‹æ–¹æ³•ç¡®å®šf[i,j](0<i<=m, j>=0)ï¼š
       f[i,j]= f[i-1, j-Abs(xi-yi)] or f[i-1, j+Abs(xi-yi)];
-      µ±È»£¬ÔÚÇó½âµÄÍ¬Ê±£¬ÎÒÃÇ¿ÉÒÔ¼ÇÂ¼Â·¾¶¡£×îºó£¬res=min{i: f[m, i]=true}¼´Îª×î¼Ñ·Ö×éµÄÈËÊý²î£¬¶øËü¶ÔÓ¦µÄÂ·¾¶¾ÍÊÇÎÒÃÇÒªÇóµÄ·Ö×é·½°¸¡£
+      å½“ç„¶ï¼Œåœ¨æ±‚è§£çš„åŒæ—¶ï¼Œæˆ‘ä»¬å¯ä»¥è®°å½•è·¯å¾„ã€‚æœ€åŽï¼Œres=min{i: f[m, i]=true}å³ä¸ºæœ€ä½³åˆ†ç»„çš„äººæ•°å·®ï¼Œè€Œå®ƒå¯¹åº”çš„è·¯å¾„å°±æ˜¯æˆ‘ä»¬è¦æ±‚çš„åˆ†ç»„æ–¹æ¡ˆã€‚
 */
 #include<iostream>
 #include<algorithm>
@@ -127,7 +127,7 @@ int main(){
 	return 0;
 }
 /*
-´úÂë
+ä»£ç 
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
@@ -145,12 +145,12 @@ char map[NN][NN];
 char col[NN];
 int dfn[NN];
 int cnt[NN][2];
-int ans[NN][2][NN];// ¼ÇÂ¼Á¬Í¨·ÖÖ§ 
+int ans[NN][2][NN];// è®°å½•è¿žé€šåˆ†æ”¯ 
 char dp[NN][NN];
-char pre[NN][NN];//¼ÇÂ¼dpÂ·¾¶ 
+char pre[NN][NN];//è®°å½•dpè·¯å¾„ 
 char flag[NN];
 
-void Add(int u, int v){//½¨±ß 
+void Add(int u, int v){//å»ºè¾¹ 
      edg[idx].v = v;
      edg[idx].nxt = Link[u];
      Link[u] = edg + idx++;
@@ -159,7 +159,7 @@ void Add(int u, int v){//½¨±ß
      Link[v] = edg + idx++;
 }
 
-int dfs(int u){//×ÅÉ«¹ý³Ì 
+int dfs(int u){//ç€è‰²è¿‡ç¨‹ 
     int v;
     dfn[u] = ++time;
     ans[scc][col[u]][++cnt[scc][col[u]]] = u;
@@ -181,7 +181,7 @@ void Dp(){
      for(i = 1; i <= N; i++) dp[0][i] = 0;
      
      for(i = 1; i <= scc; i++){
-           for(j = 0; j <= N / 2; j++){// j´Ó0¿ªÊ¼ 
+           for(j = 0; j <= N / 2; j++){// jä»Ž0å¼€å§‹ 
                  dp[i][j] = 0;
                  t = j - cnt[i][0];
                  if(t >= 0 && dp[i - 1][t]){
@@ -197,7 +197,7 @@ void Dp(){
      }
 }
 
-void Print(){//Êä³ö 
+void Print(){//è¾“å‡º 
      int t, tmp, i, j, k;
      for (k = N / 2; k >= 1; k--){
          if(dp[scc][k]) break;
@@ -227,7 +227,7 @@ void Print(){//Êä³ö
 }
 void Solve(){
      int i;
-     memset(dfn, 0, sizeof(dfn));//·¢ÏÖ±êºÅ 
+     memset(dfn, 0, sizeof(dfn));//å‘çŽ°æ ‡å· 
      memset(col, 0, sizeof(col));
      memset(cnt, 0, sizeof(cnt));
      time = scc = 0;

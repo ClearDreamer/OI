@@ -1,6 +1,6 @@
 /*
-ÎäÊ¿·ç¶ÈµÄÅ£
-·ÖÎö£ºBFS£¬¿Ó¡£¡£ 
+æ­¦å£«é£Žåº¦çš„ç‰›
+åˆ†æžï¼šBFSï¼Œå‘ã€‚ã€‚ 
 */
 #include<iostream>
 #include<queue>

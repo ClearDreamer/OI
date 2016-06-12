@@ -1,7 +1,7 @@
 /*
 Big Number
-题意：求N!有多少位
-分析：用log 
+棰樻剰锛氭眰N!鏈夊灏戜綅
+鍒嗘瀽锛氱敤log 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,6 +1,6 @@
 /*
-有理逼近
-分析：枚举i，然后可以确定j的范围（在i/sqrt(p)周围），然后试一试就行了 
+鏈夌悊閫艰繎
+鍒嗘瀽锛氭灇涓緄锛岀劧鍚庡彲浠ョ‘瀹歫鐨勮寖鍥达紙鍦╥/sqrt(p)鍛ㄥ洿锛夛紝鐒跺悗璇曚竴璇曞氨琛屼簡 
 */
 #include<iostream>
 #include<algorithm>

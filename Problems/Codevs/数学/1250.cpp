@@ -1,6 +1,6 @@
 /*
-FibonacciÊýÁÐ 2
-·ÖÎö£º¾ØÕó³Ë+¿ìËÙÃÝ£¬ÓÉµÝÍÆÊ½¿ÉµÃ¾ØÕó 
+Fibonacciæ•°åˆ— 2
+åˆ†æžï¼šçŸ©é˜µä¹˜+å¿«é€Ÿå¹‚ï¼Œç”±é€’æŽ¨å¼å¯å¾—çŸ©é˜µ 
 */
 #include<cstdio>
 #include<cstring>

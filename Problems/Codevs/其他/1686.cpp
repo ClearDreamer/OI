@@ -1,6 +1,6 @@
 /*
-图书分配
-分析：和抄书问题一样，二分答案，贪心的验证答案 
+鍥句功鍒嗛厤
+鍒嗘瀽锛氬拰鎶勪功闂涓�鏍凤紝浜屽垎绛旀锛岃椽蹇冪殑楠岃瘉绛旀 
 */
 #include<iostream>
 using namespace std;

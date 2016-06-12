@@ -1,7 +1,7 @@
 /*
 Prime Land
-���⣺����һ����x���������ֽ⣬��x-1���������ֽ� 
-	  Ϊʲô�����ܱ���ɹ������˾ͱ���ʧ�ܡ��� 
+题意：给出一个数x的质因数分解，求x-1的质因数分解 
+	  为什么本机能编译成功，交了就编译失败。。 
 */
 #include<iostream>
 #include<cstdio>
@@ -71,7 +71,7 @@ int main(){
 	}
 	return 0;
 } 
-/*AC����
+/*AC代码
 #include<stdio.h>
 #include<string.h>
 int prime[3000],e[3000];

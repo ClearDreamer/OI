@@ -1,8 +1,8 @@
 /*
 [Heoi2013]Alo
-�������Ȱ�ԭ˳�����ɳ־û�Trie��Ȼ��Ӵ�С����setά��λ�ã���֤set�е���ǰk�������λ�á��������ڵ�k����V������set����С�ģ�
-	  ��set������ǰ����ǰ��Ϊx����̵ĺ��Ϊy����ô���Ǵδ�ֵ�����伴[x+1..V]��[V..y-1]������Ҫ�������������Trie����������ֵ��̰�ļ��ɡ�
-	  ע������������Trie��ֻ����һ�Σ�[x+1..y-1]�� 
+分析：先按原顺序建立可持久化Trie，然后从大到小，用set维护位置，保证set中的是前k大的数的位置。这样对于第k个数V，他是set中最小的，
+	  设set中他的前驱的前驱为x，后继的后继为y，那么他是次大值的区间即[x+1..V]和[V..y-1]，我们要在这两个区间的Trie中求异或最大值。贪心即可。
+	  注意这俩区间在Trie上只用跑一次（[x+1..y-1]） 
 */
 #include<iostream>
 #include<cstdio>
@@ -44,9 +44,9 @@ int n,ans=0;
 int main(){
 	bin[0]=1;for(int i=1;i<=30;i++)bin[i]=bin[i-1]<<1;
 	scanf("%d",&n);
-	for(int i=1;i<=n;i++){scanf("%d",&ds[i].v);ds[i].p=i;root[i]=insert(root[i-1],ds[i].v);}//ע�Ᵽ��� 
+	for(int i=1;i<=n;i++){scanf("%d",&ds[i].v);ds[i].p=i;root[i]=insert(root[i-1],ds[i].v);}//注意保存根 
 	sort(ds+1,ds+n+1);
-	S.insert(-1);S.insert(-2);S.insert(INF);S.insert(INF+1);//���ϱ߽� 
+	S.insert(-1);S.insert(-2);S.insert(INF);S.insert(INF+1);//填上边界 
 	S.insert(ds[n].p);
 	for(int i=n-1;i>=1;i--){
 		int l,r,x;l=r=x=ds[i].p;
@@ -54,7 +54,7 @@ int main(){
 		w++;r=*w-1;
 		q--;q--;l=*q+1;
 		l=max(1,l);r=min(r,n);
-		if(l!=r)ans=max(ans,query(ds[i].v,root[l-1],root[r]));//������õ��Ǹ� 
+		if(l!=r)ans=max(ans,query(ds[i].v,root[l-1],root[r]));//这里调用的是根 
 		S.insert(ds[i].p);
 	}
 	printf("%d\n",ans);

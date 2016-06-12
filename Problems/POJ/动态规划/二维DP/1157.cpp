@@ -1,9 +1,9 @@
 /*
 LITTLE SHOP OF FLOWERS
-���⣺F��������V��ƿ�����棬��Ҫ����Ų壬��ͬ�����벻ͬ�Ļ�ƿ�в�ͬ�����۳̶ȣ�Ҫ���������۳̶ȡ�
-������opt[i][j]��ʾ��i��������ǰj��ƿ�����档��״̬ת�ƺ���Ϊopt[i][j]=max(opt[i-1][j-1]+a[i][j],opt[i][j-1])
-	  ��Ϊ�����ֲ巨��һ����i���������j��ƿ�����棬��Ϊopt[i][j]=opt[i-1][j-1]+a[i][j].������i�����������j��ƿ�����棬��opt[i][j]=opt[i][j-1]��
-	  ��ʼ��Ҳ����Ҫ������opt[i][i]ֻ�����β� 
+题意：F束花插入V个瓶子里面，花要按编号插，不同花插入不同的花瓶有不同的美观程度，要求最大的美观程度。
+分析：opt[i][j]表示第i束花插入前j个瓶子里面。则状态转移函数为opt[i][j]=max(opt[i-1][j-1]+a[i][j],opt[i][j-1])
+	  因为有两种插法，一：第i束花插入第j个瓶子里面，则为opt[i][j]=opt[i-1][j-1]+a[i][j].二：第i束花不插入第j个瓶子里面，则opt[i][j]=opt[i][j-1]。
+	  初始化也很重要：对于opt[i][i]只能依次插 
 */
 #include<iostream>
 #include<algorithm>

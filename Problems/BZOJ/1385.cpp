@@ -1,6 +1,6 @@
 /*
 [Baltic2000]Division expression
-分析：X2一定是分母，然后约分一下就行了 
+鍒嗘瀽锛歑2涓�瀹氭槸鍒嗘瘝锛岀劧鍚庣害鍒嗕竴涓嬪氨琛屼簡 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-[SCOI2005]�����ַ�King
-������ ״ѹDP��Ԥ������״̬ת�ƣ���С״̬�� 
+[SCOI2005]互不侵犯King
+分析： 状压DP，预处理下状态转移，减小状态数 
 */
 #include <iostream>
 #include<cstring>

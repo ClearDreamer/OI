@@ -51,7 +51,7 @@ struct Stack {
 	}
 };
 template<class T>
-struct Monotone_Queue { //µ¥µ÷²»½µ¶ÓÁĞ
+struct Monotone_Queue { //å•è°ƒä¸é™é˜Ÿåˆ—
 	T q[MAXN+3];
 	int h,t;
 	void clear() {
@@ -211,7 +211,7 @@ struct Splay {
 		if(t==0)root=x;
 	}
 
-	void init() { //Ìí¼ÓÁ½±ßµÄINFºÍ-INF
+	void init() { //æ·»åŠ ä¸¤è¾¹çš„INFå’Œ-INF
 		tot=0;
 		root=newnode(-INF);
 		int t=newnode(INF);

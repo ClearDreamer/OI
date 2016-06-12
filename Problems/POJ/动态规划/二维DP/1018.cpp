@@ -1,12 +1,12 @@
 /*
 Communication System
-题意：N个格子，每个格子i可以选择Mi个不同物品，每种物品两个属性：bj,pj，设每个格子选ti号物品，
-	  则要求最大化min{b[ti]}/sum{p[ti]}
-分析：最大化这个值，可以理解为最小化sum，最大化min，利用DP转成枚举方案 
-	  DP，状态：opt[i][j]表示填满前i个格子，min{b[ti]}=j时的最小sum{p[ti]} 
-	  则有：opt[i][j]=min{opt[i-1][min(j,b[k])]+p[k]|1<=k<=mi} 
-	  注意i=1时的边界处理，最后枚举opt[n][i]，注意有的状态是不可达的 
-	  边读边处理，可以节省空间 
+棰樻剰锛歂涓牸瀛愶紝姣忎釜鏍煎瓙i鍙互閫夋嫨Mi涓笉鍚岀墿鍝侊紝姣忕鐗╁搧涓や釜灞炴�э細bj,pj锛岃姣忎釜鏍煎瓙閫塼i鍙风墿鍝侊紝
+	  鍒欒姹傛渶澶у寲min{b[ti]}/sum{p[ti]}
+鍒嗘瀽锛氭渶澶у寲杩欎釜鍊硷紝鍙互鐞嗚В涓烘渶灏忓寲sum锛屾渶澶у寲min锛屽埄鐢―P杞垚鏋氫妇鏂规 
+	  DP锛岀姸鎬侊細opt[i][j]琛ㄧず濉弧鍓峣涓牸瀛愶紝min{b[ti]}=j鏃剁殑鏈�灏弒um{p[ti]} 
+	  鍒欐湁锛歰pt[i][j]=min{opt[i-1][min(j,b[k])]+p[k]|1<=k<=mi} 
+	  娉ㄦ剰i=1鏃剁殑杈圭晫澶勭悊锛屾渶鍚庢灇涓緊pt[n][i]锛屾敞鎰忔湁鐨勭姸鎬佹槸涓嶅彲杈剧殑 
+	  杈硅杈瑰鐞嗭紝鍙互鑺傜渷绌洪棿 
 */
 #include<iostream>
 #include<algorithm>

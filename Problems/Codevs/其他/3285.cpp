@@ -1,6 +1,6 @@
 /*
-转圈游戏
-分析：ans=(x+m*(10^k))%n 
+杞湀娓告垙
+鍒嗘瀽锛歛ns=(x+m*(10^k))%n 
 */
 #include<iostream>
 using namespace std;

@@ -1,12 +1,12 @@
 /*
-[Noi2014]ħ��ɭ��
-��������̬�ӱ����·��
-		���Ƕ�a����ö��a������ÿһ��ö����bȨ���ֵ����Сֵ����
-		��M�����·�϶���ʱ���� ���Ϻܶ���д��LInk-Cut-Treeά����̬��С������������ʵ 
-		����Ҫ�õ����·�Ķ�̬�ӵ㣨�ߣ��� ����ÿ��һ���� �Ͱѱߵ����˵���� ����dijkstra ���ö�f�������memset
-		�ⷽ���ǳ��� ��LCT��д�˲�֪���� Ȼ�����ﻹ�м�֦
-		��֦1 ÿ��һ���߾�dijkstra��Ȼ���˷ѣ����ǰ�aֵ��ͬ�ĵ�ͳͳ������У�Ȼ��dijkstraһ�ν��
-		��֦2 ����һ��˫��� ���ǲ���������м������㣬ֱ�����������и���fֵ��ģ��ܸ��¾ͼ������
+[Noi2014]魔法森林
+分析：动态加边最短路。
+		我们对a排序，枚举a，对于每一次枚举求b权最大值的最小值即可
+		跑M遍最短路肯定超时无误 网上很多人写了LInk-Cut-Tree维护动态最小生成树，但其实 
+		这里要用的最短路的动态加点（边）法 我们每加一条边 就把边的两端点入队 继续dijkstra 不用对f数组进行memset
+		这方法非常快 比LCT好写了不知多少 然后这里还有剪枝
+		剪枝1 每加一条边就dijkstra自然很浪费，我们把a值相同的点统统加入队列，然后dijkstra一次解决
+		剪枝2 对于一条双向边 我们不必向队列中加两个点，直接在主函数中更新f值大的，能更新就加入队列
 */
 #include<iostream>
 #include<cstdio>
@@ -28,7 +28,7 @@ struct node{
 	}
 	node(int p,int d):p(p),d(d){}
 };
-int head[MAXN+3],nxt[2*MAXM+100],cnt=1;//ע��next���鿪����M 
+int head[MAXN+3],nxt[2*MAXM+100],cnt=1;//注意next数组开的是M 
 void addedge(int id){
 	E[++cnt]=es[id];
 	nxt[cnt]=head[E[cnt].u];

@@ -1,5 +1,5 @@
 /*
-最小公倍数
+鏈�灏忓叕鍊嶆暟
 */
 #include<iostream>
 #include<algorithm>

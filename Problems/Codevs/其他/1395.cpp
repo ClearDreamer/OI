@@ -1,5 +1,5 @@
 /*
-求一个整数有几位
+姹備竴涓暣鏁版湁鍑犱綅
 */
 #include<stdio.h>
 int main(){

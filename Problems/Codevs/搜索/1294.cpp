@@ -1,11 +1,11 @@
 /*
-È«ÅÅÁÐ
-·ÖÎö£ºÏÈÏëµÄÊÇÓÃ¿âº¯Êý£¬È»ºó³¬Ê±1¸öµã
+å…¨æŽ’åˆ—
+åˆ†æžï¼šå…ˆæƒ³çš„æ˜¯ç”¨åº“å‡½æ•°ï¼Œç„¶åŽè¶…æ—¶1ä¸ªç‚¹
 	for(int i=1;i<=n;i++)a[i]=i;
 	do{
 		output();
 	}while(next_permutation(a+1,a+n+1)); 
-	ÓÚÊÇÀÏÀÏÊµÊµDFS£¬µ«Ò²ÊÇ³¬Ê±£¬ÓÚÊÇ·ÅÆúcout£¬AC 
+	äºŽæ˜¯è€è€å®žå®žDFSï¼Œä½†ä¹Ÿæ˜¯è¶…æ—¶ï¼ŒäºŽæ˜¯æ”¾å¼ƒcoutï¼ŒAC 
 */
 #include<algorithm>
 #include<cstdio>

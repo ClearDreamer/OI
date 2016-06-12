@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Dec]The Fewest Coins ����Ǯ
-��������һ�����ر�����һ����ȫ������ö����Ǯ�Ķ��٣���𰸡����ݷ�Χ���Ǻܴ�ֱ�ӱ������ر���Ҳ�ǿ��Ե� 
+[Usaco2006 Dec]The Fewest Coins 找零钱
+分析：求一个多重背包，一个完全背包，枚举找钱的多少，求答案。数据范围不是很大，直接暴力多重背包也是可以的 
 */
 #include<iostream>
 #include<cstdio>

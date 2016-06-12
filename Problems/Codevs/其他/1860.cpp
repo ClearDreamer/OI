@@ -1,6 +1,6 @@
 /*
-×î´óÊı
-·ÖÎö£ºÍ¨¹ıÇÉÃîÉè¼Æ×Ö·û´®±È½Ï£¬sortÒ»±é¼´¿É 
+æœ€å¤§æ•°
+åˆ†æï¼šé€šè¿‡å·§å¦™è®¾è®¡å­—ç¬¦ä¸²æ¯”è¾ƒï¼Œsortä¸€éå³å¯ 
 */
 #include<iostream>
 #include<string>
@@ -9,7 +9,7 @@ using namespace std;
 string a[23];
 int n;
 bool cmp(const string &a,const string &b){
-	/*·½·¨1£¬´Ë·½·¨¹ı²»ÁË1649£¬ËµÃ÷´Ë·½·¨ÓĞÎÊÌâ 
+	/*æ–¹æ³•1ï¼Œæ­¤æ–¹æ³•è¿‡ä¸äº†1649ï¼Œè¯´æ˜æ­¤æ–¹æ³•æœ‰é—®é¢˜ 
 	int mi=min(a.length(),b.length());
 	for(int i=0;i<mi;i++){
 		if(a[i]>b[i])return true;

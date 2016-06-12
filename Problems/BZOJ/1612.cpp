@@ -1,5 +1,5 @@
 /*
-[Usaco2008 Jan]Cow ContestÄÌÅ£µÄ±ÈÈü
+[Usaco2008 Jan]Cow Contestå¥¶ç‰›çš„æ¯”èµ›
 */
 #include<iostream>
 #include<cstdio>

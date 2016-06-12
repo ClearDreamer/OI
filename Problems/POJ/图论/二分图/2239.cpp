@@ -11,7 +11,7 @@ const int INF=0x3f3f3f3f,MAXN=300,M=7*12;
 int link[MAXN+3],n;
 bool mp[MAXN+3][MAXN+3],vis[M+3];
 bool find(int u){
-	for(int i=1;i<=M;i++){//这里是m 
+	for(int i=1;i<=M;i++){//杩欓噷鏄痬 
 		if(mp[u][i] && !vis[i]){
 			vis[i]=1;
 			if(link[i]==-1 || find(link[i])){
@@ -25,7 +25,7 @@ bool find(int u){
 int maxpart(){
 	memset(link,-1,sizeof(link));
 	int ans=0;
-	for(int i=1;i<=n;i++){//注意这里是n 
+	for(int i=1;i<=n;i++){//娉ㄦ剰杩欓噷鏄痭 
 		memset(vis,0,sizeof(vis));
 		if(find(i))ans++;
 	}

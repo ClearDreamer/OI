@@ -1,6 +1,6 @@
 /*
-»ğÑæ¾ŞÄ§µÄã°âê
-·ÖÎö£ºËùÓĞ±ß·´Ïò£¬Äæ×Åspfa£¬×¢Òâ<1µÄÇé¿ö 
+ç«ç„°å·¨é­”çš„æƒ†æ€…
+åˆ†æï¼šæ‰€æœ‰è¾¹åå‘ï¼Œé€†ç€spfaï¼Œæ³¨æ„<1çš„æƒ…å†µ 
 */
 #include<iostream>
 #include<vector>
@@ -33,7 +33,7 @@ void spfa(int from){
 			int k=(dis[t]+e.w+1)/2;
 			if(dis[e.v]>k){
 				dis[e.v]=(dis[t]+e.w+1)/2;
-				if(dis[e.v]<1)dis[e.v]=1;//ÕâÀïºÜ¹Ø¼ü 
+				if(dis[e.v]<1)dis[e.v]=1;//è¿™é‡Œå¾ˆå…³é”® 
 				if(!inq[e.v]){
 					inq[e.v]=1;q.push(e.v);
 				}

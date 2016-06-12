@@ -1,8 +1,8 @@
 /*
 Monster
-·ÖÎö£ºÄÜ¿³ËÀµÄÈý¸ö³ä·ÖÌõ¼þ£º
-	  1.OTK£¬2.µÚk»ØºÏ¿³ËÀ£¬3.ÐÝÏ¢Ö®ºóÑªÁ¿±È³õÊ¼µÍ£¬
-	  ×¢Òâ¿ªlong long ºÍÊä³ö 
+åˆ†æžï¼šèƒ½ç æ­»çš„ä¸‰ä¸ªå……åˆ†æ¡ä»¶ï¼š
+	  1.OTKï¼Œ2.ç¬¬kå›žåˆç æ­»ï¼Œ3.ä¼‘æ¯ä¹‹åŽè¡€é‡æ¯”åˆå§‹ä½Žï¼Œ
+	  æ³¨æ„å¼€long long å’Œè¾“å‡º 
 */
 #include<cstdio>
 using namespace std;

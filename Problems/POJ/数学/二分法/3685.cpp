@@ -1,7 +1,7 @@
 /*
 Matrix
-·ÖÎö£ºÓÐÒ»¸ö¹æÂÉÊÇ¿´µÃ¼ûµÄ£¬j²»±äiÔö´óº¯ÊýÖµÒ²ÔÚÔö´ó¡£¸ù¾ÝÕâ¸ö¿ÉÒÔ¶ÔÕânÁÐ¶þ·ÖµÃµ½<xµÄÖµ£¬Í¬ÑùËùÇóµÄxÒ²ÊÇ¿ÉÒÔ¶þ·ÖÂýÂý¿¿½ü×îºóµÄ½á¹û£¬ÎÒ´¦ÀíµÃµ½×îºóµÄ½á¹ûÊÇ¸öÊýÎªm+1µÄ×îÐ¡Öµ£¬ËùÒÔ×îºómid-1¼´Îª´ð°¸¡£
-	  µ«Á½ÖÖ¶þ·Ö½á¹û²»Í¬£¬¾ö¶¨²ÉÈ¡ÕâÖÖ 
+åˆ†æžï¼šæœ‰ä¸€ä¸ªè§„å¾‹æ˜¯çœ‹å¾—è§çš„ï¼Œjä¸å˜iå¢žå¤§å‡½æ•°å€¼ä¹Ÿåœ¨å¢žå¤§ã€‚æ ¹æ®è¿™ä¸ªå¯ä»¥å¯¹è¿™nåˆ—äºŒåˆ†å¾—åˆ°<xçš„å€¼ï¼ŒåŒæ ·æ‰€æ±‚çš„xä¹Ÿæ˜¯å¯ä»¥äºŒåˆ†æ…¢æ…¢é è¿‘æœ€åŽçš„ç»“æžœï¼Œæˆ‘å¤„ç†å¾—åˆ°æœ€åŽçš„ç»“æžœæ˜¯ä¸ªæ•°ä¸ºm+1çš„æœ€å°å€¼ï¼Œæ‰€ä»¥æœ€åŽmid-1å³ä¸ºç­”æ¡ˆã€‚
+	  ä½†ä¸¤ç§äºŒåˆ†ç»“æžœä¸åŒï¼Œå†³å®šé‡‡å–è¿™ç§ 
 */
 #include<iostream>
 #include<algorithm>
@@ -43,8 +43,8 @@ int main(){
 	return 0;
 }
 /*
-Õâ¸ö¶þ·Ö´íÔÚÄÄ£º
-»òÐíÕâµÀÌâÊÇÕÒÎ»ÖÃ£¬¶ø²»ÊÇÇó¿ÉÐÐ£¬ËùÒÔÎ¬»¤´ð°¸µÄ·½Ê½²¢²»ºÏÊÊ 
+è¿™ä¸ªäºŒåˆ†é”™åœ¨å“ªï¼š
+æˆ–è®¸è¿™é“é¢˜æ˜¯æ‰¾ä½ç½®ï¼Œè€Œä¸æ˜¯æ±‚å¯è¡Œï¼Œæ‰€ä»¥ç»´æŠ¤ç­”æ¡ˆçš„æ–¹å¼å¹¶ä¸åˆé€‚ 
 #include<iostream>
 #include<algorithm>
 #include<cstring>

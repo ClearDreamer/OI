@@ -1,5 +1,5 @@
 /*
-�Ҵδ�ֵ
+找次大值
 */
 #include<iostream>
 using namespace std;

@@ -1,6 +1,6 @@
 /*
-[HNOI2008]玩具装箱toy
-分析：斜率优化DP 
+[HNOI2008]鐜╁叿瑁呯toy
+鍒嗘瀽锛氭枩鐜囦紭鍖朌P 
 */
 #include<iostream>
 #include<cstring>

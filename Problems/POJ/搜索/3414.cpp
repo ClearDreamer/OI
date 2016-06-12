@@ -1,7 +1,7 @@
 /*
 Pots
-ÌâÒâ£ºµ¹Ë®ÎÊÌâ£¬ÒªÇóÊä³ö·½°¸
-·ÖÎö£ºÏÈÏëµÄDFS£¬È»ºó±¬Õ»ÁË£¬ÍøÉÏ¶¼ÓÃBFS£¬µ«¶¼ºÜ¸´ÔÓ 
+é¢˜æ„ï¼šå€’æ°´é—®é¢˜ï¼Œè¦æ±‚è¾“å‡ºæ–¹æ¡ˆ
+åˆ†æžï¼šå…ˆæƒ³çš„DFSï¼Œç„¶åŽçˆ†æ ˆäº†ï¼Œç½‘ä¸Šéƒ½ç”¨BFSï¼Œä½†éƒ½å¾ˆå¤æ‚ 
 */
 /*
 #include<iostream>

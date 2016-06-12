@@ -1,6 +1,6 @@
 /*
 [Poi2010]Pilots
-·ÖÎö£ºÁ½¸öµ¥µ÷¶ÓÁÐ Î¬»¤×î´óºÍ×îÐ¡ 
+åˆ†æžï¼šä¸¤ä¸ªå•è°ƒé˜Ÿåˆ— ç»´æŠ¤æœ€å¤§å’Œæœ€å° 
 */
 #include<iostream>
 #include<cstdio>
@@ -17,7 +17,7 @@ void solve(){
         while(l2<=r2&&a[i]<=a[q2[r2]])r2--;
         q1[++r1]=i;q2[++r2]=i;
 		while(a[q1[l1]]-a[q2[l2]]>K)
-			if(q1[l1]<q2[l2])t=q1[l1]+1,l1++;//×¢ÒâÕâÀï£¬ÊÇ²»ºÏ·¨µÄÎ»ÖÃ+1£¬ÕâÑùÒ»¶¨ÄÜµÃµ½Ò»¸öºÏ·¨µÄ×î³¤µÄ 
+			if(q1[l1]<q2[l2])t=q1[l1]+1,l1++;//æ³¨æ„è¿™é‡Œï¼Œæ˜¯ä¸åˆæ³•çš„ä½ç½®+1ï¼Œè¿™æ ·ä¸€å®šèƒ½å¾—åˆ°ä¸€ä¸ªåˆæ³•çš„æœ€é•¿çš„ 
 			else t=q2[l2]+1,l2++;
 		ans=max(ans,i-t+1);
 	}

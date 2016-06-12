@@ -1,7 +1,7 @@
 /*
 Strategic game
-ÌâÒâ£ºÔÚÊ÷ÉÏÑ¡Ò»¸ö×îÐ¡µã¼¯S£¬Ê¹µÃÃ¿Ìõ±ß¶¼ÖÁÉÙÓÐÒ»¸ö¶¥µãÔÚSÖÐ 
-·ÖÎö£ºÊ÷µÄ×îÐ¡µã¸²¸Ç£¬£¨ÀàËÆÓÚÃ»ÓÐÉÏË¾µÄÎè»á£¬µ«µãÈ¨¾ù±äÎª1£© 
+é¢˜æ„ï¼šåœ¨æ ‘ä¸Šé€‰ä¸€ä¸ªæœ€å°ç‚¹é›†Sï¼Œä½¿å¾—æ¯æ¡è¾¹éƒ½è‡³å°‘æœ‰ä¸€ä¸ªé¡¶ç‚¹åœ¨Sä¸­ 
+åˆ†æžï¼šæ ‘çš„æœ€å°ç‚¹è¦†ç›–ï¼Œï¼ˆç±»ä¼¼äºŽæ²¡æœ‰ä¸Šå¸çš„èˆžä¼šï¼Œä½†ç‚¹æƒå‡å˜ä¸º1ï¼‰ 
 */
 #include<iostream>
 #include<algorithm>

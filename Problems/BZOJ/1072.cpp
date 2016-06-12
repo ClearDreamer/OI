@@ -1,7 +1,7 @@
 /*
-[SCOI2007]����perm
-������״ѹDP��f[S][i]��ʾ״̬ΪS��ģdΪi����������S���油������ת�ơ�
-	  ע�⣬���ԭ�������ظ��ģ���ô�����Ҳ�ͻ����ظ��ģ������Ĵ𰸳���cnt[i]�Ľ׳˾Ϳ����ˡ� 
+[SCOI2007]排列perm
+分析：状压DP：f[S][i]表示状态为S，模d为i的数量，在S后面补东西来转移。
+	  注意，如果原数中有重复的，那么算出来也就会有重复的，用最后的答案除以cnt[i]的阶乘就可以了。 
 */
 #include<iostream>
 #include<cstdio>

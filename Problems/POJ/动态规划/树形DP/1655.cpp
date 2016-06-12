@@ -1,6 +1,6 @@
 /*
 Balancing Act
-МвТвЈєКчµДЧоРЎПВ±кЦШРД 
+йўж„Џпјљж ‘зљ„жњЂе°Џдё‹ж ‡й‡Ќеїѓ 
 */
 #include<iostream>
 #include<cstdio>

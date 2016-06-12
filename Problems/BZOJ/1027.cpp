@@ -1,13 +1,13 @@
 /*
-[JSOI2007]�Ͻ�
-������ת��Ϊ��ά���⣬����ά������ǰ��άȷ�������Կ��Բ��ùܡ�
-		Ȼ������ԭ������ɵĲ�Ʒһ������������߶��ϡ�
-		ת������m�����������ٵ㣬ʹ����ȫ������n���㡣
-		�������Ŀ������߶�a,b��ͬһ����dis[a][b]=1
-			����dis[a][b]=inf
-		Ȼ����floyd��С��������min{dis[i][i]}
-		�ص�������= = 
-		 ���е��غ�/���ߣ�����д����= = 
+[JSOI2007]合金
+分析：转化为二维问题，第三维可以由前两维确定，所以可以不用管。
+		然后两种原料能配成的产品一定在两个点的线段上。
+		转化成在m个点里找最少点，使其完全包含那n个点。
+		如果所有目标点在线段a,b的同一侧则dis[a][b]=1
+			否则dis[a][b]=inf
+		然后跑floyd最小环，答案是min{dis[i][i]}
+		重点是特判= = 
+		 所有点重合/共线，就是写不对= = 
 */
 #include <iostream>
 #include <cstdio>
@@ -48,14 +48,14 @@ bool onpoint(){
     }
     return false;
 }
-bool onseg(){//������е㹲��,��û��һ���߶ΰ����������е㣬�򷵻��� 
+bool onseg(){//如果所有点共线,且没有一条线段包含他们所有点，则返回真 
     for(int i=3;i<=n;i++)
         if(dc(cross(s[1],s[2],s[i]))!=0) return false;
     for(int i=1;i<=m;i++)
         for(int j=i+1;j<=m;j++){
             int cnt=0;
             for(int k=1;k<=n;k++)
-                if(dc(dot(s[k],p[i],p[j]))<=0)cnt++;//Ϊʲô<=0�Ͱ������� 
+                if(dc(dot(s[k],p[i],p[j]))<=0)cnt++;//为什么<=0就包含了呢 
             if(cnt==n) return false;
         }
     return true;
@@ -160,8 +160,8 @@ bool spj(){
             	for(int k=1;k<=n;k++){
             		double d=dot(pn[k],pm[j],pm[i]),y=dist(pn[k],pm[i]);
             		double t=d/di/y;
-            		if(dcmp(fabs(t)-1.0)!=0){flg=1;break;}//pn[k]����ֱ��ij��
-					if(dcmp(t)<0) {flg=-1;break;}//pn[k]�����߶�ij�� 
+            		if(dcmp(fabs(t)-1.0)!=0){flg=1;break;}//pn[k]不在直线ij上
+					if(dcmp(t)<0) {flg=-1;break;}//pn[k]不在线段ij上 
 					if(dcmp(t)>0 && dcmp(y-di)>0) {flg=-1;break;}
 				}
 				//cout<<flg<<endl;
@@ -170,7 +170,7 @@ bool spj(){
 				else {puts("2");return true;}
 				------------------
         	}
-        puts("-1");//˵��û���߶ο��Ը������е� 
+        puts("-1");//说明没有线段可以覆盖所有点 
         return true;
 	}
 	return false;

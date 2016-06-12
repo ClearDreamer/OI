@@ -1,6 +1,6 @@
 /*
-˰���벹������
-��������Ŀ�ܿӣ�Ŀ��ö�٣����Ǿ�ö����TAT�����WA��һ�������У� 
+税收与补贴问题
+分析：题目很坑，目测枚举，于是就枚举了TAT。结果WA了一个，特判！ 
 */
 #include<iostream>
 #include<algorithm>

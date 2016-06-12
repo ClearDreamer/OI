@@ -1,5 +1,5 @@
 /*
-Сľ��
+小木棍
 */
 #include<iostream>
 #include<algorithm>

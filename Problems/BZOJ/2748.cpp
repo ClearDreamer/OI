@@ -1,6 +1,6 @@
 /*
-[HAOI2012]音量调节
-分析：直接背包DP 
+[HAOI2012]闊抽噺璋冭妭
+鍒嗘瀽锛氱洿鎺ヨ儗鍖匘P 
 */
 #include<iostream>
 #include<cstdio>

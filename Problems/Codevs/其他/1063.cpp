@@ -1,6 +1,6 @@
 /*
-合并果子
-分析：每次选择最小的两堆合并 
+鍚堝苟鏋滃瓙
+鍒嗘瀽锛氭瘡娆￠�夋嫨鏈�灏忕殑涓ゅ爢鍚堝苟 
 */
 #include<iostream>
 #include<queue>

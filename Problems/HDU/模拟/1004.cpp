@@ -1,6 +1,6 @@
 /*
 Let the Balloon Rise
-题意：给一些颜色，选出现次数最多的颜色 
+棰樻剰锛氱粰涓�浜涢鑹诧紝閫夊嚭鐜版鏁版渶澶氱殑棰滆壊 
 */
 #include<iostream>
 #include<algorithm>

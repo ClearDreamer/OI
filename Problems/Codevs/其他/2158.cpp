@@ -1,5 +1,5 @@
 /*
-Ñ°ÕÒÖÊÒòÊı
+å¯»æ‰¾è´¨å› æ•°
 */
 #include<iostream>
 #include<bitset>

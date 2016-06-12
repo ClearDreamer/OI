@@ -1,6 +1,6 @@
 /*
-�����Ƹ��
-��������ͼ����������Դ�㣬ע��ö��������ƣ�dijkstraʱ�Ӹ��������ɣ���һֱWAһ�飬��֪��ԭ�� 
+昂贵的聘礼
+分析：建图，构建超级源点，注意枚举最大限制，dijkstra时加个条件即可，但一直WA一组，不知道原因 
 */
 #include<iostream>
 #include<algorithm>

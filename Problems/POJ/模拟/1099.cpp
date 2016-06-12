@@ -1,6 +1,6 @@
 /*
 Square Ice
-ÌâÒâ£ºÄ£ÄâÌâ£¬»­±ùÖĞË®·Ö×ÓÅÅÁĞĞÎÊ½µÄ¶şÎ¬½á¹¹¡£ 
+é¢˜æ„ï¼šæ¨¡æ‹Ÿé¢˜ï¼Œç”»å†°ä¸­æ°´åˆ†å­æ’åˆ—å½¢å¼çš„äºŒç»´ç»“æ„ã€‚ 
 */
 #include<cstdio>
 #include<cstring>
@@ -49,7 +49,7 @@ void Run(){
 void Answer(int t){
 	printf("Case %d:\n\n",t);
 	for(int i=0;i<c+2;i++)putchar('*');
-	puts("");//´ò»Ø³µ 
+	puts("");//æ‰“å›è½¦ 
 	for(int i=0;i<r;i++)printf("*%s*\n",s[i]);
 	for(int i=0;i<c+2;i++)putchar('*');
 	puts("\n");

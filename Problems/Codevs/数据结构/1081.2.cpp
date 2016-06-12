@@ -1,6 +1,6 @@
 /*
-�߶�����ϰ 2
-������ZKW�߶���ʵ�֣������޸ĵ����ѯ��ÿ�δ��ǣ���ѯʱ�ۼӱ�ǣ�ע�ⲻ�´� 
+线段树练习 2
+分析：ZKW线段树实现，区间修改单点查询，每次打标记，查询时累加标记，注意不下传 
 */
 #include<iostream>
 using namespace std;

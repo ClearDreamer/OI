@@ -1,7 +1,7 @@
 /*
-SGU505 Prefixes and suffixes��ѯ�����߰棩
-������Hash+�����ж�
-		һ������ķ��������봮����Ȼ������д����������ɳ־û�Trie 
+SGU505 Prefixes and suffixes（询问在线版）
+分析：Hash+暴力判断
+		一个更快的方法对输入串排序，然后对所有串的逆序建立可持久化Trie 
 */
 #include<iostream>
 #include<cstring>

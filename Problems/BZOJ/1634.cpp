@@ -1,7 +1,7 @@
 /*
-[Usaco2007 Jan]Protecting the Flowers »¤»¨
-·ÖÎö£ºÌ°ÐÄ¡£ÎÒÃÇ·¢ÏÖ£¬Á½¸öÏàÁÚµÄÅ££¨aºÍb£©ÄÄ¸öÏÈ×ß¶ÔÆäËüµÄÅ£ÎÞÓ°Ïì£¬µ«ÊÇ¿ÉÒÔÍ¨¹ý aµÄÆÆ»µ»¨¡ÁbµÄÊ±¼ä ºÍ bµÄÆÆ»µ»¨¡ÁaµÄÊ±¼ä ¿ÉÒÔÅÐ¶ÏÄÄ¸öÏÈ×ß¡£
-		¸ù¾ÝÕâ¸öÅÅ¸öÐò 
+[Usaco2007 Jan]Protecting the Flowers æŠ¤èŠ±
+åˆ†æžï¼šè´ªå¿ƒã€‚æˆ‘ä»¬å‘çŽ°ï¼Œä¸¤ä¸ªç›¸é‚»çš„ç‰›ï¼ˆaå’Œbï¼‰å“ªä¸ªå…ˆèµ°å¯¹å…¶å®ƒçš„ç‰›æ— å½±å“ï¼Œä½†æ˜¯å¯ä»¥é€šè¿‡ açš„ç ´åèŠ±Ã—bçš„æ—¶é—´ å’Œ bçš„ç ´åèŠ±Ã—açš„æ—¶é—´ å¯ä»¥åˆ¤æ–­å“ªä¸ªå…ˆèµ°ã€‚
+		æ ¹æ®è¿™ä¸ªæŽ’ä¸ªåº 
 */
 #include<cstdio>
 #include<algorithm>

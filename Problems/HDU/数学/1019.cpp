@@ -1,6 +1,6 @@
 /*
 Least Common Multiple
-题意：求多个数的LCM 
+棰樻剰锛氭眰澶氫釜鏁扮殑LCM 
 */
 #include<iostream>
 #include<algorithm>

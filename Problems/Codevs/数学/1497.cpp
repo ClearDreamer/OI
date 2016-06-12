@@ -1,6 +1,6 @@
 /*
-取余运算
-题意：快速幂，注意用long long 
+鍙栦綑杩愮畻
+棰樻剰锛氬揩閫熷箓锛屾敞鎰忕敤long long 
 */
 #include<iostream>
 using namespace std;

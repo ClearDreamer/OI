@@ -1,7 +1,7 @@
 /*
-���յ���
-��������ά����������DP����
-	  ע��һ��ʼҪ���ɸ��������-1�ǲ��Ե� 
+生日蛋糕
+分析：二维背包，暴力DP即可
+	  注意一开始要赋成负无穷，赋成-1是不对的 
 */
 #include<iostream>
 #include<cstdio>
@@ -22,7 +22,7 @@ int main(){
 			}
 		}
 	}
-	if(opt[K][V]>0)printf("%d",opt[K][V]);//��Ҫ�ж�==-INF,���ܻ����б仯������һЩ���� 
+	if(opt[K][V]>0)printf("%d",opt[K][V]);//不要判断==-INF,可能会稍有变化（加了一些数） 
 	else puts("impossible");
 	return 0;
 }

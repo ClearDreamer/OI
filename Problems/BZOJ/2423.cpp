@@ -1,8 +1,8 @@
 /*
-[HAOI2010]×î³¤¹«¹²×ÓÐòÁÐ
-·ÖÎö£ºÉèF[i][j]±íÊ¾AÖÐÇ°i£¬BÖÐÇ°jµÄ×î³¤¹«¹²×ÓÐòÁÐ
-		ÉèG[i][j]±íÊ¾AÖÐÇ°i£¬BÖÐÇ°jµÄ×î³¤¹«¹²×ÓÐòÁÐµÄÊýÄ¿
-		¸ù¾ÝF[i][j]µÄÈ¡ÖµÌÖÂÛÏÂG¼´¿É¡£N^2¿É¹ý 
+[HAOI2010]æœ€é•¿å…¬å…±å­åºåˆ—
+åˆ†æžï¼šè®¾F[i][j]è¡¨ç¤ºAä¸­å‰iï¼ŒBä¸­å‰jçš„æœ€é•¿å…¬å…±å­åºåˆ—
+		è®¾G[i][j]è¡¨ç¤ºAä¸­å‰iï¼ŒBä¸­å‰jçš„æœ€é•¿å…¬å…±å­åºåˆ—çš„æ•°ç›®
+		æ ¹æ®F[i][j]çš„å–å€¼è®¨è®ºä¸‹Gå³å¯ã€‚N^2å¯è¿‡ 
 */
 #include<cstdio>
 #include<cstring>
@@ -33,6 +33,6 @@ int main(){
                 if(F[now][j]==F[last][j-1])(G[now][j]-=G[last][j-1])%=MOD;
             }
     }
-    printf("%d\n%d\n",F[now][m],(G[now][m]+MOD)%MOD);//Ç°Ãæ¾Í²»±£Ö¤GÊÇÕýµÄÁË£¬¾Í×îºó´¦ÀíÒ»ÏÂ 
+    printf("%d\n%d\n",F[now][m],(G[now][m]+MOD)%MOD);//å‰é¢å°±ä¸ä¿è¯Gæ˜¯æ­£çš„äº†ï¼Œå°±æœ€åŽå¤„ç†ä¸€ä¸‹ 
     return 0;
 }

@@ -1,7 +1,7 @@
 /*
 [Usaco2006 Dec]Cow Roller Coaster
-·ÖÎö£ºopt[i][j]±íÊ¾ÆÌµ½i-1(ÏÂ´Î¸ÃÆÌi)£¬»¨·ÑÎªjµÄ×îÓÅ½â
-	  ×¢ÒâÌâÄ¿ÖĞÆäÊµÊÇ´Ó0µ½l-1 
+åˆ†æï¼šopt[i][j]è¡¨ç¤ºé“ºåˆ°i-1(ä¸‹æ¬¡è¯¥é“ºi)ï¼ŒèŠ±è´¹ä¸ºjçš„æœ€ä¼˜è§£
+	  æ³¨æ„é¢˜ç›®ä¸­å…¶å®æ˜¯ä»0åˆ°l-1 
 */
 #include<iostream>
 #include<cstdio>
@@ -26,7 +26,7 @@ int main(){
 	sort(s+1,s+n+1);
 	for(int i=1;i<=n;i++){
 		for(int j=b-s[i].c;j>=0;j--){
-			if(opt[s[i].x][j]==-1)continue;//×¢ÒâÊäÈëÊı¾İ£¬ÕâÀï²»ÒªÓÃs[i].x-1 
+			if(opt[s[i].x][j]==-1)continue;//æ³¨æ„è¾“å…¥æ•°æ®ï¼Œè¿™é‡Œä¸è¦ç”¨s[i].x-1 
 			opt[s[i].x+s[i].w][j+s[i].c]=max(opt[s[i].x][j]+s[i].f,opt[s[i].x+s[i].w][j+s[i].c]);
 		}
 	}

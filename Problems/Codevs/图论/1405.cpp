@@ -1,11 +1,11 @@
 /*
-��ţ������
-������������˺þá�����
-	  ��ʵ�����ҵ���ͨ�飬
-	  Ȼ���ҵ�ÿ����������ͨ���ڵ���Զ����룬
-	  Ȼ��ö�ٲ�ͬ��ͨ����ĵ㣬����Сֵ��
-	  cout��setprecision(n)���õ�����Ч����λ��������С��λ��
-	  ֻ����printf��Ȼ���и����ݹ���ȥ��������һ�£�ע��double�ľ������� 
+奶牛的旅行
+分析：读题读了好久。。。
+	  其实就是找到连通块，
+	  然后找到每个点在其连通块内的最远点距离，
+	  然后枚举不同连通块里的点，找最小值。
+	  cout的setprecision(n)设置的是有效数字位数，不是小数位数
+	  只好用printf，然后有个数据过不去，特判了一下，注意double的精度问题 
 */
 #include<iostream>
 #include<algorithm>
@@ -75,7 +75,7 @@ double solve(){
 	double ans=INF;
 	for(int i=1;i<=n;i++){
 		for(int j=1;j<=n;j++){
-			if(!same(i,j)){//����һ����ͨ���� 
+			if(!same(i,j)){//不在一个连通块内 
 				//ans=min(mx[find(i)]+mx[find(j)]+(ps[i]-ps[j]),ans); 
 				ans=min(mx[i]+mx[j]+(ps[i]-ps[j]),ans); 
 			}

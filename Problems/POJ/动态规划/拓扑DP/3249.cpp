@@ -1,7 +1,7 @@
 /*
 Test for Job
-���⣺��һ������ͼ��һ�������Ϊ0�ĵ㵽����Ϊ0�ĵ�����Ȩֵ��·��
-�����������ˣ���DP��ע�⸺��Ȩֵ 
+题意：求一个拓扑图的一条由入度为0的点到出度为0的点的最大权值和路径
+分析：边拓扑，边DP，注意负数权值 
 */
 #include<iostream>
 #include<algorithm>

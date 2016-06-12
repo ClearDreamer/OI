@@ -1,16 +1,16 @@
 /*
-YYµÄGCD
-·ÖÎö£ººÃÄÑµÄÒ»µÀÌâ= =
-	  ÈÝÒ×Ïëµ½Ã¶¾ÙÖÊÊý£º
+YYçš„GCD
+åˆ†æžï¼šå¥½éš¾çš„ä¸€é“é¢˜= =
+	  å®¹æ˜“æƒ³åˆ°æžšä¸¾è´¨æ•°ï¼š
 	  ans=sigma{p<=min(n,m),sigma{d<=min(n,m),miu[d]*(n/(pd))*(m/(pd))}}
-	  Áîpd=T£¬ÏÈÃ¶¾ÙT(n<m)£º
+	  ä»¤pd=Tï¼Œå…ˆæžšä¸¾T(n<m)ï¼š
 	  ans=sigma{T<=n,(n/T)*(m/T)*sigma{p|T,miu(T/p)}}
-	   ÏÖÔÚÒªÇó³ö sigma{p|T,miu(T/p)}¹ØÓÚTµÄÇ°×ººÍ
-	   Áîg(x)= sigma{p|x,miu(x/p)}
-	   ÓÐg(qx)={q|xÊ±£º sigma{p|qx,miu(qx/p)} Èôq=p£¬ÔòÓÐmiu(x)£¬·ñÔòmiu(qx/p)=0£¬ËùÒÔq|x => g(qx)=miu(x)
-	   			q not |x£ºÈôq=p£¬ÔòÓÐmiu(x)£¬·ñÔò»á·¢ÏÖ miu(qx/p)=-miu(x/p) ËùÒÔ¶ÔÓÚËùÓÐq!=pµÄÏî,ÆäºÍ=-g(x)}
-		ÕâÑùg(x)Ò²¿ÉÒÔÏßÐÔÉ¸³öÀ´ÁË
-		µ«ÊÇÕâÑùÔ¤´¦ÀíO(n)£¬²éÑ¯O(sqrt(n)),¸Ð¾õ»¹ÊÇ¿ÉÄÜ»á³¬Ê±µÄ 
+	   çŽ°åœ¨è¦æ±‚å‡º sigma{p|T,miu(T/p)}å…³äºŽTçš„å‰ç¼€å’Œ
+	   ä»¤g(x)= sigma{p|x,miu(x/p)}
+	   æœ‰g(qx)={q|xæ—¶ï¼š sigma{p|qx,miu(qx/p)} è‹¥q=pï¼Œåˆ™æœ‰miu(x)ï¼Œå¦åˆ™miu(qx/p)=0ï¼Œæ‰€ä»¥q|x => g(qx)=miu(x)
+	   			q not |xï¼šè‹¥q=pï¼Œåˆ™æœ‰miu(x)ï¼Œå¦åˆ™ä¼šå‘çŽ° miu(qx/p)=-miu(x/p) æ‰€ä»¥å¯¹äºŽæ‰€æœ‰q!=pçš„é¡¹,å…¶å’Œ=-g(x)}
+		è¿™æ ·g(x)ä¹Ÿå¯ä»¥çº¿æ€§ç­›å‡ºæ¥äº†
+		ä½†æ˜¯è¿™æ ·é¢„å¤„ç†O(n)ï¼ŒæŸ¥è¯¢O(sqrt(n)),æ„Ÿè§‰è¿˜æ˜¯å¯èƒ½ä¼šè¶…æ—¶çš„ 
 */
 #include<iostream>
 #include<cstdio>

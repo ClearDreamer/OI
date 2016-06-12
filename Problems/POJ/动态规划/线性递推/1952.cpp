@@ -1,7 +1,7 @@
 /*
 BUY LOW, BUY LOWER
-���⣺����ϸ��½������У�����������е�������
-�������ؼ��ڼ����������ؼ����ڲ��ظ���ע���ǲ�ͬ�֣����Ե�ֵ���ʱӦֻ��¼һ�� 
+题意：求最长严格下降子序列，并求出子序列的种数。
+分析：关键在计数，计数关键在于不重复，注意是不同种，所以当值相等时应只记录一次 
 */
 #include<iostream>
 #include<algorithm>
@@ -24,7 +24,7 @@ int main(){
 				}
 				else if(opt[j]+1==opt[i])cnt[i]+=cnt[j];
 			}
-			else if(a[i]==a[j])cnt[j]=0;//��aֵ���ʱ������ǰ���ʵ�����Ѿ���Ч����Ϊ����Ŀ϶����ţ�����cntֵ��0����Ϊ������ͬʱ���������ӡ�  
+			else if(a[i]==a[j])cnt[j]=0;//当a值相等时，排在前面的实际上已经无效了因为后面的肯定更优，所以cnt值置0，因为序列相同时次数不叠加。  
 		}
 	}
 	int ans=0,cts=0;

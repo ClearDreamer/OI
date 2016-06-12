@@ -1,8 +1,8 @@
 /*
-[Usaco2005 Nov]Ant Counting ÊýÂìÒÏ
-·ÖÎö£ºcnt[i]±íÊ¾i¼¯ºÏµÄÔªËØ¸öÊý£¬ÄÇÃ´opt[i][j]±íÊ¾Ç°i¸ö¼¯ºÏ£¬×é³Éj¸öÂìÒÏµÄ·½°¸Êý£º
+[Usaco2005 Nov]Ant Counting æ•°èš‚èš
+åˆ†æžï¼šcnt[i]è¡¨ç¤ºié›†åˆçš„å…ƒç´ ä¸ªæ•°ï¼Œé‚£ä¹ˆopt[i][j]è¡¨ç¤ºå‰iä¸ªé›†åˆï¼Œç»„æˆjä¸ªèš‚èšçš„æ–¹æ¡ˆæ•°ï¼š
 	  opt[i][j]=sigma{opt[i-1][k]|k+cnt[i]>=j}
-	  ÓÃÇ°×ººÍÓÅ»¯+¹ö¶¯Êý×é£¬¹ö¶¯Êý×é£¡ 
+	  ç”¨å‰ç¼€å’Œä¼˜åŒ–+æ»šåŠ¨æ•°ç»„ï¼Œæ»šåŠ¨æ•°ç»„ï¼ 
 */
 #include<iostream>
 #include<cstdio>

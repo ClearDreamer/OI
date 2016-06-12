@@ -1,6 +1,6 @@
 /*
-等式问题
-分析：dfs+判断即可 
+绛夊紡闂
+鍒嗘瀽锛歞fs+鍒ゆ柇鍗冲彲 
 */
 #include<iostream>
 using namespace std;

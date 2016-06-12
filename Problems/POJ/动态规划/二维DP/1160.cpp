@@ -1,6 +1,6 @@
 /*
 Post Office
-·ÖÎö£º¼ò»¯°æµÄ1485 
+åˆ†æžï¼šç®€åŒ–ç‰ˆçš„1485 
 */
 #include<iostream>
 #include<algorithm>

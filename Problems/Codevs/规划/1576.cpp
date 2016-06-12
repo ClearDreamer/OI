@@ -1,5 +1,5 @@
 /*
-最长严格上升子序列
+鏈�闀夸弗鏍间笂鍗囧瓙搴忓垪
 */
 #include<iostream>
 #include<algorithm>

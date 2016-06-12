@@ -1,6 +1,6 @@
 /*
-×î½ü¾àÀë
-·ÖÎö£ºÒ»¶¨¿ªlong long 
+æœ€è¿‘è·ç¦»
+åˆ†æï¼šä¸€å®šå¼€long long 
 */
 #include<iostream>
 using namespace std;

@@ -1,6 +1,6 @@
 /*
-[SCOI2009]windyÊı
-·ÖÎö£ºÊıÎ»DP 
+[SCOI2009]windyæ•°
+åˆ†æï¼šæ•°ä½DP 
 */
 #include<iostream>
 #include<cstdio>
@@ -15,17 +15,17 @@ int count(int n){
 	if(!n)return 0;
 	int tmp=0,w=10;
 	while(base[w]>n)w--;
-	for(int i=1;i<w;i++)//È¡ËùÓĞÎ»ÊıĞ¡ÓÚnµÄ 
+	for(int i=1;i<w;i++)//å–æ‰€æœ‰ä½æ•°å°äºnçš„ 
 	    for(int j=1;j<=9;j++)
 	        tmp+=f[i][j];
-	int cur=n/base[w];//È¡×î¸ßÎ»
+	int cur=n/base[w];//å–æœ€é«˜ä½
 	for(int i=1;i<cur;i++)tmp+=f[w][i]; 
 	n%=base[w];
 	int pre=cur;
-	for(int i=w-1;i;i--){//Ç°w-iÎ»ÏàÍ¬ 
+	for(int i=w-1;i;i--){//å‰w-iä½ç›¸åŒ 
 		cur=n/base[i];
 		for(int j=0;j<cur;j++)if(abs(pre-j)>=2)tmp+=f[i][j];
-		if(i==1)if(abs(pre-cur)>=2)tmp++;//ÍêÈ«ÏàÍ¬£¬ÅĞÒ»ÏÂnÊÇ²»ÊÇwindyÊı 
+		if(i==1)if(abs(pre-cur)>=2)tmp++;//å®Œå…¨ç›¸åŒï¼Œåˆ¤ä¸€ä¸‹næ˜¯ä¸æ˜¯windyæ•° 
 		if(abs(cur-pre)<2)break;
 		pre=cur;
 		n%=base[i];

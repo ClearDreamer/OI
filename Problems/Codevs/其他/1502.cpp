@@ -1,5 +1,5 @@
 /*
-这个月有几天
+杩欎釜鏈堟湁鍑犲ぉ
 */
 #include<stdio.h>
 bool isrun(int year){

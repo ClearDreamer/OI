@@ -1,6 +1,6 @@
 /*
 [Usaco2007 Demo] Asteroids
-·ÖÎö£ºÐÐÁÐ×ø±ê½¨¶þ·ÖÍ¼£¬×îÐ¡µã¸²¸Ç¡£ 
+åˆ†æžï¼šè¡Œåˆ—åæ ‡å»ºäºŒåˆ†å›¾ï¼Œæœ€å°ç‚¹è¦†ç›–ã€‚ 
 */
 #include <cstdio>
 #include <iostream>

@@ -1,7 +1,7 @@
 /*
-[Usaco2008 Nov]Guarding the Farm ��������
-���������˵���Ŀ�������������ݷ�Χ�Ǵ��ģ����⣬�ڽ��а˸��㣬���Ҳ���Լ���dfs- -�������ϸ�С�� 
-		 �Ӵ�С��ÿ����dfs��ֻ����<=�Լ��� 
+[Usaco2008 Nov]Guarding the Farm 保卫牧场
+分析：坑人的题目描述，中文数据范围是错的，另外，邻接有八个点，相等也可以继续dfs- -，不是严格小于 
+		 从大到小，每个点dfs，只能走<=自己的 
 */
 #include<iostream>
 #include<cstdio>

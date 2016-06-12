@@ -1,14 +1,14 @@
 /*
-Codechef MARCH14 GERALD07��ǿ��
-���������Ȱѱ����μӵ�ͼ�У�����ǰ��������ͼ�еı��γ��˻�����ô�������������ӽ����ıߵ���ȥ
-		����ÿ���߰������ߵ��˳�ȥ��¼������ntr[i] = j���ر�أ�Ҫ��û�е����ߣ�ntr[i] = 0;
-		�����Ȼ�ǿ�����LCT��Ū�Ķ԰ɡ��������ӣ���ô�½�һ���㣬ȨֵΪi��u->i,v->i 
-		Ȼ�����ÿ��ѯ�ʣ����ǵĴ𰸾��Ƕ�l~r��ntrС��l�ı���ͣ�����n��ȥ���ֵ
-		��ȷ�Կ���YYһ�£�
-			���һ���ߵ�ntr >= l,��ô��Ȼ���������l ~ r�еı��γɻ�����ô���Դ�û�й���
-			��֮���һ���ߵ�ntr < l��ô�����l ~ r�еı��ǲ����γɻ��ģ���ô���Դ𰸵Ĺ���Ϊ-1
-			���ڲ�ѯ��l ~ r���ж��ٱߵ�ntrС��l������ʽ�߶���
-	  �������������� 
+Codechef MARCH14 GERALD07加强版
+分析：首先把边依次加到图中，若当前这条边与图中的边形成了环，那么把这个环中最早加进来的边弹出去
+		并将每条边把哪条边弹了出去记录下来：ntr[i] = j，特别地，要是没有弹出边，ntr[i] = 0;
+		这个显然是可以用LCT来弄的对吧。对于连接，那么新建一个点，权值为i，u->i,v->i 
+		然后对于每个询问，我们的答案就是对l~r中ntr小于l的边求和，并用n减去这个值
+		正确性可以YY一下：
+			如果一条边的ntr >= l,那么显然他可以与从l ~ r中的边形成环，那么它对答案没有贡献
+			反之如果一条边的ntr < l那么它与从l ~ r中的边是不能形成环的，那么他对答案的贡献为-1
+			对于查询从l ~ r中有多少边的ntr小于l，函数式线段树
+	  调的我真是醉了 
 */
 #include<iostream>
 #include<cstdio>
@@ -46,7 +46,7 @@ struct LCT{
 	int tot,tp;
 	void clear(){
 		tot=0;nil=ns;nil->val=INF;
-		nil->c[0]=nil->c[1]=nil->mn=nil;//һ��Ҫ��nil->mn��ֵ 
+		nil->c[0]=nil->c[1]=nil->mn=nil;//一定要给nil->mn赋值 
 	}
 	node* newnode(int val){
 		node *x=ns+(++tot);

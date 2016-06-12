@@ -1,5 +1,5 @@
 /*
-聪明的质监员 
+鑱槑鐨勮川鐩戝憳 
 */
 #include<iostream>
 #include<algorithm>

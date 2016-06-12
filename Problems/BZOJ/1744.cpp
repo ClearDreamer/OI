@@ -1,6 +1,6 @@
 /*
-[Usaco2005 oct]Skiing 奶牛滑雪
-分析：注意这个速度的定义，其实保证了到每个点的速度是一定的。跑最短路即可 
+[Usaco2005 oct]Skiing 濂剁墰婊戦洩
+鍒嗘瀽锛氭敞鎰忚繖涓�熷害鐨勫畾涔夛紝鍏跺疄淇濊瘉浜嗗埌姣忎釜鐐圭殑閫熷害鏄竴瀹氱殑銆傝窇鏈�鐭矾鍗冲彲 
 */
 #include<iostream>
 #include<cstdio>

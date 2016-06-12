@@ -1,5 +1,5 @@
 /*
-Í¼±êËõ·Å
+å›¾æ ‡ç¼©æ”¾
 */
 #include<stdio.h>
 int main(){

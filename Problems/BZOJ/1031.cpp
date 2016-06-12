@@ -1,7 +1,7 @@
 /*
-[JSOI2007]�ַ�����Cipher
-������������һ������׺����ɨһ��
-	  ע�ⲻҪ��Ϊ���鿪С��RE 
+[JSOI2007]字符加密Cipher
+分析：串长翻一倍，后缀数组扫一遍
+	  注意不要因为数组开小了RE 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Open]The Climbing Wall ÅÊÑÒ
-·ÖÎö£º±©Á¦½¨±ß£¬×î¶ÌÂ· 
+[Usaco2006 Open]The Climbing Wall æ”€å²©
+åˆ†æï¼šæš´åŠ›å»ºè¾¹ï¼Œæœ€çŸ­è·¯ 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,7 +1,7 @@
 /*
 Function Run Fun
-ÌâÒâ£º¶¨ÒåÁËÒ»¸öº¯Êý£¬Çóº¯ÊýÖµ
-·ÖÎö£ºÓÉÓÚÏÞÖÆÔÚ(20,20,20)£¬´ò¸ö±í¼´¿É 
+é¢˜æ„ï¼šå®šä¹‰äº†ä¸€ä¸ªå‡½æ•°ï¼Œæ±‚å‡½æ•°å€¼
+åˆ†æžï¼šç”±äºŽé™åˆ¶åœ¨(20,20,20)ï¼Œæ‰“ä¸ªè¡¨å³å¯ 
 */
 #include<iostream>
 using namespace std;

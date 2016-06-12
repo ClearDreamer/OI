@@ -1,11 +1,11 @@
 /*
-ÄæÐòÍ³¼Æ
-·ÖÎö£ºxi±íÊ¾Ç°i¸öÊýÖÐ£¬±ÈµÚi¸öÊý´óµÄÊýµÄ¸öÊý£¬
-	  ÄÇÃ´ÄæÐò¶ÔÊý=x1+x2+x3+x4+...xn
-	  ÌâÄ¿ÒªÇó±äÎª x1+x2+x3+x4+...xn=k£¬Çóx¿ÉÄÜµÄÈ¡Öµ·½°¸Êý
-	  Í¨¹ýsi=xi+1£¬ÕâÑùÈ¥µôxi=0µÄ¿ÉÄÜ£¬×ª³ÉÊýµÄ»®·Ö£¨¿ÉÖØ¸´£©
-	  Çó½âs1+s2+s3+s4+...+sn=k+n
-	  opt[i][j]±íÊ¾ s1+s2+s3+...+si=jµÄ·½°¸Êý 
+é€†åºç»Ÿè®¡
+åˆ†æžï¼šxiè¡¨ç¤ºå‰iä¸ªæ•°ä¸­ï¼Œæ¯”ç¬¬iä¸ªæ•°å¤§çš„æ•°çš„ä¸ªæ•°ï¼Œ
+	  é‚£ä¹ˆé€†åºå¯¹æ•°=x1+x2+x3+x4+...xn
+	  é¢˜ç›®è¦æ±‚å˜ä¸º x1+x2+x3+x4+...xn=kï¼Œæ±‚xå¯èƒ½çš„å–å€¼æ–¹æ¡ˆæ•°
+	  é€šè¿‡si=xi+1ï¼Œè¿™æ ·åŽ»æŽ‰xi=0çš„å¯èƒ½ï¼Œè½¬æˆæ•°çš„åˆ’åˆ†ï¼ˆå¯é‡å¤ï¼‰
+	  æ±‚è§£s1+s2+s3+s4+...+sn=k+n
+	  opt[i][j]è¡¨ç¤º s1+s2+s3+...+si=jçš„æ–¹æ¡ˆæ•° 
 */
 #include<iostream>
 using namespace std;

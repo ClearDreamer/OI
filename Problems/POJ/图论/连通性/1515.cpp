@@ -1,7 +1,7 @@
 /*
 Street Directions
-���⣺��һ������ͼ�ĳ�����ͼ��ʹ���Ϊǿ��ͨ��������еıߡ�
-���������ǿ���������ͼ�ı�˫��ͨ����������ͬһ��˫��ͨ������ֻ�豣�����߼��ɹ���ǿ��ͨ��dfsһ�飩������ͬ��˫��ͨ�������豣��˫��ߡ� 
+题意：将一个无向图改成有向图，使其成为强连通，输出所有的边。
+分析：我们可以求无向图的边双连通分量，对于同一个双连通分量，只需保留单边即可构成强连通（dfs一遍），而不同的双连通分量则需保留双向边。 
 */
 #include<iostream>
 #include<algorithm>
@@ -48,7 +48,7 @@ void dfs(int u,int pa){
 	vis[u]=1;
 	for(int i=0;i<g[u].size();i++){
 		edge &e=es[g[u][i]];
-		if(e.isbridge)continue;//�������ű� 
+		if(e.isbridge)continue;//不能走桥边 
 		if(es[g[u][i]^1].isprint==0)e.isprint=1;
 		if(!vis[e.v])dfs(e.v,u);
 	}

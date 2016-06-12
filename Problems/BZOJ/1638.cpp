@@ -1,7 +1,7 @@
 /*
-[Usaco2007 Mar]Cow Traffic ��ţ��ͨ
-����������һ����(a,b)��ԭͼ�����Ϊ0�ĵ㵽a��·������F��ԭͼ��b��N��·������G����ô�����ߵľ�������ΪF*G
-	  Ȼ������˵���رߣ��ѵ��������ô0.0 
+[Usaco2007 Mar]Cow Traffic 奶牛交通
+分析：对于一条边(a,b)，原图中入度为0的点到a的路径条数F，原图中b到N的路径条数G，那么这条边的经过次数为F*G
+	  然而题中说有重边，难道不会分流么0.0 
 */
 #include<iostream>
 #include<cstdio>

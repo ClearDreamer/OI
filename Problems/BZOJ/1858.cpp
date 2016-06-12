@@ -1,6 +1,6 @@
 /*
-[Scoi2010]序列操作
-分析：线段树，一套标记和信息= = 
+[Scoi2010]搴忓垪鎿嶄綔
+鍒嗘瀽锛氱嚎娈垫爲锛屼竴濂楁爣璁板拰淇℃伅= = 
 */
 #include<iostream>
 #include<cstdio>
@@ -112,7 +112,7 @@ seg ask_mx(int k,int x,int y){
     int mid=(l+r)>>1;
     if(mid>=y)return ask_mx(k<<1,x,y);
     else if(mid<x)return ask_mx(k<<1|1,x,y);
-    else return merge(ask_mx(k<<1,x,mid),ask_mx(k<<1|1,mid+1,y));//必须要合并一下再算答案，直接区间信息是不行的= = 
+    else return merge(ask_mx(k<<1,x,mid),ask_mx(k<<1|1,mid+1,y));//蹇呴』瑕佸悎骞朵竴涓嬪啀绠楃瓟妗堬紝鐩存帴鍖洪棿淇℃伅鏄笉琛岀殑= = 
 }
 int asksum(int k,int x,int y){
     pushdown(k);

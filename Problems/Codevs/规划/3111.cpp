@@ -1,5 +1,5 @@
 /*
-CYD�й�ͷ
+CYD啃骨头
 */
 #include<iostream>
 #include<algorithm>

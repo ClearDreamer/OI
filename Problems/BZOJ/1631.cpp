@@ -1,6 +1,6 @@
 /*
 [Usaco2007 Feb]Cow Party
-分析：两遍最短路 
+鍒嗘瀽锛氫袱閬嶆渶鐭矾 
 */
 #include<iostream>
 #include<cstdio>

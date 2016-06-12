@@ -8,17 +8,17 @@
 using namespace std;
 const int MAXN=1000,INF=0x3f3f3f3f;
 void get_all_set(int n){
-	for(int i=0;i<(1<<n+1);i++){//Ã¶¾Ùn¸öÔªËØµÄ¼¯ºÏ 
+	for(int i=0;i<(1<<n+1);i++){//æšä¸¾nä¸ªå…ƒç´ çš„é›†åˆ 
 		for(int k=0;(1<<k)<=i;k++)printf("%d",i>>k&1);
 		puts(":");
-		for(int j=i;j;j=(j-1)&i){//Ã¶¾Ù·Ç¿Õ×Ó¼¯ 
+		for(int j=i;j;j=(j-1)&i){//æšä¸¾éç©ºå­é›† 
 			for(int k=0;(1<<k)<=j;k++)printf("%d",j>>k&1);
 			puts("");
 		}
 	}
 }
 namespace Dichotomy{
-	int dichotomy(int l,int r,bool (*check)(int x)){//¶ş·ÖµÃµ½Âú×ãÌõ¼şµÄ×î´ó½â£¬º¯Êıµ¥µ÷ĞÔ£ºÏÈ¿ÉĞĞºó²»¿ÉĞĞ 
+	int dichotomy(int l,int r,bool (*check)(int x)){//äºŒåˆ†å¾—åˆ°æ»¡è¶³æ¡ä»¶çš„æœ€å¤§è§£ï¼Œå‡½æ•°å•è°ƒæ€§ï¼šå…ˆå¯è¡Œåä¸å¯è¡Œ 
 	//cout<<l<<" "<<r<<endl;
 		int ans=l;
 		while(l<=r){
@@ -53,9 +53,9 @@ namespace Discretization{
 	void discretization(int *a,int *ans,int l,int r){//solve [l..r)
 		for(int i=l;i<r;i++)temp[i]=a[i];
 		sort(temp+l,temp+r);
-		int size=unique(temp+l,temp+r)-(temp+l);//sizeÎªÀëÉ¢»¯ºóÔªËØ¸öÊı
+		int size=unique(temp+l,temp+r)-(temp+l);//sizeä¸ºç¦»æ•£åŒ–åå…ƒç´ ä¸ªæ•°
 		for(int i=l;i<r;i++)
-			ans[i]=lower_bound(temp+l,temp+l+size,a[i])-(temp+l)+l;//kÎªb[i]¾­ÀëÉ¢»¯ºó¶ÔÓ¦µÄÖµ
+			ans[i]=lower_bound(temp+l,temp+l+size,a[i])-(temp+l)+l;//kä¸ºb[i]ç»ç¦»æ•£åŒ–åå¯¹åº”çš„å€¼
 	}
 }
 using namespace Quick_IO_Func;

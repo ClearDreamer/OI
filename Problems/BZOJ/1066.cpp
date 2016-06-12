@@ -1,9 +1,9 @@
 /*
-·ÖÎö£º¶ÔÓÚÃ¿¸ùÊ¯Öù£¬²ÉÈ¡Ò»·ÖÎª¶þµÄÏë·¨£¬¼´°ÑÒ»¸öµã·ÖÎªÁ½¸öµã£¨¿É³éÏóÎªÊ¯Öùµ×²¿µ½¶¥²¿£©£¬ÆäÁ¬ÏßÈÝÁ¿ÏÞÖÆÎªÊ¯Öù¸ß¶È¡£
-		³¬¼¶Ô´ÓëËùÓÐÓÐòáòæµÄµãÏàÁ¬£¬ÈÝÁ¿Îª1¡£
-		³¬¼¶»ãÓëµØÍ¼ÄÚËùÓÐÄÜÌø³öµÄµãÏàÁ¬£¬ÈÝÁ¿ÎªINF¡£
-		¶ÔÓÚµØÍ¼ÄÚÈÎÒâÁ½¸öÊ¯Öù£¬Èç¹û¼ä¾àÐ¡ÓÚd£¬¾Í½«ÆäÖÐÒ»¸ùÊ¯ÖùµÄ¶¥²¿ÓëÁíÒ»¸ùÊ¯ÖùµÄµ×²¿ÏàÁ¬£¬ÆäÁ¬ÏßÈÝÁ¿ÎªINF¡£
-		¹¹Í¼Íê³É£¬Ê£ÏÂ¾ÍÊÇÅÜÒ»±é×î´óÁ÷£¬È»ºóÓÃòáòæÊýÁ¿¼õÈ¥×î´óÁ÷¾ÍÊÇ×îÖÕ½á¹û¡£ 
+åˆ†æžï¼šå¯¹äºŽæ¯æ ¹çŸ³æŸ±ï¼Œé‡‡å–ä¸€åˆ†ä¸ºäºŒçš„æƒ³æ³•ï¼Œå³æŠŠä¸€ä¸ªç‚¹åˆ†ä¸ºä¸¤ä¸ªç‚¹ï¼ˆå¯æŠ½è±¡ä¸ºçŸ³æŸ±åº•éƒ¨åˆ°é¡¶éƒ¨ï¼‰ï¼Œå…¶è¿žçº¿å®¹é‡é™åˆ¶ä¸ºçŸ³æŸ±é«˜åº¦ã€‚
+		è¶…çº§æºä¸Žæ‰€æœ‰æœ‰èœ¥èœ´çš„ç‚¹ç›¸è¿žï¼Œå®¹é‡ä¸º1ã€‚
+		è¶…çº§æ±‡ä¸Žåœ°å›¾å†…æ‰€æœ‰èƒ½è·³å‡ºçš„ç‚¹ç›¸è¿žï¼Œå®¹é‡ä¸ºINFã€‚
+		å¯¹äºŽåœ°å›¾å†…ä»»æ„ä¸¤ä¸ªçŸ³æŸ±ï¼Œå¦‚æžœé—´è·å°äºŽdï¼Œå°±å°†å…¶ä¸­ä¸€æ ¹çŸ³æŸ±çš„é¡¶éƒ¨ä¸Žå¦ä¸€æ ¹çŸ³æŸ±çš„åº•éƒ¨ç›¸è¿žï¼Œå…¶è¿žçº¿å®¹é‡ä¸ºINFã€‚
+		æž„å›¾å®Œæˆï¼Œå‰©ä¸‹å°±æ˜¯è·‘ä¸€éæœ€å¤§æµï¼Œç„¶åŽç”¨èœ¥èœ´æ•°é‡å‡åŽ»æœ€å¤§æµå°±æ˜¯æœ€ç»ˆç»“æžœã€‚ 
 */
 #include<iostream>
 #include<cstdio>
@@ -67,9 +67,9 @@ int augment(){
 int R,C,D,cnt=0;
 int mp[20+3][20+3];
 bool mrk[20+3][20+3];
-//òáòæÎ»ÖÃ 
+//èœ¥èœ´ä½ç½® 
 #define idx1(i,j) ((i-1)*C+j)
-//Ê¯ÖùÎ»ÖÃ
+//çŸ³æŸ±ä½ç½®
 #define idx2(i,j) ((R*C)+(i-1)*C+j)
 char ch[30];
 #define sqr(x) ((x)*(x))
@@ -107,7 +107,7 @@ int main(){
     	for(int y1=1;y1<=C;y1++){
     		if(mp[x1][y1]==0)continue;
     		addedge(idx1(x1,y1),idx2(x1,y1),mp[x1][y1]);
-    		int a=max(x1-D,1),b=min(x1+D,R),c=max(y1-D,1),d=min(y1+D,C);//ÕâÀïµÄc£¬d²»ÒªºÍÖ®Ç°µÄc£¬dÖØÁË£¬WAÁËºÃ¾Ã= = 
+    		int a=max(x1-D,1),b=min(x1+D,R),c=max(y1-D,1),d=min(y1+D,C);//è¿™é‡Œçš„cï¼Œdä¸è¦å’Œä¹‹å‰çš„cï¼Œdé‡äº†ï¼ŒWAäº†å¥½ä¹…= = 
         	for(int x2=a;x2<=b;x2++)
             	for(int y2=c;y2<=d;y2++)
             		if((x1!=x2||y1!=y2)&&mp[x2][y2]&& (sqr(x1-x2)+sqr(y1-y2)<=sqr(D)))addedge(idx2(x1,y1),idx1(x2,y2),INF);

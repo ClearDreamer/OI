@@ -1,7 +1,7 @@
 /*
-ÖÐÎ»Êý
-·ÖÎö£ºÍ³¼ÆmÎ»ÖÃ×ó±ßµÄ±Èm´óµÄÊý¸öÊý-±ÈmÐ¡µÄÊýµÄ¸öÊý£¬¶ÔmÓÒ±ßÒ»Ñù´¦Àí
-	  µ±x[i]==y[-i]Ê±£¬¼´ÓÐx[i]*y[-i]ÖÖ·½°¸ 
+ä¸­ä½æ•°
+åˆ†æžï¼šç»Ÿè®¡mä½ç½®å·¦è¾¹çš„æ¯”må¤§çš„æ•°ä¸ªæ•°-æ¯”må°çš„æ•°çš„ä¸ªæ•°ï¼Œå¯¹må³è¾¹ä¸€æ ·å¤„ç†
+	  å½“x[i]==y[-i]æ—¶ï¼Œå³æœ‰x[i]*y[-i]ç§æ–¹æ¡ˆ 
 */
 #include<iostream>
 using namespace std;

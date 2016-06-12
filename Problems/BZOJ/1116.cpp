@@ -1,8 +1,8 @@
 /*
 [POI2008]CLO
-·ÖÎö£ºÊ×ÏÈÎÞÏò±ß²»¹±Ï×Èë¶È£¬ÓÐÏò±ß¹±Ï×Ò»¸öÈë¶È£¬ËùÒÔÖ»ÒªÒ»¸öÁªÍ¨¿éÖÐº¬ÓÐ»·£¬¾ÍÄÜ×öµ½£¬·ñÔò¾Í»áÓÐÒ»¸öµã×ö²»µ½
-	  ÈçºÎÅÐ¶ÏÓÐ»·£º²¢²é¼¯£ºlink(a,b)Èôa,bÊôÓÚÍ¬Ò»¸ö¼¯ºÏ£¬ÔòÕâ¸ö¼¯ºÏÓÐ»·£¬Èô²»ÊôÓÚ£¬ºÏ²¢£¬ÐÂ¼¯ºÏÓÐ»·=×Ó¼¯ºÏÖÁÉÙÓÐÒ»¸ö»· 
-	  ×¢ÒâÏÈ±ê¼Ç£¬ÔÙÐÞ¸ÄÊ÷µÄ½á¹¹ 
+åˆ†æžï¼šé¦–å…ˆæ— å‘è¾¹ä¸è´¡çŒ®å…¥åº¦ï¼Œæœ‰å‘è¾¹è´¡çŒ®ä¸€ä¸ªå…¥åº¦ï¼Œæ‰€ä»¥åªè¦ä¸€ä¸ªè”é€šå—ä¸­å«æœ‰çŽ¯ï¼Œå°±èƒ½åšåˆ°ï¼Œå¦åˆ™å°±ä¼šæœ‰ä¸€ä¸ªç‚¹åšä¸åˆ°
+	  å¦‚ä½•åˆ¤æ–­æœ‰çŽ¯ï¼šå¹¶æŸ¥é›†ï¼šlink(a,b)è‹¥a,bå±žäºŽåŒä¸€ä¸ªé›†åˆï¼Œåˆ™è¿™ä¸ªé›†åˆæœ‰çŽ¯ï¼Œè‹¥ä¸å±žäºŽï¼Œåˆå¹¶ï¼Œæ–°é›†åˆæœ‰çŽ¯=å­é›†åˆè‡³å°‘æœ‰ä¸€ä¸ªçŽ¯ 
+	  æ³¨æ„å…ˆæ ‡è®°ï¼Œå†ä¿®æ”¹æ ‘çš„ç»“æž„ 
 */
 #include<iostream>
 #include<cstdio>
@@ -24,7 +24,7 @@ int main(){
 		if(a==b)mark[a]=1;
 		else{
 			mark[b]|=mark[a];
-			pa[a]=b;//´íÎóÐ´·¨:pa[find(a)]=find(b);mark[find(b)]|=mark[find(a)];ÕâÑùµÚ¶þ´Î²éÕÒaµÄ¸ù£¬¾ÍÒÑ¾­ÊÇbÁË£¬ÕâÏÔÈ»²»ÊÇÏëÒªµÄ 
+			pa[a]=b;//é”™è¯¯å†™æ³•:pa[find(a)]=find(b);mark[find(b)]|=mark[find(a)];è¿™æ ·ç¬¬äºŒæ¬¡æŸ¥æ‰¾açš„æ ¹ï¼Œå°±å·²ç»æ˜¯bäº†ï¼Œè¿™æ˜¾ç„¶ä¸æ˜¯æƒ³è¦çš„ 
 		}
 	}
 	for(int i=1;i<=n;i++)if(mark[find(i)]==0){puts("NIE");return 0;}

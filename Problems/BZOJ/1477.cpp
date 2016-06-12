@@ -1,6 +1,6 @@
 /*
-ÇàÍÜµÄÔ¼»á
-·ÖÎö£ºÀ©Õ¹gcd 
+é’è›™çš„çº¦ä¼š
+åˆ†æï¼šæ‰©å±•gcd 
 */
 #include<iostream>
 #include<algorithm>
@@ -24,7 +24,7 @@ int main(){
     else{
 		xx=xx*((x-y)/d);
 		r=l/d;
-		xx=(xx%r+r)%r;//Çó³ö×îĞ¡·Ç¸ºÕûÊı½â
+		xx=(xx%r+r)%r;//æ±‚å‡ºæœ€å°éè´Ÿæ•´æ•°è§£
 		cout<<xx<<endl;
 	}
     return 0;

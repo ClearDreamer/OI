@@ -1,6 +1,6 @@
 /*
-修复公路
-分析：并查集 
+淇鍏矾
+鍒嗘瀽锛氬苟鏌ラ泦 
 */
 #include<iostream>
 #include<algorithm>

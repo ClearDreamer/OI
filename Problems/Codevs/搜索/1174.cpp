@@ -1,7 +1,7 @@
 /*
-°ÐÐÎÊý¶À
-·ÖÎö£ºÏÈÔ¤´¦ÀíºÃ£¬È»ºó×öºÃ¿É·ÅÖÃµÄ±ê¼Ç£¬È»ºóDFS¼´¿É
-	  ¸Ð¾õ²»ÓÃÆô·¢Ê½ËÑË÷¡£¡£¡£ 
+é¶å½¢æ•°ç‹¬
+åˆ†æžï¼šå…ˆé¢„å¤„ç†å¥½ï¼Œç„¶åŽåšå¥½å¯æ”¾ç½®çš„æ ‡è®°ï¼Œç„¶åŽDFSå³å¯
+	  æ„Ÿè§‰ä¸ç”¨å¯å‘å¼æœç´¢ã€‚ã€‚ã€‚ 
 */
 #include<iostream>
 #include<cstring>

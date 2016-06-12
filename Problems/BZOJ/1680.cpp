@@ -1,6 +1,6 @@
 /*
 [Usaco2005 Mar]Yogurt factory
-分析：贪心，和之前的最小值比较，选更优的 
+鍒嗘瀽锛氳椽蹇冿紝鍜屼箣鍓嶇殑鏈�灏忓�兼瘮杈冿紝閫夋洿浼樼殑 
 */
 #include<iostream>
 #include<cstdio>
@@ -16,7 +16,7 @@ int main(){
 	l=INF-s;
 	while(n--){
 		scanf("%d%d",&c,&y);
-		l=min(l+s,(LL)c);//这样支持加多个s 
+		l=min(l+s,(LL)c);//杩欐牱鏀寔鍔犲涓猻 
 		ans+=(LL)l*y;
 	}
 	printf("%lld\n",ans); 

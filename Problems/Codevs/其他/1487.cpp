@@ -1,5 +1,5 @@
 /*
-大批整数排序
+澶ф壒鏁存暟鎺掑簭
 */
 #include<cstdio>
 int a[11],n;

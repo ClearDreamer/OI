@@ -1,6 +1,6 @@
 /*
-[ZJOI2008]泡泡堂BNB
-分析：排序，贪心，两个指针扫，注意两个问题的关系 
+[ZJOI2008]娉℃场鍫侭NB
+鍒嗘瀽锛氭帓搴忥紝璐績锛屼袱涓寚閽堟壂锛屾敞鎰忎袱涓棶棰樼殑鍏崇郴 
 */
 #include<iostream>
 #include<cstdio>

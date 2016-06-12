@@ -1,5 +1,5 @@
 /*
-Óë3ºÍ5ÎÞ¹ØµÄÊý
+ä¸Ž3å’Œ5æ— å…³çš„æ•°
 */
 #include<stdio.h>
 bool isyoug(int n){

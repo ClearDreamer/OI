@@ -1,5 +1,5 @@
 /*
-йЩапеепР
+Ф∙╟Е┬≈Ф▌▓Е╨▐
 */
 #include<iostream>
 #include<algorithm>

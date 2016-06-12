@@ -1,8 +1,8 @@
 /*
 Tiling Up Blocks
-ÌâÒâ£ºMichael The KidÓÐn¿é»ýÄ¾£¬Ã¿¿é»ýÄ¾ÈçÏÂÍ¼£¬×óÉÏÓÐl¸öÍ¹¿Ú£¬ÓÒÉÏÓÐw¸öÍ¹¿Ú£¬×óÏÂÓÒl¸ö°¼¿Ú£¬ÓÒÏÂÓÐw¸ö°¼¿Ú¡£µ±l >= l'²¢ÇÒm >= m'Ê±£¬Ä¾¿é'¿É°²×°ÓÚÁíÒ»¸öÉÏÃæ¡£ÎÊ×î¸ßÄÜµþ¼¸²ã»ýÄ¾¡£
-·ÖÎö£ºÇ°¼¸¾ä¶¼ÊÇ·Ï»°£¬ ¡°µ±l >= l'²¢ÇÒm >= m'Ê±¡±£¬ÓÉÕâ¾ä¿ÉÖª£¬¿ÉÒÔÓÃÀàËÆLISµÄ·½·¨£¨¶þÎ¬£©£¬µ«ÕâÊÇN^2µÄ£¬ÏÈËµÏÂ¶þÎ¬LIS£ºÏÈ°´µÚÒ»Î¬ÅÅÐò£¬ÔÙ¶ÔµÚ¶þÎ¬×öLIS
-	  µ«ÓÉÓÚl,m·¶Î§½ÏÐ¡£¬Ö±½ÓÓÃopt[i][j]±íÊ¾ËùÓÐ<=i,<=jµÄ»ýÄ¾¸öÊý£¬¼´¿É¡£opt[i][j]=(i,j)³öÏÖ´ÎÊý+max(opt[i-1][j],opt[i][j-1]) 
+é¢˜æ„ï¼šMichael The Kidæœ‰nå—ç§¯æœ¨ï¼Œæ¯å—ç§¯æœ¨å¦‚ä¸‹å›¾ï¼Œå·¦ä¸Šæœ‰lä¸ªå‡¸å£ï¼Œå³ä¸Šæœ‰wä¸ªå‡¸å£ï¼Œå·¦ä¸‹å³lä¸ªå‡¹å£ï¼Œå³ä¸‹æœ‰wä¸ªå‡¹å£ã€‚å½“l >= l'å¹¶ä¸”m >= m'æ—¶ï¼Œæœ¨å—'å¯å®‰è£…äºŽå¦ä¸€ä¸ªä¸Šé¢ã€‚é—®æœ€é«˜èƒ½å å‡ å±‚ç§¯æœ¨ã€‚
+åˆ†æžï¼šå‰å‡ å¥éƒ½æ˜¯åºŸè¯ï¼Œ â€œå½“l >= l'å¹¶ä¸”m >= m'æ—¶â€ï¼Œç”±è¿™å¥å¯çŸ¥ï¼Œå¯ä»¥ç”¨ç±»ä¼¼LISçš„æ–¹æ³•ï¼ˆäºŒç»´ï¼‰ï¼Œä½†è¿™æ˜¯N^2çš„ï¼Œå…ˆè¯´ä¸‹äºŒç»´LISï¼šå…ˆæŒ‰ç¬¬ä¸€ç»´æŽ’åºï¼Œå†å¯¹ç¬¬äºŒç»´åšLIS
+	  ä½†ç”±äºŽl,mèŒƒå›´è¾ƒå°ï¼Œç›´æŽ¥ç”¨opt[i][j]è¡¨ç¤ºæ‰€æœ‰<=i,<=jçš„ç§¯æœ¨ä¸ªæ•°ï¼Œå³å¯ã€‚opt[i][j]=(i,j)å‡ºçŽ°æ¬¡æ•°+max(opt[i-1][j],opt[i][j-1]) 
 */
 #include<iostream>
 #include<algorithm>

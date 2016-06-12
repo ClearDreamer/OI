@@ -1,7 +1,7 @@
 /*
 SUBTRACT 
-ÌâÒâ£º¶¨ÒåÒ»ÖÖ²Ù×÷£¬²Ù×÷i¾ÍÊÇ½«a[i]-a[i+1]È¡³ö½øÐÐºÏ²¢£¬ÔÙ¼ÓÈëµ½a[i]µÄÎ»ÖÃ£¨ÎÒ×Ô¼ºÒÜ²âµÄÌâÒâ£©£¬½øÐÐn-1´Î²Ù×÷ºó£¬»áÊ£ÏÂÒ»¸öÊý×Ö¡£¸ø¶¨a[1]~a[n]¼°Ä¿±êt£¨×îºóÊ£ÏÂµÄÊý×Ö£©£¬Çó²Ù×÷Ë³Ðò¡£
-·ÖÎö£º´ËÌâÏàµ±ÓÚÔÚÐòÁÐÖ®¼äÌí¼Ó+-Á½ÖÖ·ûºÅÊ¹µÃ´ð°¸ÊÇt£¬×îºó°´ÕÕ+-ºÅÊä³ö¾ÍÊÇÁË£¬PS£ºµÚÒ»¸ö·ûºÅ±Ø¶¨ÊÇ¼õºÅ£¡
+é¢˜æ„ï¼šå®šä¹‰ä¸€ç§æ“ä½œï¼Œæ“ä½œiå°±æ˜¯å°†a[i]-a[i+1]å–å‡ºè¿›è¡Œåˆå¹¶ï¼Œå†åŠ å…¥åˆ°a[i]çš„ä½ç½®ï¼ˆæˆ‘è‡ªå·±è‡†æµ‹çš„é¢˜æ„ï¼‰ï¼Œè¿›è¡Œn-1æ¬¡æ“ä½œåŽï¼Œä¼šå‰©ä¸‹ä¸€ä¸ªæ•°å­—ã€‚ç»™å®ša[1]~a[n]åŠç›®æ ‡tï¼ˆæœ€åŽå‰©ä¸‹çš„æ•°å­—ï¼‰ï¼Œæ±‚æ“ä½œé¡ºåºã€‚
+åˆ†æžï¼šæ­¤é¢˜ç›¸å½“äºŽåœ¨åºåˆ—ä¹‹é—´æ·»åŠ +-ä¸¤ç§ç¬¦å·ä½¿å¾—ç­”æ¡ˆæ˜¯tï¼Œæœ€åŽæŒ‰ç…§+-å·è¾“å‡ºå°±æ˜¯äº†ï¼ŒPSï¼šç¬¬ä¸€ä¸ªç¬¦å·å¿…å®šæ˜¯å‡å·ï¼
 */
 #include<iostream>
 #include<cstdio>
@@ -21,8 +21,8 @@ int main(){
 	for(int i=3;i<=n;i++){
 		for(int j=0;j<=R<<1;j++){
 			if(can[i-1][j]==0)continue;
-			if(j+a[i]<=R<<1)can[i][j+a[i]]=1;//¼Ó 
-			if(j-a[i]>=0)can[i][j-a[i]]=-1;//¼õ 
+			if(j+a[i]<=R<<1)can[i][j+a[i]]=1;//åŠ  
+			if(j-a[i]>=0)can[i][j-a[i]]=-1;//å‡ 
 		} 
 	}
 	for(int i=n,j=R+T;i>=1;i--){

@@ -1,8 +1,8 @@
 /*
-[SCOI2007]����������
-���������ȴ�һ����͹���ϡ�
-	  Ȼ�����ö��͹���ϵĶԽ��ߣ�ά���Խ������ߵ�ָ�루��ʵָ���ֵ�����������ߣ�һ����ö�ٵ��������Է��֣����ŶԽ��ߵ���ת��������ʹ�������ָ��Ҳ�ǵ����ġ�
-	  ��ת���ǡ�������д���ܼ�࣬���Ե���ģ�� 
+[SCOI2007]最大土地面积
+分析：首先答案一定在凸包上。
+	  然后可以枚举凸包上的对角线，维护对角线两边的指针（其实指针初值不用设在两边，一定会枚举到），可以发现，随着对角线的旋转，这两个使面积最大的指针也是单调的。
+	  旋转卡壳。这个题的写法很简洁，可以当作模板 
 */
 #include<iostream>
 #include<cstdio>
@@ -54,13 +54,13 @@ void get_bag(){
 		while(tp>1&&( ((pt[i]-pt[tmp[tp]])^(pt[tmp[tp]]-pt[tmp[tp-1]])) >=0))tp--;
 		tmp[++tp]=i;
 	}
-	for(int i=1;i<tp;i++)bag[++top]=tmp[i]; //��Ҫ�����һ�����ϣ���������ͻ��ظ��� 
+	for(int i=1;i<tp;i++)bag[++top]=tmp[i]; //不要把最后一个加上，那样下面就会重复加 
 	tp=0;
 	for(int i=1;i<=n;i++){
 		while(tp>1&&( ((pt[i]-pt[tmp[tp]])^(pt[tmp[tp]]-pt[tmp[tp-1]])) <=0))tp--;
 		tmp[++tp]=i;
 	}
-	for(int i=tp;i>=1;i--)bag[++top]=tmp[i]; //����ɨ 
+	for(int i=tp;i>=1;i--)bag[++top]=tmp[i]; //倒着扫 
 }
 int main(){
 	scanf("%d",&n);

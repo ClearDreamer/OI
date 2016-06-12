@@ -1,5 +1,5 @@
 /*
-Ñ°±¦
+å¯»å®
 */
 #include<cstdio>
 using namespace std;
@@ -28,7 +28,7 @@ int main(){
 		int next=rs[i][curr].z;
 		ans=(ans+next)%20123;
 		int j=curr,p=0;
-		while(next>a[i])next-=a[i];//Õâ¸öÓÅ»¯ºÜÖØÒª 
+		while(next>a[i])next-=a[i];//è¿™ä¸ªä¼˜åŒ–å¾ˆé‡è¦ 
 		while(1){
 			if(rs[i][j].isy)
 				if(++p==next)break;

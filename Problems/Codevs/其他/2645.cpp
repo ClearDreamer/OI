@@ -1,6 +1,6 @@
 /*
 Spore
-分析：SPFA，有负环 
+鍒嗘瀽锛歋PFA锛屾湁璐熺幆 
 */ 
 #include<iostream>
 #include<queue>

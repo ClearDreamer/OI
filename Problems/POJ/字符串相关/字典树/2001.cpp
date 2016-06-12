@@ -1,6 +1,6 @@
 /*
 Shortest Prefixes
-分析：经典Trie，注意数组要开大点 
+鍒嗘瀽锛氱粡鍏窽rie锛屾敞鎰忔暟缁勮寮�澶х偣 
 */
 #include<iostream>
 #include<algorithm>

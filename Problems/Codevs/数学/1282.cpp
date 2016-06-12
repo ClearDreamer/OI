@@ -1,7 +1,7 @@
 /*
-Ô¼Éª·òÎÊÌâ
-·ÖÎö£ºÓÃvectorÄ£Äâ£¬·Ç³£ºÃ£¬
-	  »¹¿ÉÒÔÓÃÏß¶ÎÊ÷£¬Î¬»¤Ò»¸öÇø¼äÊ£ÓàµÄÈËÊý£¬²»Í£ÌøÔ¾Çø¼ä 
+çº¦ç‘Ÿå¤«é—®é¢˜
+åˆ†æžï¼šç”¨vectoræ¨¡æ‹Ÿï¼Œéžå¸¸å¥½ï¼Œ
+	  è¿˜å¯ä»¥ç”¨çº¿æ®µæ ‘ï¼Œç»´æŠ¤ä¸€ä¸ªåŒºé—´å‰©ä½™çš„äººæ•°ï¼Œä¸åœè·³è·ƒåŒºé—´ 
 */
 #include<cstdio>
 #include<vector>

@@ -1,6 +1,6 @@
 /*
-��ˮ����
-��������ÿ��״̬ת�ƽ���DFS��ע����仯��С���� 
+倒水问题
+分析：对每种状态转移进行DFS，注意记忆化最小步数 
 */
 #include<iostream>
 using namespace std;

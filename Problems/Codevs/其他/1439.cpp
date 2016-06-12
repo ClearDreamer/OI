@@ -1,5 +1,5 @@
 /*
-统计素数个数
+缁熻绱犳暟涓暟
 */
 #include<iostream>
 #include<bitset>

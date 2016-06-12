@@ -1,5 +1,5 @@
 /*
-°¢ÀêµÄ´ò×Ö»ú
+é˜¿ç‹¸çš„æ‰“å­—æœº
 */
 #include<iostream>
 #include<cstring>
@@ -98,8 +98,8 @@ AhoCorasick ac;
 BIT bit;
 int in[MAXN+3],out[MAXN+3],dfstime=0,m;
 vector<str> strs;
-vector<int> word[MAXN+3];//ÒÔi½Úµã½áÎ²µÄµ¥´Ê 
-vector<int> ques[MAXN+3];//¹ØÓÚy´®µÄÑ¯ÎÊ 
+vector<int> word[MAXN+3];//ä»¥ièŠ‚ç‚¹ç»“å°¾çš„å•è¯ 
+vector<int> ques[MAXN+3];//å…³äºyä¸²çš„è¯¢é—® 
 int quex[MAXN+3],quey[MAXN+3],queans[MAXN+3],tail[MAXN+3];
 
 void loadstr(){

@@ -1,8 +1,8 @@
 /*
-¾ØÐÎ·Ö¸î
-·ÖÎö£ºÌ°ÐÄ¼´¿É£¬Ê×ÏÈ¿Ï¶¨ÏÈÑ¡´óµÄÇÐ£¬ÕâÑù´óµÄ²»»á¸ü´ó£¬
-	  È»ºóÈç¹ûÊú×ÅÇÐ£¬ºáÏò¶ÎÊý»á+1£¬Èç¹ûºá×ÅÇÐ£¬×ÝÏò¶ÎÊý»á+1 
-	  ¹²¼ÆÐèÒªÇÐn+m-2´Î 
+çŸ©å½¢åˆ†å‰²
+åˆ†æžï¼šè´ªå¿ƒå³å¯ï¼Œé¦–å…ˆè‚¯å®šå…ˆé€‰å¤§çš„åˆ‡ï¼Œè¿™æ ·å¤§çš„ä¸ä¼šæ›´å¤§ï¼Œ
+	  ç„¶åŽå¦‚æžœç«–ç€åˆ‡ï¼Œæ¨ªå‘æ®µæ•°ä¼š+1ï¼Œå¦‚æžœæ¨ªç€åˆ‡ï¼Œçºµå‘æ®µæ•°ä¼š+1 
+	  å…±è®¡éœ€è¦åˆ‡n+m-2æ¬¡ 
 */
 #include<iostream>
 #include<algorithm>
@@ -15,9 +15,9 @@ int main(){
 	for(int i=1;i<m;i++)cin>>c[i];
 	sort(r+1,r+n);
 	sort(c+1,c+m);
-	len=n+m-2;//ÕâÀïÒªÏÈ´æÏÂÀ´£¬Ö®ºón,m»á¸Ä±ä 
+	len=n+m-2;//è¿™é‡Œè¦å…ˆå­˜ä¸‹æ¥ï¼Œä¹‹åŽn,mä¼šæ”¹å˜ 
 	for(int i=1;i<=len;i++){
-		if(r[n-1]<c[m-1]){//Êú×ÅÇÐ 
+		if(r[n-1]<c[m-1]){//ç«–ç€åˆ‡ 
 			x++;ans+=y*c[--m];
 		}
 		else{

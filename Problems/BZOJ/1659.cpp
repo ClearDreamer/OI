@@ -1,13 +1,13 @@
 /*
-[Usaco2006 Mar]Lights Out ¹ØµÆ
-·ÖÎö£ºµü´ú¼ÓÉî £¬»¹ÓĞÒ»ÖÖDP 
+[Usaco2006 Mar]Lights Out å…³ç¯
+åˆ†æï¼šè¿­ä»£åŠ æ·± ï¼Œè¿˜æœ‰ä¸€ç§DP 
 */
 #include<cstdio>
 const int N=51;
 const int INF=1<<30;
 int n,m,lo,la=INF;
 int a[N],b[N],opt[N],ans[N],k; 
-void update(){//¸üĞÂ×ÖµäĞò 
+void update(){//æ›´æ–°å­—å…¸åº 
     if(lo>la)return;
     if(lo==la){
         for(int i=1;i<=n;i++){
@@ -18,7 +18,7 @@ void update(){//¸üĞÂ×ÖµäĞò
     la=lo;
     for(int i=1;i<=la;i++)ans[i]=opt[i];
 }
-bool DFS(int cnt,int pos){//µ±Ç°Î»ÖÃÎªpos£¬ÒÑ¾­ÓĞÁËcnt¸ö1 
+bool DFS(int cnt,int pos){//å½“å‰ä½ç½®ä¸ºposï¼Œå·²ç»æœ‰äº†cntä¸ª1 
     if(cnt>k) return 0;
     if(pos+m-1>n){
         for(int i=pos;i<=n;i++) cnt+=a[i];

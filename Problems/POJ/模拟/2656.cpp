@@ -1,6 +1,6 @@
 /*
 Unhappy Jinjin
-题意：NOIP，不开心的津津 
+棰樻剰锛歂OIP锛屼笉寮�蹇冪殑娲ユ触 
 */
 #include<cstdio>
 using namespace std;

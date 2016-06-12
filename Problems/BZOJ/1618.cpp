@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Nov]Buying Hay ¹ºÂò¸É²İ
-·ÖÎö£º ÍêÈ«±³°ü 
+[Usaco2008 Nov]Buying Hay è´­ä¹°å¹²è‰
+åˆ†æï¼š å®Œå…¨èƒŒåŒ… 
 */
 #include<iostream>
 #include<cstring>

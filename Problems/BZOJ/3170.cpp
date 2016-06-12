@@ -1,13 +1,13 @@
 /*
-[Tjoi 2013]ËÉÊó¾Û»á
-·ÖÎö£º¾­µä×ª»¯£¬¶ÔÓÚÕâÌâ£¬ÎÒÃÇ¿ÉÒÔµÃµ½d(i,j)=max(|xi-xj|,|yi-yj|)£¬
-		Éèx¡¯=(x+y)/2,y¡¯=(x-y)/2
-		ÄÇÃ´d(i,j)=|xi¡¯-xj¡¯|+|yi¡¯-yj¡¯|
-		x£¬yÖá¿ÉÒÔ·Ö¿ªÍ³¼Æ
-		ÏÈÊÇÍ³¼ÆxÖá£¬½«ËùÓÐËÉÊóµÄx¡¯ÅÅÐò
-		ÓÃÇ°×ººÍºÍºó×ººÍÇó³öÄ³¸öËÉÊóµ½ÆäËûËÉÊóµÄXÖá¾àÀë
+[Tjoi 2013]æ¾é¼ èšä¼š
+åˆ†æžï¼šç»å…¸è½¬åŒ–ï¼Œå¯¹äºŽè¿™é¢˜ï¼Œæˆ‘ä»¬å¯ä»¥å¾—åˆ°d(i,j)=max(|xi-xj|,|yi-yj|)ï¼Œ
+		è®¾xâ€™=(x+y)/2,yâ€™=(x-y)/2
+		é‚£ä¹ˆd(i,j)=|xiâ€™-xjâ€™|+|yiâ€™-yjâ€™|
+		xï¼Œyè½´å¯ä»¥åˆ†å¼€ç»Ÿè®¡
+		å…ˆæ˜¯ç»Ÿè®¡xè½´ï¼Œå°†æ‰€æœ‰æ¾é¼ çš„xâ€™æŽ’åº
+		ç”¨å‰ç¼€å’Œå’ŒåŽç¼€å’Œæ±‚å‡ºæŸä¸ªæ¾é¼ åˆ°å…¶ä»–æ¾é¼ çš„Xè½´è·ç¦»
 		Xi*(i-1)-sum(1..i-1)+sum(i+1..n)-(n-i)*Xi
-		yÖáÍ¬Àí
+		yè½´åŒç†
 */ 
 #include<iostream>
 #include<algorithm>

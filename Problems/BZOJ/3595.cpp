@@ -1,8 +1,8 @@
 /*
-������treap��ֱ�Ӱ����ġ���������������ؼ��־����ˣ��ᵽǰ��ľ��Ǹ��ģ���ʵ����������sz��ע�������Щû�г��ֵĵ� 
-		����map����ÿ����Ŷ�Ӧ������ؼ��� ÿ�β��Ҿ����ˡ� 
-		��ʼ�����ֻ��һ���ڵ����[1, n]�������䣬��������Ҫ�ƶ�һ�����Ϊi�û�ʱ�����Ǿͽ�����ڵ��ֳ�[1, i-1]��[i, i]��[i+1, n]�����ڵ㣬Ȼ��Ϳ��Խ��в����ˡ�
-		��Ϊ�ռ俪���� ���԰�map[x]=0������������ı�ž����Լ����� ���Բ����õ�0��Ϊ����ؼ���
+分析：treap，直接把它的“排名”当做排序关键字就行了，提到前面的就是负的，真实的排名就用sz求，注意加上那些没有出现的点 
+		开个map保存每个编号对应的排序关键字 每次查找就行了。 
+		初始情况下只有一个节点包含[1, n]整个区间，当我们需要移动一个编号为i用户时，我们就将这个节点拆分成[1, i-1]、[i, i]、[i+1, n]三个节点，然后就可以进行操作了。
+		因为空间开不下 所以把map[x]=0的情况当做它的编号就是自己本身 所以不能用到0作为排序关键字
 */
 #include <cstdio>
 #include <iostream>
@@ -64,7 +64,7 @@ struct treap{
 	void del(node *&p, int pos){
 		if(p == null) return;
 		if(p->L <= pos && pos <= p->R){
-			/*if(p->L == p->R) merge(p, p->lc, p->rc); // ��֤ʵ����Ǵ��ġ����������������˲�����2333
+			/*if(p->L == p->R) merge(p, p->lc, p->rc); // 经证实这句是错的。不过反正窝退役了不管了2333
 			else */if(p->L == pos) { ++ p -> L; ++ p -> id; pushup(p); }
 			else if(p->R == pos) { -- p -> R; pushup(p); }
 			else{

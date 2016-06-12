@@ -1,7 +1,7 @@
 /*
-[Usaco2008 Nov]Time Management ʱ�����
-������̰�ģ�ÿ��ʱ�䶼�и����ʱ�䣬��ô���Ǿʹ����� ���ʱ��Ŀ�ʼ��ǰ��
-		ÿһ�θ������翪ʼʱ�䣨min(ans, a[i].y)����i�¼���������ʱ�䣩 
+[Usaco2008 Nov]Time Management 时间管理
+分析：贪心，每个时间都有个完成时间，那么我们就从最大的 完成时间的开始往前推
+		每一次更新最早开始时间（min(ans, a[i].y)代表i事件最早的完成时间） 
 */
 #include<iostream>
 #include<algorithm>

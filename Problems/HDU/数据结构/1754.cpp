@@ -1,6 +1,6 @@
 /*
 I Hate It
-·ÖÎö£ºÏß¶ÎÊ÷ 
+åˆ†æï¼šçº¿æ®µæ ‘ 
 */
 #include<iostream>
 #include<algorithm>

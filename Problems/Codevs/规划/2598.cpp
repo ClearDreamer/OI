@@ -1,16 +1,16 @@
 /*
-�༭��������
-���������ⲻ̫����DP�����ǿ��ܻ��뵽����������У�
-	  �����ת�Ʒ��̺�LCS�ͺ���
-	  opt[i][j]��ʾA[0..i-1]ת����B[0..j-1]�����Ž�
-	  ����opt[i][j]=	β�ַ�����ʱ�����ʱopt[i][j]=opt[i-1][j-1] 
-	  	min{opt[i-1][j]		Aĩβɾ��һ���ַ� 
-	  		,opt[i][j-1]	Aĩβ����һ���ַ� 
-			,opt[i-1][j-1]} Aĩβ�ı�һ���ַ�
-	   ���о��ǳ�ʼ����
+编辑距离问题
+分析：此题不太好想DP，但是可能会想到最长公共子序列，
+	  此题的转移方程和LCS就很像，
+	  opt[i][j]表示A[0..i-1]转换成B[0..j-1]的最优解
+	  则有opt[i][j]=	尾字符不等时（相等时opt[i][j]=opt[i-1][j-1] 
+	  	min{opt[i-1][j]		A末尾删除一个字符 
+	  		,opt[i][j-1]	A末尾增加一个字符 
+			,opt[i-1][j-1]} A末尾改变一个字符
+	   还有就是初始化了
 		opt[i=1..strlen(A)][0]=i;
 		opt[0][i=1..strlen(B)]=i;
-		������A��ת�մ�ΪA�����ȣ��մ�תB��ΪB������ 
+		意义是A串转空串为A串长度，空串转B串为B串长度 
 */
 #include<iostream>
 #include<algorithm>

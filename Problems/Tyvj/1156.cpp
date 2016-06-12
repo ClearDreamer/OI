@@ -1,6 +1,6 @@
 /*
-°¢´ïÂí¾ØÕó
-·ÖÎö£º²»ÄÑ£¬µ«ÊÇlong long¸ÕºÃ´æ²»ÏÂ¡£¡£¡£ 
+é˜¿è¾¾é©¬çŸ©é˜µ
+åˆ†æžï¼šä¸éš¾ï¼Œä½†æ˜¯long longåˆšå¥½å­˜ä¸ä¸‹ã€‚ã€‚ã€‚ 
 */
 #include<iostream>
 #include<cstdio>

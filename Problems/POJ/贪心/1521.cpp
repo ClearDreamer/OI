@@ -1,6 +1,6 @@
 /*
 Entropy
-·ÖÎö£º¹þ·òÂü±àÂë£¬µ«Ã»±ØÒªÊµ¼Ê½¨Á¢Ê÷£¬ÀûÓÃÆäÐÔÖÊ£¬ÓÅÏÈ¶ÓÁÐ¼´¿É 
+åˆ†æžï¼šå“ˆå¤«æ›¼ç¼–ç ï¼Œä½†æ²¡å¿…è¦å®žé™…å»ºç«‹æ ‘ï¼Œåˆ©ç”¨å…¶æ€§è´¨ï¼Œä¼˜å…ˆé˜Ÿåˆ—å³å¯ 
 */
 #include<iostream>
 #include<string>
@@ -43,7 +43,7 @@ int solve(){
 		int t=q.top();q.pop();
 		if(q.empty())break;
 		int e=q.top();q.pop();
-		ans+=t+e;//ÕâÀïºÜ¹Ø¼ü£¬ÒªºÃºÃÀí½â£º±àÂë³¤¶ÈºÍÆäÔÚÊ÷ÖÐµÄ²ãÊýÏà¹Ø 
+		ans+=t+e;//è¿™é‡Œå¾ˆå…³é”®ï¼Œè¦å¥½å¥½ç†è§£ï¼šç¼–ç é•¿åº¦å’Œå…¶åœ¨æ ‘ä¸­çš„å±‚æ•°ç›¸å…³ 
 		//cout<<ans<<endl;
 		q.push(t+e);
 	}

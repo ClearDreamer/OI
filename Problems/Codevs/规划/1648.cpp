@@ -1,16 +1,16 @@
 /*
-����
-�������������Ȧ����ֱ��dp[i]=max(dp[i-1]+a[i],0) 
-	  ������Ȧ����ôά��һ����ǰ��͵������еĳ���cnt��
-	  cnt>=nʱ��Ҫ��ָ��ָ�����������n-i+1�������Ǹ�λ��Ҫ��ֵΪ0 
-	  ע�����ֱ��ö����㣬��ô�ᳬʱ��
+最大和
+分析：如果不是圈，则直接dp[i]=max(dp[i-1]+a[i],0) 
+	  由于是圈，那么维护一个当前求和递增序列的长度cnt，
+	  cnt>=n时，要将指针指向新区间起点n-i+1，并且那个位置要赋值为0 
+	  注意如果直接枚举起点，那么会超时：
 	  for(int i=1;i<=n;i++){
 		memset(dp,0,sizeof(dp));
 		for(int j=0;j<n;j++){
 			dp[i+j]=max(dp[i+j-1]+a[i+j],dp[i+j]);
 			ans=max(dp[i+j],ans);
 		}
-	} ��Ϊһ��������Ǵﲻ�����Ž�� 
+	} 因为一部分起点是达不到最优解的 
 */
 #include<iostream>
 #include<algorithm>

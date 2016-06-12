@@ -1,6 +1,6 @@
 /*
 [ONTAK2015]Zwi?zek Harcerstwa Bajtockiego
-分析：求lca= =，然后判一下就好了 
+鍒嗘瀽锛氭眰lca= =锛岀劧鍚庡垽涓�涓嬪氨濂戒簡 
 */
 #include<iostream>
 #include<cstdio>

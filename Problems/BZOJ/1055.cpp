@@ -1,7 +1,7 @@
 /*
-[HAOI2008]玩具取名
-分析：can[i][j][k]表示[i..j]能否变成字符k
-	  转移：can[i][j][k]|={can[i][p][k.a]&&can[p+1][j][k.b]} 
+[HAOI2008]鐜╁叿鍙栧悕
+鍒嗘瀽锛歝an[i][j][k]琛ㄧず[i..j]鑳藉惁鍙樻垚瀛楃k
+	  杞Щ锛歝an[i][j][k]|={can[i][p][k.a]&&can[p+1][j][k.b]} 
 */
 #include<iostream>
 #include<cstdio>

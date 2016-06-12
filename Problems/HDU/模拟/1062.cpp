@@ -1,7 +1,7 @@
 /*
 Text Reverse
-ÌâÒâ£ºµ¥´Ê·­×ª
-·ÖÎö£º¶ÁÈëÊä³ö´¦Àí 
+é¢˜æ„ï¼šå•è¯ç¿»è½¬
+åˆ†æžï¼šè¯»å…¥è¾“å‡ºå¤„ç† 
 */
 #include<iostream>
 #include<algorithm>

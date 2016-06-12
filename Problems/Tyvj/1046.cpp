@@ -1,9 +1,9 @@
 /*
 Blast
-·ÖÎö£ºDP£¬opt[i][j]±íÊ¾aµÄÇ°i¸ö£¬bµÄÇ°j¸öµÄ×î¶Ì¾àÀë
-		ÔòÓÐopt[i][0]=i*k,opt[0][i]=i*k,
+åˆ†æžï¼šDPï¼Œopt[i][j]è¡¨ç¤ºaçš„å‰iä¸ªï¼Œbçš„å‰jä¸ªçš„æœ€çŸ­è·ç¦»
+		åˆ™æœ‰opt[i][0]=i*k,opt[0][i]=i*k,
 		opt[i][j]=min{opt[i-1][j]+k,opt[i][j-1]+k,opt[i-1][j-1]+abs(a[i]-b[j])} 
-		ÈýÖÖ¾ö²ß£º		b·ÅÒ»¸ö¿Õ¸ñ a·ÅÒ»¸ö¿Õ¸ñ		a,b¶¼²»·Å¿Õ¸ñ 
+		ä¸‰ç§å†³ç­–ï¼š		bæ”¾ä¸€ä¸ªç©ºæ ¼ aæ”¾ä¸€ä¸ªç©ºæ ¼		a,béƒ½ä¸æ”¾ç©ºæ ¼ 
 */
 #include<iostream>
 #include<algorithm>

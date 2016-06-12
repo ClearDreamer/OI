@@ -1,6 +1,6 @@
 /*
 [Usaco2005 qua]Who's in the Middle
-分析：中位数，注意nth_element(a+1,a+index,a+n+1)，第二个不要+1 
+鍒嗘瀽锛氫腑浣嶆暟锛屾敞鎰弉th_element(a+1,a+index,a+n+1)锛岀浜屼釜涓嶈+1 
 */
 #include<iostream>
 #include<cstdio>

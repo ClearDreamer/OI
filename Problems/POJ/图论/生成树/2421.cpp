@@ -1,7 +1,7 @@
 /*
 Constructing Roads
-���⣺��n����ׯ�����Ϊ1 ��2 ��3 ������n  Ӧ�ý����·ʹ���ǻ���ɴ��һЩ���Ѿ�������
-������MST 
+题意：有n个村庄，编号为1 ，2 ，3 ，，，n  应该建造道路使他们互相可达，有一些边已经建立了
+分析：MST 
 */
 #include<iostream>
 #include<cstring> 

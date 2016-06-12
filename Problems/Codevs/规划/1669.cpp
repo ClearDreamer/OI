@@ -1,6 +1,6 @@
 /*
-运输装备
-分析：两个限制条件的零一背包DP 
+杩愯緭瑁呭
+鍒嗘瀽锛氫袱涓檺鍒舵潯浠剁殑闆朵竴鑳屽寘DP 
 */
 #include<iostream>
 using namespace std;

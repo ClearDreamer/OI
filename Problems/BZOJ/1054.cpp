@@ -1,6 +1,6 @@
 /*
-[HAOI2008]ÒÆ¶¯Íæ¾ß
-·ÖÎö£ºBfs 
+[HAOI2008]ç§»åŠ¨ç©å…·
+åˆ†æï¼šBfs 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
 Terrible Sets
-ÌâÒâ£º×î´óÁ¬Ğø¾ØĞÎÃæ»ı 
+é¢˜æ„ï¼šæœ€å¤§è¿ç»­çŸ©å½¢é¢ç§¯ 
 */
 #include<iostream>
 #include<cstdio>

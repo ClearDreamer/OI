@@ -1,5 +1,5 @@
 /*
-[NOIP1998P1]ÇÉÃîÌîÊı
+[NOIP1998P1]å·§å¦™å¡«æ•°
 */
 #include<iostream>
 #include<cstdio>

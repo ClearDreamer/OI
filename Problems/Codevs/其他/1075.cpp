@@ -1,6 +1,6 @@
 /*
-明明的随机数
-分析：桶排序即可 
+鏄庢槑鐨勯殢鏈烘暟
+鍒嗘瀽锛氭《鎺掑簭鍗冲彲 
 */
 #include<iostream>
 #include<bitset>

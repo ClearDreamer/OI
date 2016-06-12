@@ -1,5 +1,5 @@
 /*
-多源最短路
+澶氭簮鏈�鐭矾
 */
 #include<iostream>
 #include<algorithm>

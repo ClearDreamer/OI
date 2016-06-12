@@ -1,5 +1,5 @@
 /*
-GPA¼ÆËã 
+GPAè®¡ç®— 
 */ 
 #include<iostream>
 #include<iomanip>
@@ -13,6 +13,6 @@ int main(){
 		total+=s;
 		sum+=s*t;
 	}
-	cout<<setprecision(2)<<setiosflags(ios::fixed)<<sum*1.0/total;//ÉèÖÃ³ÉÁ½Î»Ð¡Êý 
+	cout<<setprecision(2)<<setiosflags(ios::fixed)<<sum*1.0/total;//è®¾ç½®æˆä¸¤ä½å°æ•° 
 	return 0;
 } 

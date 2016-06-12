@@ -1,6 +1,6 @@
 /*
-[Usaco2005 Open] Muddy roads ÄàÅ¢µÄÂ·
-·ÖÎö£º°´×ó¶ËµãÅÅĞò£¬È»ºóÖ±½Ó×ö 
+[Usaco2005 Open] Muddy roads æ³¥æ³çš„è·¯
+åˆ†æï¼šæŒ‰å·¦ç«¯ç‚¹æ’åºï¼Œç„¶åç›´æ¥åš 
 */
 #include<iostream>
 #include<cstdio>
@@ -22,7 +22,7 @@ int main(){
 	for(int i=1,now=0,cnt;i<=n;i++){
 		if(now>=s[i].r)continue;
 		now=max(s[i].l,now);
-		cnt=(s[i].r-now)/l+((s[i].r-now)%l!=0);//×¢ÒâÓàÏÂµÄ²¿·Ö 
+		cnt=(s[i].r-now)/l+((s[i].r-now)%l!=0);//æ³¨æ„ä½™ä¸‹çš„éƒ¨åˆ† 
 		ans+=cnt;
 		now+=cnt*l;
 	}

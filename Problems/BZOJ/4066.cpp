@@ -1,7 +1,7 @@
 /*
-简单题
-分析：强制在线就用kdtree来维护T T
-		常数太丑会T，那就每插入若干次重构整棵树 
+绠�鍗曢
+鍒嗘瀽锛氬己鍒跺湪绾垮氨鐢╧dtree鏉ョ淮鎶 T
+		甯告暟澶笐浼歍锛岄偅灏辨瘡鎻掑叆鑻ュ共娆￠噸鏋勬暣妫垫爲 
 */ 
 #include<iostream>
 #include<algorithm>

@@ -1,6 +1,6 @@
 /*
-ËºÓÊÆ±
-·ÖÎö£ººÃÏñÊÇì³²¨ÄÇÆõÊýÁÐ£¬µ«Êý¾ÝÓëÌâÒâ²»·û£¬AC²»ÁË 
+æ’•é‚®ç¥¨
+åˆ†æžï¼šå¥½åƒæ˜¯æ–æ³¢é‚£å¥‘æ•°åˆ—ï¼Œä½†æ•°æ®ä¸Žé¢˜æ„ä¸ç¬¦ï¼ŒACä¸äº† 
 */
 #include<iostream>
 using namespace std;

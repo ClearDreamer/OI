@@ -1,7 +1,7 @@
 /*
-¹ýºÓ
-·ÖÎö£ºÓÉÓÚÂ·ºÜ³¤£¬Ê¯×ÓÈ´ºÜÉÙ£¬ÏÈÑ¹Ëõ£¬µ«Ñ¹ËõµÄÌõ¼þºÜ¹Ø¼ü£¬ÕâÀïÉè¶¨ÎªR=20
-	  ·½³ÌºÜºÃÐ´£¬µ«ÊÇ×¢ÒâÌØÅÐS=TµÄÇé¿ö 
+è¿‡æ²³
+åˆ†æžï¼šç”±äºŽè·¯å¾ˆé•¿ï¼ŒçŸ³å­å´å¾ˆå°‘ï¼Œå…ˆåŽ‹ç¼©ï¼Œä½†åŽ‹ç¼©çš„æ¡ä»¶å¾ˆå…³é”®ï¼Œè¿™é‡Œè®¾å®šä¸ºR=20
+	  æ–¹ç¨‹å¾ˆå¥½å†™ï¼Œä½†æ˜¯æ³¨æ„ç‰¹åˆ¤S=Tçš„æƒ…å†µ 
 */
 #include<iostream>
 #include<algorithm>
@@ -48,7 +48,7 @@ int dp(){
 	for(int i=0;i<=e+1;i++){
 		ans=min(opt[l+i],ans);
 	}
-	if(s==t){//Èç¹ûS==T£¬ansÎªÊ¯×Ó¾àÀëÊÇSµÄ±¶ÊýµÄ¸öÊý
+	if(s==t){//å¦‚æžœS==Tï¼Œansä¸ºçŸ³å­è·ç¦»æ˜¯Sçš„å€æ•°çš„ä¸ªæ•°
 		ans=0;for(int i=1;i<=m;i++)ans+=!(k[i]%s); 
 	}
 	return ans;

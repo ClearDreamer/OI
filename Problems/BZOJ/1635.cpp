@@ -1,9 +1,9 @@
 /*
-[Usaco2007 Jan]Tallest Cow ��ߵ�ţ
-�������е���˼���Ƚ����и߶���ΪH������һ����ϵ(a,b)��
-	  �ϸ�С�ڣ��൱�� ����(a,b)-1
-	  �������˵㣺ע��˵������ȣ������һ������
-	  �����������飬ʹ���������ΪO(1) 
+[Usaco2007 Jan]Tallest Cow 最高的牛
+分析：有点意思：先将所有高度置为H，对于一个关系(a,b)：
+	  严格小于：相当于 区间(a,b)-1
+	  对于两端点：注意端点可以相等，那相等一定更大。
+	  所以求差分数组，使得区间减降为O(1) 
 */
 #include<iostream>
 #include<cstdio>

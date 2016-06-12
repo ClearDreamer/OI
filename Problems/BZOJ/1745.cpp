@@ -1,7 +1,7 @@
 /*
-[Usaco2005 oct]Flying Right ���к���
-������̰�ġ���ĳ���������һЩ��ţ ����п���λ����������
-	  �����������Ŀ���복��Ŀ����Զ��ţҪ�� �Ͱ���ͷţ����ȥ����ţ.
+[Usaco2005 oct]Flying Right 飞行航班
+分析：贪心。到某个点如果有一些奶牛 如果有空座位就让它们上
+	  否则如果它的目标离车上目标最远的牛要近 就把那头牛踢下去换新牛.
 */
 #include<iostream>
 #include<vector>
@@ -24,14 +24,14 @@ int solve(vector<node> *t,int flag){
     int k=0,ans=0;
     while(!q.empty())q.pop();
     for(int i=1;i<=N;i++){
-        ans+=a[flag][i];//ɨ������ʱ���Ѿ�ɾ���˲����Ϸɻ��ģ���ʱ��a[flag][i]��ʾ��i�·ɻ��� 
+        ans+=a[flag][i];//扫到这里时，已经删除了不能上飞机的，此时的a[flag][i]表示在i下飞机的 
         k-=a[flag][i];
         for(int j=0;j<t[i].size();j++){
         	k+=t[i][j].w;
             q.push(t[i][j]);
         }
         while(k>C){
-            node tp=q.top();q.pop();//ȡ ��Զ�ģ�ɾ�� 
+            node tp=q.top();q.pop();//取 最远的，删除 
             if(k-C>=tp.w){
                 k-=tp.w;
                 a[flag][tp.v]-=tp.w;

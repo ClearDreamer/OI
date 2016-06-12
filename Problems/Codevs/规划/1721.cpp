@@ -1,9 +1,9 @@
 /*
-Æ½·½Êý
-·ÖÎö£º¸Õ¿ªÊ¼ÏëµÄ0*0¡£¡£¡£ÆäÊµ¾ÍDP¼ÆÊý£¬Éèopt[i][j]±íÊ¾ÊýiÓÃ1..jÕâÐ©ÊýµÄÆ½·½ºÍ×é³ÉµÄ·½°¸Êý£¬
-	  Ôò¿ÉµÃopt[i][j]=sum{opt[i-j^2][k]|0<=k<=j}opt[0][0]=1
-	  »òÕßopt[i][j]=sum{opt[i-j^2][k]|1<=k<=j}opt[i][1]=1;Á½ÖÖ¶¼ÊÔÒ»ÊÔ 
-	  ×îÖÕ½á¹û¼´sum{opt[n][k]|1<=k<=n(sqrt(n))} 
+å¹³æ–¹æ•°
+åˆ†æžï¼šåˆšå¼€å§‹æƒ³çš„0*0ã€‚ã€‚ã€‚å…¶å®žå°±DPè®¡æ•°ï¼Œè®¾opt[i][j]è¡¨ç¤ºæ•°iç”¨1..jè¿™äº›æ•°çš„å¹³æ–¹å’Œç»„æˆçš„æ–¹æ¡ˆæ•°ï¼Œ
+	  åˆ™å¯å¾—opt[i][j]=sum{opt[i-j^2][k]|0<=k<=j}opt[0][0]=1
+	  æˆ–è€…opt[i][j]=sum{opt[i-j^2][k]|1<=k<=j}opt[i][1]=1;ä¸¤ç§éƒ½è¯•ä¸€è¯• 
+	  æœ€ç»ˆç»“æžœå³sum{opt[n][k]|1<=k<=n(sqrt(n))} 
 */
 #include<iostream>
 #include<cmath>

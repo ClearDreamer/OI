@@ -1,7 +1,7 @@
 /*
-¿ìËÙ¸µÁ¢Ò¶Ö®¶ş
-·ÖÎö£ºÊı×é·¶Î§¼Ç×Å¿ª³É2^t>2*nµÄ×îĞ¡µÄ2^t
-		ÕâÀï°ÑBÊı×é·´¹ıÀ´£¬×îºóÊä³öans[n..2*n]¼´¿É 
+å¿«é€Ÿå‚…ç«‹å¶ä¹‹äºŒ
+åˆ†æï¼šæ•°ç»„èŒƒå›´è®°ç€å¼€æˆ2^t>2*nçš„æœ€å°çš„2^t
+		è¿™é‡ŒæŠŠBæ•°ç»„åè¿‡æ¥ï¼Œæœ€åè¾“å‡ºans[n..2*n]å³å¯ 
 */
 #include<iostream>
 #include<cstdio>
@@ -50,7 +50,7 @@ void FFT(complex *F,int bit,int op){
 }
 int n,ans[MAXN+3],len;
 int main(){
-	scanf("%d",&n);n--;len=n*2;//×¢ÒâÓĞn-- 
+	scanf("%d",&n);n--;len=n*2;//æ³¨æ„æœ‰n-- 
 	for(int i=0;i<=n;i++)scanf("%lf%lf",&A[i].a,&B[n-i].a);
 	while(1<<bit <= len)bit++;
 	w[0].a=1;w[1]=complex(cos(2.0*PI/(1<<bit)),sin(2.0*PI/(1<<bit)));

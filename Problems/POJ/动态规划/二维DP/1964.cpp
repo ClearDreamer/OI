@@ -1,7 +1,7 @@
 /*
 City Game
-���⣺����Ӿ���
-������ģ���⣬ע�����룬�����ж���ո� 
+题意：最大子矩阵
+分析：模板题，注意输入，可以有多个空格 
 */
 #include<cstdio>
 #include<cstring>

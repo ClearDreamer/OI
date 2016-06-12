@@ -1,7 +1,7 @@
 /*
-[SCOI2009]��ˢ��
-�������ȶ�ÿһ����һ��f[i][j]��dp�������һ�е�ǰi��Ϳ��j�ε�����ֵ��
-	  Ȼ��������֮����鱳���� 
+[SCOI2009]粉刷匠
+分析：先对每一行做一个f[i][j]的dp，求出这一行的前i个涂了j次的最优值，
+	  然后行与行之间分组背包。 
 */
 #include<iostream>
 #include<cstdio>

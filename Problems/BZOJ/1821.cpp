@@ -1,6 +1,6 @@
 /*
-[JSOI2010]Group ²¿Âä»®·Ö
-·ÖÎö£º×îÐ¡Éú³ÉÊ÷ £¬¾¡Á¿½«½üµÄ²¢µ½Ò»Æð 
+[JSOI2010]Group éƒ¨è½åˆ’åˆ†
+åˆ†æžï¼šæœ€å°ç”Ÿæˆæ ‘ ï¼Œå°½é‡å°†è¿‘çš„å¹¶åˆ°ä¸€èµ· 
 */
 #include<iostream>
 #include<cstdio>

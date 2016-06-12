@@ -1,5 +1,5 @@
 /*
-[Usaco2007 Dec]Building Roads ĞŞ½¨µÀÂ·
+[Usaco2007 Dec]Building Roads ä¿®å»ºé“è·¯
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-С��
-�������Ӵ�Сģ�� 
+小球
+分析：从大到小模拟 
 */
 #include<iostream>
 #include<algorithm>

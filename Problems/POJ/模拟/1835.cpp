@@ -1,6 +1,6 @@
 /*
-�Ա
-������ģ�� 
+宇航员
+分析：模拟 
 */
 #include<iostream>
 #include<cstdio>

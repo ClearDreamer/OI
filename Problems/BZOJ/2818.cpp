@@ -1,6 +1,6 @@
 /*
 Gcd
-·ÖÎö£ºbzoj2820µÄÈõ»¯°æ 
+åˆ†æžï¼šbzoj2820çš„å¼±åŒ–ç‰ˆ 
 */
 #include<iostream>
 #include<cstdio>

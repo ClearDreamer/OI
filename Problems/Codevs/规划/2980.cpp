@@ -1,6 +1,6 @@
 /*
-ÂòÃ±×Ó
-·ÖÎö£º´ËÌâ¿ÉÒÔÈÏÎªÊÇ×Ô¼ººÍ×Ô¼ºÆ¥ÅäµÄ×î³¤¹«¹²×ÓÐòÁÐ£¬×ÖµäÐòÒªÓÃstrcmp£¬²»ÄÜÖ±½Ó±È½Ï×Ö·ûÊý×é 
+ä¹°å¸½å­
+åˆ†æžï¼šæ­¤é¢˜å¯ä»¥è®¤ä¸ºæ˜¯è‡ªå·±å’Œè‡ªå·±åŒ¹é…çš„æœ€é•¿å…¬å…±å­åºåˆ—ï¼Œå­—å…¸åºè¦ç”¨strcmpï¼Œä¸èƒ½ç›´æŽ¥æ¯”è¾ƒå­—ç¬¦æ•°ç»„ 
 */
 #include<iostream>
 #include<algorithm>

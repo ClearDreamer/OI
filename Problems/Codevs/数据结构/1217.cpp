@@ -1,6 +1,6 @@
 /*
-½è½ÌÊÒ
-·ÖÎö£ºÏß¶ÎÊ÷ÊµÏÖ£¬»á³¬Ê±£¬Ò²¿ÉÒÔÓÅ»¯£¬ÄÜAC 
+å€Ÿæ•™å®¤
+åˆ†æžï¼šçº¿æ®µæ ‘å®žçŽ°ï¼Œä¼šè¶…æ—¶ï¼Œä¹Ÿå¯ä»¥ä¼˜åŒ–ï¼Œèƒ½AC 
 */
 #include<cstdio>
 #include<algorithm>

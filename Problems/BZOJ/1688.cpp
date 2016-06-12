@@ -1,6 +1,6 @@
 /*
-[Usaco2005 Open]Disease Manangement ¼²²¡¹ÜÀí
-·ÖÎö£º×´Ñ¹DP£¬×¢ÒâÊÇ¸ö01±³°ü 
+[Usaco2005 Open]Disease Manangement ç–¾ç—…ç®¡ç†
+åˆ†æï¼šçŠ¶å‹DPï¼Œæ³¨æ„æ˜¯ä¸ª01èƒŒåŒ… 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
 [POI2009]SLO
-分析：同BZOJ1697，更直接的置换问题：划分成循环来讨论 
+鍒嗘瀽锛氬悓BZOJ1697锛屾洿鐩存帴鐨勭疆鎹㈤棶棰橈細鍒掑垎鎴愬惊鐜潵璁ㄨ 
 */
 #include<iostream>
 #include<cstdio>

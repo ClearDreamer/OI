@@ -1,7 +1,7 @@
 /*
 Dungeon Master
-ÌâÒâ£ºÈıÎ¬ĞĞ×ß
-·ÖÎö£ºBFS 
+é¢˜æ„ï¼šä¸‰ç»´è¡Œèµ°
+åˆ†æï¼šBFS 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,9 +1,9 @@
 /*
-[ZJOI2009]¼ÙÆÚµÄËÞÉá
-·ÖÎö£º×î´óÁ÷£¬Ô´µãÏòËùÓÐÓÐ´²Î»µÄÁ¬±ß
-		ÐèÒª´²Î»µÄÏò»ãµãÁ¬±ß
-		Èç¹ûi¿ÉÒÔË¯jµÄ´²
-		iÏòj¡®Á¬±ß 
+[ZJOI2009]å‡æœŸçš„å®¿èˆ
+åˆ†æžï¼šæœ€å¤§æµï¼Œæºç‚¹å‘æ‰€æœ‰æœ‰åºŠä½çš„è¿žè¾¹
+		éœ€è¦åºŠä½çš„å‘æ±‡ç‚¹è¿žè¾¹
+		å¦‚æžœiå¯ä»¥ç¡jçš„åºŠ
+		iå‘jâ€˜è¿žè¾¹ 
 */
 #include<iostream>
 #include<algorithm>

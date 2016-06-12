@@ -1,6 +1,6 @@
 /*
-西行寺幽幽子
-分析：高精除 
+瑗胯瀵哄菇骞藉瓙
+鍒嗘瀽锛氶珮绮鹃櫎 
 */
 #include<iostream>
 using namespace std;

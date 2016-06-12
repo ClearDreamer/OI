@@ -1,7 +1,7 @@
 /*
 (Your)((Term)((Project)))
-ÌâÒâ£º¼ò»¯±í´ïÊ½
-·ÖÎö£ºÍ¦Âé·³£¬²»ÖªµÀ×Ô¼ºµÄ´úÂë´íÔÚÄÄ¡£¡£ 
+é¢˜æ„ï¼šç®€åŒ–è¡¨è¾¾å¼
+åˆ†æžï¼šæŒºéº»çƒ¦ï¼Œä¸çŸ¥é“è‡ªå·±çš„ä»£ç é”™åœ¨å“ªã€‚ã€‚ 
 */
 /*#include<iostream>
 #include<string>
@@ -66,28 +66,28 @@ int main(){
 	getchar();
 	while(t--){
 		cin.getline(s,256);
-		for(i=0,j=0;s[i]!='\0';i++){//³õ²½´¦Àí£¬ÏÈºöÂÔ£¨A£©ÕâÖÖÀàÐÍµÄÀ¨ºÅ 
+		for(i=0,j=0;s[i]!='\0';i++){//åˆæ­¥å¤„ç†ï¼Œå…ˆå¿½ç•¥ï¼ˆAï¼‰è¿™ç§ç±»åž‹çš„æ‹¬å· 
 			if(s[i]>='A'&&s[i]<='Z'||s[i]=='+'||s[i]=='-')result[j++]=s[i];
 			else{
 				switch(s[i]){
 					case '(':
-						if(j==0||result[j-1]!='-')sk.push('(');//Ö»ÒªÀ¨ºÅÇ°ÊÇ'+'»òÀ¨ÕûÌõÊ½£¬ºöÂÔ 
+						if(j==0||result[j-1]!='-')sk.push('(');//åªè¦æ‹¬å·å‰æ˜¯'+'æˆ–æ‹¬æ•´æ¡å¼ï¼Œå¿½ç•¥ 
 						else{
-							result[j++]='(';//À¨ºÅÇ°ÊÇ'-' £¬ÏÈ±£Áô£¬²¢×ö±ê¼Ç±£Áô')' 
+							result[j++]='(';//æ‹¬å·å‰æ˜¯'-' ï¼Œå…ˆä¿ç•™ï¼Œå¹¶åšæ ‡è®°ä¿ç•™')' 
 							sk.push('?');
 						}
 						break;
 					case ')':
-						if(sk.top()!='(')result[j++]=')';//ÓÐ±ê¼ÇµÄ±£Áô 
-						sk.pop();//ÍÂµôÇ°ÃæÑ¹ÈëµÄ'('»ò±ê¼Ç 
+						if(sk.top()!='(')result[j++]=')';//æœ‰æ ‡è®°çš„ä¿ç•™ 
+						sk.pop();//åæŽ‰å‰é¢åŽ‹å…¥çš„'('æˆ–æ ‡è®° 
 						break;
 				}
 			}
 		}
 		result[j]='\0';
-		for(i=0;i<j;i++){//µ¥¶À´¦Àí(A)ÕâÖÖÀàÐÍ 
+		for(i=0;i<j;i++){//å•ç‹¬å¤„ç†(A)è¿™ç§ç±»åž‹ 
 			if(result[i]!='*'){
-				if(result[i]=='('&&result[i+2]==')'){//×÷±ê¼Ç 
+				if(result[i]=='('&&result[i+2]==')'){//ä½œæ ‡è®° 
 					result[i+2]='*';continue;
 				}
 				cout<<result[i];

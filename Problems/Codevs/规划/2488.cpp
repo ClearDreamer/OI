@@ -1,8 +1,8 @@
 /*
-绿豆蛙的归宿
-分析：期望的公式：sigma{x*p(x)}，先拓扑排序，然后逆着做：
-	  opt[i]=sigma{p(i,j)*(opt[j]+w(i,j))|存在(i,j)} 
-	  但是这种方法编伪了，于是改成了记忆化搜索 
+缁胯眴铔欑殑褰掑
+鍒嗘瀽锛氭湡鏈涚殑鍏紡锛歴igma{x*p(x)}锛屽厛鎷撴墤鎺掑簭锛岀劧鍚庨�嗙潃鍋氾細
+	  opt[i]=sigma{p(i,j)*(opt[j]+w(i,j))|瀛樺湪(i,j)} 
+	  浣嗘槸杩欑鏂规硶缂栦吉浜嗭紝浜庢槸鏀规垚浜嗚蹇嗗寲鎼滅储 
 */ 
 #include<iostream>
 #include<vector>
@@ -75,7 +75,7 @@ int main(){
 	input();
 	//ntopo();
 	memset(opt,0,sizeof(opt));
-	opt[n]=1;//这样就方便初始化了，结果-1即可 
+	opt[n]=1;//杩欐牱灏辨柟渚垮垵濮嬪寲浜嗭紝缁撴灉-1鍗冲彲 
 	printf("%.2lf",dfs(1)-1);
 	return 0;
 }

@@ -1,7 +1,7 @@
 /*
 Contestants Division
-���⣺һ������ÿ���ڵ㶼��һ������Ȩֵ����������һ���ߣ��ֳ���������ʹ����������Ȩֵ��֮��ľ���ֵ��С������С֮�
-������dfsһ�飬�������ģ���Ҫ��һЩ 
+题意：一棵树，每个节点都有一个正的权值，将树剪断一条边，分成两棵树并使得两棵树的权值和之差的绝对值最小。求最小之差。
+分析：dfs一遍，类似重心，但要简单一些 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,7 +1,7 @@
 /*
 Uniform Generator
-ÌâÒâ£ºÅĞ¶ÏÒ»¸öËæ»úÊıÉú³É·½·¨ÊÇ·ñ¸ÅÂÊÆ½¾ù£¬¼ÆËã·½·¨ai=(ai-1 + step)%mod
-·ÖÎö£ºÄ£Äâ 
+é¢˜æ„ï¼šåˆ¤æ–­ä¸€ä¸ªéšæœºæ•°ç”Ÿæˆæ–¹æ³•æ˜¯å¦æ¦‚ç‡å¹³å‡ï¼Œè®¡ç®—æ–¹æ³•ai=(ai-1 + step)%mod
+åˆ†æï¼šæ¨¡æ‹Ÿ 
 */
 #include<iostream>  
 #include<cstdio>  
@@ -10,7 +10,7 @@ using namespace std;
 const int MAXN=100000;
 int random[MAXN+3],step,mod;
 bool check(){
-	random[0]=0;  //µÚÒ»¸öÊı×ÖÓÀÔ¶ÊÇ0   
+	random[0]=0;  //ç¬¬ä¸€ä¸ªæ•°å­—æ°¸è¿œæ˜¯0   
 	for(int i=1;i<=mod-1;i++)random[i]=(random[i-1]+step)%mod;  
 	sort(random,random+mod);  
 	for(int i=0;i<mod;i++)if(random[i]!=i)return false;

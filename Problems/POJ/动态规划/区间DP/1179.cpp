@@ -1,15 +1,15 @@
 /*
 Polygon
-���⣺һ��������n���㣬ÿ������֮����һ���ߣ��ߵ�Ȩֵ��һ���ַ���*��+��������ǰ��Ĺ�ϵ���㣻��ȥ����һ���ߣ�Ȼ��ϲ�ʣ�µ�n - 1���ߵ��ܹ�����õ������ֵ�� 
-���������˺ܾ��⣬������������ˣ�������ʵ�������������������棨���ӷ�����ע�⸺�����������ܸ��ţ�����ͬʱά����Сֵ 
-	  ״̬��maDP[i][j]��ʾ����[j,j+i-1]�����ֵ��ע������״̬��������ͬ��������������MOD����֮ǰ�Ķϻ����������ǲ���ôֱ���ˣ�����j���±�Ҫ��0��ʼ 
-	  ת�Ʒ��̣�
-	  	�ӷ�1��maDp[i][j] = max(maDp[i][j],maDp[k][j]+maDp[i-k][(k+j)%n]);
-	 	�ӷ�2��miDp[i][j] = min(miDp[i][j],miDp[k][j]+miDp[i-k][(k+j)%n]);
-		�˷�1��maDp[i][j] = max(maDp[i][j],
+题意：一个环中有n个点，每两个点之间有一条边，边的权值是一个字符（*，+）代表这前后的关系运算；求去掉任一条边，然后合并剩下的n - 1条边的能够计算得到的最大值； 
+分析：读了很久题，但还是理解错了，不过其实就是能量项链的升级版（含加法），注意负负得正，可能更优，所以同时维护最小值 
+	  状态：maDP[i][j]表示区间[j,j+i-1]的最大值，注意这里状态与以往不同，这样可以利用MOD代替之前的断环成链，但是不那么直观了，并且j的下标要从0开始 
+	  转移方程：
+	  	加法1：maDp[i][j] = max(maDp[i][j],maDp[k][j]+maDp[i-k][(k+j)%n]);
+	 	加法2：miDp[i][j] = min(miDp[i][j],miDp[k][j]+miDp[i-k][(k+j)%n]);
+		乘法1：maDp[i][j] = max(maDp[i][j],
     		                    maDp[k][j]*maDp[i-k][(k+j)%n],
                         	 	miDp[k][j]*miDp[i-k][(k+j)%n]);
-		�˷�2��miDp[i][j] = min(miDp[i][j],
+		乘法2：miDp[i][j] = min(miDp[i][j],
                         		maDp[k][j]*maDp[i-k][(k+j)%n],
                         		miDp[k][j]*miDp[i-k][(k+j)%n],
                         		maDp[k][j]*miDp[i-k][(k+j)%n],
@@ -24,8 +24,8 @@ Polygon
 using namespace std;
 const int INF=0x3f3f3f3f,MAXN=52;
 int miDp[MAXN][MAXN],maDp[MAXN][MAXN],n,ans; 
-char sym[MAXN];//��¼���� 
-vector<int> vec;//��¼�� 
+char sym[MAXN];//记录符号 
+vector<int> vec;//记录答案 
 int main(){
 	int num; 
     cin>>n;
@@ -33,11 +33,11 @@ int main(){
         cin>>sym[i]>>num;
         maDp[1][i]=miDp[1][i]=num;
     }
-    for(int i=2;i<=n;i++)//ö�����䳤�� 
-        for(int j=0;j<n;j++){//ö��������� 
+    for(int i=2;i<=n;i++)//枚举区间长度 
+        for(int j=0;j<n;j++){//枚举区间起点 
             maDp[i][j]=-INF;
             miDp[i][j]=INF;
-            for(int k=1;k<i;k++){//ö�ٻ��ֵ� 
+            for(int k=1;k<i;k++){//枚举划分点 
                 if(sym[(k+j)%n]=='t'){
                     maDp[i][j]=max(maDp[i][j],
                         maDp[k][j]+maDp[i-k][(k+j)%n]);
@@ -55,7 +55,7 @@ int main(){
     ans=-INF;
     for(int i=0;i<n;i++){
         if(maDp[n][i]==ans)vec.push_back(i);
-		else if(maDp[n][i]>ans){//���ɴ𰸣������ж��λ�ö��ܵõ����Ž� 
+		else if(maDp[n][i]>ans){//生成答案，可能有多个位置都能得到最优解 
             ans=maDp[n][i];
             vec.clear();
             vec.push_back(i);

@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Mar]Mooo длеё╣д╦ХиЫ
-╥жнЖё╨а╫╠И╣╔╣Ву╩ 
+[Usaco2006 Mar]Mooo Е╔╤Г┴⌡Г └Ф╜▄Её╟
+Е┬├Ф·░О╪ Д╦╓И│█Е█∙Х╟┐Ф═┬ 
 */
 #include<iostream>
 #include<cstdio>

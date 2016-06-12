@@ -1,20 +1,20 @@
 /*
-[Noi2010]ÄÜÁ¿²É¼¯
-·ÖÎö£º×¢ÒâÒ»¸ö½áÂÛ£º¸ø¶¨Á½¸ö¸ñµã£¬ÎÊÕâÁ½¸ö¸ñµãÁ¬³ÉµÄÏß¶ÎÉÏÓÐ¶àÉÙ¸ö¸ñµã£¬ÊÇgcd(x1-x0,y1-y0)+1 £¨º¬Á½¶Ëµã£©
-	  ÄÇÃ´ÕâµÀÌâ¾ÍÊÇ£º
+[Noi2010]èƒ½é‡é‡‡é›†
+åˆ†æžï¼šæ³¨æ„ä¸€ä¸ªç»“è®ºï¼šç»™å®šä¸¤ä¸ªæ ¼ç‚¹ï¼Œé—®è¿™ä¸¤ä¸ªæ ¼ç‚¹è¿žæˆçš„çº¿æ®µä¸Šæœ‰å¤šå°‘ä¸ªæ ¼ç‚¹ï¼Œæ˜¯gcd(x1-x0,y1-y0)+1 ï¼ˆå«ä¸¤ç«¯ç‚¹ï¼‰
+	  é‚£ä¹ˆè¿™é“é¢˜å°±æ˜¯ï¼š
 	  sigma{x<=n,y<=m,2*(gcd(x,y)-1)+1}
 	  =sigma{x<=n,y<=m,2*gcd(x,y)-1}
-	  ½«2ºÍ-1Ìá³öÈ¥£º 
+	  å°†2å’Œ-1æå‡ºåŽ»ï¼š 
 	  S=sigma{sigma(d|x&d|y,phi[d])}
 	  =sigma{d<=n,phi[d]*(n/d)*(m/d)}
 	  ans= 2*S-n*m 
-	  ×¢ÒâÓÃlong long £¬¼°Ê±×ª»»£¬·ÀÖ¹Òç³ö
+	  æ³¨æ„ç”¨long long ï¼ŒåŠæ—¶è½¬æ¢ï¼Œé˜²æ­¢æº¢å‡º
 	  O(sqrt(n)) 
 	  
-	  ÁíÒ»ÖÖ·½·¨O(n*sqrt(n))
-	  Éèf[i]±íÊ¾gcd(x,y)==iµÄx,y¸öÊý(x<=n&&y<=m)
-	  Ôòf[i]=(n/i) * (m/i) -f[2i]-f[3i]-f[4i] (ÈÝ³âÔ­Àí) 
-	  i´Ó´óµ½Ð¡Ã¶¾Ù£¬¼ÆËãf[i]£¬ans+=f[i]*(2*(i-1)+1) 
+	  å¦ä¸€ç§æ–¹æ³•O(n*sqrt(n))
+	  è®¾f[i]è¡¨ç¤ºgcd(x,y)==içš„x,yä¸ªæ•°(x<=n&&y<=m)
+	  åˆ™f[i]=(n/i) * (m/i) -f[2i]-f[3i]-f[4i] (å®¹æ–¥åŽŸç†) 
+	  iä»Žå¤§åˆ°å°æžšä¸¾ï¼Œè®¡ç®—f[i]ï¼Œans+=f[i]*(2*(i-1)+1) 
 */
 /*
 #include<iostream>

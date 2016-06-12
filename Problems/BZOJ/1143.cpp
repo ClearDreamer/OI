@@ -1,6 +1,6 @@
 /*
-[CTSC2008]����river
-�������ȴ��ݱհ���Ȼ��ת��ѡ���ĵ㣬ʹ�û����ɴ���ö���ͼ���������(n-���ƥ��)�� 
+[CTSC2008]祭祀river
+分析：先传递闭包，然后转成选最多的点，使得互不可达，可用二分图最大点独立集(n-最大匹配)做 
 */
 #include<iostream>
 #include<cstdio>

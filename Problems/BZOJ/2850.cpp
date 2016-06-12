@@ -1,6 +1,6 @@
 /*
-ÇÉ¿ËÁ¦Íõ¹ú
-·ÖÎö£ºKDTree±©Á¦ 
+å·§å…‹åŠ›ç‹å›½
+åˆ†æï¼šKDTreeæš´åŠ› 
 */ 
 #include<iostream>
 #include<cstdio>
@@ -80,7 +80,7 @@ int main(){
 		scanf("%d%d%d",&temp[i][0],&temp[i][1],&temp[i].v);
 	root=kd.build(1,n,0);
 	while(m--){
-		scanf("%lld%lld%lld",&A,&B,&C);ans=0;kd.query(root);//µÚÒ»´Î½»£¬ÍüÊäÈëÓÃlldÁË£¬WAÁË 
+		scanf("%lld%lld%lld",&A,&B,&C);ans=0;kd.query(root);//ç¬¬ä¸€æ¬¡äº¤ï¼Œå¿˜è¾“å…¥ç”¨lldäº†ï¼ŒWAäº† 
 		printf("%lld\n",ans);
 	}
 	return 0;

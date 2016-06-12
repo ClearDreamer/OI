@@ -1,8 +1,8 @@
 /*
-[Usaco2005 nov]Asteroids ��ԽС����Ⱥ
-����������ͼ�����е�ֱ��ʾ�С��С�
-		����һ����(x,y) �� x��y���ߡ�
-		��С���Ǽ��Ǵ𰸡�
+[Usaco2005 nov]Asteroids 穿越小行星群
+分析：二分图，两列点分别表示行、列。
+		对于一个点(x,y) 由 x向y连边。
+		最小覆盖即是答案。
 */
 #include<iostream>
 #include<cstdio>

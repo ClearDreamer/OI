@@ -1,6 +1,6 @@
 /*
-[NOIP1998P3]2的幂次方
-分析：递归处理 
+[NOIP1998P3]2鐨勫箓娆℃柟
+鍒嗘瀽锛氶�掑綊澶勭悊 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,5 +1,5 @@
 /*
-╨г├┼═т╡─╩ў
+цабщЧихдЦчЪДцаС
 */
 #include<cstdio>
 #include<bitset>

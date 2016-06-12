@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Oct]Another Cow Number Game ÄÌÅ£µÄÊı×ÖÓÎÏ·
-·ÖÎö£ºÖ±½Ó×ö£¬¼Ó¸ö¼ÇÒä»¯·´¶ø¸üÂı 
+[Usaco2006 Oct]Another Cow Number Game å¥¶ç‰›çš„æ•°å­—æ¸¸æˆ
+åˆ†æï¼šç›´æ¥åšï¼ŒåŠ ä¸ªè®°å¿†åŒ–åè€Œæ›´æ…¢ 
 */
 #include<iostream>
 #include<cstdio>

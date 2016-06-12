@@ -1,8 +1,8 @@
 /*
-[Zjoi2006]trouble �ʵ۵ķ���
-���������ִ𰸣�
-	 	��ǰ�����Ƴ�ÿ��������/����м����͵�һ������ͬ��ѫ��
-		Ȼ�����һ�������Ƿ���0���� 
+[Zjoi2006]trouble 皇帝的烦恼
+分析：二分答案，
+	 	从前往后推出每个人最少/最多有几个和第一个人相同的勋章
+		然后看最后一个最少是否是0即可 
 */
 #include<iostream>
 #include<cstdio>

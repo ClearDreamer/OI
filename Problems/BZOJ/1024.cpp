@@ -1,6 +1,6 @@
 /*
-[SCOI2009]生日快乐
-分析：暴力搜索，一定要等分，枚举切哪里即可 
+[SCOI2009]鐢熸棩蹇箰
+鍒嗘瀽锛氭毚鍔涙悳绱紝涓�瀹氳绛夊垎锛屾灇涓惧垏鍝噷鍗冲彲 
 */
 #include<iostream>
 #include<cstdio>
@@ -13,8 +13,8 @@ double dfs(double x,double y,int n){
 	if(n==1)return x/y;
 	double ans=INF;
 	for(int i=1;i<n;i++){
-		ans=min(ans,max(dfs(x/n*i,y,i),dfs(x/n*(n-i),y,n-i)));//切x 
-		ans=min(ans,max(dfs(x,y/n*i,i),dfs(x,y/n*(n-i),n-i)));//切y 
+		ans=min(ans,max(dfs(x/n*i,y,i),dfs(x/n*(n-i),y,n-i)));//鍒噚 
+		ans=min(ans,max(dfs(x,y/n*i,i),dfs(x,y/n*(n-i),n-i)));//鍒噛 
 	}
 	return ans;
 }

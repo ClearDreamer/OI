@@ -1,11 +1,11 @@
 /*
-[CQOI2009]danceÌøÎè
-·ÖÎö£º¶þ·Ö´ð°¸+ÍøÂçÁ÷ÅÐ¶Ï¿ÉÐÐ
-		ÏÈ°ÑÃ¿¸öÈËi²ð·Ö³ÉixºÍiyÁ½¸ö½Úµã£¬
-		ixÁ¬ÏòÏ²»¶µÄÈË£¬iyÁ¬Ïò²»Ï²»¶µÄÈË£¬ÈÝÁ¿Îª1£¨±ÈÈçÈç¹ûÄÐÉúiÓëÅ®Éúj»¥ÏàÏ²»¶£¬ÔòÓÉixÁ¬Ïòjx£¬Èç¹ûÄÐÉúiÓëÅ®Éúj»¥Ïà²»Ï²»¶£¬ÔòÓÉiyÁ¬Ïòjy£©£¬
-		ÔÙ½«Ã¿¸öÄÐÉúÄÐÉúixÁ¬Ïòiy£¬ÈÝÁ¿Îªk£»Ã¿¸öÅ®ÉúiyÁ¬Ïòix£¬ÈÝÁ¿Îªk¡£
-		ÓÉÔ´µãÏòÃ¿¸öÄÐÉúµÄx½ÚµãÁ¬ÉÏÒ»Ìõ±ß£¬ÔÙÓÉÃ¿¸öÅ®ÉúµÄx½ÚµãÏò»ãµãÁ¬ÉÏÒ»Ìõ±ß£¬ÈÝÁ¿¾ùÎªa¡£
-		×îºó´ÓÐ¡µ½´óÃ¶¾Ùa£¬¼ÆËã×î´óÁ÷flow£¬Èô·¢ÏÖa*n>flow(²»ÂúÁ÷)£¬ÔòÍ£Ö¹Ã¶¾Ù£¬a-1¼´Îª´ð°¸¡£
+[CQOI2009]danceè·³èˆž
+åˆ†æžï¼šäºŒåˆ†ç­”æ¡ˆ+ç½‘ç»œæµåˆ¤æ–­å¯è¡Œ
+		å…ˆæŠŠæ¯ä¸ªäººiæ‹†åˆ†æˆixå’Œiyä¸¤ä¸ªèŠ‚ç‚¹ï¼Œ
+		ixè¿žå‘å–œæ¬¢çš„äººï¼Œiyè¿žå‘ä¸å–œæ¬¢çš„äººï¼Œå®¹é‡ä¸º1ï¼ˆæ¯”å¦‚å¦‚æžœç”·ç”Ÿiä¸Žå¥³ç”Ÿjäº’ç›¸å–œæ¬¢ï¼Œåˆ™ç”±ixè¿žå‘jxï¼Œå¦‚æžœç”·ç”Ÿiä¸Žå¥³ç”Ÿjäº’ç›¸ä¸å–œæ¬¢ï¼Œåˆ™ç”±iyè¿žå‘jyï¼‰ï¼Œ
+		å†å°†æ¯ä¸ªç”·ç”Ÿç”·ç”Ÿixè¿žå‘iyï¼Œå®¹é‡ä¸ºkï¼›æ¯ä¸ªå¥³ç”Ÿiyè¿žå‘ixï¼Œå®¹é‡ä¸ºkã€‚
+		ç”±æºç‚¹å‘æ¯ä¸ªç”·ç”Ÿçš„xèŠ‚ç‚¹è¿žä¸Šä¸€æ¡è¾¹ï¼Œå†ç”±æ¯ä¸ªå¥³ç”Ÿçš„xèŠ‚ç‚¹å‘æ±‡ç‚¹è¿žä¸Šä¸€æ¡è¾¹ï¼Œå®¹é‡å‡ä¸ºaã€‚
+		æœ€åŽä»Žå°åˆ°å¤§æžšä¸¾aï¼Œè®¡ç®—æœ€å¤§æµflowï¼Œè‹¥å‘çŽ°a*n>flow(ä¸æ»¡æµ)ï¼Œåˆ™åœæ­¢æžšä¸¾ï¼Œa-1å³ä¸ºç­”æ¡ˆã€‚
 */
 #include<iostream>
 #include<cstdio>

@@ -1,5 +1,5 @@
 /*
-�Թ�
+迷宫
 */
 #include<cstdio>
 #include<cstring>

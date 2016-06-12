@@ -1,8 +1,8 @@
 /*
 Parity game
-���⣺һ����0,1��ɵ����ִ�~~����������һ���ˣ���iλ����jλ��1�ĸ���Ϊ��������ż����һ��������㼸������������Ҫ���ж�ǰk������˻ش�Ķ�����ȷ�ģ�����k+1�飬�����˵���Ǵ��ģ�Ҫ��������k��Ҫ������˻ش�Ķ�����ȷ�ģ����������
-������������������ģ���΢ת��һ�¡�[l,r]��1���������Ա�ʾΪsum[r]-sum[l-1]������ĿֻҪ������ż��Ҳ��ȷ����sum[r]��sum[l-1]��ż�Ƿ���ͬ
-		Ȩֵ���鼯��д��Ҫע�⣬����Ҫ��ɢ�� 
+题意：一个由0,1组成的数字串~~，现在你问一个人，第i位到第j位的1的个数为奇数还是偶数。一共会告诉你几组这样的数，要你判断前k组这个人回答的都是正确的，到第k+1组，这个人说的是错的，要你输出这个k，要是这个人回答的都是正确的，则输出组数
+分析：对于这种区间的，稍微转化一下。[l,r]中1个个数可以表示为sum[r]-sum[l-1]，而题目只要求是奇偶，也就确定了sum[r]与sum[l-1]奇偶是否相同
+		权值并查集的写法要注意，并且要离散化 
 */
 #include<iostream>
 #include<cstdio>
@@ -23,7 +23,7 @@ struct uniset{
 		return fa[x];
 	}
 	bool same(int a,int b){return find(a)==find(b);}
-	void unions(int a,int b,int d){//d=0��ʾ����������ͬ��1��ʾ��ͬ 
+	void unions(int a,int b,int d){//d=0表示这两个点相同，1表示不同 
 		int pa=find(a),pb=find(b);
 		if(pa!=pb)fa[pa]=pb,v[pa]=v[a]^v[b]^d;
 	}

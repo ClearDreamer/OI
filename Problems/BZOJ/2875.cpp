@@ -1,7 +1,7 @@
 /*
-[Noi2012]Ëæ»úÊýÉú³ÉÆ÷
-·ÖÎö£º¸øX0,¼ÆËãXn£¬Xn+1=(a*Xn+c)mod m 
-		¿ìËÙÃÝÓÅ»¯¾ØÕó³Ë+¿ìËÙ¼Ó·À±¬longlong 
+[Noi2012]éšæœºæ•°ç”Ÿæˆå™¨
+åˆ†æžï¼šç»™X0,è®¡ç®—Xnï¼ŒXn+1=(a*Xn+c)mod m 
+		å¿«é€Ÿå¹‚ä¼˜åŒ–çŸ©é˜µä¹˜+å¿«é€ŸåŠ é˜²çˆ†longlong 
 */
 #include<iostream>
 #include<cstdio>

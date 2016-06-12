@@ -1,7 +1,7 @@
 /*
-CarµÄÂÃÐÐÂ·Ïß
-·ÖÎö£ºÊ×ÏÈÈçºÎÓÉÈý¸öµãÈ·¶¨µÚËÄ¸öµã£ºÕÒµ½Ö±½ÇµÄµã£¬¿ÉÒÔ¹´¹É¶¨Àí£¬»òÕßÏòÁ¿µã»ý£¬È»ºó¾Í¿ÉÒÔÍÆ³ö¹«Ê½ÁË£ºÁî(x0,y0)ÎªÖ±½Ç¶¥µã×ø±ê£¬x=x1+x2-x0. y=y1+y2-y0¡£
-		µÚ¶þ¸öÎÊÌâ£º±©Á¦½¨Í¼£¬×î¶ÌÂ·£¬×î¶ÌÂ·¿ÉÒÔËÄ±édijkstra£¬Ò²¿ÉÒÔ¼òµ¥Floyd£¬400^3»ù±¾ÄÜ¹ý£¬ÁíÍâ¶ÑÓÅ»¯µÄdijkstra²¢²»Ò»¶¨¿ì£¬ÆäÐ§ÂÊÊÇMlogN£¬´ËÌâÖÐ»ù±¾ÉÏÊÇÍêÈ«Í¼£¬ËùÒÔM½Ó½üN^2£¬²¢²»ÓÅ£¬ÆÓËØdijkstra=O(N^2)
+Carçš„æ—…è¡Œè·¯çº¿
+åˆ†æžï¼šé¦–å…ˆå¦‚ä½•ç”±ä¸‰ä¸ªç‚¹ç¡®å®šç¬¬å››ä¸ªç‚¹ï¼šæ‰¾åˆ°ç›´è§’çš„ç‚¹ï¼Œå¯ä»¥å‹¾è‚¡å®šç†ï¼Œæˆ–è€…å‘é‡ç‚¹ç§¯ï¼Œç„¶åŽå°±å¯ä»¥æŽ¨å‡ºå…¬å¼äº†ï¼šä»¤(x0,y0)ä¸ºç›´è§’é¡¶ç‚¹åæ ‡ï¼Œx=x1+x2-x0. y=y1+y2-y0ã€‚
+		ç¬¬äºŒä¸ªé—®é¢˜ï¼šæš´åŠ›å»ºå›¾ï¼Œæœ€çŸ­è·¯ï¼Œæœ€çŸ­è·¯å¯ä»¥å››édijkstraï¼Œä¹Ÿå¯ä»¥ç®€å•Floydï¼Œ400^3åŸºæœ¬èƒ½è¿‡ï¼Œå¦å¤–å †ä¼˜åŒ–çš„dijkstraå¹¶ä¸ä¸€å®šå¿«ï¼Œå…¶æ•ˆçŽ‡æ˜¯MlogNï¼Œæ­¤é¢˜ä¸­åŸºæœ¬ä¸Šæ˜¯å®Œå…¨å›¾ï¼Œæ‰€ä»¥MæŽ¥è¿‘N^2ï¼Œå¹¶ä¸ä¼˜ï¼Œæœ´ç´ dijkstra=O(N^2)
 */
 #include<cmath>
 #include<iostream>

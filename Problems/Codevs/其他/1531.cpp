@@ -1,6 +1,6 @@
 /*
-山峰
-分析：维护递减的单调栈 
+灞卞嘲
+鍒嗘瀽锛氱淮鎶ら�掑噺鐨勫崟璋冩爤 
 */ 
 #include<iostream>
 #include<stack>

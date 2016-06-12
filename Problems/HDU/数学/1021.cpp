@@ -1,7 +1,7 @@
 /*
 Fibonacci Again
-题意：定义一个新的斐波那契数列，求f(n)%3==0?
-分析：打出来之后，发现规律！！！ 
+棰樻剰锛氬畾涔変竴涓柊鐨勬枑娉㈤偅濂戞暟鍒楋紝姹俧(n)%3==0?
+鍒嗘瀽锛氭墦鍑烘潵涔嬪悗锛屽彂鐜拌寰嬶紒锛侊紒 
 */
 #include<iostream>
 using namespace std;

@@ -1,6 +1,6 @@
 /*
 [POI2006]Szk-Schools
-分析：费用流 
+鍒嗘瀽锛氳垂鐢ㄦ祦 
 */
 #include<iostream>
 #include<cstdio>

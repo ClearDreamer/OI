@@ -1,6 +1,6 @@
 /*
-社交网络
-分析：Floyd，其中加入最短路条数的记录，然后模拟计算那个式子即可 
+绀句氦缃戠粶
+鍒嗘瀽锛欶loyd锛屽叾涓姞鍏ユ渶鐭矾鏉℃暟鐨勮褰曪紝鐒跺悗妯℃嫙璁＄畻閭ｄ釜寮忓瓙鍗冲彲 
 */ 
 #include<iostream>
 #include<algorithm>

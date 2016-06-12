@@ -1,6 +1,6 @@
 /*
-[2010Beijing wc]¾ØÕó¾àÀë
-·ÖÎö£ºBFS 
+[2010Beijing wc]çŸ©é˜µè·ç¦»
+åˆ†æï¼šBFS 
 */
 #include<iostream>
 #include<algorithm>

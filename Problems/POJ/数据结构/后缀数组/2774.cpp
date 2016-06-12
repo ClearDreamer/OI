@@ -1,9 +1,9 @@
 /*
 Long Long Message
-ÌâÒâ£º×î³¤¹«¹²×Ö´®
-·ÖÎö£ºÖ»Òª½«´®A´®BºÏ²¢£¬²¢ÔÚ½Ó¿Ú´¦¼ÓÉÏÒ»¸öÌØÊâ×Ö·û£¨´®A´®BÖĞ¶¼Ã»ÓĞ¼´¿É£©È»ºóÅÜºó×ºÊı×é²¢¼ÆËãheight
-	  ×îºó¸üĞÂansµÄÊ±ºòĞèÒªÅĞ¶Ï sa[i]<len1&&sa[i-1]>len1||sa[i-1]<len1&&sa[i]>len1¼´¿É£¨±£Ö¤²»ÔÚÒ»¸ö´®Àï£© 
-	  heightÊı×é¼ÆËã´íÁË¡£¡£¡£ 
+é¢˜æ„ï¼šæœ€é•¿å…¬å…±å­—ä¸²
+åˆ†æï¼šåªè¦å°†ä¸²Aä¸²Båˆå¹¶ï¼Œå¹¶åœ¨æ¥å£å¤„åŠ ä¸Šä¸€ä¸ªç‰¹æ®Šå­—ç¬¦ï¼ˆä¸²Aä¸²Bä¸­éƒ½æ²¡æœ‰å³å¯ï¼‰ç„¶åè·‘åç¼€æ•°ç»„å¹¶è®¡ç®—height
+	  æœ€åæ›´æ–°ansçš„æ—¶å€™éœ€è¦åˆ¤æ–­ sa[i]<len1&&sa[i-1]>len1||sa[i-1]<len1&&sa[i]>len1å³å¯ï¼ˆä¿è¯ä¸åœ¨ä¸€ä¸ªä¸²é‡Œï¼‰ 
+	  heightæ•°ç»„è®¡ç®—é”™äº†ã€‚ã€‚ã€‚ 
 */ 
 #include<iostream>
 #include<algorithm>
@@ -61,7 +61,7 @@ int main(){
 	printf("%d\n",ans);
 	return 0;
 }
-/*void calheight(int *r,int n){            //  ÇóheightÊı×é
+/*void calheight(int *r,int n){            //  æ±‚heightæ•°ç»„
     int i,j,k=0;
     for(i=1;i<=n;i++) rank[sa[i]]=i;
     for(i=0;i<n;height[rank[i++]]=k)
@@ -73,7 +73,7 @@ int main(){
     scanf("%s",str);
     l1=strlen(str);
     for(k=i=0;i<l1;i++)num[k++]=str[i]-'a'+2;
-    num[k++]=1;                       //  Ïàµ±ÓÚÂÛÎÄÖĞµÄ'$'·Ö¸ô·û¡£
+    num[k++]=1;                       //  ç›¸å½“äºè®ºæ–‡ä¸­çš„'$'åˆ†éš”ç¬¦ã€‚
     scanf("%s",str);
     l2=strlen(str);
     for(i=0;i<l2;i++)num[k++]=str[i]-'a'+2;

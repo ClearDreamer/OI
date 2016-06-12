@@ -1,6 +1,6 @@
 /*
 [HAOI2015]T2
-·ÖÎö£ºÊ÷Á´ÆÊ·Ö 
+åˆ†æžï¼šæ ‘é“¾å‰–åˆ† 
 */
 #include<cmath>
 #include<cstdio>

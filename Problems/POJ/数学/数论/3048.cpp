@@ -1,6 +1,6 @@
 /*
 Max Factor
-ÌâÒâ£ºn¸öÊýÖÐ£¬ÕÒ¾ßÓÐ×î´óËØÊýÒò×ÓµÄÄÇ¸öÊý 
+é¢˜æ„ï¼šnä¸ªæ•°ä¸­ï¼Œæ‰¾å…·æœ‰æœ€å¤§ç´ æ•°å› å­çš„é‚£ä¸ªæ•° 
 */
 #include<cstdio>
 #include<algorithm>

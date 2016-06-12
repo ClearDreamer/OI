@@ -1,9 +1,9 @@
 /*
-³Ë·¨ÓÎÏ·
-·ÖÎö£ºÇø¼äDP£¬opt[i][j]=min{opt[i][k]+opt[k][j]+a[i]*a[k]*a[j]}
-	  ×¢Òâ3µã opt[i][k]+opt[k][j]ÊÇ°üº¬kµÄ£¬ÒòÎªÕâÁ½¸öÇø¼ä¾ùÃ»Ñ¡k£¬
-	  a[l]*a[i]*a[r]£¬¶ø²»ÊÇa[i-1]*a[i]*a[i+1]£¬ÒòÎªÕâÀïÒÑ¾­È¡Íêa[i-1]ºÍa[i+1]
-	  Çø¼ä×î¶Ì³¤¶ÈÎª3 
+ä¹˜æ³•æ¸¸æˆ
+åˆ†æï¼šåŒºé—´DPï¼Œopt[i][j]=min{opt[i][k]+opt[k][j]+a[i]*a[k]*a[j]}
+	  æ³¨æ„3ç‚¹ opt[i][k]+opt[k][j]æ˜¯åŒ…å«kçš„ï¼Œå› ä¸ºè¿™ä¸¤ä¸ªåŒºé—´å‡æ²¡é€‰kï¼Œ
+	  a[l]*a[i]*a[r]ï¼Œè€Œä¸æ˜¯a[i-1]*a[i]*a[i+1]ï¼Œå› ä¸ºè¿™é‡Œå·²ç»å–å®Œa[i-1]å’Œa[i+1]
+	  åŒºé—´æœ€çŸ­é•¿åº¦ä¸º3 
 */
 #include<iostream>
 #include<cstring>
@@ -11,7 +11,7 @@
 using namespace std;
 const int MAXN=100,INF=0x3f3f3f3f;
 int n,a[MAXN+3],opt[MAXN+3][MAXN+3];
-//¼ÇÒä»¯ËÑË÷ 
+//è®°å¿†åŒ–æœç´¢ 
 int dp(int l,int r){
 	if(r-l+1==2)return 0;
 	int &t=opt[l][r];
@@ -23,7 +23,7 @@ int dp(int l,int r){
 	}
 	return t;
 }
-//µİÍÆ 
+//é€’æ¨ 
 int dp(){
 	memset(opt,INF,sizeof(opt));
 	for(int i=1;i<=n;i++){

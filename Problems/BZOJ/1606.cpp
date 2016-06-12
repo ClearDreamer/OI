@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Dec]Hay For Sale ¹ºÂò¸É²İ
-·ÖÎö£º01±³°üDP 
+[Usaco2008 Dec]Hay For Sale è´­ä¹°å¹²è‰
+åˆ†æï¼š01èƒŒåŒ…DP 
 */
 #include<iostream>
 #include<algorithm>

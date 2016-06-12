@@ -1,6 +1,6 @@
 /*
 Is It A Tree?
-·ÖÎö£º¸Õ¿ªÊ¼ÏëÓÃÈë¶ÈÀ´ÅÐ¶Ï£¬µ«¾ÍÊÇWA¡£¡£¡£Ö»ºÃÓÃ²¢²é¼¯ÁË 
+åˆ†æžï¼šåˆšå¼€å§‹æƒ³ç”¨å…¥åº¦æ¥åˆ¤æ–­ï¼Œä½†å°±æ˜¯WAã€‚ã€‚ã€‚åªå¥½ç”¨å¹¶æŸ¥é›†äº† 
 */
 #include<iostream>
 #include<cstdio>

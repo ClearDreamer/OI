@@ -1,8 +1,8 @@
 /*
 sort
-ÌâÒâ£ºÈ¡N¸öÊýÖÐµÄÇ°M´ó
-·ÖÎö£ºÖ±½Ósort¡£¡£TLE
-	  ¼ÆÊýÅÅÐò 
+é¢˜æ„ï¼šå–Nä¸ªæ•°ä¸­çš„å‰Må¤§
+åˆ†æžï¼šç›´æŽ¥sortã€‚ã€‚TLE
+	  è®¡æ•°æŽ’åº 
 */
 #include<iostream>
 #include<cstring>

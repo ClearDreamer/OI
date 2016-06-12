@@ -1,7 +1,7 @@
 /*
-[ZJOI2007]������Ϸ
-������ͬ��ͬ�еĵ����۾������ٴα任��Ȼͬ�л�ͬ�У�������Ŀ��ת��Ϊ�ܲ����ҵ�n�����಻ͬ�л�ͬ�еĵ㡣��˵��ÿ���ҵ�һ�����ϵĵ�
-	  ����ͼƥ�� 
+[ZJOI2007]矩阵游戏
+分析：同行同列的点无论经过多少次变换仍然同行或同列，所以题目可转换为能不能找到n个互相不同行或同列的点。或说给每行找到一个列上的点
+	  二分图匹配 
 */
 #include<iostream>
 #include<cstdio>
@@ -13,7 +13,7 @@ int mp[MAXN+3][MAXN+3],match[MAXN+3],vis[MAXN+3],n;
 bool augment(int u){
 	for(int i=1;i<=n;i++){
 		if(vis[i] || mp[u][i]==0)continue;
-		vis[i]=1;//ע���������������vis[u]=1����������ĵ� 
+		vis[i]=1;//注意是在这里，而不是vis[u]=1，这是两侧的点 
 		if(match[i]==0 || augment(match[i])){match[i]=u;return true;}
 	}
 	return false;

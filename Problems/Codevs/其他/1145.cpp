@@ -1,6 +1,6 @@
 /*
-Hanoi双塔问题
-分析：通项公式是f(n)=2*(2^n-1)，可以看成是两个汉诺塔，由于n较大，用高精 
+Hanoi鍙屽闂
+鍒嗘瀽锛氶�氶」鍏紡鏄痜(n)=2*(2^n-1)锛屽彲浠ョ湅鎴愭槸涓や釜姹夎濉旓紝鐢变簬n杈冨ぇ锛岀敤楂樼簿 
 */
 #include<cstdio>
 #include<iostream>

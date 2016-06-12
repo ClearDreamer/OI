@@ -1,7 +1,7 @@
 /*
 mode
-��������ÿ�����ͺ���һ��������ͬ���������������Ҫ����������˳���n div 2�Σ���ô���ʣ�µľ��Ǵ𰸡�
-ע�⣺��Ҫ������ô��ͷ�ļ�����MLE 
+分析：把每个数和后面一个与它不同的数相抵消，由于要求的数出现了超过n div 2次，那么最后剩下的就是答案。
+注意：不要引用那么多头文件，会MLE 
 */
 #include<cstdio>
 using namespace std;

@@ -1,9 +1,9 @@
 /*
-·½¸ñÈ¡Êý 2
-·ÖÎö£ºÓÉÓÚÃ¿¸öÊýÖ»È¡Ò»´Î£¬ËùÒÔÓÃÍøÂçÁ÷£¬ÏÞÖÆÁ÷Á¿Îª1£¬
-	  µ«ÓÉÓÚÒ»¸öµã¿ÉÒÔ¾­¹ý¶à´Î£¬ËùÒÔ£¬¶ÔÃ¿¸öµã²ðµã³ÉAi,Bi
-	  È»ºóAi->BiÁ¬·ÑÓÃÎªµãÈ¨ÖµµÄÈÝÁ¿Îª1µÄ±ß£¬ÔÙÁ¬Ò»ÌõÈ¨ÖµÎª0£¬ÈÝÁ¿ÎÞÏÞµÄ±ßÀ´±£Ö¤ÁªÍ¨¡£
-	  Í¨¹ý×ÜÔ´×Ü»ãµãÏÞÖÆ×ÜÁ÷Á¿Îªk£¬×ö×î´ó·ÑÓÃ×î´óÁ÷¼´¿É 
+æ–¹æ ¼å–æ•° 2
+åˆ†æžï¼šç”±äºŽæ¯ä¸ªæ•°åªå–ä¸€æ¬¡ï¼Œæ‰€ä»¥ç”¨ç½‘ç»œæµï¼Œé™åˆ¶æµé‡ä¸º1ï¼Œ
+	  ä½†ç”±äºŽä¸€ä¸ªç‚¹å¯ä»¥ç»è¿‡å¤šæ¬¡ï¼Œæ‰€ä»¥ï¼Œå¯¹æ¯ä¸ªç‚¹æ‹†ç‚¹æˆAi,Bi
+	  ç„¶åŽAi->Biè¿žè´¹ç”¨ä¸ºç‚¹æƒå€¼çš„å®¹é‡ä¸º1çš„è¾¹ï¼Œå†è¿žä¸€æ¡æƒå€¼ä¸º0ï¼Œå®¹é‡æ— é™çš„è¾¹æ¥ä¿è¯è”é€šã€‚
+	  é€šè¿‡æ€»æºæ€»æ±‡ç‚¹é™åˆ¶æ€»æµé‡ä¸ºkï¼Œåšæœ€å¤§è´¹ç”¨æœ€å¤§æµå³å¯ 
 */ 
 #include<iostream>
 #include<queue>
@@ -83,7 +83,7 @@ int Ans(){
 	int ans=0;
 	for(int i=0;i<gr.es.size();i++){
 		edge &e=gr.es[i];
-		ans+=e.f*e.w;//¼ÓÒ»¾äif(e.f==1) 
+		ans+=e.f*e.w;//åŠ ä¸€å¥if(e.f==1) 
 	}
 	return ans;
 }
@@ -100,7 +100,7 @@ int main(){
 	}
 	
 	int s=n*n*3+1,t=s+1;
-	gr.n=t+1;//Ò»¶¨ÒªÉèÖÃºÃn 
+	gr.n=t+1;//ä¸€å®šè¦è®¾ç½®å¥½n 
 	for(int i=1;i<=n;i++){
 		for(int j=1;j<=n;j++){
 			gr.add(id(i,j,0),id(i,j,1),-1*a[i][j],1);
@@ -118,6 +118,6 @@ int main(){
 	augment(s,t);
 	int ans=Ans();
 	//ans+=a[1][1]+a[n][n];
-	cout<<ans/(-2);//×îºó»áµÃµ½Á½±¶µÄÖµ£¬ÕâÊÇÒòÎª·´Ïò±ßµÄÔ­Òò£¬¿ÉÒÔÔÚAnsº¯ÊýÖÐ¼ÓÒ»ÌõÅÐ¶Ï 
+	cout<<ans/(-2);//æœ€åŽä¼šå¾—åˆ°ä¸¤å€çš„å€¼ï¼Œè¿™æ˜¯å› ä¸ºåå‘è¾¹çš„åŽŸå› ï¼Œå¯ä»¥åœ¨Anså‡½æ•°ä¸­åŠ ä¸€æ¡åˆ¤æ–­ 
 	return 0;
 }

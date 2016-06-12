@@ -1,6 +1,6 @@
 /*
-ÇóÄæĞò¶Ô
-·ÖÎö£º¹éÅÅ+ (ans+=mid-i+1;)£¬×¢Òâ¼¸¸öÏ¸½Ú£¬ansÓÃint»á±¬µô 
+æ±‚é€†åºå¯¹
+åˆ†æï¼šå½’æ’+ (ans+=mid-i+1;)ï¼Œæ³¨æ„å‡ ä¸ªç»†èŠ‚ï¼Œansç”¨intä¼šçˆ†æ‰ 
 */
 #include<iostream>
 using namespace std;
@@ -10,12 +10,12 @@ long long ans=0;
 void merge(int l,int mid,int r){
 	int i=l,j=mid+1,cur=0;
 	while(i<=mid&&j<=r){
-		if(a[i]<=a[j]){//×¢ÒâÕâÀïÒªÓĞµÈºÅ£¬ÕâÒ²ºÜ¹Ø¼ü 
+		if(a[i]<=a[j]){//æ³¨æ„è¿™é‡Œè¦æœ‰ç­‰å·ï¼Œè¿™ä¹Ÿå¾ˆå…³é”® 
 			t[cur++]=a[i++];
 		}
 		else{
 			t[cur++]=a[j++];
-			ans+=mid-i+1;//ºËĞÄ 
+			ans+=mid-i+1;//æ ¸å¿ƒ 
 		}
 	}
 	while(i<=mid)t[cur++]=a[i++];

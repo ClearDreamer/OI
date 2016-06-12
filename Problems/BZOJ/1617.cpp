@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Mar]River Crossing¶ÉºÓÎÊÌâ
-·ÖÎö£ºDP£¬×¢ÒâÊÇwµÄÇ°×ººÍ 
+[Usaco2008 Mar]River Crossingæ¸¡æ²³é—®é¢˜
+åˆ†æï¼šDPï¼Œæ³¨æ„æ˜¯wçš„å‰ç¼€å’Œ 
 */
 #include<iostream>
 #include<cstdio>

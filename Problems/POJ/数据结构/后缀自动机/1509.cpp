@@ -1,9 +1,9 @@
 /*
 Glass Beads
-���⣺��һ���ַ�������С��ʾ�Ŀ�ʼ�±ꡣ
-��������ʵ��һ��O(N)���㷨ר�������������⣬����ʵ�ַǳ��򵥣�
-	  ������׺�Զ���ͬ���ܹ����������⡣���Ȱ�������ظ����Σ�Ȼ���ǰ����һһ���ַ����뵽��׺�Զ����У�
-	  ���Ӹ���ʼ���±������ĳ��Ȳ㼴�ɡ�
+题意：求一个字符串的最小表示的开始下标。
+分析：其实有一个O(N)的算法专门来解决这个问题，并且实现非常简单，
+	  不过后缀自动机同样能够解决这个问题。首先把这个串重复两次，然后从前往后一一将字符加入到后缀自动机中，
+	  最后从根开始向下遍历串的长度层即可。
 */
 #include<iostream>
 #include<algorithm>
@@ -76,14 +76,14 @@ int main(){
 	return 0;
 }
 /*
-����������С��ʾ��
+方法二：最小表示法
 #include<iostream>
 #include<cstring>
 #include<cstdlib>
 #include<cstdio>
 #include<algorithm>
 #define N 20200 
-//����Сѭ��ͬ������� 
+//求最小循环同构串起点 
 using namespace std;
 char str[N];
 int len;

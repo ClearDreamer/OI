@@ -1,6 +1,6 @@
 /*
-进制转换
-分析：理解题意是关键 
+杩涘埗杞崲
+鍒嗘瀽锛氱悊瑙ｉ鎰忔槸鍏抽敭 
 */
 #include<iostream>
 using namespace std;
@@ -10,7 +10,7 @@ void to(int n,int r){
 	int cur=MAXN+1;
 	while(n!=0){
 		w[--cur]=n%r;
-		if(w[cur]<0){//如果此位小于0，那么要补回一个r 
+		if(w[cur]<0){//濡傛灉姝や綅灏忎簬0锛岄偅涔堣琛ュ洖涓�涓猺 
 			w[cur]-=r;n=n/r+1;
 		}else n/=r;
 	}

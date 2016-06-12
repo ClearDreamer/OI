@@ -1,5 +1,5 @@
 /*
-求合数和
+姹傚悎鏁板拰
 */
 #include<iostream>
 using namespace std;

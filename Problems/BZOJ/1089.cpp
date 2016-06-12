@@ -1,7 +1,7 @@
 /*
-[SCOI2003]ÑÏ¸ñnÔªÊ÷
-·ÖÎö£ºf[i]±íÊ¾Éî¶È<=iµÄÑÏ¸ñnÔªÊ÷µÄÊýÁ¿£¬f[i]=f[i-1]^n+1 (1ÊÇ¿ÕÊ÷)
-	  ¸ß¾«¶È £¬²»Ñ¹Î»¾ÍÊÇÂý°¡,16ms vs 36ms 
+[SCOI2003]ä¸¥æ ¼nå…ƒæ ‘
+åˆ†æžï¼šf[i]è¡¨ç¤ºæ·±åº¦<=içš„ä¸¥æ ¼nå…ƒæ ‘çš„æ•°é‡ï¼Œf[i]=f[i-1]^n+1 (1æ˜¯ç©ºæ ‘)
+	  é«˜ç²¾åº¦ ï¼Œä¸åŽ‹ä½å°±æ˜¯æ…¢å•Š,16ms vs 36ms 
 */
 #include<iostream>
 #include<cstdio>

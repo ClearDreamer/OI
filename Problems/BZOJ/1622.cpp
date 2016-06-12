@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Open]Word Power Ãû×ÖµÄÄÜÁ¿
-·ÖÎö£º±©Á¦ 
+[Usaco2008 Open]Word Power åå­—çš„èƒ½é‡
+åˆ†æï¼šæš´åŠ› 
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Jan]The Grove ��ľ
-����������ͨ������һ������ȥһ�����ߣ�Ȼ����㴩������һ���ٻص�������С������ͬʱӦ������ֻ�ܴ����ߵ�һ��������һ�� 
+[Usaco2006 Jan]The Grove 树木
+分析：从连通块任意一点连出去一条射线，然后计算穿过射线一次再回到起点的最小步数，同时应该限制只能从射线的一端走向另一端 
 */
 #include<iostream>
 #include<cstdio>
@@ -21,7 +21,7 @@ void bfs(){
         for(int i=0;i<8;i++){
             int nowx=x+dx[i],nowy=y+dy[i];
             if(mp[nowx][nowy]||nowx<1||nowy<1||nowx>n||nowy>m)continue;
-            if(mark[x][y]&&nowy<=y)continue;//ֻ���һ�Σ���Ϊ��һ������ǿ�ƹ涨һ������ķ��� 
+            if(mark[x][y]&&nowy<=y)continue;//只跨过一次，因为是一个环，强制规定一个跨过的方向 
             if(mark[nowx][nowy]&&nowy>y){
                 if(d[1][nowx][nowy]==-1){
                     d[1][nowx][nowy]=d[0][x][y]+1;

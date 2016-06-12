@@ -1,7 +1,7 @@
 /*
 Catch That Cow
-ÌâÒâ£ºÒ»¸öÊýN£¬ÈýÖÖ²Ù×÷+1£¬-1£¬*2£¬ÎÊ×îÉÙ¶àÉÙ²½±äÎªK
-·ÖÎö£º×î¼òµ¥BFS 
+é¢˜æ„ï¼šä¸€ä¸ªæ•°Nï¼Œä¸‰ç§æ“ä½œ+1ï¼Œ-1ï¼Œ*2ï¼Œé—®æœ€å°‘å¤šå°‘æ­¥å˜ä¸ºK
+åˆ†æžï¼šæœ€ç®€å•BFS 
 */
 #include<queue>
 #include<algorithm>

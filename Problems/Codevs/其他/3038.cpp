@@ -1,5 +1,5 @@
 /*
-3n+1ÎÊÌâ
+3n+1é—®é¢˜
 */ 
 #include<iostream>
 using namespace std;

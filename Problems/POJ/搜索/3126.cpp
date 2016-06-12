@@ -1,7 +1,7 @@
 /*
 Prime Path
-ÌâÒâ£º¸øÁ½¸öËÄÎ»µÄËØÊýa£¬b£¬Ã¿´ÎÌæ»»aµÄÒ»¸öÊýÎ»£¬ÈÃa±äµ½b£¬µ«ÊÇÃ¿´ÎÌæ»»ÖÐËùÉú³ÉµÄÐÂËÄÎ»ÊýÒ²±ØÐëÊÇËØÊý¡£Çó×îÉÙÒª¶àÉÙ²½¡£
-·ÖÎö£ºÃ¶¾ÙÃ¿Ò»Î»£¬ÅÐ¶ÏËØÊý 
+é¢˜æ„ï¼šç»™ä¸¤ä¸ªå››ä½çš„ç´ æ•°aï¼Œbï¼Œæ¯æ¬¡æ›¿æ¢açš„ä¸€ä¸ªæ•°ä½ï¼Œè®©aå˜åˆ°bï¼Œä½†æ˜¯æ¯æ¬¡æ›¿æ¢ä¸­æ‰€ç”Ÿæˆçš„æ–°å››ä½æ•°ä¹Ÿå¿…é¡»æ˜¯ç´ æ•°ã€‚æ±‚æœ€å°‘è¦å¤šå°‘æ­¥ã€‚
+åˆ†æžï¼šæžšä¸¾æ¯ä¸€ä½ï¼Œåˆ¤æ–­ç´ æ•° 
 */
 #include<iostream>
 #include<algorithm>
@@ -29,13 +29,13 @@ int bfs(int s,int t){
     while(!q.empty()){
         number u=q.front();q.pop();
         if(u.num==t)return u.step;
-        for(int i=3;i>=0;i--){//´Ó×î¸ßÎ»¿ªÊ¼
+        for(int i=3;i>=0;i--){//ä»Žæœ€é«˜ä½å¼€å§‹
             double p=(double)pow((double)10,(int)i);
             int x=(u.num/(int)p)%10;
             for(int j=0;j<10;j++){
-                if(i==3&&j==0)continue;//×î¸ßÎ»²»ÄÜÎª0
-                int y=u.num+(j-x)*p;//ÅÐ¶ÏÏÂÒ»¸öÊý
-                if(!vis[y]&&isprime(y)){//Èç¹ûÃ»ÓÐËÑË÷¹ýÇÒÊÇËØÊý
+                if(i==3&&j==0)continue;//æœ€é«˜ä½ä¸èƒ½ä¸º0
+                int y=u.num+(j-x)*p;//åˆ¤æ–­ä¸‹ä¸€ä¸ªæ•°
+                if(!vis[y]&&isprime(y)){//å¦‚æžœæ²¡æœ‰æœç´¢è¿‡ä¸”æ˜¯ç´ æ•°
                     vis[y]=1;
                     q.push(number(y,u.step+1));
                 }

@@ -1,7 +1,7 @@
 /*
 [HAOI2011]Problem b
-�������������ZAP(bzoj1101)��ǿ���棬��һ���ݳ�ԭ��������ԭ������ⷽʽ����
-	  ע��ȡֵ��a,b,c,d�������ݳ�ʱҪ(a-1)/k,(c-1)/k 
+分析：这道题是ZAP(bzoj1101)的强化版，用一下容斥原理，利用原来的求解方式即可
+	  注意取值含a,b,c,d，所以容斥时要(a-1)/k,(c-1)/k 
 */
 #include<iostream>
 #include<cstdio>
@@ -27,7 +27,7 @@ int solve(int n,int m){
 	if(n>m)swap(n,m);
 	int ans=0,pos;
 	for(int i=1;i<=n;i=pos+1){
-		pos=min(n/(n/i),m/(m/i));//ע��������� 
+		pos=min(n/(n/i),m/(m/i));//注意这里的求法 
 		ans+=(sum[pos]-sum[i-1])*(n/i)*(m/i);
 	}
 	return ans;

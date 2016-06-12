@@ -1,11 +1,11 @@
 /*
-û���˵�����
-��������ƽ����ά����Щ������ÿ����һ��ʵ��ֵ��ʾ���С
-		����һ����(a,b)��ʱ������a,b����֮ǰ���ֹ��������������ǿ���ֱ����ƽ�����ϲ��룬���ش�������ʵ��ֵ
-		���߶������������ֵ 
+没有人的算术
+分析：用平衡树维护这些数，给每个数一个实数值表示其大小
+		生成一个数(a,b)的时候，由于a,b都是之前出现过的数，所以我们可以直接在平衡树上插入，返回代表它的实数值
+		用线段树求区间最大值 
 	  http://pan.baidu.com/s/1B0JNo
 	  
-	  ��һ�ݴ��볬ʱTAT����֪��Ϊʲô 
+	  第一份代码超时TAT，不知道为什么 
 */
 #include<iostream>
 #include<algorithm>
@@ -59,7 +59,7 @@ struct sct{
 			x=++cnt;a[x]=mv;v[x]=val;sz[x]=1;return x;
 		}
 		int res;
-		if(val==v[x])return x;//�Ѿ�����
+		if(val==v[x])return x;//已经添加
 		else{
 			sz[x]++;
 			if(val>v[x])res=insert(rs[x],mv,rv,val);

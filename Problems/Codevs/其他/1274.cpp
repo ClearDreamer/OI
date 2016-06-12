@@ -1,5 +1,5 @@
 /*
-不好玩的罚金
+涓嶅ソ鐜╃殑缃氶噾
 */
 #include<iostream>
 using namespace std;

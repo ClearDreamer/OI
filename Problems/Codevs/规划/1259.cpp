@@ -1,6 +1,6 @@
 /*
-×î´óÕı·½ĞÎ×Ó¾ØÕó
-·ÖÎö£º×ªÒÆºÜºÃÏë£¬µ«Òª×¢ÒâÓĞÁ½ÖÖ×ªÒÆ·½Ïò 
+æœ€å¤§æ­£æ–¹å½¢å­çŸ©é˜µ
+åˆ†æï¼šè½¬ç§»å¾ˆå¥½æƒ³ï¼Œä½†è¦æ³¨æ„æœ‰ä¸¤ç§è½¬ç§»æ–¹å‘ 
 */
 #include<iostream>
 #include<cstring>
@@ -15,7 +15,7 @@ void input(){
 		for(int j=1;j<=m;j++)cin>>mp[i][j];
 	}
 }
-//ÅĞ¶ÏÒ»µãÊÇ·ñÂú×ãÒªÇó£¬len´«ÈëµÄÊÇÒª¼ì²éµÄÇø¼ä³¤¶È£¬²»º¬µ±Ç°µã£¬ËùÒÔ²»ÓÃ¡À1 
+//åˆ¤æ–­ä¸€ç‚¹æ˜¯å¦æ»¡è¶³è¦æ±‚ï¼Œlenä¼ å…¥çš„æ˜¯è¦æ£€æŸ¥çš„åŒºé—´é•¿åº¦ï¼Œä¸å«å½“å‰ç‚¹ï¼Œæ‰€ä»¥ä¸ç”¨Â±1 
 bool check(int x,int y,int len,bool isright){ 
 	for(int i=x-1;i>=x-len/*+1*/;i--){
 		if(mp[i][y])return false;
@@ -28,7 +28,7 @@ bool check(int x,int y,int len,bool isright){
 	}
 	return true;
 }
-int dpleft(){//DP×óÉÏ½Ç¾ØÕó
+int dpleft(){//DPå·¦ä¸Šè§’çŸ©é˜µ
 	int ans=0;
 	memset(opt,0,sizeof(opt));
 	for(int i=1;i<=n;i++){
@@ -42,7 +42,7 @@ int dpleft(){//DP×óÉÏ½Ç¾ØÕó
 	}
 	return ans;
 }
-int dpright(){//DPÓÒÉÏ½Ç¾ØÕó 
+int dpright(){//DPå³ä¸Šè§’çŸ©é˜µ 
 	int ans=0;
 	memset(opt,0,sizeof(opt));
 	for(int i=1;i<=n;i++){

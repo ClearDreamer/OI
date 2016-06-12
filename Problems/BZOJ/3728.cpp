@@ -1,7 +1,7 @@
 /*
 PA2014Final Zarowki
-������̰�ģ���p���������̰��ѡȡ�Ϸ���w�����ģ���p-w��������
-		δƥ���wʹ��k������k����ʣ�࣬�Ӷ���ȡk�����Ļ��������´� 
+分析：贪心，将p排序后，依次贪心选取合法的w中最大的，将p-w放入大根堆
+		未匹配的w使用k来买，若k还有剩余，从堆中取k个最大的换掉，更新答案 
 */
 #include<iostream>
 #include<cstring>

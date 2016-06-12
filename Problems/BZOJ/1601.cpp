@@ -1,6 +1,6 @@
 /*
-[Usaco2008 Oct]灌水
-分析：将点连向超级源，这样就转化成MST了，注意并查集合并时是pa[find(a)]=find(b); 
+[Usaco2008 Oct]鐏屾按
+鍒嗘瀽锛氬皢鐐硅繛鍚戣秴绾ф簮锛岃繖鏍峰氨杞寲鎴怣ST浜嗭紝娉ㄦ剰骞舵煡闆嗗悎骞舵椂鏄痯a[find(a)]=find(b); 
 */
 #include<iostream>
 #include<cstdio>

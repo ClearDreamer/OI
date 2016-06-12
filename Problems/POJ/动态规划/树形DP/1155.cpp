@@ -1,9 +1,9 @@
 /*
 TELE
-���⣺��һ������̨Ҫ�õ�������ת����Ŀ�����ֵ���������һ�������Ľڵ�Ϊ��תվ�����û������ڵ�ı��Ϊ1~N,����1Ϊ��վ��2~(N-M)Ϊ��תվ������վ����תվͳ��Ϊת��վ��N-M+1~NΪ�û������ӽ�Ŀ��һ���ط�������һ���ط���Ҫ���ã�ͬʱÿһ���û�Ը�����Ӧ��Ǯ�������ӽ�Ŀ�����ڵ������ǣ��ڵ���̨��������ǰ���£�Ҫ������������ж��ٸ��û����Կ������ӽ�Ŀ��
-˼·�������Ͻ��б�����������uΪ��������,������������j���û�����������Ǯ����ÿ��������ά����ǰ������С����ʵ���Ż���Ȼ��ö�ٹ���j���û�������k���ڴ�������
-	  ���̣�opt[u][j]=max(opt[u][j],opt[u][j-k]-w(e)+val[v]+opt[v][k]
-	  ע������Ϊ�û������ 
+题意：有一个电视台要用电视网络转播节目。这种电视网络是一树，树的节点为中转站或者用户。树节点的编号为1~N,其中1为总站，2~(N-M)为中转站，（总站和中转站统称为转发站）N-M+1~N为用户，电视节目从一个地方传到另一个地方都要费用，同时每一个用户愿意出相应的钱来付电视节目。现在的问题是，在电视台不亏本的前提下，要你求最多允许有多少个用户可以看到电视节目。
+思路：在树上进行背包，对于以u为根的子树,该子树供给给j个用户亏本的最少钱，对每个子树，维护当前的最大大小，以实现优化，然后枚举共计j个用户，其中k个在此子树内
+	  方程：opt[u][j]=max(opt[u][j],opt[u][j-k]-w(e)+val[v]+opt[v][k]
+	  注意子树为用户的情况 
 */
 #include<iostream>
 #include<algorithm>
@@ -33,11 +33,11 @@ int dp(int u,int fa){
 		edge &e=es[g[u][i]];
 		if(e.v==fa)continue;
 		now=dp(e.v,u);  
-        if(e.v>=n-m+1)++now,p=1;//���û� 
+        if(e.v>=n-m+1)++now,p=1;//是用户 
         else p=0;
         ans+=now;
-        for(int j=min(m,ans);j>=1;j--){//����ע��һ��Ҫj=min(m,ans),���Ӷ�ΪO(n^3)=>�ӽ�O(n^2)  
-            for(int k=min(j,now);k>=1;k--){//��uΪ��������������j���û�������k���û�����vΪ��������ʱ���������Ǯ  
+        for(int j=min(m,ans);j>=1;j--){//这里注意一定要j=min(m,ans),复杂度为O(n^3)=>接近O(n^2)  
+            for(int k=min(j,now);k>=1;k--){//以u为根的子树供给给j个用户并且有k个用户属于v为根的子树时亏损的最少钱  
                 opt[u][j]=max(opt[u][j],opt[u][j-k]+opt[e.v][k-p]-e.w+val[e.v]);  
             }
         }

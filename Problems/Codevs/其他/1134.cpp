@@ -1,6 +1,6 @@
 /*
-�̵�̺
-��������ȫ��������Ȼ��ֻ������Ŀ���йص� 
+铺地毯
+分析：先全读进来，然后只处理和目标有关的 
 */
 #include<iostream>
 using namespace std;

@@ -1,6 +1,6 @@
 /*
-F函数
-分析：直接写就好了，但有一个有趣的地方F(x)=91 (x<=100) 
+F鍑芥暟
+鍒嗘瀽锛氱洿鎺ュ啓灏卞ソ浜嗭紝浣嗘湁涓�涓湁瓒ｇ殑鍦版柟F(x)=91 (x<=100) 
 */
 #include<iostream>
 using namespace std;

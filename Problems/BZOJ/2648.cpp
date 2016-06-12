@@ -1,6 +1,6 @@
 /*
-SJY°ÚÆå×Ó
-·ÖÎö£ºK-DÊ÷£¬±©Á¦²åÈë£¬²»¹ıÃ»ÓĞ±À¡£¡£ 
+SJYæ‘†æ£‹å­
+åˆ†æï¼šK-Dæ ‘ï¼Œæš´åŠ›æ’å…¥ï¼Œä¸è¿‡æ²¡æœ‰å´©ã€‚ã€‚ 
 */
 #include<iostream>
 #include<cstring>
@@ -22,7 +22,7 @@ struct P{
 	P(int x=0,int y=0)
 		{l=0,r=0;d[0]=x,d[1]=y;}  
 }p[MAXN+3];
-bool operator<(const P &a,const P &b){//°´Ö¸¶¨Î¬ÅÅĞò 
+bool operator<(const P &a,const P &b){//æŒ‰æŒ‡å®šç»´æ’åº 
 	return a.d[D]<b.d[D];
 }
 inline int dis(P &a,P &b){
@@ -50,7 +50,7 @@ struct kdtree{
 		update(mid);
 		return mid;
 	}
-	int get(int k,P p){//È¡×î½ü 
+	int get(int k,P p){//å–æœ€è¿‘ 
 		int tmp=0;
 		for(int i=0;i<2;i++)
 			tmp+=max(0,t[k].mn[i]-p[i]);

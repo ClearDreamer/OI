@@ -1,6 +1,6 @@
 /*
-ÌÓÅÜµÄÀ­¶û·ò
-·ÖÎö£ºÏÈÂëµÄBFS£¬ÏÈÊÇ±¬ÄÚ´æ£¬ÓÖÊÇ³¬Ê±¼ä£¬ÓÚÊÇDFS+ÅÐÖØAC 
+é€ƒè·‘çš„æ‹‰å°”å¤«
+åˆ†æžï¼šå…ˆç çš„BFSï¼Œå…ˆæ˜¯çˆ†å†…å­˜ï¼Œåˆæ˜¯è¶…æ—¶é—´ï¼ŒäºŽæ˜¯DFS+åˆ¤é‡AC 
 */
 #include<iostream>
 #include<queue>
@@ -58,11 +58,11 @@ void bfs(){
 	q.push(s);
 	while(!q.empty()){
 		point t=q.front();q.pop();
-		if(t.b==n){//ºÜÖØÒª
+		if(t.b==n){//å¾ˆé‡è¦
 			mp[t.x][t.y]=1;
 			continue;
 		}
-		memset(used,0,sizeof(used));//²»ÒªÀ©Õ¹¶àÓà½Úµã 
+		memset(used,0,sizeof(used));//ä¸è¦æ‰©å±•å¤šä½™èŠ‚ç‚¹ 
 		if(t.b+1>n)continue; 
 		switch(a[t.b+1]){
 			case 1:

@@ -1,6 +1,6 @@
 /*
-[JLOI2011]飞行路线
-分析：按已经使用了多少次优惠分层，spfa 
+[JLOI2011]椋炶璺嚎
+鍒嗘瀽锛氭寜宸茬粡浣跨敤浜嗗灏戞浼樻儬鍒嗗眰锛宻pfa 
 */
 #include<iostream>
 #include<algorithm>

@@ -1,6 +1,6 @@
 /*
-Ѱ�Ҵ���Ԫ
-�������򵥶���ͼƥ�� 
+寻找代表元
+分析：简单二分图匹配 
 */ 
 #include<iostream>
 #include<vector>

@@ -1,6 +1,6 @@
 /*
 Maya Calendar
-题意：两种日历的转换，注意从0 
+棰樻剰锛氫袱绉嶆棩鍘嗙殑杞崲锛屾敞鎰忎粠0 
 */
 #include<cstdio>
 #include<cstring>

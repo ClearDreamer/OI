@@ -1,7 +1,7 @@
 /*
-求一次函数解析式
-分析：y1=kx1+b，y2=kx2+b
-	  k=(y2-y1)/(x2-x1)，b=y1-k*x1
+姹備竴娆″嚱鏁拌В鏋愬紡
+鍒嗘瀽锛歽1=kx1+b锛寉2=kx2+b
+	  k=(y2-y1)/(x2-x1)锛宐=y1-k*x1
 */
 #include<iostream>
 #include<cstdio>

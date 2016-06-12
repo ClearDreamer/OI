@@ -1,6 +1,6 @@
 /*
-[Usaco2009 Open]Cow Line Ö±ÏßÉÏµÄÅ£
-·ÖÎö£ºÄ£Äâ 
+[Usaco2009 Open]Cow Line ç›´çº¿ä¸Šçš„ç‰›
+åˆ†æï¼šæ¨¡æ‹Ÿ 
 */
 #include<iostream>
 #include<cstdio>

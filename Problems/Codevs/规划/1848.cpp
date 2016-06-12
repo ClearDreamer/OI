@@ -1,7 +1,7 @@
 /*
-Ó­´ºÎè»áÖ®¼¯ÌåÎè
-·ÖÎö£ºÀàËÆÆåÅÌDP£¬f[i][j]±íÊ¾µ½(i,j)µãµÄ×î´óÈý½ÇÐÎÉî¶È
-	  ÕâµÀÌâ²»ÓÃ¿¼ÂÇÁíÒ»ÖÖÈý½ÇÐÎ 
+è¿Žæ˜¥èˆžä¼šä¹‹é›†ä½“èˆž
+åˆ†æžï¼šç±»ä¼¼æ£‹ç›˜DPï¼Œf[i][j]è¡¨ç¤ºåˆ°(i,j)ç‚¹çš„æœ€å¤§ä¸‰è§’å½¢æ·±åº¦
+	  è¿™é“é¢˜ä¸ç”¨è€ƒè™‘å¦ä¸€ç§ä¸‰è§’å½¢ 
 */
 #include<iostream>
 #include<cstdio>
@@ -33,7 +33,7 @@ int work(){
 			m=max(m,f[i][j]);
 		}
 	}
-	return m*m;//×¢Òâ·µ»Øm*m£¬Õâ¸ö½á¹û¿ÉÒÔÍÆÒ»ÏÂ
+	return m*m;//æ³¨æ„è¿”å›žm*mï¼Œè¿™ä¸ªç»“æžœå¯ä»¥æŽ¨ä¸€ä¸‹
 }
 int main(){
 	init();

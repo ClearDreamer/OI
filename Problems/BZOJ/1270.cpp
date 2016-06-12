@@ -1,6 +1,6 @@
 /*
-[BeijingWc2008]À×ÌÎµÄĞ¡Ã¨
-·ÖÎö£ºDP£¬µ«ÊÇÊı¾İ·¶Î§ÊÇÊ²Ã´¹í= = 
+[BeijingWc2008]é›·æ¶›çš„å°çŒ«
+åˆ†æï¼šDPï¼Œä½†æ˜¯æ•°æ®èŒƒå›´æ˜¯ä»€ä¹ˆé¬¼= = 
 */
 #include<iostream>
 #include<cstdio>
@@ -9,7 +9,7 @@
 using namespace std;
 const int MAXN=5000,INF=0x3f3f3f3f;
 int mp[MAXN+3][MAXN+3];
-int dp[MAXN+3],c[MAXN+3],n,h,d; //¸ß¶ÈÎªi×î´óÖµ£¬µ±Ç°¸ß¶ÈÔÚµÚi¿ÃÉÏ×î´óÖµ 
+int dp[MAXN+3],c[MAXN+3],n,h,d; //é«˜åº¦ä¸ºiæœ€å¤§å€¼ï¼Œå½“å‰é«˜åº¦åœ¨ç¬¬iæ£µä¸Šæœ€å¤§å€¼ 
 int main(){
 	scanf("%d%d%d",&n,&h,&d);
 	for(int i=1;i<=n;i++){
@@ -20,7 +20,7 @@ int main(){
 		}
 	}
 	for(int i=h;i;i--){
-		int up=(i+d<=h)?dp[i+d]:0;//´ÓÉÏ·½ÌøÏÂÀ´ 
+		int up=(i+d<=h)?dp[i+d]:0;//ä»ä¸Šæ–¹è·³ä¸‹æ¥ 
 		for(int j=1;j<=n;j++){
 			c[j]=max(c[j],up)+mp[j][i]; 
 		}

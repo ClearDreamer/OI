@@ -1,6 +1,6 @@
 /*
-[Usaco2006 Feb]Stall Reservations 专用牛棚
-分析：被覆盖的次数最多的点即为答案，差分数组维护 
+[Usaco2006 Feb]Stall Reservations 涓撶敤鐗涙
+鍒嗘瀽锛氳瑕嗙洊鐨勬鏁版渶澶氱殑鐐瑰嵆涓虹瓟妗堬紝宸垎鏁扮粍缁存姢 
 */
 #include<iostream>
 #include<cstdio>

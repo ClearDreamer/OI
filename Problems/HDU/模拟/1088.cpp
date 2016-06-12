@@ -1,7 +1,7 @@
 /*
 Write a simple HTML Browser
-ÌâÒâ£ºÊäÈëÒ»¸ö¼òÒ×HTMLÎÄµµ£¬°´¸ñÊ½Êä³ö
-·ÖÎö£ºÄ£Äâ£¬×¢Òâ×Ö·û´®Ï¸½Ú 
+é¢˜æ„ï¼šè¾“å…¥ä¸€ä¸ªç®€æ˜“HTMLæ–‡æ¡£ï¼ŒæŒ‰æ ¼å¼è¾“å‡º
+åˆ†æžï¼šæ¨¡æ‹Ÿï¼Œæ³¨æ„å­—ç¬¦ä¸²ç»†èŠ‚ 
 */ 
 #include<iostream>
 #include<cstring>

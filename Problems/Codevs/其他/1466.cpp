@@ -1,5 +1,5 @@
 /*
-今年天数
+浠婂勾澶╂暟
 */
 #include<stdio.h>
 bool isrun(int year){

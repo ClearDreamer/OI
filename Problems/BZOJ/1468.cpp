@@ -1,6 +1,6 @@
 /*
 Tree
-分析：点分治，POJ1741
+鍒嗘瀽锛氱偣鍒嗘不锛孭OJ1741
 */ 
 #include<iostream>
 #include<algorithm>

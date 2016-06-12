@@ -1,10 +1,10 @@
 /*
 smrtfun
-·ÖÎö£º·ÖÎöÌâÄ¿ÖÐµÄÁ¿£ºi,suma,sumb
-	  ½«suma¿´³ÉÌå»ý£¬sumb¿´³É¼ÛÖµ£¬Ôò¿ÉÊÓÎªÁãÒ»±³°üÎÊÌâ 
-	  µ«×¢ÒâsumaÓÐ¸ºÊý£¬¶ÔÓÚ¸ºÌå»ýµÄ×ªÒÆ£¬½«Ñ­»··´¹ýÀ´×ö¾ÍÐÐÁË
-	  ÕâÑù¾ÍÍê³ÉÁË£¬×¢ÒâÎ¬»¤¿ÉÐÐÇø¼ämx,mn,ºÍ³õÊ¼»¯×îÐ¡Öµ£¬f[0]=0
-	  Ò»¸ö²»ÓÃÇø¼äÓÒÒÆµÄ·½·¨£ºÊ¹ÓÃÒ»¸öÖ¸Õë£¬Ö¸ÏòÊý×éÖÐ¼ä 
+åˆ†æžï¼šåˆ†æžé¢˜ç›®ä¸­çš„é‡ï¼ši,suma,sumb
+	  å°†sumaçœ‹æˆä½“ç§¯ï¼Œsumbçœ‹æˆä»·å€¼ï¼Œåˆ™å¯è§†ä¸ºé›¶ä¸€èƒŒåŒ…é—®é¢˜ 
+	  ä½†æ³¨æ„sumaæœ‰è´Ÿæ•°ï¼Œå¯¹äºŽè´Ÿä½“ç§¯çš„è½¬ç§»ï¼Œå°†å¾ªçŽ¯åè¿‡æ¥åšå°±è¡Œäº†
+	  è¿™æ ·å°±å®Œæˆäº†ï¼Œæ³¨æ„ç»´æŠ¤å¯è¡ŒåŒºé—´mx,mn,å’Œåˆå§‹åŒ–æœ€å°å€¼ï¼Œf[0]=0
+	  ä¸€ä¸ªä¸ç”¨åŒºé—´å³ç§»çš„æ–¹æ³•ï¼šä½¿ç”¨ä¸€ä¸ªæŒ‡é’ˆï¼ŒæŒ‡å‘æ•°ç»„ä¸­é—´ 
 */
 #include<iostream>
 #include<algorithm>

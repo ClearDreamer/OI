@@ -1,6 +1,6 @@
 /*
-[Ahoi2009]fly ������
-������ά��ǰ׺�ͣ�ö��ģ�� 
+[Ahoi2009]fly 飞行棋
+分析：维护前缀和，枚举模拟 
 */
 #include<iostream>
 #include<cstdio>

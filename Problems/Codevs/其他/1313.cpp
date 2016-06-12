@@ -1,5 +1,5 @@
 /*
-ÖÊÒòÊý·Ö½â
+è´¨å› æ•°åˆ†è§£
 */
 #include<iostream>
 #include<cmath>

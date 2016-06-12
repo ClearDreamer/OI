@@ -14,7 +14,7 @@ int main(){
 	int x,y,p,q;
 	for(int i=1;i<=d;i++){
 		cin>>x>>y>>p>>q;
-		//Í³¼ÆÃ¿ĞĞÃ¿ÁĞËù·Ö¸ôµÄ¶ÔÊı 
+		//ç»Ÿè®¡æ¯è¡Œæ¯åˆ—æ‰€åˆ†éš”çš„å¯¹æ•° 
 		if(x==p){
 			col[min(y,q)]++;
 		}
@@ -24,7 +24,7 @@ int main(){
 	}
 	for(int i=1;i<=m;i++)rc[i]=i;
 	for(int i=1;i<=n;i++)rr[i]=i;
-	sort(rc+1,rc+m+1,cmp1);//ÅÅĞò 
+	sort(rc+1,rc+m+1,cmp1);//æ’åº 
 	sort(rr+1,rr+n+1,cmp2);
 	sort(rc+1,rc+l+1);
 	sort(rr+1,rr+k+1);

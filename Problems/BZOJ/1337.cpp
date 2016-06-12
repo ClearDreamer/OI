@@ -1,6 +1,6 @@
 /*
-×îĞ¡Ô²¸²¸Ç
-·ÖÎö£ºËæ»úÔöÁ¿·¨ 
+æœ€å°åœ†è¦†ç›–
+åˆ†æï¼šéšæœºå¢é‡æ³• 
 */
 #include <cmath>  
 #include <cstdio>  
@@ -20,7 +20,7 @@ struct Point{
     friend Point operator - (const Point &p1,const Point &p2){return Point(p1.x-p2.x,p1.y-p2.y);}
     friend double operator * (const Point &p1,const Point &p2){return p1.x*p2.y-p1.y*p2.x;}  
     friend Point operator * (const Point &p1,double rate){return Point(p1.x*rate,p1.y*rate);}
-    friend Point Rotate(const Point &p){//ÄæÊ±ÕëĞı×ª90¶È 
+    friend Point Rotate(const Point &p){//é€†æ—¶é’ˆæ—‹è½¬90åº¦ 
         return Point(-p.y,p.x);  
     }  
 }ps[MAXN+3];
@@ -38,7 +38,7 @@ struct Circle{
     }  
 }ans=Circle(Point(0,0),0);
 Point Get_Intersection(const Line &l1,const Line &l2){
-    double temp=(l2.v*(l1.p-l2.p))/(l1.v*l2.v);//Ãæ»ı±ÈµÈÓÚ³¤¶È±È£¬×¢Òâ·½Ïò 
+    double temp=(l2.v*(l1.p-l2.p))/(l1.v*l2.v);//é¢ç§¯æ¯”ç­‰äºé•¿åº¦æ¯”ï¼Œæ³¨æ„æ–¹å‘ 
     return l1.p+l1.v*temp;
 }
 int n;  
@@ -55,7 +55,7 @@ int main(){
             ans=Circle((ps[i]+ps[j])*0.5,dist(ps[i],ps[j])*0.5);  
             for(int k=1;k<j;k++){
             	if(ans.In_Circle(ps[k]))continue;
-                Line l1=Line((ps[i]+ps[j])*0.5,Rotate(ps[i]-ps[j]));//Á½Ìõ´¹Ö±Æ½·ÖÏß 
+                Line l1=Line((ps[i]+ps[j])*0.5,Rotate(ps[i]-ps[j]));//ä¸¤æ¡å‚ç›´å¹³åˆ†çº¿ 
                 Line l2=Line((ps[i]+ps[k])*0.5,Rotate(ps[i]-ps[k]));
                 Point o=Get_Intersection(l1,l2);
                 ans=Circle(o,dist(ps[i],o));

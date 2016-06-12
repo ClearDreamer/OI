@@ -1,7 +1,7 @@
 /*
 Stockbroker Grapevine
-ÌâÒâ£ºÒ»ÕÅÓÐÏòÍ¼£¬´ÓÄ³Ò»µã³ö·¢£¬Ê¹µÃµ½´ïÆäËûµãµÄ×î´ó¾àÀë×îÐ¡
-·ÖÎö£ºFloyd£¬É¨Ò»±éµã 
+é¢˜æ„ï¼šä¸€å¼ æœ‰å‘å›¾ï¼Œä»ŽæŸä¸€ç‚¹å‡ºå‘ï¼Œä½¿å¾—åˆ°è¾¾å…¶ä»–ç‚¹çš„æœ€å¤§è·ç¦»æœ€å°
+åˆ†æžï¼šFloydï¼Œæ‰«ä¸€éç‚¹ 
 */
 #include<iostream>
 #include<algorithm>

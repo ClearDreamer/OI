@@ -1,14 +1,14 @@
 /*
-[Usaco2008 Open]Crisis on the Farm ����Σ��
-������DP����ʵ������ʲô30ֻһ��= =��30ֻһ��ֻ�Ǳ�֤��ţ�϶��ǾȲ���ģ�����ֻҪԤ����������仯(x+i,y+j)�ܾȵ�ţ��cnt[i][j]���� 
-	  f[k, i, j]��ʾ����k����x�����ƶ�i��y�����ƶ�j���������ţ������
-	  ���еĶ����ϱ�������Ķ�Ӧ��ע��Ҫ��Ԥ����������һ�£���ʵ����Ԥ�����仯�� 
+[Usaco2008 Open]Crisis on the Farm 牧场危机
+分析：DP，其实并不是什么30只一堆= =，30只一堆只是保证了牛肯定是救不完的，所以只要预处理出坐标变化(x+i,y+j)能救得牛数cnt[i][j]即可 
+	  f[k, i, j]表示走了k步，x方向移动i，y方向移动j的最大被拯救牛的数量
+	  题中的东西南北和坐标的对应，注意要和预处理的正负一致，其实就是预处理变化量 
 */ 
 #include<cstdio>
 #include<algorithm>
 using namespace std;
 const int dx[4]={1,0,0,-1},dy[4]={0,1,-1,0},INF=0x3f3f3f3f,R=31,MAXK=30,MAXN=1000;
-const char CHAR[4]={'E','N','S','W'};//�����Ÿ���������·����ʱ��һ���н����������֤�ֵ��� 
+const char CHAR[4]={'E','N','S','W'};//这里排个序，下面求路径的时候一旦有解就跳出，保证字典序 
 int n,m,K,ans;
 int Cx[MAXN+3],Cy[MAXN+3],Hx[MAXN+3],Hy[MAXN+3];
 int f[MAXK+3][R*2+3][R*2+3],cnt[R*2+3][R*2+3];

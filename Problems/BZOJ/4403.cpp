@@ -1,10 +1,10 @@
 /*
-序列统计
-分析：只要选出了一些属于[l..r]的数，他们一定可以排列成一个单调不降的，所以Ans=sigma{C(r-l+1,i)|1<=i<=n}
+搴忓垪缁熻
+鍒嗘瀽锛氬彧瑕侀�夊嚭浜嗕竴浜涘睘浜嶽l..r]鐨勬暟锛屼粬浠竴瀹氬彲浠ユ帓鍒楁垚涓�涓崟璋冧笉闄嶇殑锛屾墍浠ns=sigma{C(r-l+1,i)|1<=i<=n}
 		Ans=sigma{C(r-l+1,i)|1<=i<=n}
 			sigma{C(r-l+1,i)|0<=i<=n}-1
 			C(r-l+1+n,n)-1
-		用lucas定理C(n,m)%p=C(n/p,m/p)*C(n%p,m%p)求解即可		
+		鐢╨ucas瀹氱悊C(n,m)%p=C(n/p,m/p)*C(n%p,m%p)姹傝В鍗冲彲		
 */
 #include<iostream>
 #include<cstdio>

@@ -1,6 +1,6 @@
 /*
-[Usaco2005 Mar]Checking an Alibi 不在场的证明
-分析：最短路，dijkstra 
+[Usaco2005 Mar]Checking an Alibi 涓嶅湪鍦虹殑璇佹槑
+鍒嗘瀽锛氭渶鐭矾锛宒ijkstra 
 */
 #include<iostream>
 #include<cstdio>

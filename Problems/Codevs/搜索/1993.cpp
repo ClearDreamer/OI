@@ -1,6 +1,6 @@
 /*
-�ݵ���ˮ 
-������������������⣬ע��BFSʱԭ��Ĳ��Ϊ1������Ϊ0 
+草地排水 
+分析：经典最大流问题，注意BFS时原点的层次为1，不能为0 
 */
 #include<iostream>
 #include<algorithm>

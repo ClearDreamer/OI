@@ -1,6 +1,6 @@
 /*
-[Usaco2005 Jan]Moo Volume 牛的呼声
-分析：注意都是线性的，可以直接递推ans[i]=ans[i-1]+(i-1)*(delta) 
+[Usaco2005 Jan]Moo Volume 鐗涚殑鍛煎０
+鍒嗘瀽锛氭敞鎰忛兘鏄嚎鎬х殑锛屽彲浠ョ洿鎺ラ�掓帹ans[i]=ans[i-1]+(i-1)*(delta) 
 */
 #include<iostream>
 #include<cstdio>

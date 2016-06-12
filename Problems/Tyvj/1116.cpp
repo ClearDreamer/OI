@@ -1,5 +1,5 @@
 /*
-±»7Õû³ý
+è¢«7æ•´é™¤
 */ 
 #include<iostream>
 #include<cstdio>
@@ -12,7 +12,7 @@ int main(){
 	cin>>n;
 	for(int i=1,x=1;i<=n;i++){
 		(x<<=1)%=7;
-		if((x-((i%7)*(i%7))%7)%7==0)cnt++;//×¢ÒâÒªÈ¡mod 
+		if((x-((i%7)*(i%7))%7)%7==0)cnt++;//æ³¨æ„è¦å–mod 
 	}
 	cout<<cnt<<endl;
 	return 0;

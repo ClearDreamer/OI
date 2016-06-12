@@ -1,6 +1,6 @@
 /*
-лг╧Ш╢╚╣щ
-╥жнЖё╨м╛BZOJ1045 
+ГЁ√Ф·°Д╪═И─▓
+Е┬├Ф·░О╪ Е░▄BZOJ1045 
 */
 #include<cstdio>
 #include<iostream>

@@ -1,6 +1,6 @@
 /*
-忠诚S
-分析：区间查询最小值，单点修改
+蹇犺瘹S
+鍒嗘瀽锛氬尯闂存煡璇㈡渶灏忓�硷紝鍗曠偣淇敼
 */
 #include<iostream>
 #include<cmath> 

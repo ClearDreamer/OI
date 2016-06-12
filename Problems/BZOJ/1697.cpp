@@ -1,6 +1,6 @@
 /*
-[Usaco2007 Feb]Cow SortingÅ£ÅÅÐò
-·ÖÎö£º½«ÎÊÌâ×ª³ÉÖÃ»»£¬¿ÉÒÔ·¢ÏÖÖÃ»»µÄÒ»¸öÑ­»·ÄÚÒ»¶¨ÊÇÓÃ×îÐ¡µÄÈ¥ºÍÆäËûµÄ½»»»¡£µ«»¹ÓÐÒ»ÖÖ£ºÓÃÈ«ÌåµÄ×îÐ¡µÄ½»»»½øÀ´£¬½øÐÐ½»»»£¬ÔÙ½»»»»ØÈ¥£¬¿ÉÄÜ¸üÓÅ 
+[Usaco2007 Feb]Cow Sortingç‰›æŽ’åº
+åˆ†æžï¼šå°†é—®é¢˜è½¬æˆç½®æ¢ï¼Œå¯ä»¥å‘çŽ°ç½®æ¢çš„ä¸€ä¸ªå¾ªçŽ¯å†…ä¸€å®šæ˜¯ç”¨æœ€å°çš„åŽ»å’Œå…¶ä»–çš„äº¤æ¢ã€‚ä½†è¿˜æœ‰ä¸€ç§ï¼šç”¨å…¨ä½“çš„æœ€å°çš„äº¤æ¢è¿›æ¥ï¼Œè¿›è¡Œäº¤æ¢ï¼Œå†äº¤æ¢å›žåŽ»ï¼Œå¯èƒ½æ›´ä¼˜ 
 */
 #include<iostream>
 #include<cstdio>
@@ -9,7 +9,7 @@
 #include<vector>
 using namespace std;
 const int MAXN=10000;
-int a[MAXN+3],b[MAXN+3],c[10*MAXN+3],n;//×¢ÒâcÊÇÊýÖµ·¶Î§ 
+int a[MAXN+3],b[MAXN+3],c[10*MAXN+3],n;//æ³¨æ„cæ˜¯æ•°å€¼èŒƒå›´ 
 vector<int> g[MAXN+3];
 bool vis[MAXN+3];
 int main(){
@@ -26,7 +26,7 @@ int main(){
         if(vis[id])continue;
         cnt++;
         do{
-        	g[cnt].push_back(b[id]);//Ò²¿ÉÒÔÐ´³Éa[id]£¬ÆäÊµ¾Í²îÒ»Î» £¨ÒòÎªÊÇÑ­»·£¬ËùÒÔ²»»á´í 
+        	g[cnt].push_back(b[id]);//ä¹Ÿå¯ä»¥å†™æˆa[id]ï¼Œå…¶å®žå°±å·®ä¸€ä½ ï¼ˆå› ä¸ºæ˜¯å¾ªçŽ¯ï¼Œæ‰€ä»¥ä¸ä¼šé”™ 
         	vis[id]=1;
         	id=c[a[id]];
 		}while(!vis[id]);

@@ -1,5 +1,5 @@
 /*
-[2009¹ú¼Ò¼¯Ñµ¶Ó]Ð¡ZµÄÍà×Ó(hose)
+[2009å›½å®¶é›†è®­é˜Ÿ]å°Zçš„è¢œå­(hose)
 */
 #include<iostream>
 #include<algorithm>

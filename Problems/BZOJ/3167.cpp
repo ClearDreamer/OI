@@ -1,14 +1,14 @@
 /*
 [HEOI2013]SAO  
-���⣺��n���¼���n-1��Լ������ʾΪ��i���¼������ڵ�j��֮ǰ���󣩷���������ܵ��¼����У���ģ109+7���� 
-		������Լ����Ϊ����ߣ�����n���¼���һ����ͨ���ڡ� 
-		1��n��1000 
-����������DP����f[i][j]��ʾi�ڵ�λ���������е�jλ�õķ�������pre[i][j]=sigma{f[i][1..j]},suf[i][j]=sigma{f[i][j..n]}
-		����dfs������һ����(u,v)���ȵݹ鴦��v������Ȼ��ϲ���u�� 
-		���Ҫ��u��vǰ����u��u�������е�λ��Ϊi��v��v�������е�λ��Ϊj��Ҫ��v�е�ǰj-1��Ҫ��uǰ
-			��ô������ΪC( i-1 + j-1,i-1)*f[u][i] * C( size[u]-i + size[v]-(j-1),size[u]-i)*suf[v][j] , ת�Ƶ�f'[u][i+j-1] 
-		���Ҫ��v��uǰ����u��u�������е�λ��Ϊi��v��v�������е�λ��Ϊj��Ҫ��v�е�ǰj��Ҫ��uǰ
-			��ô������ΪC( i-1 + j,i-1)*f[u][i] * C( size[u]-i + size[v]-j,size[u]-i)*pre[v][j] , ת�Ƶ�f'[u][i+j] 
+题意：对n个事件有n-1个约束，表示为第i个事件必须在第j个之前（后）发生。求可能的事件排列（答案模109+7）。 
+		将所有约束视为无向边，满足n个事件在一个联通块内。 
+		1≤n≤1000 
+分析：树形DP，令f[i][j]表示i节点位于最终序列的j位置的方案数，pre[i][j]=sigma{f[i][1..j]},suf[i][j]=sigma{f[i][j..n]}
+		对于dfs的树上一条边(u,v)：先递归处理v子树，然后合并到u。 
+		如果要求u在v前，设u在u的序列中的位置为i，v在v的序列中的位置为j，要求v中的前j-1个要在u前
+			那么方案数为C( i-1 + j-1,i-1)*f[u][i] * C( size[u]-i + size[v]-(j-1),size[u]-i)*suf[v][j] , 转移到f'[u][i+j-1] 
+		如果要求v在u前，设u在u的序列中的位置为i，v在v的序列中的位置为j，要求v中的前j个要在u前
+			那么方案数为C( i-1 + j,i-1)*f[u][i] * C( size[u]-i + size[v]-j,size[u]-i)*pre[v][j] , 转移到f'[u][i+j] 
 		ans=pre[root][n] 
 */
 #include<iostream>
@@ -58,12 +58,12 @@ void dfs(int u,int fa){
 		dfs(e.v,u);
 		memset(h,0,sizeof(h));
 		for(int i=1;i<=sz[u];i++){
-			/*Ҳ���Էֿ�������u��vǰ��ö��j=0..sz[e.v]-1������u��v��ö��j=1..sz[e.v]
-				���̱�ɣ�h[i+j]+=C(i+j-1,i-1)*C(sz[u]-i+sz[e.v]-j,sz[u]-i)*f[u][i]*suf[e.v][j+1];
+			/*也可以分开，对于u在v前，枚举j=0..sz[e.v]-1，对于u在v后，枚举j=1..sz[e.v]
+				方程变成：h[i+j]+=C(i+j-1,i-1)*C(sz[u]-i+sz[e.v]-j,sz[u]-i)*f[u][i]*suf[e.v][j+1];
 						  h[i+j]+=C(i+j-1,i-1)*C(sz[u]-i+sz[e.v]-j,sz[u]-i)*f[u][i]*pre[e.v][j];*/
 			for(int j=1;j<=sz[e.v];j++){ 
 				if(e.b)//u->v 
-					(h[i+j-1]+=C(i+j-2,i-1)*C(sz[u]-i+sz[e.v]-(j-1),sz[u]-i)%MOD*f[u][i]%MOD*suf[e.v][j]%MOD)%=MOD;//ע����+= 
+					(h[i+j-1]+=C(i+j-2,i-1)*C(sz[u]-i+sz[e.v]-(j-1),sz[u]-i)%MOD*f[u][i]%MOD*suf[e.v][j]%MOD)%=MOD;//注意是+= 
 				else
 					(h[i+j]+=C(i+j-1,i-1)*C(sz[u]-i+sz[e.v]-j,sz[u]-i)%MOD*f[u][i]%MOD*pre[e.v][j]%MOD)%=MOD;
 			}
